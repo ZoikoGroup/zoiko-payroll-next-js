@@ -28,6 +28,7 @@
   --color-footer-end: var(--footer-end);
 
   --font-sans: var(--font-inter);
+  --font-mono: var(--font-ibm-plex-mono);
 }
 
 body {
@@ -87,6 +88,23 @@ body {
   animation-play-state: paused;
 }
 
+/* ---------- Nav mega menu ---------- */
+
+@keyframes mega-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-mega-menu {
+  animation: mega-menu-in 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
@@ -95,6 +113,10 @@ body {
   }
 
   .animate-marquee {
+    animation: none;
+  }
+
+  .animate-mega-menu {
     animation: none;
   }
 }

@@ -1,58 +1,118 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
+import MegaMenu from "./MegaMenu";
 import { navItems } from "./nav-data";
+import { megaMenus } from "./mega-menu-data";
 import { ChevronDownIcon, CloseIcon, MenuIcon } from "../ui/icons";
+
+const CLOSE_DELAY = 150;
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [openKey, setOpenKey] = useState<string | null>(null);
+  const navRef = useRef<HTMLElement>(null);
+  const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const clearCloseTimeout = () => {
+    if (closeTimeout.current) {
+      clearTimeout(closeTimeout.current);
+      closeTimeout.current = null;
+    }
+  };
+
+  const openMenu = (label: string) => {
+    clearCloseTimeout();
+    setOpenKey(label);
+  };
+
+  const scheduleClose = () => {
+    clearCloseTimeout();
+    closeTimeout.current = setTimeout(() => setOpenKey(null), CLOSE_DELAY);
+  };
+
+  useEffect(() => {
+    if (!openKey) return;
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setOpenKey(null);
+      }
+    };
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpenKey(null);
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, [openKey]);
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/70">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
         <Logo />
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
-          {navItems.map((item) => (
-            <div key={item.label} className="group relative">
-              {item.columns ? (
-                <>
-                  <button
-                    type="button"
-                    className="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-brand-dark transition-colors duration-200 hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
-                  >
-                    {item.label}
-                    <ChevronDownIcon className="h-4 w-4 text-slate-400 transition-transform duration-200 group-hover:rotate-180 group-hover:text-brand" />
-                  </button>
+        <nav ref={navRef} className="hidden items-center gap-1 lg:flex" aria-label="Primary">
+          {navItems.map((item) => {
+            const menu = megaMenus[item.label];
+            const isOpen = openKey === item.label;
 
-                  <div className="invisible absolute left-1/2 top-full w-64 -translate-x-1/2 translate-y-1 pt-3 opacity-0 transition-all duration-200 ease-out group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
-                    <div className="overflow-hidden rounded-xl border border-slate-200 bg-white p-2 shadow-xl shadow-slate-900/10">
-                      {item.columns.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          className="block rounded-lg px-3 py-2 text-sm text-slate-600 transition-colors duration-150 hover:bg-brand/5 hover:text-brand"
-                        >
-                          {link.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </>
-              ) : (
+            if (!menu) {
+              return (
                 <Link
+                  key={item.label}
                   href={item.href ?? "#"}
                   className="block rounded-md px-3 py-2 text-sm font-medium text-brand-dark transition-colors duration-200 hover:text-brand"
                 >
                   {item.label}
                 </Link>
-              )}
-            </div>
-          ))}
+              );
+            }
+
+            return (
+              <div
+                key={item.label}
+                onMouseEnter={() => openMenu(item.label)}
+                onMouseLeave={scheduleClose}
+              >
+                <button
+                  type="button"
+                  onClick={() => openMenu(item.label)}
+                  aria-expanded={isOpen}
+                  className="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-brand-dark transition-colors duration-200 hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
+                >
+                  {item.label}
+                  <ChevronDownIcon
+                    className={`h-4 w-4 text-slate-400 transition-transform duration-200 ${
+                      isOpen ? "rotate-180 text-brand" : ""
+                    }`}
+                  />
+                </button>
+              </div>
+            );
+          })}
         </nav>
+
+        {/* Mega menu panel: centered within the header's content container,
+            independent of which trigger opened it, so it never overflows the viewport. */}
+        {openKey && megaMenus[openKey] && (
+          <div
+            className="absolute inset-x-0 top-full z-50 flex justify-center pt-3"
+            onMouseEnter={() => openMenu(openKey)}
+            onMouseLeave={scheduleClose}
+          >
+            <div className="animate-mega-menu">
+              <MegaMenu menu={megaMenus[openKey]} />
+            </div>
+          </div>
+        )}
 
         {/* Desktop actions */}
         <div className="hidden items-center gap-3 lg:flex">
