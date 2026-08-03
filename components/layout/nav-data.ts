@@ -62,23 +62,3 @@ export const navItems: NavItem[] = [
     ],
   },
 ];
-
-export const footerColumns: { title: string; links: NavLink[] }[] = navItems
-  .filter((item): item is NavItem & { columns: NavLink[] } => Boolean(item.columns))
-  .map((item) => ({ title: item.label, links: item.columns }));
-
-export const legalLinks: NavLink[] = [
-  { label: "Trust Center", href: "/legal/trust-center" },
-  { label: "Privacy Notice", href: "/legal/privacy-notice" },
-  { label: "Cookie Preferences", href: "/legal/cookie-preferences" },
-  { label: "Accessibility Statement", href: "/legal/accessibility-statement" },
-  { label: "Terms of Service", href: "/legal/terms-of-service" },
-];
-
-export const socialLinks = [
-  { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "X", href: "https://x.com" },
-  { label: "YouTube", href: "https://youtube.com" },
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "Facebook", href: "https://facebook.com" },
-] as const;

@@ -8,17 +8,19 @@ const LOGO_HEIGHT = 212;
 
 type LogoProps = {
   variant?: "dark" | "light";
+  src?: string;
+  sizeClassName?: string;
 };
 
-export default function Logo({ variant = "dark" }: LogoProps) {
+export default function Logo({ variant = "dark", src = LOGO_SRC, sizeClassName = "h-9 w-auto" }: LogoProps) {
   const image = (
     <Image
-      src={LOGO_SRC}
+      src={src}
       alt="Zoiko Payroll"
       width={LOGO_WIDTH}
       height={LOGO_HEIGHT}
       priority
-      className="h-9 w-auto"
+      className={sizeClassName}
     />
   );
 
