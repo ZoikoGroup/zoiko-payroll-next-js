@@ -177,7 +177,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-8 text-center text-xs leading-relaxed text-slate-400">
-            <p className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1">
+            <p className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
               <span className="text-sm text-slate-200">
                 <span className="font-semibold">© {year} Zoiko Payroll.</span> All rights reserved.
               </span>

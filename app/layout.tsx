@@ -19,8 +19,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zoiko | Global Payroll",
-  description: "Global payroll control, built around local requirements.",
+  title: "Global Payroll Management Software | Zoiko Payroll",
+  description:
+    "Manage global payroll calculations, approvals, deductions, reporting, compliance workflows, and employee self-service, built around local requirements.",
 };
 
 export default function RootLayout({
