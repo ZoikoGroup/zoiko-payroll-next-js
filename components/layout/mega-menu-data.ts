@@ -45,7 +45,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Payroll Approvals",
             description: "Make review stages and decision rights visible.",
-            href: "/product/approvals",
+            href: "/payroll-approvals",
           },
           {
             title: "Deductions and Adjustments",
@@ -55,7 +55,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Employee Payroll Records",
             description: "Provide secure access to applicable pay information.",
-            href: "/product/employee-self-service",
+            href: "/employee-payroll-records",
           },
         ],
       },
@@ -70,7 +70,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Integrations",
             description: "Connect approved HR, finance, time and payment systems.",
-            href: "/product/integrations",
+            href: "/integrations",
           },
           {
             title: "Security and Trust",
@@ -90,12 +90,12 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "How Zoiko Payroll Works",
             description: "Follow the controlled payroll lifecycle from input to report.",
-            href: "/product/how-it-works",
+            href: "/how-it-works",
           },
           {
             title: "Implementation",
             description: "Understand discovery, configuration, testing and launch.",
-            href: "/product/implementation",
+            href: "/implementation",
           },
           {
             title: "Zoiko One Integration",
@@ -363,7 +363,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Implementation",
             description: "Migration, testing and launch guidance.",
-            href: "/product/implementation",
+            href: "/implementation",
           },
           {
             title: "Security and Trust",

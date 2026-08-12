@@ -218,6 +218,57 @@ export function ChartIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function MailIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth={1.33} {...props}>
+      <path d="M2 5.33333L8 9.33333L14 5.33333M14 5.33333L8 2L2 5.33333V12c0 .354.14.693.39.943.25.25.59.39.943.39h9.334c.353 0 .692-.14.942-.39.25-.25.391-.589.391-.943V5.333Z" />
+    </svg>
+  );
+}
+
+export function CardIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" strokeWidth={1.25} {...props}>
+      <path d="M11.875 2.5H3.125C2.435 2.5 1.875 3.06 1.875 3.75v7.5c0 .69.56 1.25 1.25 1.25h8.75c.69 0 1.25-.56 1.25-1.25v-7.5c0-.69-.56-1.25-1.25-1.25Z" />
+      <path d="M1.875 5.625h11.25" />
+    </svg>
+  );
+}
+
+export function BuildingsIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" strokeWidth={1.25} {...props}>
+      <path d="M2.5 11.875V3.75L5 1.875 7.5 3.75v8.125V5.625L10 3.75l2.5 1.875v6.25" />
+    </svg>
+  );
+}
+
+export function TrendIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" strokeWidth={1.25} {...props}>
+      <path d="M1.875 1.875V13.125H13.125M4.375 9.375L6.875 6.875L8.75 8.75L11.875 5" />
+    </svg>
+  );
+}
+
+export function RecordsIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <rect x="4" y="4" width="16" height="16" rx="2" />
+      <path d="M8 10h8M8 14h5" />
+    </svg>
+  );
+}
+
+export function ExportIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M4 4h16v16H4z" />
+      <path d="M8 9h8M8 13h5" />
+    </svg>
+  );
+}
+
 export function PinIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
