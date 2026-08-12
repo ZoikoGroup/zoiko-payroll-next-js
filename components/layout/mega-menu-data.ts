@@ -40,7 +40,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Payroll Processing",
             description: "Prepare, calculate, validate and complete payroll cycles.",
-            href: "/product/payroll-processing",
+            href: "/payroll-processing",
           },
           {
             title: "Payroll Approvals",

@@ -16,7 +16,7 @@ export const footerLinkColumns: FooterColumn[] = [
   {
     title: "Payroll operations",
     links: [
-      { label: "Payroll processing", href: "/product/payroll-processing" },
+      { label: "Payroll processing", href: "/payroll-processing" },
       { label: "Inputs and validation", href: "/product/inputs-validation" },
       { label: "Calculations", href: "/product/calculations" },
       { label: "Approvals", href: "/payroll-approvals" },
