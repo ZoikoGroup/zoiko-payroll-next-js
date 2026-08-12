@@ -1,0 +1,11 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as ProblemsSection } from "./ProblemsSection";
+export { default as LifecycleSection } from "./LifecycleSection";
+export { default as SelfServiceSection } from "./SelfServiceSection";
+export { default as VersionHistorySection } from "./VersionHistorySection";
+export { default as AdminWorkspaceSection } from "./AdminWorkspaceSection";
+export { default as PrivacyAuditSection } from "./PrivacyAuditSection";
+export { default as RoleBenefitsSection } from "./RoleBenefitsSection";
+export { default as ImplementationTrustSection } from "./ImplementationTrustSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";

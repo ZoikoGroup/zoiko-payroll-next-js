@@ -1,0 +1,17 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as StakeholdersSection } from "./StakeholdersSection";
+export { default as FitGapSection } from "./FitGapSection";
+export { default as ArchitectureSection } from "./ArchitectureSection";
+export { default as IntegrationHubSection } from "./IntegrationHubSection";
+export { default as LifecycleSection } from "./LifecycleSection";
+export { default as CategoryFlowSection } from "./CategoryFlowSection";
+export { default as CategoryScopeSection } from "./CategoryScopeSection";
+export { default as DataContractsSection } from "./DataContractsSection";
+export { default as RuntimeSection } from "./RuntimeSection";
+export { default as SecuritySection } from "./SecuritySection";
+export { default as ZoikoOneSection } from "./ZoikoOneSection";
+export { default as ImplementationSection } from "./ImplementationSection";
+export { default as EvidenceSection } from "./EvidenceSection";
+export { default as ApisSection } from "./ApisSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";

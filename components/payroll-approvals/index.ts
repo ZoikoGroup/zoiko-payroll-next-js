@@ -1,0 +1,13 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as ProblemsSection } from "./ProblemsSection";
+export { default as LifecycleSection } from "./LifecycleSection";
+export { default as ApprovalCenterSection } from "./ApprovalCenterSection";
+export { default as DecisionWorkspaceSection } from "./DecisionWorkspaceSection";
+export { default as DecisionRightsSection } from "./DecisionRightsSection";
+export { default as DelegationSection } from "./DelegationSection";
+export { default as VersionBindingSection } from "./VersionBindingSection";
+export { default as AuditSecuritySection } from "./AuditSecuritySection";
+export { default as SafeAlternativesSection } from "./SafeAlternativesSection";
+export { default as ImplementationSection } from "./ImplementationSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";

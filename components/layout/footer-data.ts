@@ -6,9 +6,9 @@ export const footerLinkColumns: FooterColumn[] = [
     title: "Product",
     links: [
       { label: "Product overview", href: "/product" },
-      { label: "How Zoiko Payroll works", href: "/product/how-it-works" },
+      { label: "How Zoiko Payroll works", href: "/how-it-works" },
       { label: "Payroll workspace", href: "/product/workspace" },
-      { label: "Employee payroll records", href: "/product/employee-self-service" },
+      { label: "Employee payroll records", href: "/employee-payroll-records" },
       { label: "Reporting and analytics", href: "/product/reporting" },
       { label: "Product tour", href: "/product/tour" },
     ],
@@ -19,7 +19,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Payroll processing", href: "/product/payroll-processing" },
       { label: "Inputs and validation", href: "/product/inputs-validation" },
       { label: "Calculations", href: "/product/calculations" },
-      { label: "Approvals", href: "/product/approvals" },
+      { label: "Approvals", href: "/payroll-approvals" },
       { label: "Deductions and adjustments", href: "/product/deductions" },
       { label: "Payments orchestration", href: "/product/payments-orchestration" },
       { label: "Payroll close and audit", href: "/product/close-and-audit" },
@@ -69,7 +69,7 @@ export const footerLinkColumns: FooterColumn[] = [
   {
     title: "Integrations & APIs",
     links: [
-      { label: "Integrations overview", href: "/product/integrations" },
+      { label: "Integrations overview", href: "/integrations" },
       { label: "HRIS and HCM systems", href: "/product/integrations/hris-hcm" },
       { label: "Finance and ERP systems", href: "/product/integrations/finance-erp" },
       { label: "Time and attendance", href: "/product/integrations/time-attendance" },
@@ -83,7 +83,7 @@ export const footerLinkColumns: FooterColumn[] = [
   {
     title: "Implementation & services",
     links: [
-      { label: "Implementation overview", href: "/product/implementation" },
+      { label: "Implementation overview", href: "/implementation" },
       { label: "Readiness assessment", href: "/product/implementation/readiness" },
       { label: "Data migration", href: "/product/implementation/data-migration" },
       { label: "Configuration", href: "/product/implementation/configuration" },

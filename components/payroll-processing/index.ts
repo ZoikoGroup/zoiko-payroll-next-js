@@ -1,0 +1,14 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as PillarsSection } from "./PillarsSection";
+export { default as LifecycleSection } from "./LifecycleSection";
+export { default as WorkspaceSection } from "./WorkspaceSection";
+export { default as SetupSection } from "./SetupSection";
+export { default as CalculationSection } from "./CalculationSection";
+export { default as ReviewApprovalSection } from "./ReviewApprovalSection";
+export { default as CompletionSection } from "./CompletionSection";
+export { default as ConnectivitySection } from "./ConnectivitySection";
+export { default as VersionHistorySection } from "./VersionHistorySection";
+export { default as ImplementationTourSection } from "./ImplementationTourSection";
+export { default as GovernanceSection } from "./GovernanceSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";
