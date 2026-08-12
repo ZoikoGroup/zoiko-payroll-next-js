@@ -6,12 +6,12 @@ const operatingAreas = [
   {
     area: "Payroll operations",
     scope: "Periods, inputs, earnings, deductions, adjustments, calculations, validation, review, approval and completion.",
-    href: "/product/payroll-processing",
+    href: "/payroll-processing",
   },
   {
     area: "Employee experience",
     scope: "Applicable payslips, payroll history, documents, notifications and controlled self-service.",
-    href: "/product/employee-self-service",
+    href: "/employee-payroll-records",
   },
   {
     area: "Reporting and governance",
@@ -21,7 +21,7 @@ const operatingAreas = [
   {
     area: "Connectivity",
     scope: "Zoiko One, approved business systems, APIs, webhooks and shared platform services.",
-    href: "/product/integrations",
+    href: "/integrations",
   },
 ];
 

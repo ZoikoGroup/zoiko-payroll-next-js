@@ -14,6 +14,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openKey, setOpenKey] = useState<string | null>(null);
   const navRef = useRef<HTMLElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
   const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const clearCloseTimeout = () => {
@@ -36,8 +37,13 @@ export default function Header() {
   useEffect(() => {
     if (!openKey) return;
 
+    // The panel renders outside <nav>, so it has to be checked too — otherwise a
+    // mousedown on a menu link closes the panel before the click can navigate.
     const handleClickOutside = (event: MouseEvent) => {
-      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+      const target = event.target as Node;
+      const insideNav = navRef.current?.contains(target) ?? false;
+      const insidePanel = panelRef.current?.contains(target) ?? false;
+      if (!insideNav && !insidePanel) {
         setOpenKey(null);
       }
     };
@@ -104,6 +110,7 @@ export default function Header() {
             independent of which trigger opened it, so it never overflows the viewport. */}
         {openKey && megaMenus[openKey] && (
           <div
+            ref={panelRef}
             className="absolute inset-x-0 top-full z-50 flex justify-center pt-3"
             onMouseEnter={() => openMenu(openKey)}
             onMouseLeave={scheduleClose}

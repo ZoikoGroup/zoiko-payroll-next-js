@@ -9,7 +9,7 @@ const capabilities = [
       "Manage payroll periods, earnings, deductions, adjustments, calculations, reviews, approvals and completion in one controlled workflow.",
     tags: ["Structured cycles", "Configurable inputs"],
     linkLabel: "Payroll processing",
-    href: "/product/payroll-processing",
+    href: "/payroll-processing",
     image: "/images/home/payroll-processing.png",
   },
   {
@@ -17,7 +17,7 @@ const capabilities = [
     description: "Establish clear review responsibilities so payroll does not progress without required authorization.",
     tags: ["Role-based stages", "Recorded history"],
     linkLabel: "Payroll approvals",
-    href: "/product/approvals",
+    href: "/payroll-approvals",
     image: "/images/home/approvals-2.png",
   },
   {
@@ -34,7 +34,7 @@ const capabilities = [
       "Give authorized teams and employees secure access to applicable payslips, payroll history and payroll documents.",
     tags: ["Payslips", "Secure self-service"],
     linkLabel: "Employee self-service",
-    href: "/product/employee-self-service",
+    href: "/employee-payroll-records",
     image: "/images/home/employee-records.png",
   },
   {

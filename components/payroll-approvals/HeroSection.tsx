@@ -68,9 +68,12 @@ export default function HeroSection() {
                 >
                   Book a demo
                 </Link>
-                <span className="flex min-h-11 items-center justify-center rounded-lg border border-white/30 px-5 py-3 text-xs leading-5 text-white">
+                <Link
+                  href="/payroll-processing"
+                  className="flex min-h-11 items-center justify-center rounded-lg border border-white/30 px-5 py-3 text-xs leading-5 text-white transition-all duration-200 hover:-translate-y-0.5"
+                >
                   Explore Payroll Processing →
-                </span>
+                </Link>
               </div>
             </Reveal>
 

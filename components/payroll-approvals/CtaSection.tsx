@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Reveal from "../ui/Reveal";
 
-const links = ["Payroll Processing", "Security & Trust", "Product Tour"];
+const links: { label: string; href?: string }[] = [
+  { label: "Payroll Processing", href: "/payroll-processing" },
+  { label: "Security & Trust" },
+  { label: "Product Tour" },
+];
 
 export default function CtaSection() {
   return (
@@ -27,14 +31,24 @@ export default function CtaSection() {
                   the version that was actually reviewed.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-6">
-                  {links.map((link) => (
-                    <span
-                      key={link}
-                      className="border-b border-white/40 pb-0.5 text-sm text-white/90"
-                    >
-                      {link}
-                    </span>
-                  ))}
+                  {links.map((link) =>
+                    link.href ? (
+                      <Link
+                        key={link.label}
+                        href={link.href}
+                        className="border-b border-white/40 pb-0.5 text-sm text-white/90 transition-colors duration-200 hover:border-white hover:text-white"
+                      >
+                        {link.label}
+                      </Link>
+                    ) : (
+                      <span
+                        key={link.label}
+                        className="border-b border-white/40 pb-0.5 text-sm text-white/90"
+                      >
+                        {link.label}
+                      </span>
+                    ),
+                  )}
                 </div>
               </div>
 
