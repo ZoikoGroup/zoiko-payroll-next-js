@@ -16,7 +16,7 @@ const operatingAreas = [
   {
     area: "Reporting and governance",
     scope: "Summaries, jurisdiction/entity views, approval status, history, exports, reconciliation and audit activity.",
-    href: "/product/reporting",
+    href: "/reporting",
   },
   {
     area: "Connectivity",

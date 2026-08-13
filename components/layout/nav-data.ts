@@ -18,7 +18,7 @@ export const navItems: NavItem[] = [
       { label: "Payroll processing", href: "/payroll-processing" },
       { label: "Approvals", href: "/payroll-approvals" },
       { label: "Employee payroll records", href: "/employee-payroll-records" },
-      { label: "Reporting", href: "/product/reporting" },
+      { label: "Reporting", href: "/reporting" },
       { label: "Integrations", href: "/integrations" },
       { label: "Implementation", href: "/implementation" },
       { label: "Security", href: "/product/security" },

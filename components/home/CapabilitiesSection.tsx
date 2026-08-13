@@ -43,7 +43,7 @@ const capabilities = [
       "Review payroll summaries, cross-entity and jurisdiction views, exports, reconciliation support and audit records.",
     tags: ["Summaries", "Exports"],
     linkLabel: "Payroll reporting",
-    href: "/product/reporting",
+    href: "/reporting",
     image: "/images/home/reporting.png",
   },
   {

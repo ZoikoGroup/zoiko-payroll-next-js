@@ -9,7 +9,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "How Zoiko Payroll works", href: "/how-it-works" },
       { label: "Payroll workspace", href: "/product/workspace" },
       { label: "Employee payroll records", href: "/employee-payroll-records" },
-      { label: "Reporting and analytics", href: "/product/reporting" },
+      { label: "Reporting and analytics", href: "/reporting" },
       { label: "Product tour", href: "/product/tour" },
     ],
   },
