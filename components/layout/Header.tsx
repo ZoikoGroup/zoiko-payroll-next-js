@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import MegaMenu from "./MegaMenu";
@@ -15,6 +15,7 @@ export default function Header() {
   const [openKey, setOpenKey] = useState<string | null>(null);
   const navRef = useRef<HTMLElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+  const mobileRef = useRef<HTMLDivElement>(null);
   const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const clearCloseTimeout = () => {
@@ -32,6 +33,25 @@ export default function Header() {
   const scheduleClose = () => {
     clearCloseTimeout();
     closeTimeout.current = setTimeout(() => setOpenKey(null), CLOSE_DELAY);
+  };
+
+  // Dismiss everything after a menu link is used: the mega menu, the mobile
+  // panel, and any <details> the mobile panel left expanded.
+  const closeAll = useCallback(() => {
+    clearCloseTimeout();
+    setOpenKey(null);
+    setMobileOpen(false);
+    mobileRef.current
+      ?.querySelectorAll<HTMLDetailsElement>("details[open]")
+      .forEach((d) => {
+        d.open = false;
+      });
+  }, []);
+
+  // Closing on the click rather than on a pathname change also covers links
+  // pointing at the route that's already open.
+  const closeOnLinkClick = (event: React.MouseEvent<HTMLElement>) => {
+    if ((event.target as HTMLElement).closest("a")) closeAll();
   };
 
   useEffect(() => {
@@ -90,7 +110,7 @@ export default function Header() {
               >
                 <button
                   type="button"
-                  onClick={() => openMenu(item.label)}
+                  onClick={() => (isOpen ? setOpenKey(null) : openMenu(item.label))}
                   aria-expanded={isOpen}
                   className="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-brand-dark transition-colors duration-200 hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
                 >
@@ -114,6 +134,7 @@ export default function Header() {
             className="absolute inset-x-0 top-full z-50 flex justify-center pt-3"
             onMouseEnter={() => openMenu(openKey)}
             onMouseLeave={scheduleClose}
+            onClick={closeOnLinkClick}
           >
             <div className="animate-mega-menu">
               <MegaMenu menu={megaMenus[openKey]} />
@@ -158,6 +179,8 @@ export default function Header() {
 
       {/* Mobile panel */}
       <div
+        ref={mobileRef}
+        onClick={closeOnLinkClick}
         className={`overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden ${
           mobileOpen ? "max-h-[80vh]" : "max-h-0"
         }`}
