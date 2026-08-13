@@ -65,7 +65,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Reporting and Analytics",
             description: "Review payroll totals, trends, exports and history.",
-            href: "/product/reporting",
+            href: "/reporting",
           },
           {
             title: "Integrations",
@@ -373,7 +373,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Reporting",
             description: "Payroll insights, exports and reconciliation.",
-            href: "/product/reporting",
+            href: "/reporting",
           },
         ],
       },
