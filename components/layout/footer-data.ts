@@ -20,7 +20,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Inputs and validation", href: "/product/inputs-validation" },
       { label: "Calculations", href: "/product/calculations" },
       { label: "Approvals", href: "/payroll-approvals" },
-      { label: "Deductions and adjustments", href: "/product/deductions" },
+      { label: "Deductions and adjustments", href: "/deductions" },
       { label: "Payments orchestration", href: "/product/payments-orchestration" },
       { label: "Payroll close and audit", href: "/product/close-and-audit" },
       { label: "Records and reports", href: "/product/records-and-reports" },
@@ -125,7 +125,7 @@ export const footerLinkColumns: FooterColumn[] = [
     title: "Trust, security & compliance",
     links: [
       { label: "Trust Center", href: "/company/trust-center" },
-      { label: "Security", href: "/product/security" },
+      { label: "Security", href: "/security" },
       { label: "Privacy and data protection", href: "/legal/privacy-notice" },
       { label: "Compliance and assurance", href: "/company/trust-center/compliance" },
       { label: "Data residency", href: "/company/trust-center/data-residency" },

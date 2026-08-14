@@ -1,0 +1,12 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as ProblemsSection } from "./ProblemsSection";
+export { default as ChangeTypesSection } from "./ChangeTypesSection";
+export { default as LifecycleSection } from "./LifecycleSection";
+export { default as WorkspaceSection } from "./WorkspaceSection";
+export { default as RecurringChangesSection } from "./RecurringChangesSection";
+export { default as ValidationSection } from "./ValidationSection";
+export { default as ApprovalLinkageSection } from "./ApprovalLinkageSection";
+export { default as ImportsSection } from "./ImportsSection";
+export { default as MultiEntitySection } from "./MultiEntitySection";
+export { default as ReportingRetentionSection } from "./ReportingRetentionSection";
+export { default as FaqSection } from "./FaqSection";
