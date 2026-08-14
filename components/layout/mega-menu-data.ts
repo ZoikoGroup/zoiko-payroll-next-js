@@ -50,7 +50,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Deductions and Adjustments",
             description: "Control recurring, one-time and corrective changes.",
-            href: "/product/deductions",
+            href: "/deductions",
           },
           {
             title: "Employee Payroll Records",
@@ -75,7 +75,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Security and Trust",
             description: "Review access, audit, privacy and assurance controls.",
-            href: "/product/security",
+            href: "/security",
           },
           {
             title: "Product Tour",
@@ -100,7 +100,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Zoiko One Integration",
             description: "See the connected-suite path without weakening standalone value.",
-            href: "/product/zoiko-one-integration",
+            href: "/zoiko-one-integration",
           },
         ],
       },
@@ -368,7 +368,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Security and Trust",
             description: "Controls, evidence and procurement resources.",
-            href: "/product/security",
+            href: "/security",
           },
           {
             title: "Reporting",
