@@ -29,8 +29,9 @@ export const navItems: NavItem[] = [
   {
     label: "Solutions",
     columns: [
-      { label: "Single-jurisdiction payroll", href: "/solutions/single-jurisdiction" },
-      { label: "Multi-jurisdiction payroll", href: "/solutions/multi-jurisdiction" },
+      { label: "Single-jurisdiction payroll", href: "/single-jurisdiction" },
+      { label: "Multi-jurisdiction payroll", href: "/multi-jurisdiction" },
+      { label: "Payroll modernization", href: "/payroll-modernization" },
       { label: "Mid-market", href: "/solutions/mid-market" },
       { label: "Enterprise", href: "/solutions/enterprise" },
       { label: "Finance teams", href: "/solutions/finance-teams" },

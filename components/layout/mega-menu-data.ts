@@ -124,22 +124,22 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Single-Jurisdiction Payroll",
             description: "Structured payroll control for one operating market.",
-            href: "/solutions/single-jurisdiction",
+            href: "/single-jurisdiction",
           },
           {
             title: "Multi-Jurisdiction Payroll",
             description: "Centralize oversight while preserving local requirements.",
-            href: "/solutions/multi-jurisdiction",
+            href: "/multi-jurisdiction",
           },
           {
             title: "Centralized Payroll Operations",
             description: "Coordinate teams, entities and payroll status.",
-            href: "/solutions/centralized-operations",
+            href: "/centralized-operations",
           },
           {
             title: "Payroll Modernization",
             description: "Replace fragmented or legacy workflows through controlled change.",
-            href: "/solutions/modernization",
+            href: "/payroll-modernization",
           },
           {
             title: "Payroll Migration",

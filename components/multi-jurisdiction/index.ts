@@ -1,0 +1,16 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as WhyHardSection } from "./WhyHardSection";
+export { default as ControlCenterSection } from "./ControlCenterSection";
+export { default as ObjectModelSection } from "./ObjectModelSection";
+export { default as GovernanceSection } from "./GovernanceSection";
+export { default as CloseBoardSection } from "./CloseBoardSection";
+export { default as ExceptionSection } from "./ExceptionSection";
+export { default as CurrencySection } from "./CurrencySection";
+export { default as IntegrationsSection } from "./IntegrationsSection";
+export { default as WaveSection } from "./WaveSection";
+export { default as OperatingModelsSection } from "./OperatingModelsSection";
+export { default as RoleOutcomesSection } from "./RoleOutcomesSection";
+export { default as CoverageSection } from "./CoverageSection";
+export { default as PathFinderSection } from "./PathFinderSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";

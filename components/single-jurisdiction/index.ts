@@ -1,0 +1,14 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as FitSection } from "./FitSection";
+export { default as ControlCenterSection } from "./ControlCenterSection";
+export { default as LifecycleSection } from "./LifecycleSection";
+export { default as ScopeSection } from "./ScopeSection";
+export { default as InputsSection } from "./InputsSection";
+export { default as ReviewApprovalSection } from "./ReviewApprovalSection";
+export { default as RecordsSection } from "./RecordsSection";
+export { default as IntegrationsSection } from "./IntegrationsSection";
+export { default as SecuritySection } from "./SecuritySection";
+export { default as ImplementationSection } from "./ImplementationSection";
+export { default as RoleOutcomesSection } from "./RoleOutcomesSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";
