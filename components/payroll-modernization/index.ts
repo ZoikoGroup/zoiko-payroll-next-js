@@ -1,0 +1,14 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as RoadmapSection } from "./RoadmapSection";
+export { default as ControlCenterSection } from "./ControlCenterSection";
+export { default as OperatingModelSection } from "./OperatingModelSection";
+export { default as MigrationSection } from "./MigrationSection";
+export { default as WorkflowSection } from "./WorkflowSection";
+export { default as ValidationSection } from "./ValidationSection";
+export { default as CutoverSection } from "./CutoverSection";
+export { default as SecurityReadinessSection } from "./SecurityReadinessSection";
+export { default as AdoptionSection } from "./AdoptionSection";
+export { default as ValueEvidenceSection } from "./ValueEvidenceSection";
+export { default as FindSolutionSection } from "./FindSolutionSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";

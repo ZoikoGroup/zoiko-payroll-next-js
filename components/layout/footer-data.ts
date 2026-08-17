@@ -30,8 +30,8 @@ export const footerLinkColumns: FooterColumn[] = [
     title: "Solutions",
     links: [
       { label: "Solutions overview", href: "/solutions" },
-      { label: "Single-jurisdiction payroll", href: "/solutions/single-jurisdiction" },
-      { label: "Multi-jurisdiction payroll", href: "/solutions/multi-jurisdiction" },
+      { label: "Single-jurisdiction payroll", href: "/single-jurisdiction" },
+      { label: "Multi-jurisdiction payroll", href: "/multi-jurisdiction" },
       { label: "Mid-market organizations", href: "/solutions/mid-market" },
       { label: "Enterprise organizations", href: "/solutions/enterprise" },
       { label: "Payroll teams", href: "/solutions/payroll-teams" },

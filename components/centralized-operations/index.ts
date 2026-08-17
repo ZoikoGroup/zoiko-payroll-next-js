@@ -1,0 +1,14 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as FragmentationSection } from "./FragmentationSection";
+export { default as ControlCenterSection } from "./ControlCenterSection";
+export { default as HierarchySection } from "./HierarchySection";
+export { default as CloseOrchestrationSection } from "./CloseOrchestrationSection";
+export { default as WorkQueueSection } from "./WorkQueueSection";
+export { default as StandardWorkSection } from "./StandardWorkSection";
+export { default as ApprovalSection } from "./ApprovalSection";
+export { default as RecordsSection } from "./RecordsSection";
+export { default as TransitionSection } from "./TransitionSection";
+export { default as RoleOutcomesSection } from "./RoleOutcomesSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";
+export { default as IntegrationsSecuritySection } from "./IntegrationsSecuritySection";
