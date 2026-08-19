@@ -1,0 +1,9 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as GrowthSignalsSection } from "./GrowthSignalsSection";
+export { default as ControlCenterSection } from "./ControlCenterSection";
+export { default as ProgressionSection } from "./ProgressionSection";
+export { default as RolesSection } from "./RolesSection";
+export { default as IntegrationsSection } from "./IntegrationsSection";
+export { default as BoundariesSection } from "./BoundariesSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";

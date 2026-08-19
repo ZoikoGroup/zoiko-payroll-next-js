@@ -31,10 +31,14 @@ export const navItems: NavItem[] = [
     columns: [
       { label: "Single-jurisdiction payroll", href: "/single-jurisdiction" },
       { label: "Multi-jurisdiction payroll", href: "/multi-jurisdiction" },
+      { label: "Growing businesses", href: "/growing-businesses" },
+      { label: "International groups", href: "/international-groups" },
+      { label: "Payroll teams", href: "/payroll-teams" },
       { label: "Payroll modernization", href: "/payroll-modernization" },
-      { label: "Mid-market", href: "/solutions/mid-market" },
+      { label: "Mid-market organizations", href: "/mid-market-organizations" },
       { label: "Enterprise", href: "/solutions/enterprise" },
-      { label: "Finance teams", href: "/solutions/finance-teams" },
+      { label: "Finance teams", href: "/finance-teams" },
+      { label: "HR teams", href: "/hr-teams" },
     ],
   },
   {

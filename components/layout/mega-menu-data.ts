@@ -154,12 +154,12 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Growing Businesses",
             description: "Scale payroll control as headcount and complexity increase.",
-            href: "/solutions/growing-businesses",
+            href: "/growing-businesses",
           },
           {
             title: "Mid-Market Organizations",
             description: "Bring structure to expanding teams and entities.",
-            href: "/solutions/mid-market",
+            href: "/mid-market-organizations",
           },
           {
             title: "Enterprise Organizations",
@@ -169,7 +169,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "International Groups",
             description: "Coordinate payroll across markets and legal entities.",
-            href: "/solutions/international-groups",
+            href: "/international-groups",
           },
         ],
       },
@@ -179,17 +179,17 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Payroll Teams",
             description: "Improve preparation, validation, approvals and completion.",
-            href: "/solutions/payroll-teams",
+            href: "/payroll-teams",
           },
           {
             title: "Finance Teams",
             description: "Strengthen totals, reconciliation and financial oversight.",
-            href: "/solutions/finance-teams",
+            href: "/finance-teams",
           },
           {
             title: "HR Teams",
             description: "Keep authorized employee changes and payroll records aligned.",
-            href: "/solutions/hr-teams",
+            href: "/hr-teams",
           },
           {
             title: "Business Leaders",

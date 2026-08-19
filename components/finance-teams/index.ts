@@ -1,0 +1,12 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as OperatingRealitySection } from "./OperatingRealitySection";
+export { default as ResponsibilitySection } from "./ResponsibilitySection";
+export { default as OversightCenterSection } from "./OversightCenterSection";
+export { default as TotalsScopeSection } from "./TotalsScopeSection";
+export { default as VarianceSection } from "./VarianceSection";
+export { default as ReconciliationSection } from "./ReconciliationSection";
+export { default as MaterialChangeSection } from "./MaterialChangeSection";
+export { default as IntegrationsSection } from "./IntegrationsSection";
+export { default as AuditEvidenceSection } from "./AuditEvidenceSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";
