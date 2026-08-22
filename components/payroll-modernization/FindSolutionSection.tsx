@@ -16,7 +16,7 @@ type RouteKey =
 /** Every destination stays visible — answers only reorder them, they never remove a path. */
 const routes: { key: RouteKey; label: string; href: string }[] = [
   { key: "implementation", label: "Implementation", href: "/implementation" },
-  { key: "migration", label: "Payroll Migration", href: "/solutions/migration" },
+  { key: "migration", label: "Payroll Migration", href: "/payroll-migration" },
   {
     key: "centralized",
     label: "Centralized Payroll Operations",

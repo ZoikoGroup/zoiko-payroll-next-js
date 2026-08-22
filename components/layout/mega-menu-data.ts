@@ -144,7 +144,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Payroll Migration",
             description: "Plan data, testing, validation and cutover.",
-            href: "/solutions/migration",
+            href: "/payroll-migration",
           },
         ],
       },
@@ -228,7 +228,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Country and Territory Directory",
             description: "Search current status and documented scope by market.",
-            href: "/global-payroll/jurisdiction-directory",
+            href: "/country-territory-directory",
           },
         ],
       },
@@ -243,7 +243,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Compliance Workflows",
             description: "Manage review, documentation and traceability.",
-            href: "/global-payroll/compliance-workflows",
+            href: "/compliance-workflows",
           },
           {
             title: "Multi-Entity Payroll",
@@ -253,7 +253,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Global Reporting",
             description: "Review consolidated and jurisdiction-level outcomes.",
-            href: "/global-payroll/reporting",
+            href: "/global-reporting",
           },
         ],
       },
@@ -263,7 +263,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Global Payroll Resources",
             description: "Guides and checklists for cross-border payroll teams.",
-            href: "/global-payroll/guide",
+            href: "/global-payroll-resources",
           },
           {
             title: "Jurisdiction Guides",
@@ -284,7 +284,7 @@ export const megaMenus: Record<string, MegaMenu> = {
       description:
         "Search a country, territory, state or province and receive an honest current status before sharing personal data.",
       linkLabel: "Check availability",
-      href: "/global-payroll/jurisdiction-directory",
+      href: "/country-territory-directory",
     },
     visual: "global-payroll",
     visualPosition: "after",
