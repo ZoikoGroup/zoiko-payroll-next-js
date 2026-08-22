@@ -1,0 +1,9 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as RiskControlSection } from "./RiskControlSection";
+export { default as PhasesSection } from "./PhasesSection";
+export { default as ControlCenterSection } from "./ControlCenterSection";
+export { default as CutoverSection } from "./CutoverSection";
+export { default as SecurityRolesSection } from "./SecurityRolesSection";
+export { default as GuidedRouteSection } from "./GuidedRouteSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";

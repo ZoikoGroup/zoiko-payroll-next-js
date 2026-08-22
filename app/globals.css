@@ -29,6 +29,8 @@
 
   --font-sans: var(--font-inter);
   --font-mono: var(--font-ibm-plex-mono);
+  --font-display: var(--font-space-grotesk);
+  --font-code: var(--font-jetbrains-mono);
 }
 
 body {
