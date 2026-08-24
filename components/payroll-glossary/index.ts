@@ -1,0 +1,10 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as AzIndexSection } from "./AzIndexSection";
+export { default as TopicsSection } from "./TopicsSection";
+export { default as EssentialTermsSection } from "./EssentialTermsSection";
+export { default as TermAnatomySection } from "./TermAnatomySection";
+export { default as CompareTermsSection } from "./CompareTermsSection";
+export { default as AuthorityHandoffsSection } from "./AuthorityHandoffsSection";
+export { default as EvaluationSection } from "./EvaluationSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";
