@@ -1,4 +1,3 @@
-import Header from "../zoiko-jurisdiction-coverage/components/Header";
 import GuideHero from "./components/GuideHero";
 import GuideMeaning from "./components/GuideMeaning";
 import GuideFinder from "./components/GuideFinder";
@@ -9,12 +8,10 @@ import AuthorityHandoff from "./components/AuthorityHandoff";
 import SourcesFreshness from "./components/SourcesFreshness";
 import SearchStates from "./components/SearchStates";
 import GuideFaqCta from "./components/GuideFaqCta";
-import Footer from "../zoiko-jurisdiction-coverage/components/Footer";
 
 export default function ZoikoPayrollJurisdictionGuidesPage() {
   return (
     <div className="relative w-full bg-white">
-      <Header />
       <GuideHero />
       <GuideMeaning />
       <GuideFinder />
@@ -25,7 +22,6 @@ export default function ZoikoPayrollJurisdictionGuidesPage() {
       <SourcesFreshness />
       <SearchStates />
       <GuideFaqCta />
-      <Footer />
     </div>
   );
 }
