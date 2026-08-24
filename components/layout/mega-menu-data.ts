@@ -313,7 +313,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Payroll Glossary",
             description: "Find direct definitions of payroll terms.",
-            href: "/resources/glossary",
+            href: "/payroll-glossary",
           },
           {
             title: "Frequently Asked Questions",
