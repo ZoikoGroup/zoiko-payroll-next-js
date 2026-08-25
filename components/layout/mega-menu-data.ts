@@ -238,7 +238,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Local Payroll Requirements",
             description: "Preserve local requirements within a consistent control model.",
-            href: "/global-payroll/local-requirements",
+            href: "/payroll-requirements",
           },
           {
             title: "Compliance Workflows",
@@ -248,7 +248,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Multi-Entity Payroll",
             description: "Coordinate entities and authorized teams.",
-            href: "/global-payroll/multi-entity",
+            href: "/multi-entity-payroll",
           },
           {
             title: "Global Reporting",
@@ -273,7 +273,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Implementation and Migration",
             description: "Understand the path to controlled multi-market launch.",
-            href: "/global-payroll/implementation",
+            href: "/implementation-migration",
           },
         ],
       },
