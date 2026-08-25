@@ -286,3 +286,69 @@ export function InfoIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function AlertTriangleIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M12 3.5 22 20.5H2L12 3.5Z" />
+      <path d="M12 10v4.25M12 17h.01" />
+    </svg>
+  );
+}
+
+export function DollarIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M12 3.5v17M16.25 7.25c0-1.7-1.9-3-4.25-3s-4.25 1.2-4.25 3 1.9 2.6 4.25 3.15c2.35.55 4.25 1.45 4.25 3.15s-1.9 3-4.25 3-4.25-1.3-4.25-3" />
+    </svg>
+  );
+}
+
+export function PlayIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M8 5.5v13l11-6.5-11-6.5Z" />
+    </svg>
+  );
+}
+
+export function NodesIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <circle cx="6" cy="7" r="2.25" />
+      <circle cx="18" cy="7" r="2.25" />
+      <circle cx="12" cy="18" r="2.25" />
+      <path d="M8 8.25 10.5 15.5M16 8.25 13.5 15.5M8.25 7h7.5" />
+    </svg>
+  );
+}
+
+export function PrinterIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M6.5 9V4.5h11V9" />
+      <rect x="3.5" y="9" width="17" height="8" rx="1.5" />
+      <path d="M6.5 15h11v4.5h-11V15Z" />
+    </svg>
+  );
+}
+
+export function RssIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <circle cx="6" cy="18" r="1.4" fill="currentColor" stroke="none" />
+      <path d="M4.5 12a7.5 7.5 0 0 1 7.5 7.5M4.5 6.5A13 13 0 0 1 17.5 19.5" />
+    </svg>
+  );
+}
+
+export function WebhookIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <circle cx="6" cy="7" r="2.5" />
+      <circle cx="17" cy="6.5" r="2.5" />
+      <circle cx="12" cy="18" r="2.5" />
+      <path d="M8 8.5 10 16M15 8 12.7 15.5" />
+    </svg>
+  );
+}
