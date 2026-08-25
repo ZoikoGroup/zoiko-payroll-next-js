@@ -47,7 +47,7 @@ export const footerLinkColumns: FooterColumn[] = [
     links: [
       { label: "Global payroll overview", href: "/global-payroll" },
       { label: "Jurisdiction directory", href: "/global-payroll/jurisdiction-directory" },
-      { label: "Country and territory guides", href: "/global-payroll/country-guides" },
+      { label: "Country and territory guides", href: "/resources/jurisdiction-guides" },
       { label: "Local payroll requirements", href: "/global-payroll/local-requirements" },
       { label: "Partner-supported payroll", href: "/global-payroll/partner-supported" },
       { label: "Multi-entity payroll", href: "/global-payroll/multi-entity" },
@@ -102,7 +102,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Resource Center", href: "/resources" },
       { label: "Payroll guides", href: "/resources/payroll-guides" },
       { label: "Global payroll guide", href: "/resources/global-payroll-guide" },
-      { label: "Jurisdiction guides", href: "/global-payroll/country-guides" },
+      { label: "Jurisdiction guides", href: "/resources/jurisdiction-guides" },
       { label: "Payroll glossary", href: "/resources/glossary" },
       { label: "Customer stories", href: "/resources/customer-stories" },
       { label: "Webinars and events", href: "/resources/webinars-events" },

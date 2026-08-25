@@ -1,0 +1,11 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as LatestReleasesSection } from "./LatestReleasesSection";
+export { default as SearchFilterSection } from "./SearchFilterSection";
+export { default as TimelineSection } from "./TimelineSection";
+export { default as ActionRequiredSection } from "./ActionRequiredSection";
+export { default as ProductAreasSection } from "./ProductAreasSection";
+export { default as DeprecationsSection } from "./DeprecationsSection";
+export { default as CorrectionsSection } from "./CorrectionsSection";
+export { default as ReleaseDetailSection } from "./ReleaseDetailSection";
+export { default as AuthorityRoutingSection } from "./AuthorityRoutingSection";
+export { default as FinalCtaSection } from "./FinalCtaSection";

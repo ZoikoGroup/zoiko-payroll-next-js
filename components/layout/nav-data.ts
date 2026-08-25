@@ -45,7 +45,7 @@ export const navItems: NavItem[] = [
     label: "Global Payroll",
     columns: [
       { label: "Jurisdiction directory", href: "/global-payroll/jurisdiction-directory" },
-      { label: "Country guides", href: "/global-payroll/country-guides" },
+      { label: "Country guides", href: "/resources/jurisdiction-guides" },
       { label: "Global payroll guide", href: "/global-payroll/guide" },
       { label: "Payroll glossary", href: "/global-payroll/glossary" },
     ],
