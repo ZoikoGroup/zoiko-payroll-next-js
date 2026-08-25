@@ -426,7 +426,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Zoiko One",
             description: "Connected-suite relationship and expansion route.",
-            href: "/company/zoiko-one",
+            href: "/zoiko-one",
           },
         ],
       },
