@@ -23,7 +23,7 @@ export default function DirectAnswerLeadershipSection() {
               </h2>
 
               {/* Description */}
-              <p className="text-[17px] text-[#4D5E72] leading-relaxed">
+              <p className="text-[17px] text-[#5B646B] leading-relaxed">
                 Every public person-role relationship shown here requires an
                 approved person record, an approved leadership assignment, an
                 exact current title, entity and product scope, a status, an
@@ -32,7 +32,7 @@ export default function DirectAnswerLeadershipSection() {
             </div>
 
             {/* Disclosure Box */}
-            <div className="p-5 rounded-2xl border-l-4 border-l-[#0284C7] border border-[#E1E8F0] space-y-1">
+            <div className="p-5 rounded-2xl border-l-4 border-l-[#0A8FD0] border border-[#E1E8F0] space-y-1">
               <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
                 <span className="font-bold text-[#0F172A]">
                   Disclosure standard:

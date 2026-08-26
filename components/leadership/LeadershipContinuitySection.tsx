@@ -63,7 +63,7 @@ export default function LeadershipContinuitySection() {
               Leadership data changes — the page handles it without breaking
             </h2>
 
-            <p className="text-[17px] text-[#4D5E72] leading-relaxed">
+            <p className="text-[17px] text-[#4D5E72] max-w-120 leading-relaxed">
               Every assignment and profile uses immutable, versioned records
               with scheduled reviews. If assignment evidence is missing or
               expired, we fail closed: the named identity is suppressed and a
@@ -85,13 +85,13 @@ export default function LeadershipContinuitySection() {
         </div>
 
         {/* Transition Banner Card */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-white border-l-4 border-[#0284C7] shadow-sm max-w-4xl mx-auto space-y-1">
-          <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
+        <div className="p-6 sm:p-8 rounded-2xl bg-white border-l-4 border-[#0A8FD0] shadow-sm max-w-3xl mx-auto space-y-1">
+          <p className="text-[14.5px] text-[#334155] leading-relaxed">
             <span className="font-bold text-[#0F172A]">
               Example transition banner:
             </span>{" "}
             "Interim ownership — Chief Revenue Officer role currently held on an
-            acting basis. Current accountable scope: Commercial & Customer
+            acting <br /> basis. Current accountable scope: Commercial & Customer
             Success, all regions." Former leaders are never simply deleted if
             that would break external citations — a governed archive record is
             retained instead.

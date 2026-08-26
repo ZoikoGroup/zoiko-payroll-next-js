@@ -49,7 +49,7 @@ export default function CollaborationFlowSection() {
           </h2>
 
           {/* Subtitle */}
-          <p className="text-xs sm:text-sm text-[#4D5E72] leading-relaxed">
+          <p className="text-[17px] max-w-150 mx-auto text-[#5B646B] leading-relaxed">
             Each arrow represents public collaboration or handoff between
             domains, not an internal reporting relationship.
           </p>

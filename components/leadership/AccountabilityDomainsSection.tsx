@@ -89,7 +89,7 @@ export default function AccountabilityDomainsSection() {
           </h2>
 
           {/* Subtitle */}
-          <p className="text-[17px] mx-auto max-w-2xl text-[#4D5E72] leading-relaxed">
+          <p className="text-[17px] mx-auto max-w-150 text-[#4D5E72] leading-relaxed">
             Every domain below names the accountable role, its scope, current status
             and where the next question should go. Titles never imply more authority
             than the verified assignment.

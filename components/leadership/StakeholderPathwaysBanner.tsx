@@ -19,13 +19,13 @@ export default function StakeholderPathwaysBanner() {
           {/* Content Wrapper */}
           <div className="relative z-10 max-w-xl space-y-3">
             {/* Tag / Category */}
-            <div className="flex items-center gap-1.5 text-xs font-semibold tracking-wider text-[#38BDF8] uppercase">
+            <div className="flex items-center gap-1.5 text-xs font-semibold tracking-wider text-[#8FD0F2] uppercase">
               <span className="font-bold">/</span>
               <span>STAKEHOLDER PATHWAYS</span>
             </div>
 
             {/* Main Title */}
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight">
+            <h2 className="text-2xl md:text-[24px] max-w-120 font-bold text-white tracking-tight leading-tight">
               Every audience routed to the right destination.
             </h2>
           </div>

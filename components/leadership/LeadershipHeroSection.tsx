@@ -30,7 +30,7 @@ export default function LeadershipHeroSection() {
         </h1>
 
         {/* Subtitle / Description */}
-        <p className="text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
+        <p className="text-[#CFE0EE] max-w-140 font-normal leading-relaxed">
           Leadership here means verified accountability — not a celebrity page.
           Every role, scope and status shown is sourced, approved and kept
           current.
@@ -41,7 +41,7 @@ export default function LeadershipHeroSection() {
           {/* Primary Filled Blue Button */}
           <Link
             href="/book-demo"
-            className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:from-[#247ab1] hover:to-[#185485] text-white font-medium text-sm transition-all shadow-md active:scale-[0.99] text-center"
+            className="w-full sm:w-auto px-6 py-3 rounded-[8px] bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:from-[#247ab1] hover:to-[#185485] text-white font-medium text-sm transition-all shadow-md active:scale-[0.99] text-center"
           >
             Book a demo
           </Link>
@@ -49,7 +49,7 @@ export default function LeadershipHeroSection() {
           {/* Secondary Glassmorphism / Outline Button */}
           <Link
             href="/trust-and-security"
-            className="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#FFFFFF26] hover:bg-white/30 text-white border border-white/20 font-medium text-sm transition-all text-center backdrop-blur-sm"
+            className="w-full sm:w-auto px-6 py-3 rounded-[8px] bg-[#FFFFFF26] hover:bg-white/30 text-white border border-white/20 font-medium text-sm transition-all text-center backdrop-blur-sm"
           >
             Explore Trust and Security
           </Link>

@@ -19,7 +19,7 @@ export default function ReadyToGoFurtherCTA() {
         </h2>
 
         {/* Supporting Text */}
-        <p className="text-xs sm:text-sm text-[#94A3B8] max-w-xl mx-auto leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#B9CDDD] max-w-155 mx-auto leading-relaxed">
           Existing customer? Help Center, System Status and Contact resolve most
           needs without a sales detour.
         </p>

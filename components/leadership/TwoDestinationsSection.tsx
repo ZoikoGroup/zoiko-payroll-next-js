@@ -50,7 +50,7 @@ export default function TwoDestinationsSection() {
           {destinationsData.map((card, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-3xl p-8 sm:p-10 border border-gray-100 shadow-sm flex flex-col justify-between space-y-8 hover:shadow-md transition-shadow"
+              className="bg-white rounded-3xl p-8 sm:p-10 border border-gray-100 shadow-sm flex flex-col justify-between space-y-4 hover:shadow-md transition-shadow"
             >
               <div className="space-y-4">
                 {/* Title */}

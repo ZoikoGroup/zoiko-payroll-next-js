@@ -63,7 +63,7 @@ export default function LeadershipPrinciplesSection() {
             </div>
 
             {/* Footnote */}
-            <p className="text-xs text-[#94A3B8] leading-relaxed pt-2 border-t border-transparent">
+            <p className="text-[12.5px] text-[#8592A0] leading-relaxed pt-2 border-t border-transparent">
               Verified statements, when available, are Newsroom–sourced only and
               link to the canonical release — never self-authored claims
               presented as external validation.

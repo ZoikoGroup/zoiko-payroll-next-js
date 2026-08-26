@@ -55,7 +55,7 @@ export default function LeadershipStructureSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Side: Header & Text */}
           <div className="lg:col-span-6 space-y-4">
-            <div className="flex items-center gap-1.5 text-xs font-semibold tracking-wider text-[#155A8A] uppercase">
+            <div className="flex items-center gap-1.5 text-xs font-bold tracking-wider text-[#0A8FD0] uppercase">
               <span className="font-bold">/</span>
               <span>LEADERSHIP STRUCTURE</span>
             </div>
@@ -64,7 +64,7 @@ export default function LeadershipStructureSection() {
               Role and accountability come before any biography
             </h2>
 
-            <p className="text-[17px] text-[#4D5E72] leading-relaxed">
+            <p className="text-[17px] text-[#4D5E72] leading-relaxed max-w-120">
               Each card separates a stable person record from the role they're
               assigned to. Title, scope, status and accountability domains are
               shown before any biography — and never include personal contact
