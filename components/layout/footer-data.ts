@@ -102,7 +102,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Resource Center", href: "/resources" },
       { label: "Payroll guides", href: "/resources/payroll-guides" },
       { label: "Global payroll guide", href: "/resources/global-payroll-guide" },
-      { label: "Jurisdiction guides", href: "/global-payroll/country-guides" },
+      { label: "Jurisdiction guides", href: "/resources/jurisdiction-guides" },
       { label: "Payroll glossary", href: "/resources/glossary" },
       { label: "Customer stories", href: "/resources/customer-stories" },
       { label: "Webinars and events", href: "/resources/webinars-events" },

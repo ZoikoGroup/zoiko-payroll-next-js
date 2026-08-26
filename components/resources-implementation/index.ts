@@ -1,0 +1,15 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as PathfinderSection } from "./PathfinderSection";
+export { default as GuidanceScopeSection } from "./GuidanceScopeSection";
+export { default as StageOrientationSection } from "./StageOrientationSection";
+export { default as MigrationSection } from "./MigrationSection";
+export { default as ValidationSection } from "./ValidationSection";
+export { default as ParallelTestingSection } from "./ParallelTestingSection";
+export { default as LaunchCutoverSection } from "./LaunchCutoverSection";
+export { default as StabilizationSection } from "./StabilizationSection";
+export { default as ResourcesSection } from "./ResourcesSection";
+export { default as GlobalImplementationSection } from "./GlobalImplementationSection";
+export { default as RiskRoutingSection } from "./RiskRoutingSection";
+export { default as CurrentProductSection } from "./CurrentProductSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as FinalCtaSection } from "./FinalCtaSection";

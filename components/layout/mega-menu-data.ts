@@ -268,7 +268,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Jurisdiction Guides",
             description: "Market-specific education and current availability context.",
-            href: "/global-payroll/country-guides",
+            href: "/resources/jurisdiction-guides",
           },
           {
             title: "Implementation and Migration",
@@ -308,7 +308,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Jurisdiction Guides",
             description: "Access market-specific guidance.",
-            href: "/global-payroll/country-guides",
+            href: "/resources/jurisdiction-guides",
           },
           {
             title: "Payroll Glossary",
