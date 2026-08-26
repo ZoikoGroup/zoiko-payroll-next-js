@@ -55,7 +55,7 @@ function resolvePath(scope: string): Path {
       "Why this path: single-entity scope routes to the product implementation authority for configuration, validation and launch guidance.",
     owner: "Authority owner: Product Implementation",
     ctaLabel: "Open Implementation",
-    ctaHref: "/implementation",
+    ctaHref: "/product/implementation",
   };
 }
 

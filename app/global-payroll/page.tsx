@@ -1,4 +1,4 @@
-import Header from "../zoiko-jurisdiction-coverage/components/Header";
+import Header from "./jurisdiction-coverage/components/Header";
 import HeroSection from "./components/HeroSection";
 import GlobalVsLocal from "./components/GlobalVsLocal";
 import JurisdictionAvailability from "./components/JurisdictionAvailability";
@@ -10,7 +10,7 @@ import CloseReadiness from "./components/CloseReadiness";
 import LocalRequirements from "./components/LocalRequirements";
 import ReportingTrust from "./components/ReportingTrust";
 import Implementation from "./components/Implementation";
-import Footer from "../zoiko-jurisdiction-coverage/components/Footer";
+import Footer from "./jurisdiction-coverage/components/Footer";
 
 export default function ZoikoGlobalPayrollOverviewPage() {
   return (

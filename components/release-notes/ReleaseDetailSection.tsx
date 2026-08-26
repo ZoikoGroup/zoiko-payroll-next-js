@@ -106,7 +106,7 @@ export default function ReleaseDetailSection() {
 
             <div className="border-t border-slate-100 px-5 py-4">
               <Link
-                href="/payroll-approvals"
+                href="/product/payroll-approvals"
                 className="group inline-flex items-center gap-1.5 text-sm font-bold text-brand transition-colors duration-200 hover:text-brand-dark"
               >
                 Open current Approvals guide

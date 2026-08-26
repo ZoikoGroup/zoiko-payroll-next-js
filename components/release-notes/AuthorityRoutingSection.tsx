@@ -30,14 +30,14 @@ const destinations = [
     title: "Implementation",
     description: "Migration & launch authority.",
     cta: "Open Implementation",
-    href: "/implementation",
+    href: "/product/implementation",
   },
   {
     icon: LockIcon,
     title: "Security & Trust",
     description: "Evidence & controls.",
     cta: "Open Security",
-    href: "/security",
+    href: "/product/security",
   },
 ];
 

@@ -7,32 +7,32 @@ const routes = [
   {
     trigger: "2+ jurisdictions, entities or payroll groups",
     label: "Global Implementation",
-    href: "/implementation",
+    href: "/product/implementation",
   },
   {
     trigger: "Market availability uncertainty",
     label: "Coverage / Directory",
-    href: "/country-territory-directory",
+    href: "/global-payroll/country-territory-directory",
   },
   {
     trigger: "Local requirement questions",
     label: "Local Requirements",
-    href: "/compliance-workflows",
+    href: "/global-payroll/compliance-workflows",
   },
   {
     trigger: "Cross-entity authority",
     label: "Multi-Entity Payroll",
-    href: "/multi-jurisdiction",
+    href: "/solutions/multi-jurisdiction",
   },
   {
     trigger: "Compliance review/evidence state",
     label: "Compliance Workflows",
-    href: "/compliance-workflows",
+    href: "/global-payroll/compliance-workflows",
   },
   {
     trigger: "Global reporting/variance",
     label: "Global Reporting",
-    href: "/global-reporting",
+    href: "/global-payroll/reporting",
   },
 ];
 

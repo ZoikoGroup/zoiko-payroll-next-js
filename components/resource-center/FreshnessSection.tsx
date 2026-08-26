@@ -46,7 +46,7 @@ const records = [
     topic: "Approvals",
     image: "/images/resource-center/approval-controls-guide.png",
     alt: "A payroll folder and measuring rule on a desk",
-    href: "/payroll-approvals",
+    href: "/product/payroll-approvals",
   },
   {
     family: "System Status",

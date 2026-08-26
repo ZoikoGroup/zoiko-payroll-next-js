@@ -13,7 +13,7 @@ const supporting = [
     title: "Designing Approval Controls",
     meta: "Guide · Reviewed Jun 2026",
     image: "/images/resource-center/thumb-approval-controls.png",
-    href: "/payroll-approvals",
+    href: "/product/payroll-approvals",
   },
   {
     title: "Getting the Most from Help Center",

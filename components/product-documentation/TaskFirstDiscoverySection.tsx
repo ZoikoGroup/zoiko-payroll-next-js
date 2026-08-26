@@ -13,7 +13,7 @@ const groups = [
       { label: "Manage deductions and adjustments", status: "Current" },
       { label: "Maintain employee payroll records", status: "Current" },
     ],
-    href: "/payroll-processing",
+    href: "/product/payroll-processing",
   },
   {
     icon: CheckSquareIcon,
@@ -24,7 +24,7 @@ const groups = [
       { label: "Review and approve a payroll cycle", status: "Current" },
       { label: "Reconcile payroll reports", status: "Review due" },
     ],
-    href: "/payroll-approvals",
+    href: "/product/payroll-approvals",
   },
   {
     icon: NodesIcon,
@@ -35,7 +35,7 @@ const groups = [
       { label: "Set up SSO / MFA", status: "Current" },
       { label: "Manage webhooks and retries", status: "Current" },
     ],
-    href: "/integrations",
+    href: "/product/integrations",
   },
 ];
 

@@ -52,7 +52,7 @@ export default function HeroSection() {
 
             <form
               className="mt-6 flex flex-col gap-1.5 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-[0px_8px_24px_-12px_rgba(8,19,43,0.15)] sm:flex-row"
-              action="/country-territory-directory"
+              action="/global-payroll/country-territory-directory"
             >
               <label htmlFor="market-search" className="sr-only">
                 Search country, territory, ISO code or alias

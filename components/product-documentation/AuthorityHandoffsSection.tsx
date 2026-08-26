@@ -17,9 +17,9 @@ const handoffs = [
   { icon: CheckCircleIcon, label: "Shipped changes", description: "What changed → Release Notes.", href: "/resources/release-notes" },
   { icon: UserIcon, label: "Account support", description: "Account-specific help → Help Center.", href: "/resources/help-center" },
   { icon: GlobeIcon, label: "Local legal/tax truth", description: "Jurisdiction context → Jurisdiction / Local Requirements.", href: "/global-payroll" },
-  { icon: LockIcon, label: "Security assurance", description: "Evidence & controls → Security & Trust.", href: "/security" },
-  { icon: ChartIcon, label: "Reporting domain", description: "Report/export authority → Reporting.", href: "/reporting" },
-  { icon: DatabaseIcon, label: "Implementation program", description: "Migration/launch authority → Implementation.", href: "/implementation" },
+  { icon: LockIcon, label: "Security assurance", description: "Evidence & controls → Security & Trust.", href: "/product/security" },
+  { icon: ChartIcon, label: "Reporting domain", description: "Report/export authority → Reporting.", href: "/product/reporting" },
+  { icon: DatabaseIcon, label: "Implementation program", description: "Migration/launch authority → Implementation.", href: "/product/implementation" },
   { icon: DollarIcon, label: "Commercial terms", description: "Pricing/contract → Pricing / Sales.", href: "/pricing" },
 ];
 

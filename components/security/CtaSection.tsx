@@ -4,8 +4,8 @@ import Eyebrow from "./Eyebrow";
 
 const links: { label: string; href?: string }[] = [
   { label: "Trust Center" },
-  { label: "Integrations", href: "/integrations" },
-  { label: "Implementation", href: "/implementation" },
+  { label: "Integrations", href: "/product/integrations" },
+  { label: "Implementation", href: "/product/implementation" },
   { label: "Pricing" },
 ];
 

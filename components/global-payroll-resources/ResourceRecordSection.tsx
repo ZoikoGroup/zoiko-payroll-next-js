@@ -64,7 +64,7 @@ export default function ResourceRecordSection() {
                 approval configuration or contractual scope.
               </p>
               <Link
-                href="/compliance-workflows"
+                href="/global-payroll/compliance-workflows"
                 className="rounded-lg border border-slate-200 bg-white px-3.5 py-2 text-xs font-semibold leading-5 text-slate-900 transition-all duration-200 hover:-translate-y-0.5"
               >
                 See Compliance Workflows <span aria-hidden="true">→</span>

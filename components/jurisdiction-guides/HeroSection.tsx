@@ -71,7 +71,7 @@ export default function HeroSection() {
               Find a jurisdiction guide
             </Link>
             <Link
-              href="/country-territory-directory"
+              href="/global-payroll/country-territory-directory"
               className="rounded-lg border border-white/50 px-5 py-3 text-center text-sm font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10"
             >
               Check jurisdiction availability

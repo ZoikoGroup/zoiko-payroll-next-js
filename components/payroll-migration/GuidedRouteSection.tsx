@@ -13,31 +13,31 @@ const routes: Record<RouteKey, Route> = {
   migration: {
     key: "migration",
     label: "Payroll Migration",
-    href: "/payroll-migration",
+    href: "/solutions/payroll-migration",
     reason: "Migrate-payroll objective, multiple entities and retained history in scope.",
   },
   multi: {
     key: "multi",
     label: "Multi-Jurisdiction Payroll",
-    href: "/multi-jurisdiction",
+    href: "/solutions/multi-jurisdiction",
     reason: "Several jurisdictions in scope — local requirements drive the operating model.",
   },
   centralized: {
     key: "centralized",
     label: "Centralized Payroll Operations",
-    href: "/centralized-operations",
+    href: "/solutions/centralized-operations",
     reason: "Many entities coordinated by one team — oversight matters more than movement.",
   },
   modernization: {
     key: "modernization",
     label: "Payroll Modernization",
-    href: "/payroll-modernization",
+    href: "/solutions/payroll-modernization",
     reason: "Replacing fragmented workflows is a program, with migration as one workstream.",
   },
   single: {
     key: "single",
     label: "Single-Jurisdiction Payroll",
-    href: "/single-jurisdiction",
+    href: "/solutions/single-jurisdiction",
     reason: "One operating market, one entity — structured control without cross-border scope.",
   },
 };

@@ -77,7 +77,7 @@ export default function HeroSection() {
                 Book a demo
               </Link>
               <Link
-                href="/multi-jurisdiction"
+                href="/solutions/multi-jurisdiction"
                 className="flex min-h-11 items-center justify-center rounded-lg border border-white/25 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
               >
                 Explore Multi-Jurisdiction Payroll

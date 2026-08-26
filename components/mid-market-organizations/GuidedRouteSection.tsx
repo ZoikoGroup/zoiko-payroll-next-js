@@ -10,22 +10,22 @@ type RouteKey = "growing" | "mid-market" | "enterprise" | "international";
 const routes: Record<RouteKey, { label: string; href: string; why: string }> = {
   growing: {
     label: "Growing Businesses",
-    href: "/growing-businesses",
+    href: "/solutions/growing-businesses",
     why: "one market, a single entity and a small payroll team point to adding structure before scale.",
   },
   "mid-market": {
     label: "Mid-Market",
-    href: "/mid-market-organizations",
+    href: "/solutions/mid-market-organizations",
     why: "expanding entities, specialist roles and reconciliation needs point to Mid-Market.",
   },
   enterprise: {
     label: "Enterprise",
-    href: "/solutions/enterprise",
+    href: "/solutions/enterprise-organizations",
     why: "scale, procurement and governance depth point to Enterprise.",
   },
   international: {
     label: "International Groups",
-    href: "/multi-jurisdiction",
+    href: "/solutions/multi-jurisdiction",
     why: "statutory responsibility across markets points to multi-jurisdiction payroll.",
   },
 };

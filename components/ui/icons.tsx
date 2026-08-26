@@ -361,3 +361,78 @@ export function TrashIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function ScalesIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M12 4v16M7 20h10M5 8h14M12 8 5 8l-2.25 5a3.25 3.25 0 0 0 6.5 0L12 8Zm0 0 7 0 2.25 5a3.25 3.25 0 0 1-6.5 0L12 8Z" />
+      <circle cx="12" cy="4.75" r="1.25" />
+    </svg>
+  );
+}
+
+export function DocumentTextIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M13.5 3.25H7A1.75 1.75 0 0 0 5.25 5v14A1.75 1.75 0 0 0 7 20.75h10A1.75 1.75 0 0 0 18.75 19V8.5l-5.25-5.25Z" />
+      <path d="M13.5 3.25V8.5h5.25M8.75 12.5h6.5M8.75 16h4.5" />
+    </svg>
+  );
+}
+
+export function BookmarkIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M6.5 4.75h11a.75.75 0 0 1 .75.75v14L12 16.25 5.75 19.5v-14a.75.75 0 0 1 .75-.75Z" />
+    </svg>
+  );
+}
+
+export function ListIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M4.5 7h15M4.5 12h15M4.5 17h9" />
+    </svg>
+  );
+}
+
+export function SparkleIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M12 3.5v17M3.5 12h17M6 6l12 12M18 6 6 18" />
+    </svg>
+  );
+}
+
+export function BoltIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M13.25 2.75 4.5 13.5h6.25l-.75 7.75 8.75-10.75H12.5l.75-7.75Z" />
+    </svg>
+  );
+}
+
+export function TransferIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M3.5 12h17M7.25 7.75 3.5 12l3.75 4.25M16.75 7.75 20.5 12l-3.75 4.25" />
+    </svg>
+  );
+}
+
+export function StarIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="m12 3.75 2.6 5.27 5.82.85-4.21 4.1.99 5.79L12 17.03l-5.2 2.73.99-5.79-4.21-4.1 5.82-.85L12 3.75Z" />
+    </svg>
+  );
+}
+
+export function KeyIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <circle cx="6.75" cy="17.25" r="3.25" />
+      <path d="m9.05 14.95 8.2-8.2M14.5 9.5l2 2M17.25 6.75l2.25 2.25" />
+    </svg>
+  );
+}

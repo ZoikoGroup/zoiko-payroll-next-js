@@ -2,7 +2,7 @@ import Link from "next/link";
 import Reveal from "../ui/Reveal";
 
 const links: { label: string; href?: string }[] = [
-  { label: "Payroll Processing", href: "/payroll-processing" },
+  { label: "Payroll Processing", href: "/product/payroll-processing" },
   { label: "Security & Trust" },
   { label: "Product Tour" },
 ];

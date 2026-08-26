@@ -1,0 +1,10 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as TaskFinderSection } from "./TaskFinderSection";
+export { default as BrowseSection } from "./BrowseSection";
+export { default as FeaturedSection } from "./FeaturedSection";
+export { default as LibrarySection } from "./LibrarySection";
+export { default as FastPathsSection } from "./FastPathsSection";
+export { default as CanonicalWatchSection } from "./CanonicalWatchSection";
+export { default as EvaluationSection } from "./EvaluationSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as FinalCtaSection } from "./FinalCtaSection";
