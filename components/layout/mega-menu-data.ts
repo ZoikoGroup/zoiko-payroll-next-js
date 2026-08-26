@@ -401,12 +401,12 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "About Zoiko Group",
             description: "Ownership and wider technology ecosystem.",
-            href: "/company/zoiko-group",
+            href: "/about-zoiko-group",
           },
           {
             title: "Leadership",
             description: "Approved accountable leaders and roles.",
-            href: "/company/leadership",
+            href: "/leadership",
           },
         ],
       },

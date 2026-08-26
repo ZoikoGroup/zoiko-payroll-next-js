@@ -141,9 +141,9 @@ export const footerLinkColumns: FooterColumn[] = [
     title: "Company & ecosystem",
     links: [
       { label: "About Zoiko Payroll", href: "/about-us" },
-      { label: "Zoiko Group", href: "/company/zoiko-group" },
+      { label: "Zoiko Group", href: "/about-zoiko-group" },
       { label: "Zoiko One", href: "/zoiko-one" },
-      { label: "Leadership", href: "/company/leadership" },
+      { label: "Leadership", href: "/leadership" },
       { label: "Partners", href: "/company/partners" },
       { label: "Careers", href: "/careers" },
       { label: "Newsroom", href: "/company/newsroom" },
