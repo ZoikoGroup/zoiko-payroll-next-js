@@ -1,0 +1,11 @@
+export { default as LocalPayrollRequirementsSection } from "./LocalPayrollRequirementsSection";
+export { default as LocalPayrollComplexitySection } from "./LocalPayrollComplexitySection";
+export { default as GlobalContractSection } from "./GlobalContractSection";
+export { default as LocalRequirementsWorkspaceSection } from "./LocalRequirementsWorkspaceSection";
+export { default as RequirementControlRecordSection } from "./RequirementControlRecordSection";
+export { default as ChangeControlTimelineSection } from "./ChangeControlTimelineSection";
+export { default as GlobalDecisionRightsSection } from "./GlobalDecisionRightsSection";
+export { default as AvailabilityWorkflowSection } from "./AvailabilityWorkflowSection";
+export { default as TrustIntegrationsSection } from "./TrustIntegrationsSection";
+export { default as FAQSection } from "./FAQSection";
+export { default as CallToActionSection } from "./CallToActionSection";

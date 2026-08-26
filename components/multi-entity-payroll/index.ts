@@ -1,0 +1,12 @@
+export { default as MultiEntityPayrollSection } from "./MultiEntityPayrollSection";
+export { default as MultiEntityDefinitionSection } from "./MultiEntityDefinitionSection";
+export { default as EntityOperatingModelSection } from "./EntityOperatingModelSection";
+export { default as MultiEntityControlCenterSection } from "./MultiEntityControlCenterSection";
+export { default as SharedConfigurationSection } from "./SharedConfigurationSection";
+export { default as CalendarsCutoffsSection } from "./CalendarsCutoffsSection";
+export { default as RolesDelegationSection } from "./RolesDelegationSection";
+export { default as ReadinessAttentionSection } from "./ReadinessAttentionSection";
+export { default as CrossEntityActionsSection } from "./CrossEntityActionsSection";
+export { default as SystemBoundariesSection } from "./SystemBoundariesSection";
+export { default as FAQSection } from "./FAQSection";
+export { default as CoordinatePayrollCTASection } from "./CoordinatePayrollCTASection";
