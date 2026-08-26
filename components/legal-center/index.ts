@@ -1,0 +1,10 @@
+export { default as LegalCenterHeroSection } from "./LegalCenterHeroSection";
+export { default as WhatIsLegalCenterCard } from "./WhatIsLegalCenterCard";
+export { default as TermsRelationshipMapSection } from "./TermsRelationshipMapSection";
+export { default as CurrentLegalDocumentsTable } from "./CurrentLegalDocumentsTable";
+export { default as QuickTaskRouterSection } from "./QuickTaskRouterSection";
+export { default as PrivacyCookiesNoticeControlSection } from "./PrivacyCookiesNoticeControlSection";
+export { default as CustomerProcurementSection } from "./CustomerProcurementSection";
+export { default as AcceptableUseAndNoticesSection } from "./AcceptableUseAndNoticesSection";
+export { default as DocumentCurrencyAndRoutingSection } from "./DocumentCurrencyAndRoutingSection";
+export { default as LegalCenterFAQSection } from "./LegalCenterFAQSection";

@@ -154,10 +154,10 @@ export const footerLinkColumns: FooterColumn[] = [
   {
     title: "Legal & governance",
     links: [
-      { label: "Legal Center", href: "/legal" },
+      { label: "Legal Center", href: "/legal/legal-center" },
       { label: "Privacy Notice", href: "/legal/privacy-notice" },
       { label: "Cookie Notice", href: "/legal/cookie-notice" },
-      { label: "Website Terms of Use", href: "/legal/terms-of-service" },
+      { label: "Website Terms of Use", href: "/legal/website-terms" },
       { label: "Zoiko Payroll Service Terms", href: "/legal/service-terms" },
       { label: "Data Processing Addendum", href: "/legal/dpa" },
       { label: "Acceptable Use Policy", href: "/legal/acceptable-use-policy" },
