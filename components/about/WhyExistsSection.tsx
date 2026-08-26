@@ -38,7 +38,7 @@ export default function WhyExistsSection() {
               We do not make payroll appear simple by hiding its complexity. We make complex payroll
               operations clearer, more accountable, and easier to control.
             </p>
-            <ArrowLink href="/how-it-works" className="mt-5">
+            <ArrowLink href="/product/how-it-works" className="mt-5">
               See how Zoiko Payroll works
             </ArrowLink>
           </Reveal>

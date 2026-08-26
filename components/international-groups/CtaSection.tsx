@@ -4,7 +4,7 @@ import Eyebrow from "./Eyebrow";
 
 const links = [
   { label: "View Jurisdiction Directory", href: "/global-payroll/jurisdiction-directory" },
-  { label: "Explore Multi-Jurisdiction Payroll", href: "/multi-jurisdiction" },
+  { label: "Explore Multi-Jurisdiction Payroll", href: "/solutions/multi-jurisdiction" },
   { label: "Contact Sales", href: "/company/contact" },
 ];
 

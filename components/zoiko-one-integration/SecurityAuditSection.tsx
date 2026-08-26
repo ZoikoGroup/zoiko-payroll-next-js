@@ -30,7 +30,7 @@ export default function SecurityAuditSection() {
             </ul>
 
             <Link
-              href="/security"
+              href="/product/security"
               className="mt-8 inline-block border-b-2 border-sky-950 pb-1 text-sm font-bold text-sky-950 transition-colors duration-200 hover:border-sky-600 hover:text-sky-700"
             >
               Visit the Trust Center →

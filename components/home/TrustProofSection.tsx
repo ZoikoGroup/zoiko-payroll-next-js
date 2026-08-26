@@ -64,7 +64,7 @@ export default function TrustProofSection() {
         </div>
 
         <Reveal className="mt-10">
-          <ArrowLink href="/security">Explore security and trust</ArrowLink>
+          <ArrowLink href="/product/security">Explore security and trust</ArrowLink>
         </Reveal>
       </div>
     </section>

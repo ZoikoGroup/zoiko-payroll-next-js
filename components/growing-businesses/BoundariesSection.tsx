@@ -11,12 +11,12 @@ const boundaries = [
   {
     label: "Mid-Market Organizations",
     description: "Broader teams and entities, with more governance needs.",
-    href: "/mid-market-organizations",
+    href: "/solutions/mid-market-organizations",
   },
   {
     label: "International Groups",
     description: "Multiple markets or legal entities — multi-jurisdiction payroll.",
-    href: "/international-groups",
+    href: "/solutions/international-groups",
   },
 ];
 

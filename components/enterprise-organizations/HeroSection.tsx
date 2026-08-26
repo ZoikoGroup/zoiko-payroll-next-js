@@ -53,7 +53,7 @@ export default function HeroSection() {
                 Find your solution
               </Link>
               <Link
-                href="/payroll-processing"
+                href="/product/payroll-processing"
                 className="w-full sm:w-auto mt-2 sm:mt-0 sm:ml-2 inline-flex justify-center items-center px-1 py-2 text-[14.5px] font-semibold text-[#2049c9] transition-all hover:text-[#1a3d54]"
               >
                 Explore Payroll Processing →

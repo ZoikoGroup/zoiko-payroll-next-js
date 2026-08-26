@@ -57,7 +57,7 @@ export default function ImplementationTrustSection() {
               Review security &amp; trust →
             </span>
             <Link
-              href="/implementation"
+              href="/product/implementation"
               className="inline-flex border-b border-slate-300 pb-0.5 text-sm font-semibold leading-5 text-sky-950 transition-colors duration-200 hover:border-sky-700 hover:text-sky-700"
             >
               Review implementation →

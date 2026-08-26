@@ -40,22 +40,22 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Payroll Processing",
             description: "Prepare, calculate, validate and complete payroll cycles.",
-            href: "/payroll-processing",
+            href: "/product/payroll-processing",
           },
           {
             title: "Payroll Approvals",
             description: "Make review stages and decision rights visible.",
-            href: "/payroll-approvals",
+            href: "/product/payroll-approvals",
           },
           {
             title: "Deductions and Adjustments",
             description: "Control recurring, one-time and corrective changes.",
-            href: "/deductions",
+            href: "/product/deductions",
           },
           {
             title: "Employee Payroll Records",
             description: "Provide secure access to applicable pay information.",
-            href: "/employee-payroll-records",
+            href: "/product/employee-payroll-records",
           },
         ],
       },
@@ -65,17 +65,17 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Reporting and Analytics",
             description: "Review payroll totals, trends, exports and history.",
-            href: "/reporting",
+            href: "/product/reporting",
           },
           {
             title: "Integrations",
             description: "Connect approved HR, finance, time and payment systems.",
-            href: "/integrations",
+            href: "/product/integrations",
           },
           {
             title: "Security and Trust",
             description: "Review access, audit, privacy and assurance controls.",
-            href: "/security",
+            href: "/product/security",
           },
           {
             title: "Product Tour",
@@ -90,17 +90,17 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "How Zoiko Payroll Works",
             description: "Follow the controlled payroll lifecycle from input to report.",
-            href: "/how-it-works",
+            href: "/product/how-it-works",
           },
           {
             title: "Implementation",
             description: "Understand discovery, configuration, testing and launch.",
-            href: "/implementation",
+            href: "/product/implementation",
           },
           {
             title: "Zoiko One Integration",
             description: "See the connected-suite path without weakening standalone value.",
-            href: "/zoiko-one-integration",
+            href: "/product/zoiko-one-integration",
           },
         ],
       },
@@ -124,27 +124,27 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Single-Jurisdiction Payroll",
             description: "Structured payroll control for one operating market.",
-            href: "/single-jurisdiction",
+            href: "/solutions/single-jurisdiction",
           },
           {
             title: "Multi-Jurisdiction Payroll",
             description: "Centralize oversight while preserving local requirements.",
-            href: "/multi-jurisdiction",
+            href: "/solutions/multi-jurisdiction",
           },
           {
             title: "Centralized Payroll Operations",
             description: "Coordinate teams, entities and payroll status.",
-            href: "/centralized-operations",
+            href: "/solutions/centralized-operations",
           },
           {
             title: "Payroll Modernization",
             description: "Replace fragmented or legacy workflows through controlled change.",
-            href: "/payroll-modernization",
+            href: "/solutions/payroll-modernization",
           },
           {
             title: "Payroll Migration",
             description: "Plan data, testing, validation and cutover.",
-            href: "/payroll-migration",
+            href: "/solutions/payroll-migration",
           },
         ],
       },
@@ -154,22 +154,22 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Growing Businesses",
             description: "Scale payroll control as headcount and complexity increase.",
-            href: "/growing-businesses",
+            href: "/solutions/growing-businesses",
           },
           {
             title: "Mid-Market Organizations",
             description: "Bring structure to expanding teams and entities.",
-            href: "/mid-market-organizations",
+            href: "/solutions/mid-market-organizations",
           },
           {
             title: "Enterprise Organizations",
             description: "Evaluate governance, scale, integrations and assurance.",
-            href: "/solutions/enterprise",
+            href: "/solutions/enterprise-organizations",
           },
           {
             title: "International Groups",
             description: "Coordinate payroll across markets and legal entities.",
-            href: "/international-groups",
+            href: "/solutions/international-groups",
           },
         ],
       },
@@ -179,17 +179,17 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Payroll Teams",
             description: "Improve preparation, validation, approvals and completion.",
-            href: "/payroll-teams",
+            href: "/solutions/payroll-teams",
           },
           {
             title: "Finance Teams",
             description: "Strengthen totals, reconciliation and financial oversight.",
-            href: "/finance-teams",
+            href: "/solutions/finance-teams",
           },
           {
             title: "HR Teams",
             description: "Keep authorized employee changes and payroll records aligned.",
-            href: "/hr-teams",
+            href: "/solutions/hr-teams",
           },
           {
             title: "Business Leaders",
@@ -228,7 +228,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Country and Territory Directory",
             description: "Search current status and documented scope by market.",
-            href: "/country-territory-directory",
+            href: "/global-payroll/country-territory-directory",
           },
         ],
       },
@@ -238,22 +238,22 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Local Payroll Requirements",
             description: "Preserve local requirements within a consistent control model.",
-            href: "/payroll-requirements",
+            href: "/global-payroll/payroll-requirements",
           },
           {
             title: "Compliance Workflows",
             description: "Manage review, documentation and traceability.",
-            href: "/compliance-workflows",
+            href: "/global-payroll/compliance-workflows",
           },
           {
             title: "Multi-Entity Payroll",
             description: "Coordinate entities and authorized teams.",
-            href: "/multi-entity-payroll",
+            href: "/global-payroll/multi-entity-payroll",
           },
           {
             title: "Global Reporting",
             description: "Review consolidated and jurisdiction-level outcomes.",
-            href: "/global-reporting",
+            href: "/global-payroll/reporting",
           },
         ],
       },
@@ -263,17 +263,17 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Global Payroll Resources",
             description: "Guides and checklists for cross-border payroll teams.",
-            href: "/global-payroll-resources",
+            href: "/global-payroll/resources",
           },
           {
             title: "Jurisdiction Guides",
             description: "Market-specific education and current availability context.",
-            href: "/resources/jurisdiction-guides",
+            href: "/global-payroll/jurisdiction-guides",
           },
           {
             title: "Implementation and Migration",
             description: "Understand the path to controlled multi-market launch.",
-            href: "/implementation-migration",
+            href: "/global-payroll/implementation-migration",
           },
         ],
       },
@@ -284,7 +284,7 @@ export const megaMenus: Record<string, MegaMenu> = {
       description:
         "Search a country, territory, state or province and receive an honest current status before sharing personal data.",
       linkLabel: "Check availability",
-      href: "/country-territory-directory",
+      href: "/global-payroll/country-territory-directory",
     },
     visual: "global-payroll",
     visualPosition: "after",
@@ -313,7 +313,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Payroll Glossary",
             description: "Find direct definitions of payroll terms.",
-            href: "/payroll-glossary",
+            href: "/resources/payroll-glossary",
           },
           {
             title: "Frequently Asked Questions",
@@ -363,17 +363,17 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Implementation",
             description: "Migration, testing and launch guidance.",
-            href: "/implementation",
+            href: "/resources/implementation",
           },
           {
             title: "Security and Trust",
             description: "Controls, evidence and procurement resources.",
-            href: "/security",
+            href: "/resources/security-trust",
           },
           {
             title: "Reporting",
             description: "Payroll insights, exports and reconciliation.",
-            href: "/reporting",
+            href: "/resources/reporting",
           },
         ],
       },
@@ -396,7 +396,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "About Zoiko Payroll",
             description: "Purpose, mission, product identity and operating model.",
-            href: "/about-us",
+            href: "/company/about-us",
           },
           {
             title: "About Zoiko Group",
@@ -426,7 +426,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Zoiko One",
             description: "Connected-suite relationship and expansion route.",
-            href: "/zoiko-one",
+            href: "/company/zoiko-one",
           },
         ],
       },
@@ -436,7 +436,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Careers",
             description: "Culture and approved open opportunities.",
-            href: "/careers",
+            href: "/company/careers",
           },
           {
             title: "Newsroom",
@@ -457,7 +457,7 @@ export const megaMenus: Record<string, MegaMenu> = {
       description:
         "A concise company story that establishes ownership, accountability and why Zoiko Payroll exists.",
       linkLabel: "Learn about Zoiko Payroll",
-      href: "/about-us",
+      href: "/company/about-us",
     },
     visual: "company",
   },

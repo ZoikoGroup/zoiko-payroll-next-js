@@ -3,18 +3,18 @@ import Reveal from "../ui/Reveal";
 import Eyebrow from "../home/Eyebrow";
 
 const paths: { goal: string; title: string; href?: string }[] = [
-  { goal: "Operate a run", title: "Payroll Processing", href: "/payroll-processing" },
-  { goal: "Understand authorization", title: "Payroll Approvals", href: "/payroll-approvals" },
+  { goal: "Operate a run", title: "Payroll Processing", href: "/product/payroll-processing" },
+  { goal: "Understand authorization", title: "Payroll Approvals", href: "/product/payroll-approvals" },
   { goal: "Evaluate changes", title: "Deductions & Adjustments" },
   {
     goal: "Need document access",
     title: "Employee Payroll Records",
-    href: "/employee-payroll-records",
+    href: "/product/employee-payroll-records",
   },
   { goal: "Need reporting", title: "Reporting & Analytics" },
-  { goal: "Need technical fit", title: "Integrations", href: "/integrations" },
+  { goal: "Need technical fit", title: "Integrations", href: "/product/integrations" },
   { goal: "Need security proof", title: "Security & Trust" },
-  { goal: "Planning deployment", title: "Implementation", href: "/implementation" },
+  { goal: "Planning deployment", title: "Implementation", href: "/product/implementation" },
 ];
 
 export default function NextPathsSection() {

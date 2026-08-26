@@ -27,7 +27,7 @@ const groups = [
       {
         title: "Payroll Glossary",
         description: "Canonical payroll definitions and synonyms.",
-        href: "/resources/glossary",
+        href: "/resources/payroll-glossary",
       },
       {
         title: "Frequently Asked Questions",
@@ -79,17 +79,17 @@ const groups = [
       {
         title: "Implementation",
         description: "Migration, testing and launch guidance.",
-        href: "/implementation",
+        href: "/product/implementation",
       },
       {
         title: "Security and Trust",
         description: "Controls, evidence and procurement resources.",
-        href: "/security",
+        href: "/product/security",
       },
       {
         title: "Reporting",
         description: "Payroll insights, exports and reconciliation.",
-        href: "/reporting",
+        href: "/product/reporting",
       },
     ],
   },

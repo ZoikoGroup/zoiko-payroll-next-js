@@ -81,7 +81,7 @@ export default function SecuritySection() {
 
         <Reveal delay={120} className="mt-10 flex flex-col gap-4 border-t border-slate-200 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <ArrowLink href="/company/trust-center">Visit the Trust Center</ArrowLink>
-          <ArrowLink href="/security/documentation">Review security documentation</ArrowLink>
+          <ArrowLink href="/product/security/documentation">Review security documentation</ArrowLink>
         </Reveal>
       </div>
     </section>

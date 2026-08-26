@@ -14,7 +14,7 @@ const actionRequired = [
     title: "Legacy Payslip Template — Deprecation Announced",
     description: "Teams using the legacy template must migrate before the removal date.",
     linkLabel: "Open migration guide",
-    href: "/implementation",
+    href: "/product/implementation",
   },
 ];
 

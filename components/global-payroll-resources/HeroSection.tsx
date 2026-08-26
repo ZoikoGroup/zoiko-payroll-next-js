@@ -32,7 +32,7 @@ export default function HeroSection() {
                 Book Now
               </Link>
               <Link
-                href="/country-territory-directory"
+                href="/global-payroll/country-territory-directory"
                 className="flex min-h-12 items-center justify-center rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-semibold leading-6 text-slate-900 transition-all duration-200 hover:-translate-y-0.5"
               >
                 Check jurisdiction availability

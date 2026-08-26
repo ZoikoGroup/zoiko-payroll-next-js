@@ -9,7 +9,7 @@ const collections = [
     count: "14 resources",
     image: "/images/resource-center/payroll-operations.png",
     alt: "Payroll colleagues working through an operating calendar",
-    href: "/payroll-processing",
+    href: "/product/payroll-processing",
   },
   {
     title: "Approvals & Controls",
@@ -17,7 +17,7 @@ const collections = [
     count: "9 resources",
     image: "/images/resource-center/approvals-controls.png",
     alt: "Two people confirming a signed approval document",
-    href: "/payroll-approvals",
+    href: "/product/payroll-approvals",
   },
   {
     title: "Implementation & Migration",
@@ -25,7 +25,7 @@ const collections = [
     count: "11 resources",
     image: "/images/resource-center/implementation-migration.png",
     alt: "An implementation lead walking a team through a rollout plan",
-    href: "/implementation",
+    href: "/product/implementation",
   },
   {
     title: "Global Payroll",
@@ -41,7 +41,7 @@ const collections = [
     count: "8 resources",
     image: "/images/resource-center/security-trust.png",
     alt: "An operations floor working with access-controlled systems",
-    href: "/security",
+    href: "/product/security",
   },
   {
     title: "Reporting & Reconciliation",
@@ -49,7 +49,7 @@ const collections = [
     count: "10 resources",
     image: "/images/resource-center/reporting-reconciliation.png",
     alt: "A team mapping reporting steps on a planning board",
-    href: "/reporting",
+    href: "/product/reporting",
   },
   {
     title: "Records & Evidence",
@@ -57,7 +57,7 @@ const collections = [
     count: "6 resources",
     image: "/images/resource-center/records-evidence.png",
     alt: "Colleagues reviewing payroll records in a meeting room",
-    href: "/employee-payroll-records",
+    href: "/product/employee-payroll-records",
   },
   {
     title: "Growing & Scaling",
@@ -65,7 +65,7 @@ const collections = [
     count: "7 resources",
     image: "/images/resource-center/growing-scaling.png",
     alt: "An international team discussing multi-market expansion",
-    href: "/growing-businesses",
+    href: "/solutions/growing-businesses",
   },
 ];
 

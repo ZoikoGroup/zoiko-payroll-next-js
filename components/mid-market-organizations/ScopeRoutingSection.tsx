@@ -6,7 +6,7 @@ const scopes = [
   {
     label: "Growing Businesses",
     description: "Adding structure before multiple entities exist.",
-    href: "/growing-businesses",
+    href: "/solutions/growing-businesses",
   },
   {
     label: "Mid-Market Organizations",
@@ -16,12 +16,12 @@ const scopes = [
   {
     label: "Enterprise Organizations",
     description: "Advanced scale, governance, procurement.",
-    href: "/solutions/enterprise",
+    href: "/solutions/enterprise-organizations",
   },
   {
     label: "International Groups",
     description: "Multiple jurisdictions — cross-market coordination.",
-    href: "/international-groups",
+    href: "/solutions/international-groups",
   },
 ];
 

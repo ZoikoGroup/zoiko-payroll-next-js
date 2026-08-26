@@ -26,7 +26,7 @@ export default function EvaluationSection() {
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="/how-it-works"
+                  href="/product/how-it-works"
                   className="flex min-h-11 items-center justify-center rounded-md bg-sky-600 px-5 py-3 text-sm font-bold leading-5 text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-sky-500"
                 >
                   Explore Zoiko Payroll

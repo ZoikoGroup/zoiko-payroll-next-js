@@ -2,8 +2,8 @@ import Link from "next/link";
 import Reveal from "../ui/Reveal";
 
 const links = [
-  { label: "Payroll Processing", href: "/payroll-processing" },
-  { label: "Security & Trust", href: "/security" },
+  { label: "Payroll Processing", href: "/product/payroll-processing" },
+  { label: "Security & Trust", href: "/product/security" },
 ];
 
 export default function CtaSection() {
