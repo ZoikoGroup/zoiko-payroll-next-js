@@ -159,7 +159,7 @@ export default function WorkflowSection() {
         </Reveal>
 
         <Reveal className="mt-10 border-t border-slate-200 pt-8">
-          <ArrowLink href="/payroll-processing">See the complete payroll workflow</ArrowLink>
+          <ArrowLink href="/product/payroll-processing">See the complete payroll workflow</ArrowLink>
         </Reveal>
       </div>
     </section>

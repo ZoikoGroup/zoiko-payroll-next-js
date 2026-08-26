@@ -31,12 +31,12 @@ const rows = [
   {
     asking: "“We’re implementing or migrating”",
     primary: "Implementation",
-    secondary: { label: "Help Center / Sales if scoped", href: "/implementation" },
+    secondary: { label: "Help Center / Sales if scoped", href: "/product/implementation" },
   },
   {
     asking: "“I need security evidence”",
     primary: "Security and Trust",
-    secondary: { label: "Sales / procurement contact", href: "/security" },
+    secondary: { label: "Sales / procurement contact", href: "/product/security" },
   },
 ];
 

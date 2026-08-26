@@ -18,12 +18,12 @@ const doNotEstablish = [
 ];
 
 const sourcesOfTruth = [
-  { label: "Coverage / Directory", href: "/country-territory-directory" },
+  { label: "Coverage / Directory", href: "/global-payroll/country-territory-directory" },
   { label: "Local Payroll Requirements", href: "/local-payroll-requirements" },
-  { label: "Compliance Workflows", href: "/compliance-workflows" },
+  { label: "Compliance Workflows", href: "/global-payroll/compliance-workflows" },
   { label: "Multi-Entity Payroll", href: "/global-payroll/multi-entity" },
-  { label: "Global Reporting", href: "/global-reporting" },
-  { label: "Implementation & Migration", href: "/payroll-migration" },
+  { label: "Global Reporting", href: "/global-payroll/reporting" },
+  { label: "Implementation & Migration", href: "/solutions/payroll-migration" },
 ];
 
 export default function AuthorityBoundarySection() {

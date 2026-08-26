@@ -8,7 +8,7 @@ const paths = [
     description:
       "See how Zoiko Payroll prepares, calculates, validates, reviews, approves and completes payroll.",
     label: "Explore Zoiko Payroll",
-    href: "/how-it-works",
+    href: "/product/how-it-works",
     primary: false,
   },
   {

@@ -100,7 +100,7 @@ export default function DeprecationsSection() {
             </Link>{" "}
             and{" "}
             <Link
-              href="/implementation"
+              href="/product/implementation"
               className="font-bold text-[#0A2E4B] transition-colors duration-200 hover:text-[#0A8FD0]"
             >
               Implementation

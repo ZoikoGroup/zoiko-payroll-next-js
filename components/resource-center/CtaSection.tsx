@@ -8,9 +8,9 @@ const destinations = [
   { label: "System Status", href: "/resources/system-status" },
   { label: "Payroll Guides", href: "/resources/payroll-guides" },
   { label: "Jurisdiction Guides", href: "/global-payroll/country-guides" },
-  { label: "Implementation", href: "/implementation" },
-  { label: "Security and Trust", href: "/security" },
-  { label: "Reporting", href: "/reporting" },
+  { label: "Implementation", href: "/product/implementation" },
+  { label: "Security and Trust", href: "/product/security" },
+  { label: "Reporting", href: "/product/reporting" },
 ];
 
 export default function CtaSection() {

@@ -61,21 +61,21 @@ const tasks = [
     title: "Plan migration, testing or launch",
     description: "Implementation and migration guidance.",
     destination: "Implementation",
-    href: "/implementation",
+    href: "/product/implementation",
   },
   {
     icon: LockIcon,
     title: "Review security, privacy or procurement evidence",
     description: "Current controls and evidence routes.",
     destination: "Security and Trust",
-    href: "/security",
+    href: "/product/security",
   },
   {
     icon: ChartIcon,
     title: "Understand payroll reporting",
     description: "Insights, exports and reconciliation pathways.",
     destination: "Reporting",
-    href: "/reporting",
+    href: "/product/reporting",
   },
 ];
 

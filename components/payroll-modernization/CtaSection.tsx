@@ -3,9 +3,9 @@ import Reveal from "../ui/Reveal";
 import Eyebrow from "./Eyebrow";
 
 const links = [
-  { label: "Payroll Migration", href: "/payroll-migration" },
-  { label: "Integrations", href: "/integrations" },
-  { label: "Security & Trust", href: "/security" },
+  { label: "Payroll Migration", href: "/solutions/payroll-migration" },
+  { label: "Integrations", href: "/product/integrations" },
+  { label: "Security & Trust", href: "/product/security" },
   { label: "Pricing", href: "/pricing" },
 ];
 

@@ -15,16 +15,16 @@ type RouteKey =
 
 /** Every destination stays visible — answers only reorder them, they never remove a path. */
 const routes: { key: RouteKey; label: string; href: string }[] = [
-  { key: "implementation", label: "Implementation", href: "/implementation" },
-  { key: "migration", label: "Payroll Migration", href: "/payroll-migration" },
+  { key: "implementation", label: "Implementation", href: "/product/implementation" },
+  { key: "migration", label: "Payroll Migration", href: "/solutions/payroll-migration" },
   {
     key: "centralized",
     label: "Centralized Payroll Operations",
-    href: "/centralized-operations",
+    href: "/solutions/centralized-operations",
   },
-  { key: "multi", label: "Multi-Jurisdiction Payroll", href: "/multi-jurisdiction" },
-  { key: "integrations", label: "Integrations", href: "/integrations" },
-  { key: "security", label: "Security & Trust", href: "/security" },
+  { key: "multi", label: "Multi-Jurisdiction Payroll", href: "/solutions/multi-jurisdiction" },
+  { key: "integrations", label: "Integrations", href: "/product/integrations" },
+  { key: "security", label: "Security & Trust", href: "/product/security" },
 ];
 
 /** Each option states the pages it matches — nothing is scored or inferred behind the scenes. */

@@ -13,17 +13,17 @@ const alternatives = [
   {
     label: "Multi-Jurisdiction Payroll",
     description: "Statutory responsibility spans multiple markets.",
-    href: "/multi-jurisdiction",
+    href: "/solutions/multi-jurisdiction",
   },
   {
     label: "Centralized Payroll Operations",
     description: "Consolidation across teams or systems is the main need.",
-    href: "/centralized-operations",
+    href: "/solutions/centralized-operations",
   },
   {
     label: "Payroll Modernization / Migration",
     description: "Replacement or cutover from a legacy system is the main need.",
-    href: "/payroll-modernization",
+    href: "/solutions/payroll-modernization",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function FitSection() {
 
               <div className="mt-4 flex flex-col gap-2.5 sm:flex-row">
                 <Link
-                  href="/how-it-works"
+                  href="/product/how-it-works"
                   className="flex min-h-11 items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-xs font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 >
                   Yes — show me how it works

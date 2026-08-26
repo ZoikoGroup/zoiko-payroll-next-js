@@ -4,12 +4,12 @@ import Eyebrow from "../home/Eyebrow";
 import { LockIcon, CheckSquareIcon, ChartIcon, DatabaseIcon, ClockIcon } from "../ui/icons";
 
 const trending = [
-  { icon: LockIcon, label: "Access & MFA activation", href: "/security" },
-  { icon: CheckSquareIcon, label: "Approval delegation setup", href: "/payroll-approvals" },
-  { icon: ChartIcon, label: "Reporting export changes", href: "/reporting" },
-  { icon: DatabaseIcon, label: "Directory / HRIS sync", href: "/integrations" },
+  { icon: LockIcon, label: "Access & MFA activation", href: "/product/security" },
+  { icon: CheckSquareIcon, label: "Approval delegation setup", href: "/product/payroll-approvals" },
+  { icon: ChartIcon, label: "Reporting export changes", href: "/product/reporting" },
+  { icon: DatabaseIcon, label: "Directory / HRIS sync", href: "/product/integrations" },
   { icon: ClockIcon, label: "Cycle stuck in Validating", href: "/resources/help-center/validate" },
-  { icon: CheckSquareIcon, label: "API webhook retry policy", href: "/integrations" },
+  { icon: CheckSquareIcon, label: "API webhook retry policy", href: "/product/integrations" },
 ];
 
 const trustFields = [
