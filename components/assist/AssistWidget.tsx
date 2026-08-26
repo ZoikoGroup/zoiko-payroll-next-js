@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
-import { ChatIcon, CloseIcon, SendIcon } from "../ui/icons";
+import Image from "next/image";
+import { CloseIcon, SendIcon } from "../ui/icons";
 import Logo from "../layout/Logo";
 import {
   createPublicSession,
@@ -131,7 +132,11 @@ export default function AssistWidget() {
             open ? "rotate-90" : ""
           }`}
         >
-          {open ? <CloseIcon className="h-6 w-6" /> : <ChatIcon className="h-6 w-6" />}
+          {open ? (
+            <CloseIcon className="h-6 w-6" />
+          ) : (
+            <Image src="/zoikopayroll-icon.png" alt="" fill sizes="56px" className="object-cover" priority />
+          )}
         </button>
       </div>
 
