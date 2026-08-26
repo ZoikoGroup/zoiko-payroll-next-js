@@ -115,17 +115,19 @@ export default function AssistWidget() {
       `}</style>
 
       <div className="fixed bottom-6 right-6 z-[9997] h-14 w-14">
+        {/* Ambient glow halo — sits behind the button, pulses gently, same
+            technique as the payroll platform's own launcher. */}
         <div
           aria-hidden="true"
           className={`zoiko-assist-glow pointer-events-none absolute inset-0 rounded-2xl bg-brand blur-xl transition-opacity duration-300 ${
-            open ? "opacity-80" : "opacity-50"
+            open ? "opacity-80" : "opacity-55"
           }`}
         />
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close Assist" : "Open Zoiko Payroll Assist"}
-          className={`relative flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-gradient text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.35),0_16px_30px_-8px_rgba(0,0,0,0.4)] transition-all duration-200 hover:-translate-y-[3px] hover:scale-[1.04] active:translate-y-0 active:scale-100 ${
+          className={`relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-[radial-gradient(circle_at_32%_26%,var(--brand-light)_0%,var(--brand)_55%,var(--brand-dark)_100%)] text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.35),inset_0_-8px_14px_-6px_rgba(0,0,0,0.4),0_16px_30px_-8px_rgba(0,0,0,0.45)] transition-all duration-200 hover:-translate-y-[3px] hover:scale-[1.04] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.45),inset_0_-8px_14px_-6px_rgba(0,0,0,0.4),0_20px_36px_-8px_rgba(0,0,0,0.5)] active:translate-y-0 active:scale-100 ${
             open ? "rotate-90" : ""
           }`}
         >
