@@ -446,7 +446,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Contact",
             description: "Sales, support, privacy, press and general routes.",
-            href: "/company/contact",
+            href: "/contact",
           },
         ],
       },

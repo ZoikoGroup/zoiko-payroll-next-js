@@ -1,0 +1,12 @@
+export { default as PrivacyNoticeHeroWithDirectAnswer } from "./PrivacyNoticeHeroWithDirectAnswer";
+export { default as TableOfContentsSidebar } from "./TableOfContentsSidebar";
+export { default as RolesContextSection } from "./RolesContextSection";
+export { default as CategoriesSourcesSection } from "./CategoriesSourcesSection";
+export { default as PurposesBasisSection } from "./PurposesBasisSection";
+export { default as RecipientsTransfersRetentionSection } from "./RecipientsTransfersRetentionSection";
+export { default as RightsRequestsSection } from "./RightsRequestsSection";
+export { default as CookiesMarketingSection } from "./CookiesMarketingSection";
+export { default as AIChildrenVersionSection } from "./AIChildrenVersionSection";
+export { default as ContactSection } from "./ContactSection";
+export { default as FAQSection } from "./FAQSection";
+export { default as RelatedResourcesSection } from "./RelatedResourcesSection";
