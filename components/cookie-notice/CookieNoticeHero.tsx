@@ -46,7 +46,7 @@ export default function CookieNoticeHero() {
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
             Understand the approved categories, current technology inventory,
             providers, purposes and duration behind cookies and similar
-            technologies used within this notice's stated scope.
+            technologies used within this notice&apos;s stated scope.
           </p>
 
           {/* Action Buttons */}

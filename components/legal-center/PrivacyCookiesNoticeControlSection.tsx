@@ -83,7 +83,7 @@ export default function PrivacyCookiesNoticeControlSection() {
             {/* Description */}
             <p className="text-xs sm:text-sm text-[#64748B] leading-relaxed max-w-xl">
               Legal content remains accessible without non-essential consent —
-              and we never fake a settings button if the control isn't actually
+              and we never fake a settings button if the control isn&apos;t actually
               available.
             </p>
           </div>

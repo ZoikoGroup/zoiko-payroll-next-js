@@ -65,7 +65,7 @@ export default function LeadershipStructureSection() {
             </h2>
 
             <p className="text-[17px] text-[#4D5E72] leading-relaxed max-w-120">
-              Each card separates a stable person record from the role they're
+              Each card separates a stable person record from the role they&apos;re
               assigned to. Title, scope, status and accountability domains are
               shown before any biography — and never include personal contact
               details, compensation or inferred background.

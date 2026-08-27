@@ -53,7 +53,7 @@ export default function RecipientsTransfersRetentionSection() {
           </h2>
           <p className="text-[14.5px] text-[#5B646B] leading-relaxed max-w-3xl">
             Recipients are described using approved recipient categories and
-            provider authority — never a vague "trusted partners" statement.
+            provider authority — never a vague &quot;trusted partners&quot; statement.
             International transfers are disclosed only where an approved
             transfer/location record exists; an office location is not
             automatically a processing location. Retention uses an approved

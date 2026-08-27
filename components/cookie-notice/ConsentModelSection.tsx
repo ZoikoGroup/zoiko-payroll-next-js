@@ -34,7 +34,7 @@ export default function ConsentModelSection() {
 
         {/* Placeholder Description */}
         <p className="text-xs text-[#5B646B] leading-relaxed">
-          This embed requires the "Marketing" category. It will load only after
+          This embed requires the &quot;Marketing&quot; category. It will load only after
           you allow it in Cookie Settings.
         </p>
 

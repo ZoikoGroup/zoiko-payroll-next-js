@@ -90,9 +90,9 @@ export default function LeadershipContinuitySection() {
             <span className="font-bold text-[#0F172A]">
               Example transition banner:
             </span>{" "}
-            "Interim ownership — Chief Revenue Officer role currently held on an
+            &quot;Interim ownership — Chief Revenue Officer role currently held on an
             acting <br /> basis. Current accountable scope: Commercial & Customer
-            Success, all regions." Former leaders are never simply deleted if
+            Success, all regions.&quot; Former leaders are never simply deleted if
             that would break external citations — a governed archive record is
             retained instead.
           </p>

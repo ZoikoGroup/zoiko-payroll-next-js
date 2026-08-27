@@ -129,7 +129,7 @@ export default function SignInSection() {
               {/* Redirect Footer */}
               <div className="text-center pt-3">
                 <p className="text-xs text-[#94A3B8]">
-                  Don't have an account?{" "}
+                  Don&apos;t have an account?{" "}
                   <Link
                     href="/auth/register"
                     className="font-semibold text-[#0F172A] hover:text-[#0284C7] transition-colors"

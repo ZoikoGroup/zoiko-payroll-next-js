@@ -56,7 +56,7 @@ export default function CorporateTruthGovernanceTimeline() {
           </div>
 
           <h2 className="text-2xl sm:text-[32px] font-bold text-[#0F172A] tracking-tight leading-tight">
-            This page says who owns each type of truth — it doesn't duplicate it
+            This page says who owns each type of truth — it doesn&apos;t duplicate it
           </h2>
         </div>
 

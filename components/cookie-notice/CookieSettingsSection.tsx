@@ -135,7 +135,7 @@ export default function CookieSettingsSection() {
           creation or commercial benefit tied to consent. Withdrawal is exactly
           as discoverable as the initial choice. If Settings is temporarily
           unavailable, an approved fallback route is shown — we never claim
-          preferences were saved when they weren't.
+          preferences were saved when they weren&apos;t.
         </p>
       </div>
     </section>
