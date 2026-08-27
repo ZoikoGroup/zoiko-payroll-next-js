@@ -51,7 +51,7 @@ export default function AcceptanceAssentSection() {
         {/* Informational Callout Card */}
         <div className="bg-white rounded-2xl border border-gray-100/80 shadow-sm p-6 sm:p-7">
           <p className="text-[13px] text-[#64748B] leading-relaxed">
-            This page does not display an "I agree" button, a pre-checked box,
+            This page does not display an &quot;I agree&quot; button, a pre-checked box,
             or acceptance logging, because no approved AcceptanceMechanismRecord
             currently authorizes one for the public website. Where a governed
             mechanism is approved, it will appear here — separate from any

@@ -46,7 +46,7 @@ export default function DurationGovernanceSection() {
         <p className="text-[13.5px] text-[#0F172A] leading-relaxed pl-2">
           <span className="font-bold">Change governance.</span> Regular runtime
           and tag scans reconcile deployed technology against the public
-          registry. Any change to a technology's provider, purpose, category,
+          registry. Any change to a technology&apos;s provider, purpose, category,
           duration or consent behavior triggers a governed review before the
           public inventory updates. A stale inventory is treated as a failed
           legal surface, even if the page itself looks polished.

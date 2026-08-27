@@ -34,7 +34,7 @@ export default function ResetPasswordSection() {
                 Forgot password?
               </h2>
               <p className="text-sm text-[#4D5E72] leading-relaxed">
-                We'll email you a link to reset it.
+                We&apos;ll email you a link to reset it.
               </p>
             </div>
 

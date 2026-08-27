@@ -27,7 +27,7 @@ export default function RolesContextSection() {
             Zoiko-controlled processing
           </h3>
           <p className="text-[12.5px] text-[#5B646B] leading-relaxed">
-            Covers website visitors, business contacts and Zoiko's own
+            Covers website visitors, business contacts and Zoiko&apos;s own
             account/service administration, where Zoiko determines the purpose
             and means of processing.
           </p>

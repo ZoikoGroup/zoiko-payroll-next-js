@@ -59,7 +59,7 @@ export default function ApprovedTechnologyEcosystemSection() {
           {/* Description Paragraph (17px) */}
           <p className="text-base sm:text-[15px] max-w-2xl text-[#64748B] leading-relaxed">
             Category-first, registry-backed. Non-active products and unverified
-            relationships are hidden rather than shown as "planned."
+            relationships are hidden rather than shown as &quot;planned.&quot;
           </p>
         </div>
 

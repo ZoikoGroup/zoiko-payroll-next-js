@@ -193,7 +193,7 @@ export default function CategoriesInventorySection() {
         {/* Footnote */}
         <p className="text-[12px] text-[#94A3B8] leading-normal pt-1">
           An unknown or unclassified technology is treated as an exception — it
-          is never published as current or hidden under "Other."
+          is never published as current or hidden under &quot;Other.&quot;
         </p>
       </div>
     </section>

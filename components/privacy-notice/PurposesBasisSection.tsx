@@ -33,7 +33,7 @@ export default function PurposesBasisSection() {
         <li className="flex items-start gap-2.5">
           <span className="h-1.5 w-1.5 rounded-full bg-[#5B646B] shrink-0 mt-2" />
           <span>
-            Basis is never inferred from a visitor's IP address, plan tier or
+            Basis is never inferred from a visitor&apos;s IP address, plan tier or
             assumed persona.
           </span>
         </li>

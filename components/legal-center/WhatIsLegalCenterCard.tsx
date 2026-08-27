@@ -22,7 +22,7 @@ export default function WhatIsLegalCenterCard() {
 
           <p className="text-xs sm:text-sm text-[#64748B] italic leading-relaxed">
             It does not determine which contract or law applies to your
-            organization — that's a question for the applicable document itself,
+            organization — that&apos;s a question for the applicable document itself,
             or your legal counsel.
           </p>
         </div>

@@ -55,7 +55,7 @@ export default function ContactSection() {
               {/* Paragraph */}
               <p className="text-sm text-[#CBDAE7] leading-relaxed max-w-lg">
                 No sensitive payroll data needed here. Choose Sales, Support,
-                Privacy, Press or General and we'll route it to the right team.
+                Privacy, Press or General and we&apos;ll route it to the right team.
               </p>
 
               {/* Quick Links */}
@@ -189,7 +189,7 @@ export default function ContactSection() {
 
                   {/* Privacy Notice Note */}
                   <p className="text-[11px] text-[#828C97] leading-tight pt-1">
-                    By submitting you agree to the Privacy Notice. We'll route
+                    By submitting you agree to the Privacy Notice. We&apos;ll route
                     this to the right team automatically.
                   </p>
 
