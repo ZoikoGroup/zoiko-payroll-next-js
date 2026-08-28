@@ -16,13 +16,13 @@ const procurementCards: ProcurementCard[] = [
     title: "Service Terms",
     description: "Public current standard terms where approved.",
     linkText: "View",
-    href: "/service-terms",
+    href: "/legal/service-terms",
   },
   {
     title: "Data Processing Addendum",
     description: "Current public DPA or approved access route.",
     linkText: "View",
-    href: "/dpa",
+    href: "/legal/dpa",
   },
   {
     title: "Trust & Security",
