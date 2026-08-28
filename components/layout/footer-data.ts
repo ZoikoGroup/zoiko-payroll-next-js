@@ -163,7 +163,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Acceptable Use Policy", href: "/legal/acceptable-use-policy" },
       { label: "Accessibility Statement", href: "/legal/accessibility-statement" },
       { label: "Legal Notices", href: "/legal/notices" },
-      { label: "Sitemap", href: "/sitemap" },
+      { label: "Sitemap", href: "/legal/sitemap" },
     ],
   },
 ];

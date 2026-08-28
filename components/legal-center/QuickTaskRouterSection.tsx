@@ -28,13 +28,13 @@ const taskRouterCards: TaskRouterCard[] = [
     title: "Customer / Service Terms",
     description: "Standard terms for using Zoiko Payroll.",
     linkText: "Go to Service Terms",
-    href: "/service-terms",
+    href: "/legal/service-terms",
   },
   {
     title: "Data Processing / DPA",
     description: "Terms covering customer data processing.",
     linkText: "Go to DPA",
-    href: "/dpa",
+    href: "/legal/dpa",
   },
   {
     title: "Acceptable Use",
@@ -58,7 +58,7 @@ const taskRouterCards: TaskRouterCard[] = [
     title: "Sitemap",
     description: "A full map of this site's pages.",
     linkText: "Go to Sitemap",
-    href: "/sitemap",
+    href: "/legal/sitemap",
   },
 ];
 

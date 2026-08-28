@@ -44,7 +44,7 @@ const legalDocuments: LegalDocumentRow[] = [
     published: "Feb 2026",
     effective: "Feb 2026",
     version: "v4.1",
-    href: "/service-terms",
+    href: "/legal/service-terms",
   },
   {
     title: "Data Processing Addendum",
@@ -54,7 +54,7 @@ const legalDocuments: LegalDocumentRow[] = [
     published: "Jan 2026",
     effective: "Jan 2026",
     version: "v2.0",
-    href: "/dpa",
+    href: "/legal/dpa",
   },
   {
     title: "Acceptable Use Policy",
