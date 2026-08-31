@@ -1,0 +1,10 @@
+export { default as FinanceERPIntegrationsHero } from "./FinanceERPIntegrationsHero";
+export { default as FitAvailabilitySection } from "./FitAvailabilitySection";
+export { default as ChartOfAccountsMappingSection } from "./ChartOfAccountsMappingSection";
+export { default as HowPayrollAccountingFlowsSection } from "./HowPayrollAccountingFlowsSection";
+export { default as SupportedFinanceERPSystemsSection } from "./SupportedFinanceERPSystemsSection";
+export { default as CorrectionsReversalsSection } from "./CorrectionsReversalsSection";
+export { default as SecurityConnectionHealthSection } from "./SecurityConnectionHealthSection";
+export { default as CustomFitRequestSection } from "./CustomFitRequestSection";
+export { default as FAQSection } from "./FAQSection";
+export { default as ReadyToGoFurtherCTA } from "./ReadyToGoFurtherCTA";
