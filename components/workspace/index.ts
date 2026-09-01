@@ -1,0 +1,9 @@
+export { default as PayrollWorkspaceSection } from "./PayrollWorkspaceSection";
+export { default as DirectAnswerWorkspaceSection } from "./DirectAnswerWorkspaceSection";
+export { default as PayrollCommandCenterSection } from "./PayrollCommandCenterSection";
+export { default as GovernedWorkflowSection } from "./GovernedWorkflowSection";
+export { default as GlobalReadyOperatingModelSection } from "./GlobalReadyOperatingModelSection";
+export { default as ConnectedPayrollEcosystemBanner } from "./ConnectedPayrollEcosystemBanner";
+export { default as ConnectedEcosystemCardsSection } from "./ConnectedEcosystemCardsSection";
+export { default as TrustSecurityAuditabilitySection } from "./TrustSecurityAuditabilitySection";
+export { default as FAQAndCTASection } from "./FAQAndCTASection";

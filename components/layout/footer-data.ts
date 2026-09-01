@@ -21,7 +21,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Calculations", href: "/payroll-operations/calculations" },
       { label: "Approvals", href: "/product/payroll-approvals" },
       { label: "Deductions and adjustments", href: "/product/deductions" },
-      { label: "Payments orchestration", href: "/product/payments-orchestration" },
+      { label: "Payments orchestration", href: "/payroll-operations/payments-orchestration" },
       { label: "Payroll close and audit", href: "/product/close-and-audit" },
       { label: "Records and reports", href: "/product/records-and-reports" },
     ],
