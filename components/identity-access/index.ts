@@ -6,3 +6,7 @@ export { default as AuthVsAuthzSection } from "./AuthVsAuthzSection";
 export { default as ProvisioningMappingSection } from "./ProvisioningMappingSection";
 export { default as JitFirstLoginSection } from "./JitFirstLoginSection";
 export { default as DeprovisioningSessionSection } from "./DeprovisioningSessionSection";
+export { default as AccessReviewConnectionHealthSection } from "./AccessReviewConnectionHealthSection";
+export { default as ImplementationSection } from "./ImplementationSection";
+export { default as IdentityAccessFaqSection } from "./IdentityAccessFaqSection";
+export { default as ValidateIntegrationCtaSection } from "./ValidateIntegrationCtaSection";

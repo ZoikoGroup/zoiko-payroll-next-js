@@ -7,6 +7,10 @@ import {
   ProvisioningMappingSection,
   JitFirstLoginSection,
   DeprovisioningSessionSection,
+  AccessReviewConnectionHealthSection,
+  ImplementationSection,
+  IdentityAccessFaqSection,
+  ValidateIntegrationCtaSection,
 } from "@/components/identity-access";
 
 export default function IdentityAccessPage() {
@@ -20,6 +24,10 @@ export default function IdentityAccessPage() {
       <ProvisioningMappingSection />
       <JitFirstLoginSection />
       <DeprovisioningSessionSection />
+      <AccessReviewConnectionHealthSection />
+      <ImplementationSection />
+      <IdentityAccessFaqSection />
+      <ValidateIntegrationCtaSection />
     </main>
   );
 }
