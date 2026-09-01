@@ -1,0 +1,11 @@
+export { default as PaymentsOrchestrationHeroSection } from "./PaymentsOrchestrationHeroSection";
+export { default as PaymentsLifecycleSection } from "./PaymentsLifecycleSection";
+export { default as WhatGetsOrchestratedSection } from "./WhatGetsOrchestratedSection";
+export { default as PrimaryProductProofSection } from "./PrimaryProductProofSection";
+export { default as FundingAndAuthorizationSection } from "./FundingAndAuthorizationSection";
+export { default as RoutingCurrenciesFxSection } from "./RoutingCurrenciesFxSection";
+export { default as StatusAndExceptionsSection } from "./StatusAndExceptionsSection";
+export { default as ReconciliationSection } from "./ReconciliationSection";
+export { default as CoverageSecurityAiSection } from "./CoverageSecurityAiSection";
+export { default as PaymentsOrchestrationFaqSection } from "./PaymentsOrchestrationFaqSection";
+export { default as PaymentsCallToActionSection } from "./PaymentsCallToActionSection";
