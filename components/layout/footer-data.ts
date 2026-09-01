@@ -17,8 +17,8 @@ export const footerLinkColumns: FooterColumn[] = [
     title: "Payroll operations",
     links: [
       { label: "Payroll processing", href: "/product/payroll-processing" },
-      { label: "Inputs and validation", href: "/product/inputs-validation" },
-      { label: "Calculations", href: "/product/calculations" },
+      { label: "Inputs and validation", href: "/payroll-operations/inputs-validation" },
+      { label: "Calculations", href: "/payroll-operations/calculations" },
       { label: "Approvals", href: "/product/payroll-approvals" },
       { label: "Deductions and adjustments", href: "/product/deductions" },
       { label: "Payments orchestration", href: "/product/payments-orchestration" },
@@ -78,8 +78,8 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Payment systems", href: "/integrations/payment-systems" },
       { label: "Identity and access", href: "/integrations/identity-access" },
       { label: "API documentation", href: "/integrations/api-documentation" },
-      { label: "Webhooks", href: "/product/integrations/webhooks" },
-      { label: "Integration support", href: "/product/integrations/support" },
+      { label: "Webhooks", href: "/integrations/webhooks" },
+      { label: "Integration support", href: "/integrations/support" },
     ],
   },
   {
