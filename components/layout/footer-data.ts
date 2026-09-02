@@ -118,7 +118,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Contact support", href: "/company/contact" },
       { label: "Employee access help", href: "/support/employee-access" },
       { label: "Payroll administrator help", href: "/support/administrator-help" },
-      { label: "Implementation support", href: "/support/implementation" },
+      { label: "Implementation support", href: "/customer/implementation-support" },
       { label: "Sign in", href: "/sign-in" },
       { label: "System status", href: "/resources/system-status" },
     ],
