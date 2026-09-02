@@ -1,0 +1,11 @@
+export { default as PayrollRecordsReportingSection } from "./PayrollRecordsReportingSection";
+export { default as RecordLifecycleSection } from "./RecordLifecycleSection";
+export { default as RecordClassesTaxonomySection } from "./RecordClassesTaxonomySection";
+export { default as RecordsControlCenterSection } from "./RecordsControlCenterSection";
+export { default as ReportCatalogReportingSection } from "./ReportCatalogReportingSection";
+export { default as TraceabilityVersionComparisonSection } from "./TraceabilityVersionComparisonSection";
+export { default as ExportSecureDistributionSection } from "./ExportSecureDistributionSection";
+export { default as GlobalReportingSecurityPrivacySection } from "./GlobalReportingSecurityPrivacySection";
+export { default as AIAssistedReportingSection } from "./AIAssistedReportingSection";
+export { default as FAQRecordsReportsSection } from "./FAQRecordsReportsSection";
+export { default as CTASection } from "./CTASection";
