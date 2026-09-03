@@ -1,0 +1,12 @@
+export { default as PayrollAdministratorHelpSection } from "./PayrollAdministratorHelpSection";
+export { default as KnownIssueSystemStatusSection } from "./KnownIssueSystemStatusSection";
+export { default as AdministratorAccessSecuritySection } from "./AdministratorAccessSecuritySection";
+export { default as PayrollReadinessSection } from "./PayrollReadinessSection";
+export { default as InputsValidationDiagnosticsSection } from "./InputsValidationDiagnosticsSection";
+export { default as CalculationsApprovalsSection } from "./CalculationsApprovalsSection";
+export { default as PaymentsFilingsSection } from "./PaymentsFilingsSection";
+export { default as CloseAuditReportsSection } from "./CloseAuditReportsSection";
+export { default as IntegrationsMultiEntitySection } from "./IntegrationsMultiEntitySection";
+export { default as CreateSupportCaseSection } from "./CreateSupportCaseSection";
+export { default as FAQPayrollAdminSection } from "./FAQPayrollAdminSection";
+export { default as ReadyToGoFurtherSection } from "./ReadyToGoFurtherSection";
