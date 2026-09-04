@@ -1,0 +1,10 @@
+export { default as DataResidencySection } from "./DataResidencySection";
+export { default as FourDistinctDimensionsSection } from "./FourDistinctDimensionsSection";
+export { default as RegionAvailabilityRegistrySection } from "./RegionAvailabilityRegistrySection";
+export { default as AvailabilityStateSystemSection } from "./AvailabilityStateSystemSection";
+export { default as DataLifecycleSection } from "./DataLifecycleSection";
+export { default as ServiceAndDataCategoryMatrixSection } from "./ServiceAndDataCategoryMatrixSection";
+export { default as BackupDrSupportAccessSection } from "./BackupDrSupportAccessSection";
+export { default as SubprocessorsTransfersSection } from "./SubprocessorsTransfersSection";
+export { default as LocalizationProcurementEvidenceSection } from "./LocalizationProcurementEvidenceSection";
+export { default as FaqAndCtaSection } from "./FaqAndCtaSection";
