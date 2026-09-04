@@ -5,7 +5,6 @@ import {
   JurisdictionDirectory,
   QuickViewSection,
   CompareJurisdictions,
-  SubJurisdictions,
   FaqSection,
   CtaSection,
 } from "@/components/zoiko-jurisdiction-directory";
@@ -24,7 +23,6 @@ export default function ZoikoJurisdictionDirectoryPage() {
       <JurisdictionDirectory />
       <QuickViewSection />
       <CompareJurisdictions />
-      <SubJurisdictions />
       <FaqSection />
       <CtaSection />
     </div>
