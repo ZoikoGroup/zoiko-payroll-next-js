@@ -39,9 +39,9 @@ export default function HeroSection() {
               {/* Pillars */}
               <div className="w-full pt-5 border-t border-slate-200 flex items-start gap-6 flex-wrap">
                 {[
-                  { label: "Global view", icon: "/b1.png" },
-                  { label: "Local precision", icon: "/b2.png" },
-                  { label: "Availability truth", icon: "/b3.png" },
+                  { label: "Global view", icon: "/images/global-payroll/world.png" },
+                  { label: "Local precision", icon: "/images/global-payroll/loc.png" },
+                  { label: "Availability truth", icon: "/images/global-payroll/tick.png" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-center gap-2">
                     <Image src={item.icon} alt={item.label} width={16} height={16} className="w-4 h-4" />
@@ -55,7 +55,7 @@ export default function HeroSection() {
           {/* Right: Hero Image + Stats */}
           <div className="w-[519px] h-[420px] relative bg-white rounded-[20px] shadow-[0px_8px_24px_0px_rgba(8,47,73,0.06)] shadow-[0px_1px_2px_0px_rgba(8,47,73,0.04)] overflow-hidden flex-shrink-0">
             <div className="w-full h-full bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
-              <Image src="/99.png" alt="Global payroll" width={519} height={420} className="w-full h-full object-cover" />
+              <Image src="/images/global-payroll/hero.png" alt="Global payroll" width={519} height={420} className="w-full h-full object-cover" />
             </div>
             {/* Stats overlay */}
             <div className="absolute bottom-[20px] left-[20px] w-[479px] h-[81px] rounded-xl backdrop-blur-[3px] flex items-start justify-start gap-5 px-6 py-0" style={{ backgroundColor: '#082F49B8' }}>

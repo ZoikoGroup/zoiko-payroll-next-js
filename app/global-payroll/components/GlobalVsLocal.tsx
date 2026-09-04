@@ -27,7 +27,7 @@ export default function GlobalVsLocal() {
           <div className="flex flex-col md:flex-row items-stretch">
             {/* Image on LEFT (40%) */}
             <div className="w-full md:w-[40%] bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center min-h-[280px]">
-              <Image src="/mus.png" alt="Global vs Local" width={472} height={400} className="w-full h-full object-cover" />
+              <Image src="/images/global-payroll/1.png" alt="Global vs Local" width={472} height={400} className="w-full h-full object-cover" />
             </div>
 
             {/* Content panel on RIGHT (60%) */}
