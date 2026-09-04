@@ -32,10 +32,10 @@ export default function PayrollFootprintCTA() {
             Need to confirm your exact payroll footprint?
           </h2>
 
-          {/* Description */}
+          {/* Description - exactly 3 lines */}
           <p className="text-white/80 text-base font-normal leading-6 pt-1 max-w-[480px]">
-            Tell us the jurisdictions, entities, worker population, current payroll<br className="hidden sm:inline" />
-            model and required services. Please don&apos;t send employee-level payroll<br className="hidden sm:inline" />
+            Tell us the jurisdictions, entities, worker population, current payroll<br />
+            model and required services. Please don&apos;t send employee-level payroll<br />
             data in your first inquiry.
           </p>
 
@@ -156,7 +156,7 @@ export default function PayrollFootprintCTA() {
 
           </div>
 
-          {/* Submit Button with exact Figma Linear Gradient */}
+          {/* Submit Button with exact 84deg linear gradient (color/azure/54 2 to color/azure/25 3) */}
           <button
             type="submit"
             className="w-full mt-2 py-3 px-5 bg-[linear-gradient(84deg,#1B81E2_0%,#0B4F82_100%)] hover:opacity-95 text-white text-base font-bold rounded-[10px] shadow-[0px_4px_14px_0px_rgba(12,71,115,0.28)] transition-all cursor-pointer text-center"
