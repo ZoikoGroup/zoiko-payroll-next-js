@@ -1,0 +1,10 @@
+export { default as PlansAndPricingSection } from "./PlansAndPricingSection";
+export { default as FourPlansSection } from "./FourPlansSection";
+export { default as PlanFitNavigatorSection } from "./PlanFitNavigatorSection";
+export { default as ComparePlansSection } from "./ComparePlansSection";
+export { default as ServicePacksSection } from "./ServicePacksSection";
+export { default as ExploreProfessionalSection } from "./ExploreProfessionalSection";
+export { default as UpgradeAndDowngradeAssuranceSection } from "./UpgradeAndDowngradeAssuranceSection";
+export { default as PayrollIntegrityAndTrustSection } from "./PayrollIntegrityAndTrustSection";
+export { default as ZoikoOneAndEnterpriseSection } from "./ZoikoOneAndEnterpriseSection";
+export { default as FaqAnswerEngineSection } from "./FaqAnswerEngineSection";
