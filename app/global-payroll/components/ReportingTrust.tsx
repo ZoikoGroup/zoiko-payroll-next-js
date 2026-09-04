@@ -33,7 +33,8 @@ export default function ReportingTrust() {
 
       {/* Image placeholder */}
       <div className="w-full pt-3.5 bg-white rounded-2xl shadow-[0px_8px_24px_0px_rgba(8,47,73,0.06)] shadow-[0px_1px_2px_0px_rgba(8,47,73,0.04)] outline outline-1 outline-offset-[-1px] outline-slate-100 overflow-hidden">
-        <div className="w-full h-64 bg-gradient-to-br from-slate-100 to-slate-200" />
+        {/* <div className="w-full h-64 bg-gradient-to-br from-slate-100 to-slate-200" /> */}
+        <img src="/images/global-payroll/9.png" alt="image" className="w-full h-64" />
       </div>
 
       {/* Feature cards */}

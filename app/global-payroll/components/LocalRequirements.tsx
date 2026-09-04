@@ -38,7 +38,7 @@ export default function LocalRequirements() {
 
           {/* Compliance workflow */}
           <div className="flex-1 bg-white rounded-2xl shadow-[0px_1px_2px_0px_rgba(8,47,73,0.04)] outline outline-1 outline-offset-[-1px] outline-slate-100 overflow-hidden">
-            <div className="w-full h-48 bg-gradient-to-br from-slate-100 to-slate-200" />
+            <img src="/images/global-payroll/8.png" alt="image" className="w-full h-48" />
             <div className="px-6 py-5 flex flex-col gap-3.5">
               <div className="text-sky-950 text-lg font-bold leading-7">Compliance workflow</div>
               <div className="flex flex-wrap gap-2">
