@@ -1,13 +1,22 @@
-import GuideHero from "./components/GuideHero";
-import GuideMeaning from "./components/GuideMeaning";
-import GuideFinder from "./components/GuideFinder";
-import IdentityAmbiguity from "./components/IdentityAmbiguity";
-import GuideAnatomy from "./components/GuideAnatomy";
-import MarketContext from "./components/MarketContext";
-import AuthorityHandoff from "./components/AuthorityHandoff";
-import SourcesFreshness from "./components/SourcesFreshness";
-import SearchStates from "./components/SearchStates";
-import GuideFaqCta from "./components/GuideFaqCta";
+import type { Metadata } from "next";
+import {
+  GuideHero,
+  GuideMeaning,
+  GuideFinder,
+  IdentityAmbiguity,
+  GuideAnatomy,
+  MarketContext,
+  AuthorityHandoff,
+  SourcesFreshness,
+  SearchStates,
+  GuideFaqCta,
+} from "@/components/zoiko-payroll-jurisdiction-guides";
+
+export const metadata: Metadata = {
+  title: "Zoiko Payroll Jurisdiction Guides | Zoiko Payroll",
+  description:
+    "Country and territory payroll guides with jurisdiction finder, market context, authority handoff and evidence governance.",
+};
 
 export default function ZoikoPayrollJurisdictionGuidesPage() {
   return (

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, IBM_Plex_Mono, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Inter, IBM_Plex_Mono, Space_Grotesk, JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -26,6 +26,14 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+/** Jakarta face for the Payroll Guides page. */
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+});
+
 /** Mono face for the country & territory directory. */
 const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -46,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${ibmPlexMono.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${ibmPlexMono.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} ${plusJakartaSans.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <AnnouncementBar />
         <Header />

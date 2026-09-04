@@ -1,4 +1,4 @@
-@import "tailwindcss";
+ @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -31,6 +31,8 @@
   --font-mono: var(--font-ibm-plex-mono);
   --font-display: var(--font-space-grotesk);
   --font-code: var(--font-jetbrains-mono);
+  --font-jakarta: var(--font-plus-jakarta);
+
 }
 
 body {

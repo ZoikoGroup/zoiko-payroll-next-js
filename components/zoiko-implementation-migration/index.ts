@@ -1,0 +1,11 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as ControlCenterSection } from "./ControlCenterSection";
+export { default as OperatingModelSection } from "./OperatingModelSection";
+export { default as SixPhaseLifecycleSection } from "./SixPhaseLifecycleSection";
+export { default as ControlCenterDashboardSection } from "./ControlCenterDashboardSection";
+export { default as ScopeManifestSection } from "./ScopeManifestSection";
+export { default as ValidationSection } from "./ValidationSection";
+export { default as ReadinessGatesSection } from "./ReadinessGatesSection";
+export { default as CutoverWavesSection } from "./CutoverWavesSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";

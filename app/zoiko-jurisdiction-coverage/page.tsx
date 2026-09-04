@@ -1,13 +1,22 @@
-import Hero from "./components/Hero";
-import StatsBar from "./components/StatsBar";
-import AvailabilityStateContract from "./components/AvailabilityStateContract";
-import SearchCanonicalization from "./components/SearchCanonicalization";
-import CoverageSnapshot from "./components/CoverageSnapshot";
-import CoverageWorkspace from "./components/CoverageWorkspace";
-import JurisdictionDetail from "./components/JurisdictionDetail";
-import MarketComparison from "./components/MarketComparison";
-import EvidenceGovernance from "./components/EvidenceGovernance";
-import TrustBoundaryFaqCta from "./components/TrustBoundaryFaqCta";
+import type { Metadata } from "next";
+import {
+  Hero,
+  StatsBar,
+  AvailabilityStateContract,
+  SearchCanonicalization,
+  CoverageSnapshot,
+  CoverageWorkspace,
+  JurisdictionDetail,
+  MarketComparison,
+  EvidenceGovernance,
+  TrustBoundaryFaqCta,
+} from "@/components/zoiko-jurisdiction-coverage";
+
+export const metadata: Metadata = {
+  title: "Zoiko Payroll Jurisdiction Coverage | Zoiko Payroll",
+  description:
+    "Coverage snapshot, availability states, evidence governance and market comparison across jurisdictions — with canonical search and detailed jurisdiction records.",
+};
 
 export default function ZoikoJurisdictionCoveragePage() {
   return (

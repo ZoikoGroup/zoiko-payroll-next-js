@@ -1,0 +1,10 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as DirectAnswerSection } from "./DirectAnswerSection";
+export { default as GovernanceSection } from "./GovernanceSection";
+export { default as BoundariesSection } from "./BoundariesSection";
+export { default as LifecycleSection } from "./LifecycleSection";
+export { default as IdentitySection } from "./IdentitySection";
+export { default as AdminSection } from "./AdminSection";
+export { default as SecuritySection } from "./SecuritySection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";

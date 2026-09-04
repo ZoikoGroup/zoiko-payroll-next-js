@@ -1,14 +1,23 @@
-import HeroSection from "./components/HeroSection";
-import GlobalVsLocal from "./components/GlobalVsLocal";
-import JurisdictionAvailability from "./components/JurisdictionAvailability";
-import WorkforceScenarios from "./components/WorkforceScenarios";
-import ProductProof from "./components/ProductProof";
-import SearchInteraction from "./components/SearchInteraction";
-import ScopeHierarchy from "./components/ScopeHierarchy";
-import CloseReadiness from "./components/CloseReadiness";
-import LocalRequirements from "./components/LocalRequirements";
-import ReportingTrust from "./components/ReportingTrust";
-import Implementation from "./components/Implementation";
+import type { Metadata } from "next";
+import {
+  HeroSection,
+  GlobalVsLocal,
+  JurisdictionAvailability,
+  WorkforceScenarios,
+  ProductProof,
+  SearchInteraction,
+  ScopeHierarchy,
+  CloseReadiness,
+  LocalRequirements,
+  ReportingTrust,
+  Implementation,
+} from "@/components/zoiko-global-payroll-overview";
+
+export const metadata: Metadata = {
+  title: "Zoiko Global Payroll Overview | Zoiko Payroll",
+  description:
+    "Global payroll control built around local requirements — jurisdiction availability, workforce scenarios, scope hierarchy and implementation guidance.",
+};
 
 export default function ZoikoGlobalPayrollOverviewPage() {
   return (
@@ -18,8 +27,8 @@ export default function ZoikoGlobalPayrollOverviewPage() {
       <JurisdictionAvailability />
       <WorkforceScenarios />
       <ProductProof />
-      <SearchInteraction />
       <ScopeHierarchy />
+      <SearchInteraction />
       <CloseReadiness />
       <LocalRequirements />
       <ReportingTrust />

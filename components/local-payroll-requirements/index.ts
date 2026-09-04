@@ -1,0 +1,11 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as GlobalControlSection } from "./GlobalControlSection";
+export { default as WorkspaceSection } from "./WorkspaceSection";
+export { default as WhyRequirementsVarySection } from "./WhyRequirementsVarySection";
+export { default as RequirementControlRecordSection } from "./RequirementControlRecordSection";
+export { default as EffectiveDatedChangeControlSection } from "./EffectiveDatedChangeControlSection";
+export { default as DecisionRightsSection } from "./DecisionRightsSection";
+export { default as AvailabilitySection } from "./AvailabilitySection";
+export { default as TrustIntegrationsSection } from "./TrustIntegrationsSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";
