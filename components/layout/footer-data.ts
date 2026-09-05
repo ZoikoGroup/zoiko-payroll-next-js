@@ -131,7 +131,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Privacy and data protection", href: "/legal/privacy-notice" },
       { label: "Compliance and assurance", href: "/trust-security/compliance" },
       { label: "Data residency", href: "/trust-security/data-residency" },
-      { label: "Business continuity", href: "/company/trust-center/business-continuity" },
+      { label: "Business continuity", href: "/trust-security/business-continuity" },
       { label: "Subprocessors", href: "/legal/subprocessors" },
       { label: "Responsible disclosure", href: "/company/trust-center/responsible-disclosure" },
       { label: "Accessibility", href: "/legal/accessibility-statement" },
