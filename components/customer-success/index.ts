@@ -1,0 +1,12 @@
+export { default as PostGoLiveSuccessSection } from "./PostGoLiveSuccessSection";
+export { default as CustomerSuccessLifecycleSection } from "./CustomerSuccessLifecycleSection";
+export { default as SuccessPrinciplesSection } from "./SuccessPrinciplesSection";
+export { default as ServiceBoundariesSection } from "./ServiceBoundariesSection";
+export { default as GovernedSuccessHandoverSection } from "./GovernedSuccessHandoverSection";
+export { default as OperationalPayrollHealthSection } from "./OperationalPayrollHealthSection";
+export { default as GovernanceReviewsSection } from "./GovernanceReviewsSection";
+export { default as GlobalCoverageSection } from "./GlobalCoverageSection";
+export { default as PayrollMaturitySection } from "./PayrollMaturitySection";
+export { default as SuccessMetricsSection } from "./SuccessMetricsSection";
+export { default as CustomerSuccessFAQSection } from "./CustomerSuccessFAQSection";
+export { default as ScaleGlobalPayrollCTASection } from "./ScaleGlobalPayrollCTASection";
