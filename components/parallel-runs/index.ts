@@ -1,0 +1,14 @@
+export { default as ProvePayrollAccuracyHeroSection } from "./ProvePayrollAccuracyHeroSection";
+export { default as ValidationPrinciplesSection } from "./ValidationPrinciplesSection";
+export { default as ParallelPayrollMeaningSection } from "./ParallelPayrollMeaningSection";
+export { default as ParallelCyclePlannerSection } from "./ParallelCyclePlannerSection";
+export { default as PayrollValidationLifecycleSection } from "./PayrollValidationLifecycleSection";
+export { default as ValidationReadinessChecklistSection } from "./ValidationReadinessChecklistSection";
+export { default as PayrollComparisonSection } from "./PayrollComparisonSection";
+export { default as InvestigateWorkspaceSection } from "./InvestigateWorkspaceSection";
+export { default as ThreeValidationsSection } from "./ThreeValidationsSection";
+export { default as ValidationSuccessSection } from "./ValidationSuccessSection";
+export { default as ValidationWavesSection } from "./ValidationWavesSection";
+export { default as GovernanceRecordsSection } from "./GovernanceRecordsSection";
+export { default as ValidationFaqSection } from "./ValidationFaqSection";
+export { default as LaunchConfidenceCtaSection } from "./LaunchConfidenceCtaSection";

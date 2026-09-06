@@ -1,0 +1,11 @@
+export { default as PayrollConfigurationSection } from "./PayrollConfigurationSection";
+export { default as ConfigurationComparisonSection } from "./ConfigurationComparisonSection";
+export { default as ConfigurationHierarchySection } from "./ConfigurationHierarchySection";
+export { default as ConfigurationWorkstreamsSection } from "./ConfigurationWorkstreamsSection";
+export { default as RequirementsTraceabilitySection } from "./RequirementsTraceabilitySection";
+export { default as PayrollStructuresSection } from "./PayrollStructuresSection";
+export { default as ProductBoundaryClassificationSection } from "./ProductBoundaryClassificationSection";
+export { default as ConfigurationReadinessSection } from "./ConfigurationReadinessSection";
+export { default as SharedResponsibilitySection } from "./SharedResponsibilitySection";
+export { default as ConfigurationFaqSection } from "./ConfigurationFaqSection";
+export { default as ConfigurationCtaSection } from "./ConfigurationCtaSection";
