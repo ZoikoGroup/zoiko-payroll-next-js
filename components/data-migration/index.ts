@@ -1,0 +1,16 @@
+export { default as MigrationHero } from "./MigrationHero";
+export { default as MigrationPillarsStrip } from "./MigrationPillarsStrip";
+export { default as DefinitionSection } from "./DefinitionSection";
+export { default as MigratableDataSection } from "./MigratableDataSection";
+export { default as DataQualitySection } from "./DataQualitySection";
+export { default as StrategySection } from "./StrategySection";
+export { default as CutoverSection } from "./CutoverSection";
+export { default as SourceLandscapeSection } from "./SourceLandscapeSection";
+export { default as ReconciliationSection } from "./ReconciliationSection";
+export { default as ExceptionManagementSection } from "./ExceptionManagementSection";
+export { default as SecurityWorkspaceSection } from "./SecurityWorkspaceSection";
+export { default as GovernanceSection } from "./GovernanceSection";
+export { default as GlobalReachSection } from "./GlobalReachSection";
+export { default as SharedResponsibilitySection } from "./SharedResponsibilitySection";
+export { default as MigrationFaqSection } from "./MigrationFaqSection";
+export { default as MigrationCta } from "./MigrationCta";
