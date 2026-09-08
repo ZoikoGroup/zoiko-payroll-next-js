@@ -1,0 +1,17 @@
+export { default as TrainingHero } from "./TrainingHero";
+export { default as TrainingPrinciplesSection } from "./TrainingPrinciplesSection";
+export { default as WhatTrainingMeansSection } from "./WhatTrainingMeansSection";
+export { default as WhoNeedsTrainingSection } from "./WhoNeedsTrainingSection";
+export { default as LearningJourneySection } from "./LearningJourneySection";
+export { default as LearningPathsSection } from "./LearningPathsSection";
+export { default as CoreCurriculumSection } from "./CoreCurriculumSection";
+export { default as DeliveryModesSection } from "./DeliveryModesSection";
+export { default as SandboxPracticeSection } from "./SandboxPracticeSection";
+export { default as AssessmentsSection } from "./AssessmentsSection";
+export { default as TrainingPlanBuilderSection } from "./TrainingPlanBuilderSection";
+export { default as LocalizedLearningSection } from "./LocalizedLearningSection";
+export { default as ReadinessGateSection } from "./ReadinessGateSection";
+export { default as OngoingLearningSection } from "./OngoingLearningSection";
+export { default as SharedResponsibilitySection } from "./SharedResponsibilitySection";
+export { default as TrainingFaqSection } from "./TrainingFaqSection";
+export { default as TrainingCta } from "./TrainingCta";

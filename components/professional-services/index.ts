@@ -1,0 +1,14 @@
+export { default as ServicesHero } from "./ServicesHero";
+export { default as OverviewSection } from "./OverviewSection";
+export { default as ScopeSection } from "./ScopeSection";
+export { default as WhenToUseSection } from "./WhenToUseSection";
+export { default as ServicePortfolioSection } from "./ServicePortfolioSection";
+export { default as DeliveryJourneySection } from "./DeliveryJourneySection";
+export { default as ScopingSection } from "./ScopingSection";
+export { default as StatementOfWorkSection } from "./StatementOfWorkSection";
+export { default as DeliveryGovernanceSection } from "./DeliveryGovernanceSection";
+export { default as GlobalDeliverySection } from "./GlobalDeliverySection";
+export { default as SecurityWorkspaceSection } from "./SecurityWorkspaceSection";
+export { default as KnowledgeTransferSection } from "./KnowledgeTransferSection";
+export { default as ServicesFaqSection } from "./ServicesFaqSection";
+export { default as ServicesCta } from "./ServicesCta";
