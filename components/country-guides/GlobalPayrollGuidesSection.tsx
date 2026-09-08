@@ -109,7 +109,7 @@ export default function GlobalPayrollGuidesSection() {
                 {/* Globe / Network Graphic Background */}
                 <div className="absolute inset-0 z-0 opacity-80">
                   <Image
-                    src="/images/country-guides/hero.png"
+                    src="/images/country-guides/hero1.png"
                     alt="Global digital network map"
                     fill
                     className="object-cover object-center"

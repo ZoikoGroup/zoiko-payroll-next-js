@@ -18,7 +18,7 @@ const topicsData: TopicCard[] = [
     description:
       "How inputs, cutoffs and pay dates flow from calculation to payday across jurisdictions.",
     tags: ["Cutoffs", "Cadence"],
-    imageSrc: "/images/country-guides/3.png",
+    imageSrc: "/images/country-guides/payroll-cycle.png",
     linkText: "Browse cycle guidance",
   },
   {
@@ -26,7 +26,7 @@ const topicsData: TopicCard[] = [
     description:
       "Withholding structures and social-insurance splits between employer and employee.",
     tags: ["Withholding", "Social insurance"],
-    imageSrc: "/images/country-guides/4.png",
+    imageSrc: "/images/country-guides/taxes-contributions.png",
     linkText: "Browse tax guidance",
   },
   {
@@ -34,7 +34,7 @@ const topicsData: TopicCard[] = [
     description:
       "Required payslip content and the statutory reports each authority expects.",
     tags: ["Payslips", "Filings"],
-    imageSrc: "/images/country-guides/5.png",
+    imageSrc: "/images/country-guides/payslips-filings.png",
     linkText: "Browse filing guidance",
   },
   {
@@ -42,7 +42,7 @@ const topicsData: TopicCard[] = [
     description:
       "Local payment currencies, banking conventions and cutoff/settlement context.",
     tags: ["Banking", "FX context"],
-    imageSrc: "/images/country-guides/6.png",
+    imageSrc: "/images/country-guides/payments.png",
     linkText: "Browse Payment guidance",
   },
   {
@@ -50,7 +50,7 @@ const topicsData: TopicCard[] = [
     description:
       "Tax-year boundaries, annual reconciliation and employee year-end statements.",
     tags: ["Reconciliation", "Annual forms"],
-    imageSrc: "/images/country-guides/7.png",
+    imageSrc: "/images/country-guides/year-end.png",
     linkText: "Browse year end guidance",
   },
   {
@@ -58,7 +58,7 @@ const topicsData: TopicCard[] = [
     description:
       "Whether local registration and authority relationships typically drive payroll.",
     tags: ["Registration", "Authorities"],
-    imageSrc: "/images/country-guides/8.png",
+    imageSrc: "/images/country-guides/employer-setup.png",
     linkText: "Browse set-up guidance",
   },
 ];
