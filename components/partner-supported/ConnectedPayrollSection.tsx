@@ -66,7 +66,7 @@ const features: FeatureCard[] = [
 export default function ConnectedPayrollSection() {
   return (
     <section className="relative w-full py-20 px-4 sm:px-6 lg:px-8 text-white overflow-hidden">
-      {/* Background Image with Dark Blue Overlay */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/partner-supported/bg.png"
@@ -74,7 +74,6 @@ export default function ConnectedPayrollSection() {
           fill
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[#092236]/85" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto space-y-12">

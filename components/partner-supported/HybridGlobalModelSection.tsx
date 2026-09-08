@@ -46,11 +46,10 @@ export default function HybridGlobalModelSection() {
           src="/images/partner-supported/bg1.png"
           alt="Hybrid global model background"
           fill
-          className="object-cover object-center opacity-30 mix-blend-overlay"
+          className="object-cover object-center"
           priority
         />
-        {/* Dark Blue Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#071C2EE0] via-[#0A3254BF] to-[#0A8FD066] backdrop-blur-xs" />
+        
         
       </div>
 
