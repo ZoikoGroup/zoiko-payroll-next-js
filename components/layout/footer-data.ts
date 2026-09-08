@@ -86,14 +86,14 @@ export const footerLinkColumns: FooterColumn[] = [
     title: "Implementation & services",
     links: [
       { label: "Implementation overview", href: "/product/implementation" },
-      { label: "Readiness assessment", href: "/product/implementation/readiness" },
+      { label: "Readiness assessment", href: "/implementation/readiness-assessment" },
       { label: "Data migration", href: "/implementation/data-migration" },
       { label: "Configuration", href: "/implementation/configuration" },
       { label: "Parallel runs and validation", href: "/implementation/parallel-runs" },
-      { label: "Change management", href: "/product/implementation/change-management" },
-      { label: "Training", href: "/product/implementation/training" },
+      { label: "Change management", href: "/implementation/change-management" },
+      { label: "Training", href: "/implementation/training" },
       { label: "Customer success", href: "/implementation/customer-success" },
-      { label: "Professional services", href: "/product/implementation/professional-services" },
+      { label: "Professional services", href: "/implementation/professional-services" },
     ],
   },
   {
