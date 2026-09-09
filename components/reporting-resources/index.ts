@@ -1,0 +1,12 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as DirectAnswerSection } from "./DirectAnswerSection";
+export { default as UnderstandPayrollSection } from "./UnderstandPayrollSection";
+export { default as RoutingSection } from "./RoutingSection";
+export { default as ReconciliationGuidanceSection } from "./ReconciliationGuidanceSection";
+export { default as ExportGuidanceSection } from "./ExportGuidanceSection";
+export { default as GlobalReportingBanner } from "./GlobalReportingBanner";
+export { default as AuditEvidenceSection } from "./AuditEvidenceSection";
+export { default as ImplementationReadinessSection } from "./ImplementationReadinessSection";
+export { default as CuratedResourcesSection } from "./CuratedResourcesSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaSection } from "./CtaSection";

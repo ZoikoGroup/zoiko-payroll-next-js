@@ -2,7 +2,7 @@
 
 export default function CoverageDefinitions() {
   return (
-    <section className="bg-white px-4 sm:px-6 lg:px-8 xl:px-40 py-20">
+    <section className="px-4 sm:px-6 lg:px-8 xl:px-40 py-20">
       <div className="max-w-[1116px] mx-auto flex flex-col gap-6">
 
         {/* Section header */}
@@ -155,7 +155,7 @@ export default function CoverageDefinitions() {
         </div>
 
         {/* Important distinction callout banner */}
-        <div className="w-[1116px] h-[103px] rounded-xl bg-[#F5F8FA] px-[22px] py-[19px] outline outline-1 outline-offset-[-1px] outline-[#D8E2E8] flex items-center gap-3.5">
+        <div className="w-[1116px] h-[103px] rounded-xl bg-[#F1F5F9] px-[22px] py-[19px] outline outline-1 outline-offset-[-1px] outline-[#E2E8F0] flex items-center gap-3.5">
           <div className="self-stretch py-px flex items-start">
             <div className="w-1 self-stretch rounded-[3px] bg-[#0A78C3]" />
           </div>

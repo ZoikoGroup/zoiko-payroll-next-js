@@ -92,11 +92,11 @@ export default function JurisdictionComparison() {
   ];
 
   return (
-    <div className="w-full bg-white py-20 px-6 sm:px-12 lg:px-40 flex flex-col items-center gap-12 font-['Segoe_UI',sans-serif]">
-      
+    <div className="w-full py-20 px-6 sm:px-12 lg:px-40 flex flex-col items-center gap-12 font-['Segoe_UI',sans-serif]">
+
       {/* ================= SECTION 1: COMPARE JURISDICTIONS ================= */}
       <div className="w-full max-w-[1117px] flex flex-col justify-start items-start gap-8">
-        
+
         {/* Header */}
         <div className="w-full max-w-[660px] flex flex-col justify-start items-start gap-3">
           <div className="flex items-center gap-1.5">
@@ -113,17 +113,24 @@ export default function JurisdictionComparison() {
         </div>
 
         {/* Comparison Table Card */}
-        <div className="w-full bg-white rounded-2xl shadow-[0px_1px_8px_0px_rgba(10,22,38,0.05),0px_1px_2px_0px_rgba(10,22,38,0.04)] outline outline-1 outline-offset-[-1px] outline-[#DFE1E6] flex flex-col overflow-hidden">
-          
-          {/* Top Selection Bar */}
+        <div className="w-full p-2 bg-white rounded-2xl shadow-[0px_1px_8px_0px_rgba(10,22,38,0.05),0px_1px_2px_0px_rgba(10,22,38,0.04)] outline outline-1 outline-offset-[-1px] outline-[#DFE1E6] flex flex-col overflow-hidden">
+
+          {/* Top Selection Bar — flags only here */}
           <div className="px-6 py-4 border-b border-[#E2E8F0] flex flex-wrap justify-between items-center gap-4">
             <div className="flex items-center gap-2.5 flex-wrap">
+
+              {/* Germany pill */}
               <div className="px-3 py-1.5 bg-white rounded-lg outline outline-1 outline-offset-[-1px] outline-[#DFE1E6] text-[#0A1626] text-xs font-bold cursor-pointer hover:bg-slate-50 transition-colors flex items-center gap-1.5">
-                🇩🇪 Germany ✕
+                <img src="https://flagcdn.com/20x15/de.png" alt="DE" width={20} height={15} className="shrink-0" />
+                Germany ✕
               </div>
+
+              {/* Singapore pill */}
               <div className="px-3 py-1.5 bg-white rounded-lg outline outline-1 outline-offset-[-1px] outline-[#DFE1E6] text-[#0A1626] text-xs font-bold cursor-pointer hover:bg-slate-50 transition-colors flex items-center gap-1.5">
-                🇸🇬 Singapore ✕
+                <img src="https://flagcdn.com/20x15/sg.png" alt="SG" width={20} height={15} className="shrink-0" />
+                Singapore ✕
               </div>
+
               <div className="px-3 py-1.5 bg-white rounded-lg outline outline-1 outline-offset-[-1px] outline-dashed outline-[#CBD5E1] text-[#64748B] text-xs font-bold cursor-pointer hover:bg-slate-50 transition-colors">
                 + Add jurisdiction
               </div>
@@ -137,7 +144,7 @@ export default function JurisdictionComparison() {
             </button>
           </div>
 
-          {/* Table Header Row */}
+          {/* Table Header Row — plain text, no flags */}
           <div className="flex justify-between items-center bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#64748B] text-xs font-bold">
             <div className="w-56 px-6 py-3.5 text-left">Dimension</div>
             <div className="flex-1 px-6 py-3.5 text-center">Germany</div>
@@ -168,9 +175,9 @@ export default function JurisdictionComparison() {
 
       </div>
 
-      {/* ================= SECTION 2: SUB-JURISDICTIONS (MATCHING FIGMA) ================= */}
+      {/* ================= SECTION 2: SUB-JURISDICTIONS ================= */}
       <div className="w-full max-w-[1117px] p-8 lg:p-12 bg-[#0C2B47] rounded-[24px] flex flex-col lg:flex-row justify-between items-center gap-8 shadow-sm">
-        
+
         {/* Left Column Description */}
         <div className="w-full lg:w-[486px] flex flex-col justify-start items-start gap-3.5 text-white">
           <div className="flex items-center gap-1.5">
@@ -191,10 +198,11 @@ export default function JurisdictionComparison() {
 
         {/* Right Column: Visual Hierarchy Card */}
         <div className="w-full lg:w-[470px] bg-white rounded-2xl p-6 shadow-lg flex flex-col gap-2 relative shrink-0">
-          
+
           {/* Level 1: Country Box */}
-          <div className="w-full px-4 py-3 bg-[#EEF4FA] rounded-xl flex items-center text-sm font-bold text-[#0A1626]">
-            🇺🇸 United States — Country
+          <div className="w-full px-4 py-3 bg-[#EEF4FA] rounded-xl flex items-center gap-2 text-sm font-bold text-[#0A1626]">
+            <img src="https://flagcdn.com/20x15/us.png" alt="US" width={20} height={15} className="shrink-0" />
+            United States — Country
           </div>
 
           {/* Vertical Connector Line 1 */}

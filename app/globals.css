@@ -27,6 +27,34 @@
   --color-footer-mid: var(--footer-mid);
   --color-footer-end: var(--footer-end);
 
+  /* Procurement page custom colors */
+  --color-azure-16: #082F49;
+  --color-azure-38: #4E6172;
+  --color-azure-40: #0A78C2;
+  --color-azure-42: #0B6BAA;
+  --color-azure-49: #4FA9DE;
+  --color-azure-53: #051B2B;
+  --color-azure-56: #959595;
+  --color-azure-74: #A8C8D8;
+  --color-azure-76: #7EAFC2;
+  --color-azure-80: #6B9DB8;
+  --color-azure-85: #B5C8D4;
+  --color-azure-89: #DCE6EC;
+  --color-grey-92: #F0F4F7;
+  --color-grey-93: #E8ECF0;
+  --color-grey-94: #E1F0FA;
+  --color-grey-95: #F5F8FA;
+  --color-grey-97: #F6F4EE;
+  --color-spring-green-33: #4D9E6A;
+  --color-spring-green-43: #3D9463;
+  --color-orange-37: #D4773A;
+  --color-orange-48: #CC6633;
+  --color-orange-90: #FFF0E5;
+  --color-blue-45: #4A8DC7;
+  --color-blue-59: #3D7AB8;
+  --color-red-44: #CC3333;
+  --color-red-50: #D94444;
+
   --font-sans: var(--font-inter);
   --font-mono: var(--font-ibm-plex-mono);
   --font-display: var(--font-space-grotesk);

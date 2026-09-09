@@ -1,122 +1,153 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
+import Link from "next/link";
 
-const faqs = [
-  {
-    question: "What is a country payroll guide?",
-    answer:
-      "A country payroll guide explains the payroll rules and operating context that commonly affect employers in a specific jurisdiction — payroll cycles, withholding, social contributions, filings, payslips, payments and year-end obligations.",
-  },
-  {
-    question: "Does a guide mean Zoiko Payroll is available there?",
-    answer:
-      "Not necessarily. A guide provides informational context about payroll rules in a jurisdiction. Commercial availability is covered separately in the Jurisdiction Directory.",
-  },
-  {
-    question: "How current are the payroll guides?",
-    answer:
-      "Every guide displays a review date. High-risk numeric facts are verified against primary sources and effective-dated where applicable.",
-  },
-  {
-    question: "Are the guides legal or tax advice?",
-    answer:
-      "No. Guide content is informational only and does not constitute legal, tax, accounting, payroll, employment or other professional advice.",
-  },
-  {
-    question: "Why can payroll rules vary within one country?",
-    answer:
-      "Many countries have sub-jurisdictional rules — state, provincial, cantonal or municipal — that can materially affect payroll obligations, rates and filing requirements.",
-  },
-  {
-    question: "Where do I find setup information to implement payroll?",
-    answer:
-      "Setup and implementation guidance is covered in the Local Payroll Requirements section and implementation resources, not in the country guides themselves.",
-  },
-];
+export default function CountryGuidesFAQ() {
+  const [openIndex, setOpenIndex] = useState(0);
 
-const relatedPages = [
-  "Jurisdiction Directory",
-  "Local Payroll Requirements",
-  "Global Payroll Guide",
-  "Payroll Glossary",
-];
-
-export default function FaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const faqs = [
+    {
+      question: "What is a country payroll guide?",
+      answer: (
+        <>
+          A country payroll guide explains the payroll rules and operating context that commonly affect
+          <br />
+          employers in a specific jurisdiction — payroll cycles, withholding, social contributions, filings,
+          <br />
+          payslips, payments and year-end obligations.
+        </>
+      ),
+    },
+    {
+      question: "Does a guide mean Zoiko Payroll is available there?",
+      answer:
+        "No, publishing a country guide does not guarantee active commercial availability. Coverage and support depend on specific jurisdictional capabilities and service delivery options.",
+    },
+    {
+      question: "How current are the payroll guides?",
+      answer:
+        "Guides are reviewed periodically based on regulatory updates and material legislative changes. Effective dates and source verification timestamps are noted where applicable.",
+    },
+    {
+      question: "Are the guides legal or tax advice?",
+      answer:
+        "No, all guides are provided for general informational purposes only and do not constitute formal legal, tax, or professional payroll advisory advice.",
+    },
+    {
+      question: "Why can payroll rules vary within one country?",
+      answer:
+        "Rules may vary due to sub-national jurisdiction levels (such as state, provincial, or local tax authorities), sector-specific collective bargaining agreements, or company size thresholds.",
+    },
+    {
+      question: "Where do I find setup information to implement payroll?",
+      answer:
+        "Detailed onboarding and implementation workflows can be accessed via the Jurisdiction Directory or through your dedicated implementation workspace.",
+    },
+  ];
 
   return (
-    <section className="w-full bg-white border-t border-[#E2E8F0] py-20">
-      <div className="w-full max-w-[1440px] mx-auto pl-10 pr-6 sm:pl-20 sm:pr-12 lg:pl-40 lg:pr-24 flex flex-col gap-10">
-        {/* Header */}
+    <section className="w-full bg-white py-20 font-['Inter',sans-serif]">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-12 lg:pl-40 lg:pr-24 flex flex-col gap-10">
+        
+        {/* Section Header */}
         <div className="max-w-[640px] flex flex-col gap-3.5">
-          <div className="relative h-3.5">
-            <div className="w-1.5 h-3.5 absolute left-[-1.48px] top-0 bg-sky-600 rounded-[1px]" />
-            <div className="absolute left-[11px] top-0 text-sky-600 text-xs font-bold font-['Inter'] uppercase tracking-wide">
-              FREQUENTLY ASKED QUESTIONS
-            </div>
+          <div className="flex items-center gap-1.5 text-sky-600 text-xs font-bold uppercase tracking-wide">
+            <span>/</span>
+            <span>FREQUENTLY ASKED QUESTIONS</span>
           </div>
-          <h2 className="text-[#082F49] text-3xl font-bold font-['Inter'] leading-10">
+          <h2 className="text-[#0A1626] text-3xl font-bold leading-10">
             Questions about the country guides.
           </h2>
         </div>
 
-        {/* Content */}
-        <div className="flex gap-10">
-          {/* FAQ List */}
-          <div className="flex-1 flex flex-col">
-            {faqs.map((faq, idx) => (
-              <div
-                key={idx}
-                className={`py-5 ${
-                  idx < faqs.length - 1 ? "border-b border-[#E2E8F0]" : ""
-                }`}
-              >
+        {/* Main Content: Accordion + Sidebar */}
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-14 items-start justify-between">
+          
+          {/* FAQ Accordion List */}
+          <div className="flex-1 max-w-[680px] w-full flex flex-col border-t border-[#C9DAE8]">
+            {faqs.map((faq, idx) => {
+              const isOpen = openIndex === idx;
+              return (
                 <div
-                  className="flex justify-between items-center cursor-pointer"
-                  onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
+                  key={idx}
+                  className="border-b border-[#C9DAE8] py-5 flex flex-col gap-3 transition-all"
                 >
-                  <span className="text-[#082F49] text-base font-bold font-['Inter']">
-                    {faq.question}
-                  </span>
-                  <span className="text-sky-600 text-lg font-normal font-['Inter']">
-                    {openIndex === idx ? "−" : "+"}
-                  </span>
-                </div>
-                {openIndex === idx && (
-                  <div className="mt-3 max-w-[620px]">
-                    <p className="text-[#4E6172] text-sm font-normal font-['Inter'] leading-6">
+                  <button
+                    onClick={() => setOpenIndex(isOpen ? -1 : idx)}
+                    className="w-full flex justify-between items-center text-left focus:outline-none group"
+                  >
+                    <span className="text-[#0A1626] text-base font-bold leading-snug">
+                      {faq.question}
+                    </span>
+                    <span className="text-sky-600 text-lg font-normal shrink-0 ml-4">
+                      {isOpen ? "−" : "+"}
+                    </span>
+                  </button>
+
+                  {isOpen && (
+                    <div className="text-[#475569] text-sm font-normal leading-6 pt-1">
                       {faq.answer}
-                    </p>
-                  </div>
-                )}
-              </div>
-            ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
 
-          {/* Related Pages Sidebar */}
-          <div className="w-96 px-8 py-6 bg-gradient-to-br from-[#0F4C75] to-[#1B6EB5] rounded-xl flex flex-col gap-4 shrink-0">
-            <span className="text-[#64748B] text-xs font-bold font-['Inter'] uppercase tracking-wide">
-              Related pages
+          {/* Related Pages Sidebar Card */}
+          <div className="w-full lg:w-[380px] shrink-0 p-6 bg-[#0E2A47] rounded-2xl flex flex-col gap-4 text-white shadow-sm">
+            
+            {/* Header */}
+            <span className="text-[#8697A8] text-xs font-bold uppercase tracking-wide">
+              RELATED PAGES
             </span>
-            <div className="flex flex-col gap-2">
-              {relatedPages.map((page) => (
-                <div
-                  key={page}
-                  className="px-3 py-2.5 bg-white rounded-lg outline outline-1 outline-offset-[-1px] outline-[#E2E8F0] flex items-center justify-center"
-                >
-                  <span className="text-[#082F49] text-xs font-bold font-['Inter'] text-center">
-                    {page}
-                  </span>
-                </div>
-              ))}
+
+            {/* 2x2 Grid of pill buttons (all 1 line strictly) */}
+            <div className="grid grid-cols-2 gap-2 w-full">
+              <Link
+                href="#"
+                className="px-2 py-2.5 bg-white rounded-lg text-[#0A1626] text-[11px] font-bold text-center flex items-center justify-center whitespace-nowrap hover:bg-slate-50 transition-colors shadow-2xs leading-none"
+              >
+                Jurisdiction Directory
+              </Link>
+
+              <Link
+                href="#"
+                className="px-1.5 py-2.5 bg-white rounded-lg text-[#0A1626] text-[10.5px] font-bold text-center flex items-center justify-center whitespace-nowrap hover:bg-slate-50 transition-colors shadow-2xs leading-none"
+              >
+                Local Payroll Requirements
+              </Link>
+
+              <Link
+                href="#"
+                className="px-2 py-2.5 bg-white rounded-lg text-[#0A1626] text-[11px] font-bold text-center flex items-center justify-center whitespace-nowrap hover:bg-slate-50 transition-colors shadow-2xs leading-none"
+              >
+                Global Payroll Guide
+              </Link>
+
+              <Link
+                href="#"
+                className="px-2 py-2.5 bg-white rounded-lg text-[#0A1626] text-[11px] font-bold text-center flex items-center justify-center whitespace-nowrap hover:bg-slate-50 transition-colors shadow-2xs leading-none"
+              >
+                Payroll Glossary
+              </Link>
             </div>
-            <p className="text-[#94A3B8] text-xs font-normal font-['Inter'] leading-5">
-              Guide content and commercial payroll coverage are governed separately. Use the
-              Jurisdiction Directory to confirm current capabilities and delivery models.
+
+            {/* Explanatory Text in color/azure/85 */}
+            <p className="text-[#B9CDE3] text-xs font-normal leading-5 pt-1">
+              Guide content and commercial payroll coverage
+              <br />
+              are governed separately. Use the Jurisdiction
+              <br />
+              Directory to confirm current capabilities and
+              <br />
+              delivery models.
             </p>
           </div>
+
         </div>
+
       </div>
     </section>
   );

@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# editor / OS artifacts
+/.vscode
+*.lnk
+
+# accidental nested build cache (duplicate of project folder name)
+/zoiko-payroll-next-js/
+
+# design source archives (not referenced by the app)
+/public/*.zip

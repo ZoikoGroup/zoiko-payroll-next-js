@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AnnouncementBar from "@/components/layout/AnnouncementBar";
+import HydrationFix from "@/components/HydrationFix";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -55,7 +56,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${ibmPlexMono.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} ${plusJakartaSans.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col">
+      <body suppressHydrationWarning className="flex min-h-full flex-col">
+        <HydrationFix />
         <AnnouncementBar />
         <Header />
         <main className="flex-1">{children}</main>

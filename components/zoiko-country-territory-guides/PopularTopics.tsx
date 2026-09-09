@@ -1,113 +1,141 @@
-"use client";
+import React from "react";
+import Image from "next/image";
 
-const topics = [
-  {
-    title: "Payroll cycle",
-    tags: ["Cutoffs", "Cadence"],
-    description:
-      "How inputs, cutoffs and pay dates flow from calculation to payday across jurisdictions.",
-    link: "Browse cycle guidance →",
-  },
-  {
-    title: "Taxes & contributions",
-    tags: ["Withholding", "Social insurance"],
-    description:
-      "Withholding structures and social-insurance splits between employer and employee.",
-    link: "Browse tax guidance →",
-  },
-  {
-    title: "Payslips & filings",
-    tags: ["Payslips", "Filings"],
-    description:
-      "Required payslip content and the statutory reports each authority expects.",
-    link: "Browse filing guidance →",
-  },
-  {
-    title: "Payments",
-    tags: ["Banking", "FX context"],
-    description:
-      "Local payment currencies, banking conventions and cutoff/settlement context.",
-    link: "Browse payment guidance →",
-  },
-  {
-    title: "Year-end",
-    tags: ["Reconciliation", "Annual forms"],
-    description:
-      "Tax-year boundaries, annual reconciliation and employee year-end statements.",
-    link: "Browse year end guidance →",
-  },
-  {
-    title: "Employer Set-up",
-    tags: ["Registration", "Authorities"],
-    description:
-      "Whether local registration and authority relationships typically drive payroll.",
-    link: "Browse set-up guidance →",
-  },
-];
+export default function PopularPayrollTopics() {
+  const topics = [
+    {
+      title: "Payroll cycle",
+      tags: ["Cutoffs", "Cadence"],
+      description: "How inputs, cutoffs and pay dates flow from calculation to payday across jurisdictions.",
+      linkText: "Browse cycle guidance",
+      href: "#",
+      image: "/v1.png",
+    },
+    {
+      title: "Taxes & contributions",
+      tags: ["Withholding", "Social insurance"],
+      description: "Withholding structures and social-insurance splits between employer and employee.",
+      linkText: "Browse tax guidance",
+      href: "#",
+      image: "/v2.png",
+    },
+    {
+      title: "Payslips & filings",
+      tags: ["Payslips", "Filings"],
+      description: "Required payslip content and the statutory reports each authority expects.",
+      linkText: "Browse filling guidance",
+      href: "#",
+      image: "/v3.png",
+    },
+    {
+      title: "Payments",
+      tags: ["Banking", "FX context"],
+      description: "Local payment currencies, banking conventions and cutoff/settlement context.",
+      linkText: "Browse Payment guidance",
+      href: "#",
+      image: "/v4.png",
+    },
+    {
+      title: "Year-end",
+      tags: ["Reconciliation", "Annual forms"],
+      description: "Tax-year boundaries, annual reconciliation and employee year-end statements.",
+      linkText: "Browse year end guidance",
+      href: "#",
+      image: "/v5.png",
+    },
+    {
+      title: "Employer Set-up",
+      tags: ["Registration", "Authorities"],
+      description: "Whether local registration and authority relationships typically drive payroll.",
+      linkText: "Browse set-up guidance",
+      href: "#",
+      image: "/v6.png",
+    },
+  ];
 
-export default function PopularTopics() {
   return (
-    <section className="w-full bg-white border-t border-[#E2E8F0] py-20">
-      <div className="w-full max-w-[1440px] mx-auto flex flex-col gap-8">
+    <section className="w-full bg-white py-20 border-t border-[#E2E8F0] font-['Inter',sans-serif]">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-20 xl:px-40 flex flex-col gap-10">
+
         {/* Header */}
-        <div className="w-full pl-10 pr-6 sm:pl-20 sm:pr-12 lg:pl-40 lg:pr-16 flex flex-col gap-10">
-          <div className="max-w-[640px] flex flex-col gap-3.5">
-            <div className="relative h-3.5">
-              <div className="w-1.5 h-3.5 absolute left-[-1.48px] top-0 bg-sky-600 rounded-[1px]" />
-              <div className="absolute left-[11px] top-0 text-sky-600 text-xs font-bold font-['Inter'] uppercase tracking-wide">
-                POPULAR PAYROLL TOPICS
-              </div>
-            </div>
-            <h2 className="text-[#082F49] text-3xl font-bold font-['Inter'] leading-10">
-              Browse guidance by payroll subject.
-            </h2>
-            <p className="text-[#4E6172] text-base font-normal font-['Inter'] leading-6">
-              Topic landing pages exist only where meaningful, maintained content is available across
-              guides.
-            </p>
+        <div className="max-w-[640px] flex flex-col gap-3.5">
+          <div className="flex items-center gap-1.5 text-[#1D5FD6] text-xs font-bold uppercase tracking-wide">
+            <span>/</span>
+            <span>POPULAR PAYROLL TOPICS</span>
           </div>
+          <h2 className="text-[#0E2A47] text-3xl font-bold leading-10">
+            Browse guidance by payroll subject.
+          </h2>
+          <p className="text-[#566B80] text-base leading-6 font-normal">
+            Topic landing pages exist only where meaningful, maintained content is available across guides.
+          </p>
         </div>
 
-        {/* Topic Cards */}
-        <div className="w-full px-10 sm:px-20 lg:px-40 flex flex-col gap-3">
-          {topics.map((topic) => (
+        {/* Topics Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {topics.map((topic, index) => (
             <div
-              key={topic.title}
-              className="w-full pl-3.5 pr-5 pt-4 pb-2.5 bg-white rounded-2xl outline outline-1 outline-offset-[-1px] outline-[#EFF4F7] flex items-start gap-4"
+              key={index}
+              className="bg-white rounded-2xl border border-[#6C8AA6]/20 p-3.5 pl-3.5 pr-5 flex gap-4 hover:shadow-md transition-shadow duration-200"
             >
-              {/* Placeholder Image */}
-              <div className="w-[105px] h-[141px] rounded-lg bg-gradient-to-br from-[#E2E8F0] to-[#CBD5E1] shrink-0" />
+              {/* Image Thumbnail */}
+              <div className="relative w-[105px] h-[141px] shrink-0 rounded-lg overflow-hidden bg-slate-100">
+                <Image
+                  src={topic.image}
+                  alt={topic.title}
+                  width={105}
+                  height={141}
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-              {/* Content */}
-              <div className="w-60 flex flex-col gap-6">
+              {/* Card Body */}
+              <div className="flex-1 flex flex-col justify-between py-0.5">
                 <div className="flex flex-col gap-2.5">
-                  <h3 className="text-[#0F4C75] text-base font-bold font-['Inter'] leading-6">
+                  <h3 className="text-[#0E2A47] text-base font-bold leading-6">
                     {topic.title}
                   </h3>
-                  <div className="inline-flex items-center gap-1">
-                    {topic.tags.map((tag) => (
+
+                  {/* ✅ Plain string + line-clamp-3 = strictly 3 lines at any width */}
+                  <p className="text-black text-xs font-light leading-4 line-clamp-3">
+                    {topic.description}
+                  </p>
+
+                  {/* Pill Tags */}
+                  <div className="flex flex-nowrap items-center gap-1">
+                    {topic.tags.map((tag, tagIdx) => (
                       <span
-                        key={tag}
-                        className="px-4 bg-[#0F4C75] rounded-full text-white text-[10px] font-normal font-['Inter'] leading-6"
+                        key={tagIdx}
+                        className="px-3.5 py-0.5 bg-[#566B80] text-white text-[10px] font-normal rounded-[50px] leading-6 whitespace-nowrap shrink-0"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <p className="w-52 text-black text-xs font-light font-['Inter'] leading-4">
-                    {topic.description}
-                  </p>
                 </div>
-                <div className="w-36">
-                  <span className="text-[#3B82F6] text-xs font-normal font-['Inter'] leading-6">
-                    {topic.link}
-                  </span>
+
+                {/* Footer Link */}
+                <div className="pt-2 border-t border-[#6C8AA6]/30">
+                  <a
+                    href={topic.href}
+                    className="text-[#1D5FD6] text-xs font-normal leading-6 hover:underline inline-flex items-center gap-1"
+                  >
+                    <span>{topic.linkText}</span>
+                    {/* ✅ Arrow reduced from w-2 h-2 to w-[5px] h-[5px] */}
+                    <Image
+                      src="/arr.png"
+                      alt=""
+                      width={5}
+                      height={5}
+                      className="w-[5px] h-[5px] object-contain inline-block"
+                    />
+                  </a>
                 </div>
-                <div className="w-52 h-px outline outline-1 outline-offset-[-0.50px] outline-slate-500/40" />
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
