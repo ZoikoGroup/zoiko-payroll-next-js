@@ -46,7 +46,7 @@ export default function SupportFirstCtaSection() {
           </a>
 
           <a
-            href="#documentation"
+            href="/integrations/api-documentation"
             className="px-6 py-3.5 rounded-xl bg-transparent border border-white/30 hover:border-white/60 hover:bg-white/5 text-white text-xs sm:text-sm font-bold transition-all backdrop-blur-xs cursor-pointer"
           >
             Browse integration documentation

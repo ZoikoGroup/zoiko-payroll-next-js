@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function EvidenceCardSystemSection() {
@@ -161,12 +162,12 @@ export default function EvidenceCardSystemSection() {
 
         {/* Bottom Action Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-          <button className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#154f78] text-white text-xs sm:text-sm font-bold rounded-xl shadow-lg transition-colors cursor-pointer">
+          <Link href="/contact" className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#154f78] text-white text-xs sm:text-sm font-bold rounded-xl shadow-lg transition-colors cursor-pointer">
             Contact support
-          </button>
-          <button className="px-6 py-3 bg-[#FFFFFF1A] hover:bg-white/10 text-white border border-white/30 text-xs sm:text-sm font-bold rounded-xl transition-colors cursor-pointer">
+          </Link>
+          <Link href="/resources/customer-stories" className="px-6 py-3 bg-[#FFFFFF1A] hover:bg-white/10 text-white border border-white/30 text-xs sm:text-sm font-bold rounded-xl transition-colors cursor-pointer">
             Customer-Stories
-          </button>
+          </Link>
         </div>
       </section>
     </div>

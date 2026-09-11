@@ -26,7 +26,7 @@ export default function ContactSection() {
           Open Cookie Settings
         </button>
         <Link
-          href="/privacy-notice"
+          href="/legal/privacy-notice"
           className="px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-[#0F172A] bg-white border border-slate-200/80 hover:bg-slate-50 shadow-sm transition-colors"
         >
           Review Privacy Notice

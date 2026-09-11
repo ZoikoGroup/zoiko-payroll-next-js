@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 const stages = [
@@ -104,11 +105,11 @@ export default function Implementation() {
               jurisdiction availability before anything else.
             </div>
             <div className="w-96 h-16 pt-3.5 flex items-start gap-3.5">
-              <div className="w-56 px-5 py-3 bg-gradient-to-b from-blue-600 rounded-[10px] shadow-[0px_6px_16px_0px_rgba(11,94,153,0.28)] flex items-center justify-center cursor-pointer">
+              <Link href="/book-a-demo" className="w-56 px-5 py-3 bg-gradient-to-b from-blue-600 rounded-[10px] shadow-[0px_6px_16px_0px_rgba(11,94,153,0.28)] flex items-center justify-center cursor-pointer">
                 <span className="text-white text-sm font-semibold">
                   Book a demo
                 </span>
-              </div>
+              </Link>
             </div>
           </div>
 

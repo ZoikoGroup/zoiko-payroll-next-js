@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -34,9 +35,9 @@ export default function ValidateIntegrationCtaSection() {
           </button>
 
           {/* Secondary Outlined Button */}
-          <button className="w-full sm:w-auto px-6 py-3.5 bg-slate-900/40 hover:bg-slate-800/60 border border-slate-500/50 text-white font-semibold text-xs sm:text-sm rounded-xl backdrop-blur-xs transition-colors cursor-pointer">
+          <Link href="/contact" className="w-full sm:w-auto px-6 py-3.5 bg-slate-900/40 hover:bg-slate-800/60 border border-slate-500/50 text-white font-semibold text-xs sm:text-sm rounded-xl backdrop-blur-xs transition-colors cursor-pointer">
             Talk to a specialist
-          </button>
+          </Link>
         </div>
       </div>
     </section>

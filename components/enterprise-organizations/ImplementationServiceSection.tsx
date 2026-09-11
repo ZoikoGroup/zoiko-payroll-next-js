@@ -16,7 +16,7 @@ export default function ImplementationServiceSection() {
             <div className="bg-[#eef0f4] border border-[#e3e7ec] h-[315px] xl:h-[375px] overflow-hidden relative rounded-[16px] w-full lg:w-[400px] xl:w-[500px]">
               <div className="absolute inset-0 left-[-6.8%] top-[-0.3%] w-[112.4%] h-[100%]">
                 <img
-                  src="http://localhost:3845/assets/2a52af53c6e02a4fcaa9a005e658ae1cc78eb415.png"
+                  src="/images/enterprise-organizations/implementation-service.png"
                   alt="Implementation stages and service cadence"
                   loading="lazy"
                   className="absolute inset-0 max-w-none object-cover size-full"

@@ -14,24 +14,24 @@ const rightsData: RightCard[] = [
     title: "Access",
     description:
       "Where applicable to your relationship with Zoiko Payroll and permitted by law.",
-    linkHref: "#request",
+    linkHref: "/contact",
   },
   {
     title: "Correction",
     description:
       "Applies to inaccurate personal data Zoiko controls directly; customer-directed payroll data corrections route through the customer.",
-    linkHref: "#request",
+    linkHref: "/contact",
   },
   {
     title: "Deletion",
     description: "Subject to retention obligations and approved exceptions.",
-    linkHref: "#request",
+    linkHref: "/contact",
   },
   {
     title: "Objection / restriction",
     description:
       "Where applicable under the relevant legal framework for your context.",
-    linkHref: "#request",
+    linkHref: "/contact",
   },
 ];
 

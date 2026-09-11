@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function TrustIntegrationsProofSection() {
@@ -89,9 +90,9 @@ export default function TrustIntegrationsProofSection() {
 
           {/* View Integrations Button */}
           <div className="pt-2">
-            <button className="px-6 py-2.5 rounded-xl border border-slate-200 bg-white text-[#07243B] font-bold text-xs hover:border-slate-300 hover:bg-slate-50 transition-colors shadow-2xs">
+            <Link href="/integrations" className="px-6 py-2.5 rounded-xl border border-slate-200 bg-white text-[#07243B] font-bold text-xs hover:border-slate-300 hover:bg-slate-50 transition-colors shadow-2xs">
               View integrations
-            </button>
+            </Link>
           </div>
         </div>
 

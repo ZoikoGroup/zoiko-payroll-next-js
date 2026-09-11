@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -79,9 +80,9 @@ export default function PlanFitNavigatorSection() {
                 <button className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-[#2E9BDD] via-[#0F5688] to-[#0A3D63] hover:bg-[#2375b0] text-white text-xs sm:text-sm font-bold shadow-md transition-colors cursor-pointer">
                   Choose Core
                 </button>
-                <button className="w-full py-3 px-4 rounded-xl hover:bg-slate-750 text-slate-200 border border-[#FFFFFF59] text-xs sm:text-sm font-bold transition-colors cursor-pointer">
+                <Link href="/contact" className="w-full py-3 px-4 rounded-xl hover:bg-slate-750 text-slate-200 border border-[#FFFFFF59] text-xs sm:text-sm font-bold transition-colors cursor-pointer">
                   Talk to Payroll Sales
-                </button>
+                </Link>
               </div>
             </div>
           </div>

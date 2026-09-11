@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -56,13 +57,13 @@ export default function PayrollCloseAuditHeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2B9BD7] to-[#1D74B4] hover:from-[#1D74B4] hover:to-[#165B8E] text-white text-sm font-semibold transition-all shadow-md cursor-pointer">
+              <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2B9BD7] to-[#1D74B4] hover:from-[#1D74B4] hover:to-[#165B8E] text-white text-sm font-semibold transition-all shadow-md cursor-pointer">
                 Book a demo
-              </button>
-              <button className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white text-sm font-semibold border border-white/30 backdrop-blur-xs transition-colors cursor-pointer flex items-center gap-2">
+              </Link>
+              <Link href="/payroll-operations/payments-orchestration" className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white text-sm font-semibold border border-white/30 backdrop-blur-xs transition-colors cursor-pointer flex items-center gap-2">
                 <span>Payments Orchestration</span>
                 <ArrowRight className="w-4 h-4 text-white" />
-              </button>
+              </Link>
             </div>
           </div>
 

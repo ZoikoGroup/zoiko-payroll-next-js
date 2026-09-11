@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -27,20 +28,18 @@ export default function PayrollConfigurationSection() {
             {/* Buttons Row */}
             <div className="flex flex-wrap items-center gap-3">
               {/* Primary Button */}
-              <button
-                type="button"
+              <Link href="/implementation/readiness-assessment"
                 className="bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] hover:from-[#0863A1] hover:to-[#024478] text-white font-semibold text-xs sm:text-sm px-5 py-3 rounded-xl transition-all shadow-xs cursor-pointer active:scale-[0.98]"
               >
                 Access configuration readiness
-              </button>
+              </Link>
 
               {/* Secondary Button */}
-              <button
-                type="button"
+              <Link href="/contact"
                 className="bg-white hover:bg-slate-50 border border-[#E2E8F0] text-[#0B192C] font-semibold text-xs sm:text-sm px-5 py-3 rounded-xl transition-all shadow-xs cursor-pointer active:scale-[0.98]"
               >
                 Talk to an implementation specialist
-              </button>
+              </Link>
             </div>
           </div>
 

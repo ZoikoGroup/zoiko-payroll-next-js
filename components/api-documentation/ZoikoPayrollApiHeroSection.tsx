@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -46,23 +47,23 @@ export default function ZoikoPayrollApiHeroSection() {
               <button className="bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#087bb5] text-white text-xs font-semibold px-6 py-3.5 rounded-xl shadow-md transition-colors cursor-pointer">
                 Explore API documentation
               </button>
-              <button className="border border-slate-500/80 hover:border-slate-300 text-white text-xs font-semibold px-6 py-3.5 rounded-xl transition-colors cursor-pointer backdrop-blur-xs">
+              <Link href="/integrations" className="border border-slate-500/80 hover:border-slate-300 text-white text-xs font-semibold px-6 py-3.5 rounded-xl transition-colors cursor-pointer backdrop-blur-xs">
                 View integration use cases
-              </button>
+              </Link>
             </div>
 
             {/* Footer Text Links */}
             <div className="pt-2 text-[11px] text-slate-400">
               Existing developer?{" "}
               <a
-                href="#api-changes"
+                href="/resources/release-notes"
                 className="text-[#8FD0F2] hover:text-white transition-colors"
               >
                 View API changes
               </a>{" "}
               ·{" "}
               <a
-                href="#support"
+                href="/integrations/support"
                 className="text-[#8FD0F2] hover:text-white transition-colors"
               >
                 Get integration support

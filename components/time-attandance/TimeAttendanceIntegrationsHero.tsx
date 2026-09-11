@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -78,12 +79,11 @@ export default function TimeAttendanceIntegrationsHero() {
 
             {/* CTA Button */}
             <div className="flex flex-wrap items-center gap-3 pt-2">
-              <button
-                type="button"
+              <Link href="/contact"
                 className="px-5 py-3 rounded-xl bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:bg-[#087ab3] text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm cursor-pointer"
               >
                 Contact Now
-              </button>
+              </Link>
             </div>
           </div>
 

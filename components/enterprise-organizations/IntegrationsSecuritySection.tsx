@@ -34,7 +34,7 @@ export default function IntegrationsSecuritySection() {
             <div className="bg-[#eef0f4] border border-[#e3e7ec] h-[315px] xl:h-[375px] overflow-hidden relative rounded-[16px] w-full lg:w-[400px] xl:w-[500px]">
               <div className="absolute inset-0 left-[-7.4%] top-[-0.26%] w-[114.4%] h-[101.6%]">
                 <img
-                  src="http://localhost:3845/assets/95cbcb5d9cd47e111e2e958700fee787d330846a.png"
+                  src="/images/enterprise-organizations/integrations-security.png"
                   alt="Integrations and security dashboard"
                   loading="lazy"
                   className="absolute inset-0 max-w-none object-cover size-full"

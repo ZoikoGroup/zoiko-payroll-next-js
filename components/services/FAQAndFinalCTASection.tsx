@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
@@ -124,18 +125,16 @@ export default function FAQAndFinalCTASection() {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-                <button
-                  type="button"
+                <Link href="/contact"
                   className="text-xs sm:text-sm font-bold bg-gradient-to-r from-[#2C90D0] to-[#117DC5] hover:opacity-95 text-white px-6 py-3.5 rounded-xl shadow-md transition-opacity cursor-pointer text-center"
                 >
                   Request Custom Quote
-                </button>
-                <button
-                  type="button"
+                </Link>
+                <Link href="/book-a-demo"
                   className="text-xs sm:text-sm font-bold bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3.5 rounded-xl transition-colors cursor-pointer text-center"
                 >
                   Book a demo
-                </button>
+                </Link>
               </div>
             </div>
 

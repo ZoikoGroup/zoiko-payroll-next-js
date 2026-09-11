@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Plus, X } from "lucide-react";
@@ -161,9 +162,9 @@ export default function FAQAndCTASection() {
 
               {/* Action Button */}
               <div className="pt-2">
-                <button className="px-5 py-3 rounded-xl bg-[#2F6FED] hover:bg-[#255BC0] text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm cursor-pointer">
+                <Link href="/contact" className="px-5 py-3 rounded-xl bg-[#2F6FED] hover:bg-[#255BC0] text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm cursor-pointer">
                   Talk to an integration specialist
-                </button>
+                </Link>
               </div>
             </div>
 

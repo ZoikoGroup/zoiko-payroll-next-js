@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 
 const fields = ["Organization", "Operating jurisdictions", "Current payroll setup"];
@@ -24,12 +25,18 @@ export default function CtaSection() {
                   generic quote.
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                  <span className="rounded-lg bg-white px-4 py-2.5 text-center text-sm font-semibold text-slate-900">
+                  <Link
+                    href="/book-a-demo"
+                    className="rounded-lg bg-white px-4 py-2.5 text-center text-sm font-semibold text-slate-900 transition-all duration-200 hover:-translate-y-0.5"
+                  >
                     Book a scoping call
-                  </span>
-                  <span className="rounded-lg border border-white/30 px-4 py-2.5 text-center text-sm font-semibold text-white">
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="rounded-lg border border-white/30 px-4 py-2.5 text-center text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
+                  >
                     Talk to an implementation specialist
-                  </span>
+                  </Link>
                 </div>
               </div>
 
@@ -47,9 +54,12 @@ export default function CtaSection() {
                     />
                   </div>
                 ))}
-                <span className="mt-2 block rounded-md bg-blue-600 px-4 py-2.5 text-center text-sm font-semibold text-white">
+                <Link
+                  href="#"
+                  className="mt-2 block rounded-md bg-blue-600 px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors duration-200 hover:bg-blue-700"
+                >
                   Request implementation timeline
-                </span>
+                </Link>
               </div>
             </div>
           </div>

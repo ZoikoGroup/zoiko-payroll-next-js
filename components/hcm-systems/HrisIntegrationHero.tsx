@@ -65,14 +65,13 @@ export default function HrisIntegrationHero() {
 
           {/* CTA Group */}
           <div className="flex flex-wrap items-center gap-4 pt-4">
-            <button
-              type="button"
+            <Link href="/contact"
               className="px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm text-white bg-[#FFFFFF1A] hover:bg-[#254673] border border-slate-700/80 transition-colors shadow-sm"
             >
               Talk to an integration specialist
-            </button>
+            </Link>
             <Link
-              href="#"
+              href="/integrations/support"
               className="text-xs sm:text-sm font-medium text-[#8FB4FF] hover:underline flex items-center gap-1 transition-all"
             >
               Already using Zoiko Payroll? Get integration support &rarr;

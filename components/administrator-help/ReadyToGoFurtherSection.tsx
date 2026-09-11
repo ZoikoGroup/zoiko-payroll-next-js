@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -31,20 +32,18 @@ export default function ReadyToGoFurtherSection() {
         {/* CTA Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
           {/* Primary Action Button */}
-          <button
-            type="button"
+          <Link href="/contact"
             className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#0878B0] text-white text-xs sm:text-sm font-semibold rounded-lg shadow-md transition-colors duration-200 tracking-[0.5px]"
           >
             Contact support
-          </button>
+          </Link>
 
           {/* Secondary Outline Button */}
-          <button
-            type="button"
+          <Link href="/resources/system-status"
             className="px-6 py-3 bg-transparent hover:bg-white/10 text-white text-xs sm:text-sm font-semibold rounded-lg border border-white/40 transition-colors duration-200 tracking-[0.5px]"
           >
             Check system status
-          </button>
+          </Link>
         </div>
       </div>
     </section>

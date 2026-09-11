@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { ArrowRight, Check } from "lucide-react";
@@ -125,10 +126,10 @@ export default function PayrollOperationsAlignedSection() {
               <button className="bg-[#0A8FD0] hover:bg-[#087bb5] text-white text-xs font-semibold px-5 py-3 rounded-xl shadow-md transition-colors cursor-pointer">
                 Check your payment system
               </button>
-              <button className="border border-slate-700 hover:border-slate-500 text-slate-200 text-xs font-semibold px-5 py-3 rounded-xl transition-colors flex items-center gap-2 cursor-pointer">
+              <Link href="/integrations/support" className="border border-slate-700 hover:border-slate-500 text-slate-200 text-xs font-semibold px-5 py-3 rounded-xl transition-colors flex items-center gap-2 cursor-pointer">
                 <span>Get integration support</span>
                 <ArrowRight className="w-3.5 h-3.5" />
-              </button>
+              </Link>
             </div>
           </div>
 

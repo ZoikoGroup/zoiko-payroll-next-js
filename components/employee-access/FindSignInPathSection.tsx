@@ -17,28 +17,28 @@ const signInOptions: SignInOption[] = [
     title: "Zoiko Payroll credentials",
     description:
       "Sign in with the email and password you set up directly with Zoiko Payroll.",
-    supportLink: "#",
+    supportLink: "/contact",
   },
   {
     icon: <HelpCircle className="w-5 h-5 text-[#8FD0F2]" />,
     title: "Employer SSO",
     description:
       "Sign in through your employer's identity provider — no separate Zoiko password.",
-    supportLink: "#",
+    supportLink: "/contact",
   },
   {
     icon: <Mail className="w-5 h-5 text-[#8FD0F2]" />,
     title: "Invitation / activation",
     description:
       "You received an email invitation and haven't activated your account yet.",
-    supportLink: "#",
+    supportLink: "/contact",
   },
   {
     icon: <Clock className="w-5 h-5 text-[#8FD0F2]" />,
     title: "Not sure",
     description:
       "We'll help you safely find your path without exposing account details.",
-    supportLink: "#",
+    supportLink: "/contact",
   },
 ];
 

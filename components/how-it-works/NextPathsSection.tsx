@@ -5,15 +5,15 @@ import Eyebrow from "../home/Eyebrow";
 const paths: { goal: string; title: string; href?: string }[] = [
   { goal: "Operate a run", title: "Payroll Processing", href: "/product/payroll-processing" },
   { goal: "Understand authorization", title: "Payroll Approvals", href: "/product/payroll-approvals" },
-  { goal: "Evaluate changes", title: "Deductions & Adjustments" },
+  { goal: "Evaluate changes", title: "Deductions & Adjustments", href: "/product/deductions" },
   {
     goal: "Need document access",
     title: "Employee Payroll Records",
     href: "/product/employee-payroll-records",
   },
-  { goal: "Need reporting", title: "Reporting & Analytics" },
+  { goal: "Need reporting", title: "Reporting & Analytics", href: "/product/reporting" },
   { goal: "Need technical fit", title: "Integrations", href: "/product/integrations" },
-  { goal: "Need security proof", title: "Security & Trust" },
+  { goal: "Need security proof", title: "Security & Trust", href: "/product/security" },
   { goal: "Planning deployment", title: "Implementation", href: "/product/implementation" },
 ];
 

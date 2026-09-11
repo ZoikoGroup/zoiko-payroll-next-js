@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 interface EntityCard {
@@ -74,12 +75,12 @@ export default function MultiEntityPayrollSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#1A83C8] to-[#093C73]  hover:bg-[#093C63] text-white text-xs sm:text-sm font-semibold transition-all shadow-md cursor-pointer">
+              <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#1A83C8] to-[#093C73]  hover:bg-[#093C63] text-white text-xs sm:text-sm font-semibold transition-all shadow-md cursor-pointer">
                 Book a demo
-              </button>
-              <button className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] text-xs sm:text-sm font-semibold border border-slate-300 transition-colors cursor-pointer">
+              </Link>
+              <Link href="/global-payroll/multi-entity-payroll" className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] text-xs sm:text-sm font-semibold border border-slate-300 transition-colors cursor-pointer">
                 See how multi-entity payroll works
-              </button>
+              </Link>
             </div>
 
             {/* Footer Note */}

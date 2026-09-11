@@ -202,7 +202,7 @@ export default function ResponsibilityMatrixSection() {
             No match? Partner-supported payroll is not currently shown for every
             jurisdiction.{" "}
             <a
-              href="#talk-to-global-payroll"
+              href="/contact"
               className="text-[#0A8FD0] hover:underline font-bold inline-flex items-center gap-0.5"
             >
               Talk to global payroll &rarr;

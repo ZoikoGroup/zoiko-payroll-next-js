@@ -35,7 +35,7 @@ export default function CTASection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
           {/* Primary Action Button */}
           <a
-            href="#system-status"
+            href="/resources/system-status"
             className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#236FA9] text-white text-sm font-bold inline-flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-xl group"
           >
             <span>Check System Status</span>
@@ -44,7 +44,7 @@ export default function CTASection() {
 
           {/* Secondary Outline Button */}
           <a
-            href="#guidance"
+            href="/resources/implementation"
             className="w-full sm:w-auto px-6 py-3.5 rounded-xl border border-white/30 hover:border-white/60 bg-white/5 hover:bg-white/10 text-white text-sm font-bold inline-flex items-center justify-center transition-all backdrop-blur-xs"
           >
             View implementation guidance

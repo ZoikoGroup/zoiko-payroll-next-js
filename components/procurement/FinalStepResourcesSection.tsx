@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -41,12 +42,11 @@ export default function FinalStepResourcesSection() {
                 >
                   Check Resources
                 </button>
-                <button
-                  type="button"
+                <Link href="/contact"
                   className="px-6 py-3.5 rounded-xl bg-[#FFFFFF1A] hover:bg-[#10334d] border border-slate-700/80 text-white text-xs sm:text-sm font-bold transition-all cursor-pointer"
                 >
                   Contact Support
-                </button>
+                </Link>
               </div>
             </div>
 

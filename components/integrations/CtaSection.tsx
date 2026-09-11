@@ -35,9 +35,12 @@ export default function CtaSection() {
                 >
                   Book a demo
                 </Link>
-                <span className="rounded-lg border border-white/30 bg-white/10 px-6 py-3 text-center text-sm font-semibold text-white">
+                <Link
+                  href="/integrations"
+                  className="rounded-lg border border-white/30 bg-white/10 px-6 py-3 text-center text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
+                >
                   Explore the Integration Hub
-                </span>
+                </Link>
               </div>
             </div>
           </div>

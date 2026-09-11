@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -26,13 +27,13 @@ export default function ImplementationSupportHero() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-            <button className="w-full sm:w-auto bg-gradient-to-r from-[#388FCB] to-[#134870] hover:from-[#2B7BB5] hover:to-[#0F395A] text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-xl shadow-xs transition-all active:scale-[0.99]">
+            <Link href="/resources/implementation" className="w-full sm:w-auto bg-gradient-to-r from-[#388FCB] to-[#134870] hover:from-[#2B7BB5] hover:to-[#0F395A] text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-xl shadow-xs transition-all active:scale-[0.99]">
               View implementation guidance
-            </button>
-            <button className="w-full sm:w-auto bg-slate-50 hover:bg-slate-100 border border-slate-200/80 text-[#07243B] font-bold text-xs sm:text-sm px-6 py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
+            </Link>
+            <Link href="/resources/system-status" className="w-full sm:w-auto bg-slate-50 hover:bg-slate-100 border border-slate-200/80 text-[#07243B] font-bold text-xs sm:text-sm px-6 py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
               <span>Check System Status</span>
               <ArrowRight className="w-4 h-4 text-slate-600" />
-            </button>
+            </Link>
           </div>
         </div>
 

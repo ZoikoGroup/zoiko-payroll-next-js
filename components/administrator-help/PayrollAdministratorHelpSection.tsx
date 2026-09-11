@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 interface MetricsItem {
@@ -66,18 +67,16 @@ export default function PayrollAdministratorHelpSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <button
-              type="button"
+            <Link href="/contact"
               className="bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:opacity-95 text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-xl shadow-md transition-all tracking-[1px]"
             >
               Get payroll support
-            </button>
-            <button
-              type="button"
+            </Link>
+            <Link href="/resources/system-status"
               className="bg-white hover:bg-slate-50 text-[#07243B] font-bold text-xs sm:text-sm px-6 py-3 rounded-xl border border-slate-200/80 shadow-2xs transition-all tracking-[1px]"
             >
               Check system status
-            </button>
+            </Link>
           </div>
         </div>
 

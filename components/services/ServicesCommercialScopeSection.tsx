@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { CheckCircle2, ShieldCheck, Scale } from "lucide-react";
@@ -53,18 +54,16 @@ export default function ServicesCommercialScopeSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-              <button
-                type="button"
+              <Link href="/contact"
                 className="text-xs sm:text-sm font-bold bg-[#2A87C8] hover:bg-[#2374AD] text-white px-6 py-3.5 rounded-xl shadow-xs transition-colors cursor-pointer text-center"
               >
                 Request Custom Quote
-              </button>
-              <button
-                type="button"
+              </Link>
+              <Link href="/implementation/professional-services"
                 className="text-xs sm:text-sm font-bold bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200/80 px-6 py-3.5 rounded-xl shadow-2xs transition-colors cursor-pointer text-center"
               >
                 Check Services Portfolio
-              </button>
+              </Link>
             </div>
 
             {/* Feature Badges / Highlights */}

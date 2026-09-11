@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -36,13 +37,13 @@ export default function ReadyToGoFurtherSection() {
 
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
-          <button className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#165f95] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md transition-all cursor-pointer">
+          <Link href="/solutions" className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#165f95] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md transition-all cursor-pointer">
             Find a Solution
-          </button>
+          </Link>
 
-          <button className="px-6 py-3 bg-transparent hover:bg-white/10 text-white border border-white/30 hover:border-white/60 text-xs sm:text-sm font-bold rounded-xl transition-all cursor-pointer">
+          <Link href="/contact" className="px-6 py-3 bg-transparent hover:bg-white/10 text-white border border-white/30 hover:border-white/60 text-xs sm:text-sm font-bold rounded-xl transition-all cursor-pointer">
             Request audit reports
-          </button>
+          </Link>
         </div>
       </section>
     </div>

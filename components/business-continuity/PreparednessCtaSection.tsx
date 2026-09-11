@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -30,21 +31,19 @@ export default function PreparednessCtaSection() {
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 w-full">
               {/* Primary Button */}
-              <button
-                type="button"
+              <Link href="/resources/system-status"
                 className="bg-gradient-to-r from-[#3B92CE] to-[#1D71AF] hover:from-[#3284BD] hover:to-[#17629A] text-white text-xs sm:text-sm font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition-all shadow-md cursor-pointer active:scale-[0.98]"
               >
                 View system status
-              </button>
+              </Link>
 
               {/* Secondary Button */}
-              <button
-                type="button"
+              <Link href="/company/trust-center"
                 className="border border-white/30 hover:bg-white/10 text-white text-xs sm:text-sm font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition-all backdrop-blur-xs flex items-center gap-1.5 cursor-pointer active:scale-[0.98]"
               >
                 <span>Open Trust Center</span>
                 <span className="text-sm">→</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

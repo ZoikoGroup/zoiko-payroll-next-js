@@ -12,7 +12,7 @@ const authorityData: AuthorityRow[] = [
   {
     topic: "Broader personal-data processing & rights",
     authority: "Privacy Notice",
-    href: "#",
+    href: "/legal/privacy-notice",
   },
   {
     topic: "Operational consent / preference changes",
@@ -22,12 +22,12 @@ const authorityData: AuthorityRow[] = [
   {
     topic: "Legal provider role (where separately governed)",
     authority: "Provider / Subprocessor authority",
-    href: "#",
+    href: "/trust-security/subprocessors",
   },
   {
     topic: "Security controls & evidence",
     authority: "Trust and Security",
-    href: "#",
+    href: "/trust-security",
   },
 ];
 

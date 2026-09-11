@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 interface FailureMode {
@@ -162,18 +163,16 @@ export default function EvaluationRisksSection() {
 
           {/* Action CTAs */}
           <div className="flex flex-wrap items-center justify-center gap-3 pt-3">
-            <button
-              type="button"
+            <Link href="/implementation/readiness-assessment"
               className="bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#07243B] text-white text-xs font-bold px-6 py-3 rounded-2xl shadow-xs transition-colors"
             >
               Explore implementation readiness
-            </button>
-            <button
-              type="button"
+            </Link>
+            <Link href="/contact"
               className="bg-white border border-slate-200/80 text-[#07243B] hover:bg-slate-50 text-xs font-bold px-6 py-3 rounded-2xl shadow-2xs transition-colors"
             >
               Get support
-            </button>
+            </Link>
           </div>
 
           {/* Bottom Note */}

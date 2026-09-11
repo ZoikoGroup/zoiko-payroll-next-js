@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Soc2IsoEvidenceSection() {
@@ -92,9 +93,9 @@ export default function Soc2IsoEvidenceSection() {
             </div>
 
             <div className="pt-2">
-              <button className="px-5 py-2.5 bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs font-bold rounded-xl shadow-xs transition-colors cursor-pointer">
+              <Link href="/contact" className="px-5 py-2.5 bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs font-bold rounded-xl shadow-xs transition-colors cursor-pointer">
                 Request report
-              </button>
+              </Link>
             </div>
           </div>
 

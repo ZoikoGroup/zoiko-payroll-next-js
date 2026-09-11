@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
@@ -138,12 +139,12 @@ export default function FAQAndCTASection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#0863A1] text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs cursor-pointer">
+            <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#0863A1] text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs cursor-pointer">
               Book a Demo
-            </button>
-            <button className="px-6 py-3 rounded-xl bg-transparent border border-slate-600 hover:border-slate-400 text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer">
+            </Link>
+            <Link href="/contact" className="px-6 py-3 rounded-xl bg-transparent border border-slate-600 hover:border-slate-400 text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer">
               Talk to Sales
-            </button>
+            </Link>
           </div>
         </div>
       </div>

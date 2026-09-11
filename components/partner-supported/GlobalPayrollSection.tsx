@@ -62,13 +62,13 @@ export default function GlobalPayrollSection() {
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-3 pt-2">
               <a
-                href="#explore-jurisdictions"
+                href="/global-payroll/jurisdiction-directory"
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#4FA9DE] via-[#0A78C2] to-[#082F49] hover:bg-[#165E84] text-white text-xs sm:text-sm font-bold transition-all shadow-sm"
               >
                 Explore jurisdictions
               </a>
               <a
-                href="#talk-to-global-payroll"
+                href="/contact"
                 className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-bold transition-all shadow-2xs"
               >
                 Talk to global payroll

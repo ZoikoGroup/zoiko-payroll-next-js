@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 interface AssuranceCard {
@@ -155,9 +156,9 @@ export default function UpgradeAndDowngradeAssuranceSection() {
             <button className="px-5 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs font-bold shadow-xs transition-colors cursor-pointer">
               Keep Business
             </button>
-            <button className="px-5 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs font-bold shadow-xs transition-colors cursor-pointer">
+            <Link href="/contact" className="px-5 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs font-bold shadow-xs transition-colors cursor-pointer">
               Contact Support
-            </button>
+            </Link>
           </div>
         </div>
       </div>

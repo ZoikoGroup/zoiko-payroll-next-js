@@ -53,7 +53,7 @@ export default function ConfirmPayrollFootprintSection() {
 
             <div className="pt-2">
               <a
-                href="#"
+                href="/global-payroll/country-territory-directory"
                 className="text-xs sm:text-sm font-semibold text-white underline decoration-white/60 underline-offset-4 hover:decoration-white transition-all inline-flex items-center gap-1"
               >
                 Explore country and territory guides →
