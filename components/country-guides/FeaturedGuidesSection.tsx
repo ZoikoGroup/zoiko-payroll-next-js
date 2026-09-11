@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -204,9 +205,9 @@ export default function FeaturedGuidesSection() {
                     <span>View payroll guide</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </button>
-                  <button className="text-[#0A8FD0] hover:underline font-semibold text-[11px]">
+                  <Link href="/global-payroll/jurisdiction-coverage" className="text-[#0A8FD0] hover:underline font-semibold text-[11px]">
                     Check coverage
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

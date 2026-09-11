@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { Check } from "lucide-react";
 
@@ -105,10 +106,10 @@ export default function WhereTruthLivesSection() {
 
             {/* Gradient Button */}
             <div className="pt-2">
-              <button className="bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] text-white text-xs font-semibold px-5 py-2.5 rounded-lg shadow-xs hover:opacity-95 transition-opacity inline-flex items-center gap-1.5">
+              <Link href="/global-payroll/country-guides" className="bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] text-white text-xs font-semibold px-5 py-2.5 rounded-lg shadow-xs hover:opacity-95 transition-opacity inline-flex items-center gap-1.5">
                 <span>Explore country guides</span>
                 <span>→</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

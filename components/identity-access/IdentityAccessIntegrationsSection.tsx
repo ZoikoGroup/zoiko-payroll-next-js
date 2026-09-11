@@ -49,7 +49,7 @@ export default function IdentityAccessIntegrationsSection() {
                 Check your identity system
               </a>
               <a
-                href="#"
+                href="/contact"
                 className="px-6 py-3.5 bg-[#E2EAF2] hover:bg-[#D5E1ED] text-[#07243B] text-xs font-bold rounded-xl transition-all text-center"
               >
                 Talk to a specialist

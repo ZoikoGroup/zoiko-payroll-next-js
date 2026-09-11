@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function ReadyToGoFurtherSection() {
@@ -25,12 +26,11 @@ export default function ReadyToGoFurtherSection() {
 
         {/* CTA Button */}
         <div className="pt-2">
-          <button
-            type="button"
+          <Link href="/contact"
             className="inline-flex items-center justify-center px-6 py-3 rounded-xl text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-[#38BDF8] via-[#0284C7] to-[#0369A1] hover:opacity-95 transition-opacity shadow-md"
           >
             Talk to an integration specialist
-          </button>
+          </Link>
         </div>
       </div>
     </section>

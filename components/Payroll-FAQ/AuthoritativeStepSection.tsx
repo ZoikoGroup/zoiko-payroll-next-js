@@ -53,7 +53,7 @@ export const AuthoritativeStepSection: React.FC = () => {
             Search the FAQ
           </a>
           <a
-            href="#product-documentation"
+            href="/resources/documentation"
             className="inline-flex items-center justify-center px-6 py-3 bg-transparent border border-white/30 text-white text-sm font-bold rounded-lg hover:bg-white/10 transition-colors"
           >
             Visit Product Documentation

@@ -3,8 +3,8 @@ import Reveal from "../ui/Reveal";
 
 const links: { label: string; href?: string }[] = [
   { label: "Payroll Processing", href: "/product/payroll-processing" },
-  { label: "Security & Trust" },
-  { label: "Product Tour" },
+  { label: "Security & Trust", href: "/product/security" },
+  { label: "Product Tour", href: "#" },
 ];
 
 export default function CtaSection() {
@@ -59,9 +59,12 @@ export default function CtaSection() {
                 >
                   Book a demo
                 </Link>
-                <span className="rounded-lg border border-white/40 px-6 py-3 text-center text-sm font-semibold text-white">
+                <Link
+                  href="/product/how-it-works"
+                  className="rounded-lg border border-white/40 px-6 py-3 text-center text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white"
+                >
                   See the workflow
-                </span>
+                </Link>
               </div>
             </div>
           </div>

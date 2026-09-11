@@ -58,9 +58,8 @@ export default function DisciplineSection() {
             <p className="text-sm leading-6 text-slate-900">
               Training is part of the broader change plan, but has its own
               dedicated service.{" "}
-              {/* No training route exists yet — placeholder until one is built. */}
               <Link
-                href="#"
+                href="/implementation/training"
                 className="font-semibold text-blue-600 hover:text-blue-700"
               >
                 Explore training services →

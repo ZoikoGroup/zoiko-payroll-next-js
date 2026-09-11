@@ -106,7 +106,7 @@ export default function FAQHeroSection() {
                   <span>Reviewed Aug 2026</span>
                 </div>
                 <a
-                  href="#product-overview"
+                  href="/product/how-it-works"
                   className="text-sky-600 font-bold hover:underline inline-flex items-center"
                 >
                   View Product Overview &rarr;

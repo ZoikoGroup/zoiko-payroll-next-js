@@ -169,7 +169,7 @@ export default function FaqAndCtaSection() {
                   View webhook quickstart
                 </a>
                 <a
-                  href="#"
+                  href="/integrations/support"
                   className="px-6 py-3 rounded-xl bg-[#FFFFFF1A] border border-slate-700 hover:border-slate-500 text-white text-xs sm:text-sm font-semibold transition-colors"
                 >
                   Get integration support

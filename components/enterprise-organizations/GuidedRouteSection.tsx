@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 
 export default function GuidedRouteSection() {
@@ -146,12 +147,12 @@ export default function GuidedRouteSection() {
             </div>
 
             <div className="flex flex-wrap gap-[10px] mt-[20px] mb-[12px]">
-              <button className="bg-white rounded-[9px] px-[18px] min-h-[44px] flex items-center justify-center font-semibold text-[#0b1220] text-[14px] hover:bg-gray-100 transition-colors">
+              <Link href="/book-a-demo" className="bg-white rounded-[9px] px-[18px] min-h-[44px] flex items-center justify-center font-semibold text-[#0b1220] text-[14px] hover:bg-gray-100 transition-colors">
                 Book a demo
-              </button>
-              <button className="border border-[#2e3b52] rounded-[9px] px-[18px] min-h-[44px] flex items-center justify-center font-semibold text-[#d6dbe3] text-[14px] hover:bg-[#1a3d54] transition-colors">
+              </Link>
+              <Link href="#" className="border border-[#2e3b52] rounded-[9px] px-[18px] min-h-[44px] flex items-center justify-center font-semibold text-[#d6dbe3] text-[14px] hover:bg-[#1a3d54] transition-colors">
                 {"{{ alt }}"}
-              </button>
+              </Link>
             </div>
             
             <p className="text-[#8b95a3] text-[10.5px] leading-normal m-0">

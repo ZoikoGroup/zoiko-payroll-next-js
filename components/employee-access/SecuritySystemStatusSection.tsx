@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { AlertTriangle } from "lucide-react";
 
@@ -33,17 +34,17 @@ const situationRoutes: SituationRoute[] = [
   {
     situation: "Global platform issue",
     route: "System Status",
-    href: "#",
+    href: "/resources/system-status",
   },
   {
     situation: "Personal account issue only",
     route: "Secure account / Recover access",
-    href: "#",
+    href: "/reset-password",
   },
   {
     situation: "Suspected compromise or phishing",
     route: "Priority security escalation",
-    href: "#",
+    href: "/contact",
   },
   {
     situation: "Employer SSO or identity-provider issue",
@@ -132,18 +133,16 @@ export default function SecuritySystemStatusSection() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-          <button
-            type="button"
+          <Link href="/resources/system-status"
             className="w-full sm:w-auto bg-white hover:bg-slate-50 text-[#07243B] font-bold text-xs sm:text-sm px-6 py-3 rounded-2xl border border-slate-200/80 shadow-2xs transition-all tracking-[1px]"
           >
             Check system status
-          </button>
-          <button
-            type="button"
+          </Link>
+          <Link href="/contact"
             className="w-full sm:w-auto bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#087CB7] text-white font-bold text-xs sm:text-sm px-7 py-3 rounded-2xl shadow-sm transition-all tracking-[1px]"
           >
             Contact support
-          </button>
+          </Link>
         </div>
       </div>
     </section>

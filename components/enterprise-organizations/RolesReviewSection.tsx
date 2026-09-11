@@ -34,7 +34,7 @@ export default function RolesReviewSection() {
             <div className="bg-[#eef0f4] border border-[#e3e7ec] h-[315px] xl:h-[375px] overflow-hidden relative rounded-[16px] w-full lg:w-[400px] xl:w-[500px]">
               <div className="absolute inset-0 left-[-7.8%] top-[-0.26%] w-[115%] h-[102.13%]">
                 <img
-                  src="http://localhost:3845/assets/f8956a4c1d1a0a0d0f53ea3ec378be22c861ea2f.png"
+                  src="/images/enterprise-organizations/roles-review.png"
                   alt="Roles and permissions dashboard"
                   loading="lazy"
                   className="absolute inset-0 max-w-none object-cover size-full"

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import { Plus, X } from "lucide-react";
 
@@ -121,9 +122,9 @@ export default function JurisdictionComparisonSection() {
                 )}
               </div>
 
-              <button className="bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] hover:bg-[#087BB5] text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors">
+              <Link href="/contact" className="bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] hover:bg-[#087BB5] text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors">
                 Talk to a specialist about these
-              </button>
+              </Link>
             </div>
 
             {/* Table Content */}

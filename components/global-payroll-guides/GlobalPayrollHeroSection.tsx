@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -32,14 +33,14 @@ export default function GlobalPayrollHeroSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <button className="bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:opacity-95 text-white text-xs font-semibold px-5 py-2.5 rounded-lg shadow-sm transition-opacity inline-flex items-center gap-1.5">
+            <Link href="/book-a-demo" className="bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:opacity-95 text-white text-xs font-semibold px-5 py-2.5 rounded-lg shadow-sm transition-opacity inline-flex items-center gap-1.5">
               <span>Book a demo</span>
               <span>→</span>
-            </button>
+            </Link>
 
-            <button className="bg-[#FFFFFF33] hover:bg-white/5 text-white border border-[#E1E8F0] text-xs font-semibold px-5 py-2.5 rounded-lg transition-colors">
+            <Link href="/global-payroll/jurisdiction-coverage" className="bg-[#FFFFFF33] hover:bg-white/5 text-white border border-[#E1E8F0] text-xs font-semibold px-5 py-2.5 rounded-lg transition-colors">
               Check jurisdiction availability
-            </button>
+            </Link>
           </div>
         </div>
 

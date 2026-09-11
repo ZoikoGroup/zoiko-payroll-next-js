@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import {
   Lock,
@@ -104,9 +105,9 @@ export default function TrustSecurityAuditabilitySection() {
 
         {/* Bottom CTA Button */}
         <div className="flex justify-center pt-2">
-          <button className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors shadow-2xs cursor-pointer">
+          <Link href="/trust-security" className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors shadow-2xs cursor-pointer">
             Explore Trust and Security
-          </button>
+          </Link>
         </div>
       </div>
     </section>

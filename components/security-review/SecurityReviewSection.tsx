@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { Check, Lock, ShieldCheck } from "lucide-react";
@@ -53,12 +54,11 @@ export default function SecurityReviewSection() {
               >
                 Start a security review
               </button>
-              <button
-                type="button"
+              <Link href="/contact"
                 className="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-bold shadow-xs transition-all cursor-pointer"
               >
                 Request assurance evidence
-              </button>
+              </Link>
             </div>
 
             {/* Feature Checkpoints */}

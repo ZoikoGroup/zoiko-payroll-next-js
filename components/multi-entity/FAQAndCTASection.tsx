@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
@@ -126,12 +127,12 @@ export default function FAQAndCTASection() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-            <button className="w-full sm:w-auto px-6 py-2.5 bg-white text-[#07243B] text-xs font-bold rounded-lg shadow-sm hover:bg-slate-100 transition-colors">
+            <Link href="/book-a-demo" className="w-full sm:w-auto px-6 py-2.5 bg-white text-[#07243B] text-xs font-bold rounded-lg shadow-sm hover:bg-slate-100 transition-colors">
               Book a demo
-            </button>
-            <button className="w-full sm:w-auto px-6 py-2.5 bg-[#FFFFFF1A] border border-[#FFFFFF4D] text-white text-xs font-semibold rounded-lg hover:bg-[#07243B]/60 transition-colors">
+            </Link>
+            <Link href="/solutions/multi-jurisdiction" className="w-full sm:w-auto px-6 py-2.5 bg-[#FFFFFF1A] border border-[#FFFFFF4D] text-white text-xs font-semibold rounded-lg hover:bg-[#07243B]/60 transition-colors">
               Explore multi-jurisdiction payroll
-            </button>
+            </Link>
           </div>
         </div>
       </div>

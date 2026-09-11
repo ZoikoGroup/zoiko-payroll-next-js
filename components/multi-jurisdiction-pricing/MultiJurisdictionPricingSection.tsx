@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -54,12 +55,11 @@ export default function MultiJurisdictionPricingSection() {
               >
                 Build your jurisdiction scope
               </button>
-              <button
-                type="button"
+              <Link href="/global-payroll/jurisdiction-coverage"
                 className="text-xs sm:text-sm font-bold bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200/80 px-6 py-3.5 rounded-xl shadow-2xs transition-colors cursor-pointer text-center"
               >
                 Check jurisdiction availability
-              </button>
+              </Link>
             </div>
 
             {/* Footnote */}

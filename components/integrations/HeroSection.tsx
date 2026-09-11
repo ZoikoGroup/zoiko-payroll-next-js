@@ -98,9 +98,9 @@ export default function HeroSection() {
               >
                 Book a demo
               </Link>
-              <span className="rounded-lg border border-white/30 bg-white/10 px-5 py-3 text-center text-sm font-semibold text-white">
+              <Link href="/integrations" className="rounded-lg border border-white/30 bg-white/10 px-5 py-3 text-center text-sm font-semibold text-white">
                 See the Integration Hub
-              </span>
+              </Link>
             </div>
 
             <ul className="mt-8 flex flex-wrap gap-x-8 gap-y-2 border-t border-white/10 pt-6">

@@ -57,12 +57,11 @@ export default function CookieNoticeHero() {
             >
               Open Cookie Settings
             </button>
-            <button
-              type="button"
+            <Link href="/product/how-it-works"
               className="px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-white border border-white/30 hover:bg-white/10 transition-colors"
             >
               Explore the product
-            </button>
+            </Link>
           </div>
 
           {/* Subtext */}
@@ -73,7 +72,7 @@ export default function CookieNoticeHero() {
               Cookie Settings
             </span>
             . For broader personal-data rights, see the{" "}
-            <Link href="/privacy-notice" className="underline hover:text-white">
+            <Link href="/legal/privacy-notice" className="underline hover:text-white">
               Privacy Notice
             </Link>
             .

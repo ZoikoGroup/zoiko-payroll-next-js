@@ -46,27 +46,27 @@ export default function FAQSection() {
     {
       question: "What makes payroll software suitable for enterprise organizations?",
       answer: "Scoped authority across entities and payroll groups, separated preparation, review and approval, governed integrations, and evidence recorded against every material action.",
-      defaultOpen: true
+      defaultOpen: false
     },
     {
       question: "How are multiple legal entities and payroll groups handled?",
       answer: "Each entity carries its own jurisdiction, owner, service model and reporting context. Payroll groups hold frequency, period, cutoff, reviewer and approver, and roll up without losing separation.",
-      defaultOpen: true
+      defaultOpen: false
     },
     {
       question: "Can we keep central visibility without taking away local decisions?",
       answer: "Yes. Visibility and decision rights are separate. Central governance holds standards, definitions and escalation; entity and payroll-group roles hold the decisions inside their scope.",
-      defaultOpen: true
+      defaultOpen: false
     },
     {
       question: "How is review and approval separation enforced?",
       answer: "Preparer, reviewer and approver are distinct role assignments where configured. Approval binds to the current material version, and a material change after review invalidates or re-opens that approval.",
-      defaultOpen: true
+      defaultOpen: false
     },
     {
       question: "How does finance reconcile payroll across entities?",
       answer: "Approved output is compared against downstream receipt per period, entity and group, with variance, owner and next action. Currencies are never summed without an explicit conversion basis.",
-      defaultOpen: true
+      defaultOpen: false
     }
   ];
 

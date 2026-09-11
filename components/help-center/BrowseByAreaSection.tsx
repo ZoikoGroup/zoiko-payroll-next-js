@@ -4,14 +4,14 @@ import Eyebrow from "../home/Eyebrow";
 import { ArrowRightIcon } from "../ui/icons";
 
 const areas = [
-  { label: "Users / employee records", href: "/resources/help-center/users" },
-  { label: "Payroll runs", href: "/resources/help-center/payroll-runs" },
-  { label: "Approvals", href: "/resources/help-center/approvals" },
-  { label: "Adjustments", href: "/resources/help-center/adjustments" },
-  { label: "Integrations", href: "/resources/help-center/integrations" },
-  { label: "Reporting", href: "/resources/help-center/reporting" },
-  { label: "Global Payroll", href: "/resources/help-center/global-payroll" },
-  { label: "Implementation", href: "/resources/help-center/implementation" },
+  { label: "Users / employee records", href: "/product/employee-payroll-records" },
+  { label: "Payroll runs", href: "/product/payroll-processing" },
+  { label: "Approvals", href: "/product/payroll-approvals" },
+  { label: "Adjustments", href: "/product/deductions" },
+  { label: "Integrations", href: "/product/integrations" },
+  { label: "Reporting", href: "/product/reporting" },
+  { label: "Global Payroll", href: "/global-payroll" },
+  { label: "Implementation", href: "/product/implementation" },
 ];
 
 const featured = [

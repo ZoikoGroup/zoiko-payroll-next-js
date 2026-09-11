@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import { ChevronDown, Info } from "lucide-react";
 
@@ -44,12 +45,11 @@ export default function PaymentSystemIntegrationsHero() {
               >
                 Check your payment system
               </button>
-              <button
-                type="button"
+              <Link href="/integrations/support"
                 className="px-5 py-3 rounded-lg text-xs font-semibold text-[#0F172A] bg-white border border-slate-200 hover:bg-slate-50 transition-colors shadow-2xs inline-flex items-center gap-1.5"
               >
                 Get integration support <span className="text-sm">→</span>
-              </button>
+              </Link>
             </div>
 
             {/* Info Callout Box */}

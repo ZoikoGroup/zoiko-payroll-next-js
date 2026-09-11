@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { ArrowRight, ChevronDown } from "lucide-react";
@@ -367,9 +368,9 @@ export default function GuideIndexSection() {
                         <span>View guide</span>
                         <ArrowRight className="w-3 h-3" />
                       </button>
-                      <button className="text-[#0A8FD0] hover:underline font-semibold text-[11px]">
+                      <Link href="/global-payroll/jurisdiction-coverage" className="text-[#0A8FD0] hover:underline font-semibold text-[11px]">
                         Coverage
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

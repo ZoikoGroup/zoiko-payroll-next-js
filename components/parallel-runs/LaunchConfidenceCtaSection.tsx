@@ -37,7 +37,7 @@ export default function LaunchConfidenceCtaSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
               {/* Primary Button */}
               <a
-                href="#implementation"
+                href="/implementation/professional-services"
                 className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white text-[#2563EB] text-xs sm:text-sm font-bold shadow-md hover:bg-slate-100 transition-colors"
               >
                 Explore implementation services
@@ -45,7 +45,7 @@ export default function LaunchConfidenceCtaSection() {
 
               {/* Secondary Ghost Button */}
               <a
-                href="#contact"
+                href="/contact"
                 className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/30 text-white text-xs sm:text-sm font-semibold transition-colors backdrop-blur-xs"
               >
                 Talk to payroll specialists

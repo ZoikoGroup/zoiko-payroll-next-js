@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
@@ -125,12 +126,12 @@ export default function FaqAndCtaSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
-              <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:bg-[#0863A1] text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm cursor-pointer">
+              <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:bg-[#0863A1] text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm cursor-pointer">
                 Book a demo
-              </button>
-              <button className="px-6 py-3 rounded-xl bg-transparent hover:bg-white/10 border border-slate-500/60 text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer">
+              </Link>
+              <Link href="/payroll-operations/inputs-validation" className="px-6 py-3 rounded-xl bg-transparent hover:bg-white/10 border border-slate-500/60 text-white text-xs sm:text-sm font-semibold transition-colors cursor-pointer">
                 Explore Inputs & Validation
-              </button>
+              </Link>
             </div>
           </div>
         </div>

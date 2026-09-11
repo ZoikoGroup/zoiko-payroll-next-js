@@ -9,13 +9,13 @@ interface StepItem {
 }
 
 const spineSteps: StepItem[] = [
-  { title: "Inputs & validation", href: "#" },
-  { title: "Gross-to-net calculations", href: "#" },
-  { title: "Review & approvals", href: "#" },
-  { title: "Deductions & adjustments", href: "#" },
-  { title: "Payments orchestration", href: "#" },
-  { title: "Payroll close & audit", href: "#" },
-  { title: "Reporting & analytics", href: "#" },
+  { title: "Inputs & validation", href: "/payroll-operations/inputs-validation" },
+  { title: "Gross-to-net calculations", href: "/payroll-operations/calculations" },
+  { title: "Review & approvals", href: "/product/payroll-approvals" },
+  { title: "Deductions & adjustments", href: "/product/deductions" },
+  { title: "Payments orchestration", href: "/payroll-operations/payments-orchestration" },
+  { title: "Payroll close & audit", href: "/payroll-operations/close-and-audit" },
+  { title: "Reporting & analytics", href: "/product/reporting" },
 ];
 
 export default function ConnectedOperatingSpineSection() {

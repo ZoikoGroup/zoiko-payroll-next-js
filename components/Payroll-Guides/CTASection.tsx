@@ -47,7 +47,7 @@ export default function CTASection() {
             Explore payroll guides
           </a>
           <a
-            href="#product-docs"
+            href="/resources/documentation"
             className="w-full sm:w-auto px-6 py-3 border border-white/30 rounded-lg text-center text-white text-sm font-bold hover:bg-white/10 transition-colors"
           >
             Visit Product Documentation

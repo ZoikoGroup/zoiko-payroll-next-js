@@ -297,12 +297,12 @@ export default function JurisdictionDirectorySection() {
                 <div className="flex flex-col items-start lg:items-end gap-1.5 shrink-0">
                   <div className="flex items-center gap-3 text-xs font-semibold">
                     {item.hasGuide && (
-                      <a href="#" className="text-[#0A8FD0] hover:underline">
+                      <a href="/global-payroll/country-guides" className="text-[#0A8FD0] hover:underline">
                         Guide
                       </a>
                     )}
                     {item.hasRequirements && (
-                      <a href="#" className="text-[#0A8FD0] hover:underline">
+                      <a href="/global-payroll/payroll-requirements" className="text-[#0A8FD0] hover:underline">
                         Requirements
                       </a>
                     )}

@@ -50,7 +50,7 @@ export default function WebinarsAndEventsHero() {
               Join the Waitlist
             </a>
             <a
-              href="#"
+              href="/contact"
               className="bg-[#FFFFFF26] hover:bg-[#173852]/90 text-white border border-slate-400/30 text-xs sm:text-sm font-bold px-6 py-3 rounded-xl shadow-xs transition-colors cursor-pointer backdrop-blur-xs"
             >
               Contact Support

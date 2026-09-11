@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -34,24 +35,22 @@ export default function ConfigurationCtaSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full sm:w-auto mb-6">
-              <button
-                type="button"
+              <Link href="/implementation/readiness-assessment"
                 className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] hover:bg-[#0863A1] text-white font-bold text-xs sm:text-sm transition-all shadow-md cursor-pointer"
               >
                 Access configuration readiness
-              </button>
+              </Link>
 
-              <button
-                type="button"
+              <Link href="/contact"
                 className="w-full sm:w-auto px-6 py-3 rounded-xl hover:bg-white/15 text-white font-bold text-xs sm:text-sm border border-white/20 transition-all cursor-pointer backdrop-blur-xs"
               >
                 Talk to an implementation specialist
-              </button>
+              </Link>
             </div>
 
             {/* Bottom Link */}
             <a
-              href="#"
+              href="/product/implementation"
               className="text-xs sm:text-sm font-semibold text-[#E2E8F0] hover:text-white underline underline-offset-4 decoration-white/40 hover:decoration-white transition-all flex items-center gap-1 mt-1"
             >
               Explore Implementation Overview &rarr;

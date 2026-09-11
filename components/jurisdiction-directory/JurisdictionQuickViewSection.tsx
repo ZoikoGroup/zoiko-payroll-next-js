@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { CheckSquare, Clock, Link as LinkIcon, X } from "lucide-react";
@@ -187,7 +188,7 @@ export default function JurisdictionQuickViewSection() {
             <div className="space-y-1.5 pt-1 text-xs font-semibold">
               <div>
                 <a
-                  href="#"
+                  href="/global-payroll/country-guides"
                   className="text-[#1483CE] hover:underline inline-flex items-center gap-1"
                 >
                   <span className="text-slate-400 font-normal">—</span> Germany
@@ -196,7 +197,7 @@ export default function JurisdictionQuickViewSection() {
               </div>
               <div>
                 <a
-                  href="#"
+                  href="/global-payroll/partner-supported"
                   className="text-[#1483CE] hover:underline inline-flex items-center gap-1"
                 >
                   <span className="text-slate-400 font-normal">—</span> How
@@ -210,9 +211,9 @@ export default function JurisdictionQuickViewSection() {
               <button className="w-full bg-slate-50 hover:bg-slate-100 text-[#07243B] border border-slate-200/80 text-xs font-semibold py-2.5 px-3 rounded-lg transition-colors">
                 Add to comparison
               </button>
-              <button className="w-full bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] hover:bg-[#008CC2] text-white text-xs font-semibold py-2.5 px-3 rounded-lg shadow-sm transition-colors">
+              <Link href="/contact" className="w-full bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] hover:bg-[#008CC2] text-white text-xs font-semibold py-2.5 px-3 rounded-lg shadow-sm transition-colors">
                 Discuss this jurisdiction
-              </button>
+              </Link>
             </div>
           </div>
         </div>

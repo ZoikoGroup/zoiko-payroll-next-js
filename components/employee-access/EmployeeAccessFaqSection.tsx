@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Plus, Minus, ArrowRight } from "lucide-react";
@@ -148,19 +149,17 @@ export default function EmployeeAccessFaqSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-              <button
-                type="button"
+              <Link href="/sign-in"
                 className="w-full sm:w-auto bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#087CB7] text-white font-bold text-xs sm:text-sm px-8 py-3 rounded-xl shadow-md transition-all tracking-[1px]"
               >
                 Sign in
-              </button>
-              <button
-                type="button"
+              </Link>
+              <Link href="/contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 hover:bg-slate-900/60 text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-xl border border-slate-400/40 shadow-sm transition-all tracking-[1px]"
               >
                 <span>Contact support</span>
                 <ArrowRight className="w-3.5 h-3.5" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

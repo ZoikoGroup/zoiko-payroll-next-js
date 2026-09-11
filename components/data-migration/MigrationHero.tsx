@@ -34,9 +34,8 @@ export default function MigrationHero() {
           </div>
 
           <div className="flex flex-col items-stretch gap-3.5 sm:flex-row sm:items-center">
-            {/* No readiness route exists yet — placeholder until one is built. */}
             <Link
-              href="#"
+              href="/implementation/readiness-assessment"
               className="rounded-xl bg-linear-to-r from-blue-400 via-sky-600 to-sky-950 px-8 py-3.5 text-center text-base font-semibold text-white shadow-[0px_8px_20px_-6px_rgba(37,99,235,0.55)] transition-all hover:brightness-110"
             >
               Assess migration readiness

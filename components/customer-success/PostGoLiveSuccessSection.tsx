@@ -69,7 +69,7 @@ export default function PostGoLiveSuccessSection() {
                 Explore our success model
               </a>
               <a
-                href="#contact"
+                href="/contact"
                 className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white border border-[#E2E8F0] hover:bg-slate-50 text-[#0B192C] text-xs sm:text-sm font-semibold text-center transition-colors shadow-xs"
               >
                 Talk to Zoiko Payroll

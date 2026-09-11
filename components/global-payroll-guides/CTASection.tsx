@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -34,20 +35,18 @@ export default function CTASection() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-          <button
-            type="button"
+          <Link href="/book-a-demo"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#3387bd] text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-md transition-colors"
           >
             <span>Book a demo</span>
             <ArrowRight className="w-4 h-4 stroke-[2.5]" />
-          </button>
+          </Link>
 
-          <button
-            type="button"
+          <Link href="/global-payroll/jurisdiction-coverage"
             className="w-full sm:w-auto inline-flex items-center justify-center border border-white/30 hover:border-white/60 bg-white/5 hover:bg-white/10 text-white text-xs font-bold px-6 py-3.5 rounded-xl backdrop-blur-xs transition-colors"
           >
             Check jurisdiction availability
-          </button>
+          </Link>
         </div>
       </div>
     </section>
