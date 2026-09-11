@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
@@ -133,9 +134,9 @@ export default function FaqAndCtaSection() {
               <button className="bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#165a8c] text-white text-xs sm:text-sm font-extrabold px-6 py-3.5 rounded-xl shadow-md transition-all cursor-pointer">
                 View residency options
               </button>
-              <button className="hover:bg-[#07243B] text-white border border-slate-600/60 text-xs sm:text-sm font-extrabold px-6 py-3.5 rounded-xl shadow-md transition-all cursor-pointer">
+              <Link href="/legal/dpa" className="hover:bg-[#07243B] text-white border border-slate-600/60 text-xs sm:text-sm font-extrabold px-6 py-3.5 rounded-xl shadow-md transition-all cursor-pointer">
                 Open Data Processing Addendum
-              </button>
+              </Link>
             </div>
           </div>
         </div>

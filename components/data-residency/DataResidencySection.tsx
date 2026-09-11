@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -57,9 +58,9 @@ export default function DataResidencySection() {
                 View residency options
               </button>
 
-              <button className="px-6 py-3 bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200/80 text-xs sm:text-sm font-bold rounded-xl shadow-xs transition-all cursor-pointer">
+              <Link href="/legal/dpa" className="px-6 py-3 bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200/80 text-xs sm:text-sm font-bold rounded-xl shadow-xs transition-all cursor-pointer">
                 Open Data Processing Addendum
-              </button>
+              </Link>
             </div>
           </div>
 

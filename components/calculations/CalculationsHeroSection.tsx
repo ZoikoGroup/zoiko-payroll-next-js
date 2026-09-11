@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function CalculationsHeroSection() {
@@ -37,12 +38,12 @@ export default function CalculationsHeroSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:bg-[#0863A1] text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm cursor-pointer">
+            <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:bg-[#0863A1] text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm cursor-pointer">
               Book a demo
-            </button>
-            <button className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors shadow-xs cursor-pointer">
+            </Link>
+            <Link href="/payroll-operations/inputs-validation" className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors shadow-xs cursor-pointer">
               Explore Inputs & Validation
-            </button>
+            </Link>
           </div>
         </div>
       </div>

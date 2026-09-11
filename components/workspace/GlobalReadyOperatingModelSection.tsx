@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function GlobalReadyOperatingModelSection() {
@@ -36,9 +37,9 @@ export default function GlobalReadyOperatingModelSection() {
               <button className="px-5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors shadow-2xs cursor-pointer">
                 Explore Supported Payroll Capabilities
               </button>
-              <button className="px-5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors shadow-2xs cursor-pointer">
+              <Link href="/contact" className="px-5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors shadow-2xs cursor-pointer">
                 Talk to Sales
-              </button>
+              </Link>
             </div>
 
             {/* Disclaimer Footnote */}

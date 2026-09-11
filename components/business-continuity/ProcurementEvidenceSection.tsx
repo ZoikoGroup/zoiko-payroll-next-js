@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function ProcurementEvidenceSection() {
@@ -116,12 +117,11 @@ export default function ProcurementEvidenceSection() {
 
                 {/* Submit Action Button */}
                 <div className="pt-5">
-                  <button
-                    type="button"
+                  <Link href="/contact"
                     className="w-full bg-gradient-to-r from-[#0A78C3] to-[#035999] hover:from-[#0863A1] hover:to-[#024478] text-white font-semibold text-xs sm:text-sm py-3 rounded-xl transition-all shadow-xs cursor-pointer active:scale-[0.99]"
                   >
                     Request access
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 interface EvaluationFeature {
@@ -61,12 +62,12 @@ export default function ExploreProfessionalSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <button className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#2E9BDD] via-[#0F5688] to-[#0A3D63] hover:bg-[#051a2c] text-white text-xs sm:text-sm font-bold shadow-md transition-colors cursor-pointer">
+            <Link href="/register" className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#2E9BDD] via-[#0F5688] to-[#0A3D63] hover:bg-[#051a2c] text-white text-xs sm:text-sm font-bold shadow-md transition-colors cursor-pointer">
               Start 30-Day Evaluation
-            </button>
-            <button className="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs sm:text-sm font-bold shadow-xs transition-colors cursor-pointer">
+            </Link>
+            <Link href="/contact" className="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs sm:text-sm font-bold shadow-xs transition-colors cursor-pointer">
               Talk to Sales
-            </button>
+            </Link>
           </div>
         </div>
       </div>

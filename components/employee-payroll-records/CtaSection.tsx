@@ -24,7 +24,7 @@ export default function CtaSection() {
                 Book a demo
               </Link>
               <Link
-                href="/product/tour"
+                href="#"
                 className="rounded-lg border border-white/40 px-6 py-3 text-center text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white"
               >
                 Start the product tour

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -134,9 +135,9 @@ export default function MultiEntityOrganizationsSection() {
           </p>
 
           <div>
-            <button className="px-6 py-3 bg-gradient-to-r from-[#0A8FD0] to-[#076BA0] hover:from-[#097EB8] hover:to-[#065A87] text-white text-xs font-bold rounded-xl shadow-md transition-all">
+            <Link href="/solutions/multi-entity" className="px-6 py-3 bg-gradient-to-r from-[#0A8FD0] to-[#076BA0] hover:from-[#097EB8] hover:to-[#065A87] text-white text-xs font-bold rounded-xl shadow-md transition-all">
               Explore multi-entity organizations
-            </button>
+            </Link>
           </div>
         </div>
       </div>

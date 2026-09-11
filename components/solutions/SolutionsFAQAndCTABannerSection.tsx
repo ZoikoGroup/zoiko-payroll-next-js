@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
@@ -136,12 +137,12 @@ export default function SolutionsFAQAndCTABannerSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
-              <button className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:from-[#097EB8] hover:to-[#065A87] text-white text-xs font-bold rounded-xl shadow-md transition-all">
+              <Link href="/book-a-demo" className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:from-[#097EB8] hover:to-[#065A87] text-white text-xs font-bold rounded-xl shadow-md transition-all">
                 Book a demo
-              </button>
-              <button className="w-full sm:w-auto px-6 py-3 bg-white/5 border border-white/20 hover:bg-white/10 text-white text-xs font-semibold rounded-xl transition-all">
+              </Link>
+              <Link href="/contact" className="w-full sm:w-auto px-6 py-3 bg-white/5 border border-white/20 hover:bg-white/10 text-white text-xs font-semibold rounded-xl transition-all">
                 Contact Sales
-              </button>
+              </Link>
             </div>
           </div>
         </div>

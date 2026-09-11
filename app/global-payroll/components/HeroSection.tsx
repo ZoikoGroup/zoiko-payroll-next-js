@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -28,12 +29,12 @@ export default function HeroSection() {
 
               {/* CTAs */}
               <div className="w-full pt-4 pb-5 flex items-start gap-3.5 flex-wrap">
-                <div className="px-5 py-3 bg-gradient-to-b from-[#2E91D1] to-[#0B4E7D] rounded-[10px] shadow-[0px_6px_16px_0px_rgba(11,94,153,0.28)] flex items-center justify-center">
+                <Link href="/book-a-demo" className="px-5 py-3 bg-gradient-to-b from-[#2E91D1] to-[#0B4E7D] rounded-[10px] shadow-[0px_6px_16px_0px_rgba(11,94,153,0.28)] flex items-center justify-center">
                   <span className="text-white text-sm font-semibold">Book a demo</span>
-                </div>
-                <div className="px-5 py-3 bg-white rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-200 flex items-center justify-center">
+                </Link>
+                <Link href="/global-payroll/jurisdiction-coverage" className="px-5 py-3 bg-white rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-200 flex items-center justify-center">
                   <span className="text-sky-950 text-sm font-semibold">Check jurisdiction availability</span>
-                </div>
+                </Link>
               </div>
 
               {/* Pillars */}

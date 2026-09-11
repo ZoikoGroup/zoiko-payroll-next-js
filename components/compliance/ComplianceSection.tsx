@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function ComplianceSection() {
@@ -33,12 +34,12 @@ export default function ComplianceSection() {
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <button className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#154f78] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md transition-colors cursor-pointer">
+              <Link href="/solutions" className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#154f78] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md transition-colors cursor-pointer">
                 Find a Solution
-              </button>
-              <button className="px-6 py-3 bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs sm:text-sm font-bold rounded-xl shadow-xs transition-colors cursor-pointer">
+              </Link>
+              <Link href="/contact" className="px-6 py-3 bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs sm:text-sm font-bold rounded-xl shadow-xs transition-colors cursor-pointer">
                 Request audit reports
-              </button>
+              </Link>
             </div>
           </div>
 

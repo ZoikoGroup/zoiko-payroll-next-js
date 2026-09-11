@@ -25,9 +25,8 @@ export default function MigrationCta() {
             timeline.
           </p>
           <div className="flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center">
-            {/* No readiness route exists yet — placeholder until one is built. */}
             <Link
-              href="#"
+              href="/implementation/readiness-assessment"
               className="rounded-full bg-white px-7 py-3 text-center text-sm font-semibold text-blue-600 transition-colors hover:bg-slate-100"
             >
               Assess migration readiness

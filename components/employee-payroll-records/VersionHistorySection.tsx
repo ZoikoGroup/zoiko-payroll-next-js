@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 import Eyebrow from "./Eyebrow";
 import { ArrowRightIcon } from "../ui/icons";
@@ -40,9 +41,12 @@ export default function VersionHistorySection() {
           </div>
 
           <div className="mt-5 border-t border-slate-200 pt-5">
-            <span className="inline-flex border-b border-slate-300 pb-0.5 text-sm font-semibold leading-5 text-sky-950">
+            <Link
+              href="#"
+              className="inline-flex border-b border-slate-300 pb-0.5 text-sm font-semibold leading-5 text-sky-950 transition-colors duration-200 hover:border-sky-700 hover:text-sky-700"
+            >
               View full history →
-            </span>
+            </Link>
           </div>
         </Reveal>
       </div>

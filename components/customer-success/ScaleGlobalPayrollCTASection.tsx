@@ -43,7 +43,7 @@ export default function ScaleGlobalPayrollCTASection() {
 
               {/* Secondary Transparent Outline Button */}
               <a
-                href="#contact"
+                href="/contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#FFFFFF1F] border border-white/20 text-white font-semibold text-xs sm:text-sm hover:bg-white/10 transition-colors backdrop-blur-xs"
               >
                 Talk to Zoiko Payroll

@@ -47,7 +47,7 @@ export default function HeroSection() {
                 Book a demo
               </Link>
               <Link
-                href="/solution"
+                href="/solutions"
                 className="w-full sm:w-auto inline-flex justify-center items-center rounded-[9px] border border-[#cbd2db] bg-white px-[22px] min-h-[44px] text-[15px] font-semibold text-[#0b1220] transition-all hover:bg-slate-50"
               >
                 Find your solution

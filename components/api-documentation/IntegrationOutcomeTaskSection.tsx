@@ -53,14 +53,14 @@ const taskCards: TaskCard[] = [
     title: "Receive asynchronous changes",
     description: "Subscribe to approved event notifications.",
     linkText: "Open Webhooks",
-    href: "#",
+    href: "/integrations/webhooks",
   },
   {
     icon: <AlertCircle className="w-5 h-5 text-[#0A8FD0]" />,
     title: "Troubleshoot an API error",
     description: "Identify the error class and the correct developer action.",
     linkText: "Open error reference",
-    href: "#",
+    href: "/integrations/support",
   },
 ];
 

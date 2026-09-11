@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Plus, X, ArrowRight } from "lucide-react";
@@ -111,13 +112,13 @@ export default function CloseAuditFAQSection() {
             </h3>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#59A9E0] to-[#0A5A93] hover:from-[#1D74B4] hover:to-[#165B8E] text-white text-xs sm:text-sm font-semibold transition-all shadow-md cursor-pointer">
+              <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#59A9E0] to-[#0A5A93] hover:from-[#1D74B4] hover:to-[#165B8E] text-white text-xs sm:text-sm font-semibold transition-all shadow-md cursor-pointer">
                 Book a demo
-              </button>
-              <button className="px-6 py-3 rounded-xl hover:bg-white/20 text-white text-xs sm:text-sm font-semibold border border-white/30 backdrop-blur-xs transition-colors cursor-pointer flex items-center gap-2">
+              </Link>
+              <Link href="/contact" className="px-6 py-3 rounded-xl hover:bg-white/20 text-white text-xs sm:text-sm font-semibold border border-white/30 backdrop-blur-xs transition-colors cursor-pointer flex items-center gap-2">
                 <span>Talk to sales</span>
                 <ArrowRight className="w-4 h-4 text-white" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

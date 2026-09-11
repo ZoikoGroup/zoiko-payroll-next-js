@@ -13,32 +13,32 @@ const mfaIssues: MfaIssue[] = [
   {
     title: "Code not arriving",
     description: "Check delivery method and request a new code.",
-    supportLink: "#",
+    supportLink: "/contact",
   },
   {
     title: "Lost or replaced phone",
     description: "Recover verification through an approved alternate method.",
-    supportLink: "#",
+    supportLink: "/contact",
   },
   {
     title: "Authenticator app unavailable",
     description: "Use a backup method or approved recovery route.",
-    supportLink: "#",
+    supportLink: "/contact",
   },
   {
     title: "Changed phone number",
     description: "Update your verification method securely once signed in.",
-    supportLink: "#",
+    supportLink: "/contact",
   },
   {
     title: "Too many attempts",
     description: "Rate protection is active — wait or use approved recovery.",
-    supportLink: "#",
+    supportLink: "/contact",
   },
   {
     title: "Employer SSO MFA",
     description: "Your employer's identity provider owns this.",
-    supportLink: "#",
+    supportLink: "/contact",
   },
 ];
 

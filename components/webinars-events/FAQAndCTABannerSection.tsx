@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
@@ -137,12 +138,11 @@ export default function FAQAndCTABannerSection() {
               >
                 Join the Waitlist
               </button>
-              <button
-                type="button"
+              <Link href="/contact"
                 className="w-full sm:w-auto text-xs sm:text-sm font-bold border border-white/40 hover:bg-white/10 text-white px-7 py-3 rounded-xl transition-colors cursor-pointer"
               >
                 Contact Support
-              </button>
+              </Link>
             </div>
           </div>
         </div>

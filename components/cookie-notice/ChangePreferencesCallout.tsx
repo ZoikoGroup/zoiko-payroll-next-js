@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function ChangePreferencesCallout() {
@@ -31,12 +32,11 @@ export default function ChangePreferencesCallout() {
           >
             Open Cookie Settings
           </button>
-          <button
-            type="button"
+          <Link href="/product/how-it-works"
             className="px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-white border border-white/20 hover:bg-white/10 transition-colors"
           >
             Explore the product
-          </button>
+          </Link>
         </div>
       </div>
     </section>

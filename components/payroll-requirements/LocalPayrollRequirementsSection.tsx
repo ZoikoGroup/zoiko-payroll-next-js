@@ -74,13 +74,13 @@ export default function LocalPayrollRequirementsSection() {
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4">
             <a
-              href="#"
+              href="/global-payroll/jurisdiction-directory"
               className="px-6 py-3 rounded-full bg-[#52B2EC] text-[#051626] font-semibold text-sm hover:bg-[#52B2EC]/90 transition-colors shadow-sm"
             >
               Review a jurisdiction
             </a>
             <a
-              href="#"
+              href="/book-a-demo"
               className="px-6 py-3 rounded-full border border-white/20 text-white font-semibold text-sm hover:bg-white/10 transition-colors"
             >
               Book a demo
@@ -105,7 +105,7 @@ export default function LocalPayrollRequirementsSection() {
           <div className="text-xs text-[#B9CDDD]/60">
             Configuration support is not legal advice.{" "}
             <a
-              href="#"
+              href="/global-payroll/compliance-workflows"
               className="text-[#52B2EC] font-semibold inline-flex items-center gap-1 hover:underline"
             >
               See Compliance Workflows <ArrowRight className="w-3 h-3" />

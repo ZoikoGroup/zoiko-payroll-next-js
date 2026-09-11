@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 import Eyebrow from "../home/Eyebrow";
 import { ArrowRightIcon } from "../ui/icons";
@@ -55,10 +56,10 @@ export default function StandaloneSection() {
                 </li>
               ))}
             </ul>
-            <span className="mt-6 inline-flex items-center gap-1.5 border-b border-white pb-1 text-sm font-semibold text-white">
+            <Link href="/company/zoiko-one" className="mt-6 inline-flex items-center gap-1.5 border-b border-white pb-1 text-sm font-semibold text-white">
               Explore Zoiko One
               <ArrowRightIcon className="h-4 w-4" />
-            </span>
+            </Link>
           </Reveal>
         </div>
       </div>

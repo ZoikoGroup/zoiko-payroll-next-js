@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function ProvePayrollAccuracyHeroSection() {
@@ -66,12 +67,11 @@ export default function ProvePayrollAccuracyHeroSection() {
           >
             Review validation approach
           </button>
-          <button
-            type="button"
+          <Link href="/contact"
             className="w-full sm:w-auto px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#0F172A] font-bold text-xs sm:text-sm border border-[#E2E8F0] transition-all shadow-xs cursor-pointer"
           >
             Talk to an implementation specialist
-          </button>
+          </Link>
         </div>
 
         {/* Bottom Dark Card with Metrics Grid */}

@@ -38,7 +38,7 @@ export default function ReadyToGoFurtherCTA() {
 
           {/* Secondary Dark Outline Button */}
           <a
-            href="#"
+            href="/contact"
             className="w-full sm:w-auto px-6 py-3 bg-transparent hover:bg-slate-800/50 text-slate-200 border border-slate-600/80 hover:border-slate-500 text-xs font-bold rounded-xl transition-all text-center"
           >
             Talk to an integration specialist

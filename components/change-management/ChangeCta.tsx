@@ -30,9 +30,8 @@ export default function ChangeCta() {
             >
               Talk to an implementation specialist
             </Link>
-            {/* No training route exists yet — placeholder until one is built. */}
             <Link
-              href="#"
+              href="/implementation/training"
               className="rounded-[10px] border border-slate-200 bg-white px-7 py-3.5 text-center text-sm font-semibold text-slate-900 transition-colors hover:border-blue-600"
             >
               Explore training services

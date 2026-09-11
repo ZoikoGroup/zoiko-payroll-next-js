@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 // Bottom link items matching the screenshot footer navigation
@@ -30,14 +31,14 @@ export default function CallToActionSection() {
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4">
           {/* Primary Filled Button */}
-          <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] text-white hover:bg-[#0281D3]/90 text-sm font-semibold transition-all shadow-md active:scale-95">
+          <Link href="/global-payroll/jurisdiction-directory" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] text-white hover:bg-[#0281D3]/90 text-sm font-semibold transition-all shadow-md active:scale-95">
             Review a jurisdiction
-          </button>
+          </Link>
 
           {/* Secondary Outline Button */}
-          <button className="px-6 py-3 rounded-xl bg-transparent border border-white/30 hover:bg-white/10 text-white text-sm font-semibold transition-all active:scale-95">
+          <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-transparent border border-white/30 hover:bg-white/10 text-white text-sm font-semibold transition-all active:scale-95">
             Book a demo
-          </button>
+          </Link>
         </div>
 
         {/* Horizontal Divider */}

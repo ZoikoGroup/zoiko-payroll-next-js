@@ -72,7 +72,7 @@ export default function HeroSection() {
                 Book a demo
               </Link>
               <Link
-                href="#alignment-center"
+                href="/solutions"
                 className="flex min-h-11 items-center justify-center rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-sky-950 transition-all duration-200 hover:-translate-y-0.5"
               >
                 Find your solution

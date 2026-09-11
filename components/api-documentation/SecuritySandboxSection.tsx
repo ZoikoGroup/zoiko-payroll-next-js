@@ -63,7 +63,7 @@ export default function SecuritySandboxSection() {
             {/* Action Button */}
             <div>
               <a
-                href="#"
+                href="/trust-security"
                 className="inline-flex items-center justify-center px-6 py-3 bg-white hover:bg-slate-50 border border-slate-200/80 rounded-xl text-xs font-bold text-[#07243B] shadow-xs transition-colors"
               >
                 Explore Trust and Security

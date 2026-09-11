@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 interface EnterprisePoint {
@@ -66,9 +67,9 @@ export default function ZoikoOneAndEnterpriseSection() {
             </div>
 
             <div>
-              <button className="text-xs sm:text-sm font-bold text-[#0A78C3] hover:underline inline-flex items-center gap-1 cursor-pointer">
+              <Link href="/company/zoiko-one" className="text-xs sm:text-sm font-bold text-[#0A78C3] hover:underline inline-flex items-center gap-1 cursor-pointer">
                 Explore Zoiko One →
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -89,9 +90,9 @@ export default function ZoikoOneAndEnterpriseSection() {
             </div>
 
             <div>
-              <button className="text-xs sm:text-sm font-bold text-white hover:underline inline-flex items-center gap-1 cursor-pointer">
+              <Link href="/contact" className="text-xs sm:text-sm font-bold text-white hover:underline inline-flex items-center gap-1 cursor-pointer">
                 Talk to Sales →
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -142,12 +143,12 @@ export default function ZoikoOneAndEnterpriseSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <button className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#2E9BDD] via-[#0F5688] to-[#0A3D63] hover:bg-[#051a2c] text-white text-xs sm:text-sm font-bold shadow-md transition-colors cursor-pointer">
+            <Link href="/contact" className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#2E9BDD] via-[#0F5688] to-[#0A3D63] hover:bg-[#051a2c] text-white text-xs sm:text-sm font-bold shadow-md transition-colors cursor-pointer">
               Talk to Enterprise Sales
-            </button>
-            <button className="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs sm:text-sm font-bold shadow-xs transition-colors inline-flex items-center gap-1.5 cursor-pointer">
+            </Link>
+            <Link href="/company/trust-center" className="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs sm:text-sm font-bold shadow-xs transition-colors inline-flex items-center gap-1.5 cursor-pointer">
               Visit the Trust Center →
-            </button>
+            </Link>
           </div>
         </div>
       </div>

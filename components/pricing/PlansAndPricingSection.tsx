@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -38,13 +39,13 @@ export default function PlansAndPricingSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-4 pt-1">
-              <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#2375b0] text-white text-xs sm:text-sm font-bold shadow-md transition-colors inline-flex items-center gap-2 cursor-pointer">
+              <Link href="/contact" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#2375b0] text-white text-xs sm:text-sm font-bold shadow-md transition-colors inline-flex items-center gap-2 cursor-pointer">
                 Talk to Payroll Sales
                 <ArrowRight className="w-4 h-4" />
-              </button>
-              <button className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs sm:text-sm font-bold shadow-xs transition-colors cursor-pointer">
+              </Link>
+              <Link href="/pricing/plans" className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs sm:text-sm font-bold shadow-xs transition-colors cursor-pointer">
                 Compare Plans
-              </button>
+              </Link>
             </div>
 
             {/* Footer Subtext Notes */}

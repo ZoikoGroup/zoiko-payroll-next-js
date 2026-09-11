@@ -16,17 +16,17 @@ const resources: ResourceCard[] = [
         playbooks for payroll operations.
       </>
     ),
-    href: '#payroll-guides',
+    href: "/resources/payroll-guides",
   },
   {
     title: 'Payroll Glossary',
     description: 'Direct definitions of payroll terms.',
-    href: '#payroll-glossary',
+    href: "/resources/payroll-glossary",
   },
   {
     title: 'Product Documentation',
     description: 'Configure and use Zoiko Payroll.',
-    href: '#product-documentation',
+    href: "/resources/documentation",
   },
   {
     title: 'Resource Center',
@@ -37,7 +37,7 @@ const resources: ResourceCard[] = [
         knowledge.
       </>
     ),
-    href: '#resource-center',
+    href: "/resources",
   },
 ];
 

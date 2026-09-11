@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -98,10 +99,10 @@ export default function ZoikoPayrollWebhooksSection() {
             <button className="w-full sm:w-auto px-6 py-3 bg-[#38A5E4] hover:bg-[#2F93CD] text-white font-semibold text-xs sm:text-sm rounded-xl shadow-md transition-colors cursor-pointer">
               Explore webhook events
             </button>
-            <button className="w-full sm:w-auto px-6 py-3 bg-[#112B4A]/60 hover:bg-[#183960] border border-slate-700/60 text-slate-200 font-medium text-xs sm:text-sm rounded-xl backdrop-blur-xs flex items-center justify-center gap-2 transition-colors cursor-pointer">
+            <Link href="/integrations/support" className="w-full sm:w-auto px-6 py-3 bg-[#112B4A]/60 hover:bg-[#183960] border border-slate-700/60 text-slate-200 font-medium text-xs sm:text-sm rounded-xl backdrop-blur-xs flex items-center justify-center gap-2 transition-colors cursor-pointer">
               <span>integration support</span>
               <ArrowRight className="w-3.5 h-3.5" />
-            </button>
+            </Link>
           </div>
         </div>
 

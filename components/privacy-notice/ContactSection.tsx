@@ -24,7 +24,7 @@ export default function ContactSection() {
       {/* Button */}
       <div className="pt-2">
         <Link
-          href="#contact-privacy"
+          href="/contact"
           className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-xs sm:text-sm text-white bg-gradient-to-r from-[#389ed9] to-[#1d5987] hover:opacity-95 shadow-sm transition-all"
         >
           Contact Privacy

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -43,13 +44,13 @@ export default function PayrollContinuitySection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-4">
-            <button className="bg-gradient-to-r from-[#59A9E0] to-[#0A5A93] hover:bg-[#165a8c] text-white text-xs sm:text-sm font-semibold px-6 py-3.5 rounded-xl shadow-md transition-all cursor-pointer">
+            <Link href="/resources/system-status" className="bg-gradient-to-r from-[#59A9E0] to-[#0A5A93] hover:bg-[#165a8c] text-white text-xs sm:text-sm font-semibold px-6 py-3.5 rounded-xl shadow-md transition-all cursor-pointer">
               View system status
-            </button>
-            <button className="bg-transparent hover:bg-white/10 text-white border border-[#FFFFFF80] text-xs sm:text-sm font-semibold px-6 py-3.5 rounded-xl transition-all flex items-center gap-2 cursor-pointer">
+            </Link>
+            <Link href="/company/trust-center" className="bg-transparent hover:bg-white/10 text-white border border-[#FFFFFF80] text-xs sm:text-sm font-semibold px-6 py-3.5 rounded-xl transition-all flex items-center gap-2 cursor-pointer">
               <span>Open Trust Center</span>
               <ArrowRight className="w-4 h-4 stroke-[2.5]" />
-            </button>
+            </Link>
           </div>
         </div>
 
