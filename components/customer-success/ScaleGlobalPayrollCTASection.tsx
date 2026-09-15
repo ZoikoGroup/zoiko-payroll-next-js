@@ -35,7 +35,7 @@ export default function ScaleGlobalPayrollCTASection() {
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
               {/* Primary White Button */}
               <a
-                href="#explore"
+                href="/implementation/customer-success#explore"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-[#2563EB] font-bold text-xs sm:text-sm hover:bg-slate-100 transition-colors shadow-xs"
               >
                 Explore our success model
