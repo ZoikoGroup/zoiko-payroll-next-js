@@ -180,7 +180,7 @@ export default function TermsDetailedContentSection() {
   };
 
   return (
-    <section className="w-full bg-[#F8FAFC] py-12 lg:py-16 font-sans antialiased text-[#0F172A]">
+    <section id="terms" className="w-full bg-[#F8FAFC] py-12 lg:py-16 font-sans antialiased text-[#0F172A]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative">
           {/* Left Sidebar Sticky Navigation */}

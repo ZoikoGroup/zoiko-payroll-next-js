@@ -67,7 +67,7 @@ export default function PayrollHero() {
               <button className="h-11 px-6 bg-gradient-to-r from-[#0A8FD0] to-[#0A2E4B] text-white text-sm font-bold rounded-lg shadow-sm hover:opacity-95 transition-opacity">
                 Explore payroll guides
               </button>
-              <Link href="/contact" className="h-11 px-6 bg-white text-[#0A2E4B] text-sm font-bold rounded-lg border border-[#E1E8F0] hover:bg-gray-50 transition-colors">
+              <Link href="/resources/payroll-guides#payroll-guides" className="h-11 px-6 bg-white text-[#0A2E4B] text-sm font-bold rounded-lg border border-[#E1E8F0] hover:bg-gray-50 transition-colors">
                 Contact Support
               </Link>
             </div>

@@ -63,7 +63,7 @@ export default function PostGoLiveSuccessSection() {
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-3 mb-10 w-full sm:w-auto">
               <a
-                href="#success-model"
+                href="/implementation/customer-success#explore"
                 className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-[#0B192C] hover:bg-[#1E293B] text-white text-xs sm:text-sm font-semibold text-center transition-colors shadow-sm"
               >
                 Explore our success model
