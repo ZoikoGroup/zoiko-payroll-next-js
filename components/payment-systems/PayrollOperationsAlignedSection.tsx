@@ -123,9 +123,9 @@ export default function PayrollOperationsAlignedSection() {
 
             {/* Buttons */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <button className="bg-[#0A8FD0] hover:bg-[#087bb5] text-white text-xs font-semibold px-5 py-3 rounded-xl shadow-md transition-colors cursor-pointer">
+              <Link href="#fit-and-availability" className="bg-[#0A8FD0] hover:bg-[#087bb5] text-white text-xs font-semibold px-5 py-3 rounded-xl shadow-md transition-colors cursor-pointer">
                 Check your payment system
-              </button>
+              </Link>
               <Link href="/integrations/support" className="border border-slate-700 hover:border-slate-500 text-slate-200 text-xs font-semibold px-5 py-3 rounded-xl transition-colors flex items-center gap-2 cursor-pointer">
                 <span>Get integration support</span>
                 <ArrowRight className="w-3.5 h-3.5" />

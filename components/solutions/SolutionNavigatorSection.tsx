@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function SolutionNavigatorSection() {
@@ -29,8 +30,37 @@ export default function SolutionNavigatorSection() {
     "Global expansion",
   ];
 
+  // The navigator recommends one page: a concrete footprint beats everything,
+  // multiple legal entities beats a vague footprint, then stage, then team focus.
+  const q1Routes: Record<string, string> = {
+    "One jurisdiction": "/solutions/single-jurisdiction",
+    "Multiple jurisdictions": "/solutions/multi-jurisdiction",
+  };
+
+  const q2Routes: Record<string, string> = {
+    Growing: "/solutions/growing-businesses",
+    "Mid-market": "/solutions/mid-market-organizations",
+    "International group": "/solutions/international-groups",
+    Enterprise: "/solutions/enterprise-organizations",
+    "Multiple legal entities": "/solutions/multi-entity",
+  };
+
+  const q3Routes: Record<string, string> = {
+    "Run payroll": "/solutions/payroll-teams",
+    "Standardize controls": "/solutions/centralized-operations",
+    "Finance visibility": "/solutions/finance-teams",
+    "HR/people coordination": "/solutions/hr-teams",
+    "Global expansion": "/solutions/multi-jurisdiction",
+  };
+
+  const recommendedHref =
+    (q2 === "Multiple legal entities" ? q2Routes[q2] : q1Routes[q1]) ??
+    q2Routes[q2] ??
+    q3Routes[q3] ??
+    "/solutions/multi-jurisdiction";
+
   return (
-    <section className="w-full bg-[#F9FAFB] py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
+    <section id="solution-navigator" className="w-full bg-[#F9FAFB] py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
       <div className="max-w-6xl mx-auto space-y-10">
         {/* Header */}
         <div className="text-center space-y-3">
@@ -168,12 +198,12 @@ export default function SolutionNavigatorSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
-            <button className="w-full sm:w-auto px-6 py-2.5 bg-[#8BD2F8] hover:bg-[#78C9F6] text-[#07243B] text-xs font-bold rounded-lg transition-colors">
+            <Link href={recommendedHref} className="inline-block text-center w-full sm:w-auto px-6 py-2.5 bg-[#8BD2F8] hover:bg-[#78C9F6] text-[#07243B] text-xs font-bold rounded-lg transition-colors">
               View recommended solution
-            </button>
-            <button className="w-full sm:w-auto px-6 py-2.5 bg-transparent border border-slate-500 text-white text-xs font-semibold rounded-lg hover:bg-white/5 transition-colors">
+            </Link>
+            <Link href="#by-payroll-footprint" className="inline-block text-center w-full sm:w-auto px-6 py-2.5 bg-transparent border border-slate-500 text-white text-xs font-semibold rounded-lg hover:bg-white/5 transition-colors">
               Compare solution paths
-            </button>
+            </Link>
           </div>
         </div>
       </div>

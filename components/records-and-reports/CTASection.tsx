@@ -38,9 +38,9 @@ export default function CTASection() {
           <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2B9BD7] to-[#1D74B4] hover:from-[#1D74B4] hover:to-[#165B8E] text-white text-sm font-semibold transition-all shadow-md cursor-pointer">
             Book a Demo
           </Link>
-          <button className="px-6 py-3 rounded-xl hover:bg-white/20 text-white text-sm font-semibold border border-white/30 backdrop-blur-xs transition-colors cursor-pointer">
+          <Link href="/product/tour" className="px-6 py-3 rounded-xl hover:bg-white/20 text-white text-sm font-semibold border border-white/30 backdrop-blur-xs transition-colors cursor-pointer">
             Take the Product Tour
-          </button>
+          </Link>
         </div>
       </div>
     </section>

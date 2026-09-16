@@ -86,9 +86,9 @@ export default function PayrollRecordsReportingSection() {
               <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#0A8FD0] to-[#0B4573] text-white text-xs sm:text-sm font-semibold hover:opacity-95 transition-opacity shadow-sm cursor-pointer">
                 Book a Demo
               </Link>
-              <button className="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:bg-slate-50 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors shadow-2xs cursor-pointer">
+              <Link href="/product/tour" className="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:bg-slate-50 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors shadow-2xs cursor-pointer">
                 Take the Product Tour
-              </button>
+              </Link>
             </div>
 
             {/* Pill Tags */}

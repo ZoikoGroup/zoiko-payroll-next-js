@@ -110,7 +110,7 @@ export default function SecurityDiversionSection() {
 
           <div>
             <a
-              href="#"
+              href="/company/trust-center"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white border border-slate-200 hover:bg-slate-50 text-xs font-semibold text-[#07243B] shadow-2xs transition-colors"
             >
               <span>Report a security concern</span>

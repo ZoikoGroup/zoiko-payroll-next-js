@@ -36,9 +36,9 @@ export default function FinalSecurityReviewSection() {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
-                <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2C90D0] to-[#117DC5] hover:bg-[#2375b0] text-white text-xs sm:text-sm font-bold shadow-md transition-colors cursor-pointer">
+                <Link href="#request-evidence" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2C90D0] to-[#117DC5] hover:bg-[#2375b0] text-white text-xs sm:text-sm font-bold shadow-md transition-colors cursor-pointer">
                   Start a security review
-                </button>
+                </Link>
                 <Link href="/contact" className="px-6 py-3 rounded-xl bg-[#FFFFFF1A] hover:bg-slate-800 text-slate-200 border border-[#FFFFFF47] text-xs sm:text-sm font-bold transition-colors cursor-pointer">
                   Request assurance evidence
                 </Link>

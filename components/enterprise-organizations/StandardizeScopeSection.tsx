@@ -33,7 +33,7 @@ export default function StandardizeScopeSection() {
             <div className="bg-[#eef0f4] border border-[#e3e7ec] h-auto lg:h-[375px] overflow-hidden relative rounded-[16px] w-full max-w-[500px] shrink-0">
               <div className="absolute lg:h-[372px] lg:-left-[46px] lg:-top-[1.75px] w-full lg:w-[557px] inset-0 lg:inset-auto">
                 <img
-                  src="/images/enterprise-organizations/standardize.png"
+                  src="/images/enterprise-organizations/standardize.webp"
                   alt="Standardize scope dashboard"
                   loading="lazy"
                   className="absolute inset-0 max-w-none object-cover size-full pointer-events-none"

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -77,12 +78,12 @@ export default function CustomFitRequestSection() {
 
             {/* Primary Gradient CTA Button */}
             <div className="pt-2">
-              <button
-                type="button"
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-xs font-semibold text-white bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:opacity-95 transition-opacity shadow-sm"
               >
                 Submit custom fit request
-              </button>
+              </Link>
             </div>
           </div>
         </div>

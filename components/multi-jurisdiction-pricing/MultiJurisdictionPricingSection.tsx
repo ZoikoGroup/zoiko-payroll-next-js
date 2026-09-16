@@ -49,12 +49,12 @@ export default function MultiJurisdictionPricingSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-              <button
-                type="button"
+              <Link
+                href="/pricing/plans"
                 className="text-xs sm:text-sm font-bold bg-gradient-to-r from-[#2C90D0] to-[#117DC5] hover:bg-[#2374AD] text-white px-6 py-3.5 rounded-xl shadow-xs transition-colors cursor-pointer text-center"
               >
                 Build your jurisdiction scope
-              </button>
+              </Link>
               <Link href="/global-payroll/jurisdiction-coverage"
                 className="text-xs sm:text-sm font-bold bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200/80 px-6 py-3.5 rounded-xl shadow-2xs transition-colors cursor-pointer text-center"
               >

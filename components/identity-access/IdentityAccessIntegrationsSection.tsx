@@ -43,7 +43,7 @@ export default function IdentityAccessIntegrationsSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
               <a
-                href="#"
+                href="#fit-capability-confidence"
                 className="px-6 py-3.5 bg-gradient-to-r from-[#1D77B4] to-[#0A5F9E] hover:from-[#176296] hover:to-[#084D82] text-white text-xs font-bold rounded-xl shadow-md transition-all text-center"
               >
                 Check your identity system

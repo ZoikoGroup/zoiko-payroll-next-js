@@ -48,12 +48,12 @@ export default function SecurityReviewSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-4 pt-1">
-              <button
-                type="button"
+              <Link
+                href="#request-evidence"
                 className="px-6 py-3.5 rounded-xl bg-[#2A87C8] hover:bg-[#2374ac] text-white text-xs sm:text-sm font-bold shadow-lg shadow-[#2A87C8]/20 transition-all cursor-pointer"
               >
                 Start a security review
-              </button>
+              </Link>
               <Link href="/contact"
                 className="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-bold shadow-xs transition-all cursor-pointer"
               >

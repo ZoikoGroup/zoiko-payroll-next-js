@@ -81,7 +81,7 @@ export default function EventCatalogReferenceSection() {
   };
 
   return (
-    <section className="w-full bg-white py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
+    <section id="event-catalog" className="scroll-mt-24 w-full bg-white py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
       <div className="max-w-6xl mx-auto space-y-10">
         {/* Header Block */}
         <div className="text-center space-y-3 max-w-3xl mx-auto">

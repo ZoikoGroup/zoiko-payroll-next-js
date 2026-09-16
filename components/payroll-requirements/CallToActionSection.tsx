@@ -5,11 +5,11 @@ import React from "react";
 
 // Bottom link items matching the screenshot footer navigation
 const FOOTER_LINKS = [
-  { label: "Compliance Workflows", href: "#compliance-workflows" },
-  { label: "Multi-Entity Payroll", href: "#multi-entity-payroll" },
-  { label: "Global Reporting", href: "#global-reporting" },
-  { label: "Implementation and Migration", href: "#implementation-migration" },
-  { label: "Jurisdiction Guides", href: "#jurisdiction-guides" },
+  { label: "Compliance Workflows", href: "/global-payroll/compliance-workflows" },
+  { label: "Multi-Entity Payroll", href: "/global-payroll/multi-entity-payroll" },
+  { label: "Global Reporting", href: "/global-payroll/reporting" },
+  { label: "Implementation and Migration", href: "/global-payroll/implementation-migration" },
+  { label: "Jurisdiction Guides", href: "/global-payroll/jurisdiction-guides" },
 ];
 
 export default function CallToActionSection() {
@@ -49,13 +49,13 @@ export default function CallToActionSection() {
         {/* Bottom Navigation Links */}
         <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-xs sm:text-sm text-[#9FC7E3]">
           {FOOTER_LINKS.map((link, index) => (
-            <a
+            <Link
               key={index}
               href={link.href}
               className="hover:text-white transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -24,7 +24,7 @@ export default function SecureSupportIntakeSection() {
   };
 
   return (
-    <section className="w-full bg-[#F9FAFB] py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
+    <section id="get-support" className="scroll-mt-24 w-full bg-[#F9FAFB] py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Header Block */}
         <div className="space-y-3">

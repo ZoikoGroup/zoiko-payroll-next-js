@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { Check } from "lucide-react";
 
@@ -8,6 +9,7 @@ interface FootprintOption {
   description: string;
   features: string[];
   ctaLabel: string;
+  ctaHref: string;
 }
 
 const footprintData: FootprintOption[] = [
@@ -21,6 +23,7 @@ const footprintData: FootprintOption[] = [
       "Integrations where supported",
     ],
     ctaLabel: "Explore Single-Jurisdiction Payroll",
+    ctaHref: "/solutions/single-jurisdiction",
   },
   {
     title: "Multi-jurisdiction payroll",
@@ -33,12 +36,13 @@ const footprintData: FootprintOption[] = [
       "Clear local responsibilities and ownership",
     ],
     ctaLabel: "Explore Multi-Jurisdiction Payroll",
+    ctaHref: "/solutions/multi-jurisdiction",
   },
 ];
 
 export default function ByPayrollFootprintSection() {
   return (
-    <section className="w-full bg-white py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
+    <section id="by-payroll-footprint" className="w-full bg-white py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Section Header */}
         <div className="text-center space-y-3 max-w-3xl mx-auto">
@@ -84,9 +88,9 @@ export default function ByPayrollFootprintSection() {
 
               {/* Button */}
               <div className="pt-4">
-                <button className="w-full sm:w-auto px-5 py-2.5 rounded-xl border border-slate-200 text-[#07243B] font-bold text-xs hover:border-slate-300 hover:bg-slate-50 transition-colors">
+                <Link href={item.ctaHref} className="inline-block text-center w-full sm:w-auto px-5 py-2.5 rounded-xl border border-slate-200 text-[#07243B] font-bold text-xs hover:border-slate-300 hover:bg-slate-50 transition-colors">
                   {item.ctaLabel}
-                </button>
+                </Link>
               </div>
             </div>
           ))}

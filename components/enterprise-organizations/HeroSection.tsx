@@ -80,7 +80,7 @@ export default function HeroSection() {
           {/* Right Column (Image) */}
           <Reveal delay={120} className="w-full mt-6 lg:mt-0">
             <img
-              src="/images/enterprise-organizations/hero.png"
+              src="/images/enterprise-organizations/hero.webp"
               alt="Enterprise Payroll Dashboard on Laptop"
               loading="lazy"
               className="w-full h-auto drop-shadow-2xl"
