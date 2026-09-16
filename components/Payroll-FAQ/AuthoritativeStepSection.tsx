@@ -47,7 +47,7 @@ export const AuthoritativeStepSection: React.FC = () => {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#search-faq"
+            href="#search"
             className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-sky-400 to-sky-900 text-white text-sm font-bold rounded-lg shadow-[0px_1px_2px_0px_rgba(10,46,75,0.06)] hover:opacity-95 transition-opacity min-w-[160px]"
           >
             Search the FAQ

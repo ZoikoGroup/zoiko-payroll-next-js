@@ -43,17 +43,17 @@ export default function EvidenceGovernance() {
         </div>
 
         {/* Evidence Image with Pipeline at bottom */}
-        <div className="relative w-full overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-[0px_8px_24px_0px_rgba(8,47,73,0.06)]">
-          <div className="relative h-80 w-full bg-sky-950/30">
+        <div className="relative w-full overflow-hidden rounded-2xl">
+          <div className="relative h-90 w-full">
             <Image
-              src="/11.png"
+              src="/images/jurisdiction-coverage/13.png"
               alt="Evidence governance"
               fill
               className="object-cover"
             />
           </div>
           {/* Pipeline at bottom of image */}
-          <div className="absolute bottom-0 left-0 right-0 flex w-full flex-wrap items-center justify-center gap-3 py-3">
+          <div className="absolute bottom-5 left-0 right-0 flex w-full flex-wrap items-center justify-center gap-3 py-3">
           {pipeline.map((step, i) => (
             <div key={step} className="flex items-center">
 

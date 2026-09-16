@@ -1,43 +1,74 @@
 import Reveal from "../ui/Reveal";
 import Eyebrow from "./Eyebrow";
 
-/** `detail` is split into the two lines the design sets it on. */
-const problems = [
+export type ProblemItem = {
+  icon: string;
+  problem: string;
+  detail: [string, string];
+  control: string;
+  href: string;
+};
+
+const problems: ProblemItem[] = [
   {
     icon: "icon-clock.svg",
     problem: "A recurring item keeps applying unintentionally",
-    detail: ["No end condition was set, so the deduction continues", "past when it should have stopped."],
+    detail: [
+      "No end condition was set, so the deduction continues",
+      "past when it should have stopped.",
+    ],
     control: "See recurring change controls",
+    href: "/implementation/change-management",
   },
   {
     icon: "icon-calendar.svg",
     problem: "A one-time item hits the wrong pay period",
-    detail: ["Without a clear effective date, a single change lands on", "an unintended payroll run."],
+    detail: [
+      "Without a clear effective date, a single change lands on",
+      "an unintended payroll run.",
+    ],
     control: "See effective date controls",
+    href: "/payroll-operations/inputs-validation",
   },
   {
     icon: "icon-plus.svg",
     problem: "A correction silently overwrites history",
-    detail: ["The original value is lost, so no one can reconstruct what", "changed or why."],
+    detail: [
+      "The original value is lost, so no one can reconstruct what",
+      "changed or why.",
+    ],
     control: "See non-destructive corrections",
+    href: "/payroll-operations/close-and-audit",
   },
   {
     icon: "icon-duplicate.svg",
     problem: "A duplicate item enters through an import",
-    detail: ["The same change is applied twice because duplicates", "weren't detected before eligibility."],
+    detail: [
+      "The same change is applied twice because duplicates",
+      "weren't detected before eligibility.",
+    ],
     control: "See import validation",
+    href: "/payroll-operations/inputs-validation",
   },
   {
     icon: "icon-check.svg",
     problem: "A change bypasses required review",
-    detail: ["A material change reaches payroll without the approval its", "policy requires."],
+    detail: [
+      "A material change reaches payroll without the approval its",
+      "policy requires.",
+    ],
     control: "See approval linkage",
+    href: "/product/payroll-approvals",
   },
   {
     icon: "icon-globe.svg",
     problem: "Jurisdiction context is hidden",
-    detail: ["A change is applied without visible entity, currency or", "jurisdiction scope."],
+    detail: [
+      "A change is applied without visible entity, currency or",
+      "jurisdiction scope.",
+    ],
     control: "See multi-entity controls",
+    href: "/solutions/multi-jurisdiction",
   },
 ];
 
@@ -62,11 +93,12 @@ export default function ProblemsSection() {
           <Reveal delay={100}>
             <Eyebrow>Why change control matters</Eyebrow>
             <h2 className="mt-3 text-3xl font-bold leading-9 text-sky-950">
-              Small payroll changes cause large downstream problems when they aren&rsquo;t governed.
+              Small payroll changes cause large downstream problems when they
+              aren&rsquo;t governed.
             </h2>
             <p className="mt-3.5 max-w-xl text-base leading-6 text-slate-600">
-              These are operational failure modes, not hypothetical risk — each one points to the
-              control built to prevent it.
+              These are operational failure modes, not hypothetical risk — each
+              one points to the control built to prevent it.
             </p>
           </Reveal>
         </div>
@@ -76,17 +108,29 @@ export default function ProblemsSection() {
             <Reveal key={item.problem} delay={(index % 3) * 60}>
               <div className="flex h-full flex-col rounded-xl border border-slate-200 bg-white px-4 pt-4 pb-5">
                 <span className="flex size-8 items-center justify-center rounded-lg bg-red-100">
-                  <img src={`/images/deductions/${item.icon}`} alt="" aria-hidden="true" className="size-4" />
+                  <img
+                    src={`/images/deductions/${item.icon}`}
+                    alt=""
+                    aria-hidden="true"
+                    className="size-4"
+                  />
                 </span>
-                <h3 className="mt-3 text-sm font-bold leading-5 text-sky-950">{item.problem}</h3>
+                <h3 className="mt-3 text-sm font-bold leading-5 text-sky-950">
+                  {item.problem}
+                </h3>
                 <p className="mt-1.5 text-xs leading-5 text-slate-600">
                   {item.detail[0]}
                   <br />
                   {item.detail[1]}
                 </p>
-                <p className="mt-auto pt-4 text-xs font-semibold leading-4 text-sky-700">
-                  {item.control} →
-                </p>
+                <div className="mt-auto pt-4">
+                  <a
+                    href={item.href}
+                    className="inline-flex items-center text-xs font-semibold leading-4 text-sky-700 hover:text-sky-900 transition-colors"
+                  >
+                    {item.control} →
+                  </a>
+                </div>
               </div>
             </Reveal>
           ))}

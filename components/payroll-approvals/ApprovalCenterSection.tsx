@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 import Eyebrow from "./Eyebrow";
 
@@ -197,9 +198,9 @@ export default function ApprovalCenterSection() {
                   </div>
                 ))}
               </dl>
-              <span className="mt-5 block rounded-md bg-green-700 px-4 py-2.5 text-center text-sm font-semibold text-white">
+              <Link href="/sign-in" className="mt-5 block rounded-md bg-green-700 px-4 py-2.5 text-center text-sm font-semibold text-white">
                 Review approval →
-              </span>
+              </Link>
             </div>
           </div>
         </Reveal>

@@ -1,43 +1,42 @@
 import Link from "next/link";
-import React from 'react';
+import React from "react";
 
 export default function PayrollHero() {
   const tags = [
-    'Task-first guidance',
-    'Reviewed dates',
-    'Clear scope',
-    'Authority handoffs',
-    'Versioned corrections',
+    "Task-first guidance",
+    "Reviewed dates",
+    "Clear scope",
+    "Authority handoffs",
+    "Versioned corrections",
   ];
 
   const cards = [
     {
-      badge: 'CHECKLIST',
-      badgeBg: 'bg-[#CFE0EE] text-[#155A8A]',
-      status: 'Current',
-      title: 'Payroll Operations Checklist: From Inputs to Close',
-      meta: 'General operations · Reviewed Jul 2026',
+      badge: "CHECKLIST",
+      badgeBg: "bg-[#CFE0EE] text-[#155A8A]",
+      status: "Current",
+      title: "Payroll Operations Checklist: From Inputs to Close",
+      meta: "General operations · Reviewed Jul 2026",
     },
     {
-      badge: 'GUIDE',
-      badgeBg: 'bg-[#CFE0EE] text-[#155A8A]',
-      status: 'Current',
-      title: 'Designing Payroll Review and Approval Controls',
-      meta: 'Payroll leader · Reviewed Jun 2026',
+      badge: "GUIDE",
+      badgeBg: "bg-[#CFE0EE] text-[#155A8A]",
+      status: "Current",
+      title: "Designing Payroll Review and Approval Controls",
+      meta: "Payroll leader · Reviewed Jun 2026",
     },
     {
-      badge: 'PLAYBOOK',
-      badgeBg: 'bg-[#CFE0EE] text-[#155A8A]',
-      status: 'Current',
-      title: 'Managing Payroll Adjustments and Corrections',
-      meta: 'Payroll operations · Reviewed Aug 2026',
+      badge: "PLAYBOOK",
+      badgeBg: "bg-[#CFE0EE] text-[#155A8A]",
+      status: "Current",
+      title: "Managing Payroll Adjustments and Corrections",
+      meta: "Payroll operations · Reviewed Aug 2026",
     },
   ];
 
   return (
     <section className="w-full max-w-[1200px] mx-auto p-6 lg:p-10 font-sans text-[#0A2E4B]">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-        
         {/* Left Column: Hero Content */}
         <div className="lg:col-span-6 flex flex-col justify-between h-full">
           <div>
@@ -51,23 +50,28 @@ export default function PayrollHero() {
 
             {/* Main Title */}
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight text-[#0A2E4B] mb-4">
-              Practical payroll guides for<br />
+              Practical payroll guides for
+              <br />
               stronger payroll operations.
             </h1>
 
             {/* Subtitle / Description */}
             <p className="text-base font-normal text-gray-600 leading-relaxed mb-8 max-w-xl">
-              Explore practical guides, checklists and playbooks for payroll processes, 
-              controls, reviews, records, reporting and implementation — with scope 
-              and reviewed-date context kept visible.
+              Explore practical guides, checklists and playbooks for payroll
+              processes, controls, reviews, records, reporting and
+              implementation — with scope and reviewed-date context kept
+              visible.
             </p>
 
             {/* CTA Action Buttons */}
-            <div className="flex flex-wrap gap-4 mb-10">
-              <button className="h-11 px-6 bg-gradient-to-r from-[#0A8FD0] to-[#0A2E4B] text-white text-sm font-bold rounded-lg shadow-sm hover:opacity-95 transition-opacity">
+            <div className="flex flex-wrap items-center gap-4 mb-10">
+              <Link href="#explore" className="inline-flex items-center justify-center h-11 px-6 bg-gradient-to-r from-[#0A8FD0] to-[#0A2E4B] text-white text-sm font-bold rounded-lg shadow-sm hover:opacity-95 transition-opacity">
                 Explore payroll guides
-              </button>
-              <Link href="/resources/payroll-guides#payroll-guides" className="h-11 px-6 bg-white text-[#0A2E4B] text-sm font-bold rounded-lg border border-[#E1E8F0] hover:bg-gray-50 transition-colors">
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center h-11 px-6 bg-white text-[#0A2E4B] text-sm font-bold rounded-lg border border-[#E1E8F0] hover:bg-gray-50 transition-colors"
+              >
                 Contact Support
               </Link>
             </div>
@@ -76,7 +80,10 @@ export default function PayrollHero() {
             <div className="pt-6 border-t border-[#E1E8F0] mb-8">
               <ul className="flex flex-wrap gap-y-3 gap-x-6">
                 {tags.map((tag, idx) => (
-                  <li key={idx} className="flex items-center gap-2 text-xs font-semibold text-[#0A2E4B]">
+                  <li
+                    key={idx}
+                    className="flex items-center gap-2 text-xs font-semibold text-[#0A2E4B]"
+                  >
                     <span className="w-1.5 h-1.5 bg-[#0A8FD0] rounded-full inline-block" />
                     <span>{tag}</span>
                   </li>
@@ -105,17 +112,23 @@ export default function PayrollHero() {
               />
             </div>
             <p className="text-xs text-gray-400">
-              Reviewed by <span className="font-bold text-[#0A2E4B]">payroll operations specialists</span> before publish
+              Reviewed by{" "}
+              <span className="font-bold text-[#0A2E4B]">
+                payroll operations specialists
+              </span>{" "}
+              before publish
             </p>
           </div>
         </div>
 
         {/* Right Column: Interactive Card Container */}
         <div className="lg:col-span-6 bg-white rounded-2xl p-5 shadow-[0px_8px_24px_0px_rgba(10,46,75,0.08)] border border-[#E1E8F0] flex flex-col gap-4">
-          
           {/* Search Bar */}
           <div className="w-full h-11 px-4 bg-[#E9F0F8] rounded-lg border border-[#E1E8F0] flex items-center text-xs text-gray-400">
-            <span>🔍 Search payroll guides — e.g., approvals, deductions, reconciliation</span>
+            <span>
+              🔍 Search payroll guides — e.g., approvals, deductions,
+              reconciliation
+            </span>
           </div>
 
           {/* Category Filter Pills */}
@@ -142,7 +155,9 @@ export default function PayrollHero() {
                 className="p-4 bg-white rounded-lg border border-[#E1E8F0] hover:border-[#0A8FD0] transition-colors cursor-pointer"
               >
                 <div className="flex items-center justify-between mb-2">
-                  <span className={`px-2 py-0.5 rounded text-[9.5px] font-extrabold tracking-wide uppercase ${card.badgeBg}`}>
+                  <span
+                    className={`px-2 py-0.5 rounded text-[9.5px] font-extrabold tracking-wide uppercase ${card.badgeBg}`}
+                  >
                     {card.badge}
                   </span>
                   <span className="px-2 py-0.5 bg-gray-100 text-gray-600 rounded text-[9.5px] font-bold">
@@ -152,15 +167,11 @@ export default function PayrollHero() {
                 <h3 className="text-xs font-bold text-[#0A2E4B] mb-1">
                   {card.title}
                 </h3>
-                <p className="text-xs text-gray-400">
-                  {card.meta}
-                </p>
+                <p className="text-xs text-gray-400">{card.meta}</p>
               </div>
             ))}
           </div>
-
         </div>
-
       </div>
     </section>
   );

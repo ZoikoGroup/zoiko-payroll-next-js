@@ -13,37 +13,39 @@ const cards: CountryCard[] = [
   {
     name: "United States",
     status: "available",
-    image: "/a.png",
+    image: "/images/jurisdiction-coverage/7.png",
     desc: "Effective March 2025 · Direct, self-managed.",
   },
   {
     name: "United Kingdom",
     status: "available",
-    image: "/b.png",
+    image: "/images/jurisdiction-coverage/8.png",
     desc: "Effective Jan 2025 · Direct, self-managed.",
   },
   {
     name: "Germany",
     status: "limited",
-    image: "/c.png",
+    image: "/images/jurisdiction-coverage/9.png",
     desc: "Select entity types · Self-managed only.",
   },
   {
     name: "Singapore",
     status: "available",
-    image: "/d.png",
+    image: "/images/jurisdiction-coverage/10.png",
     desc: "Effective March 2025 · Direct, self-managed.",
   },
   {
     name: "Brazil",
     status: "partner",
-    image: "/e.png",
+    image: "/images/jurisdiction-coverage/11.png",
+
     desc: "Delivered via approved local partner.",
   },
   {
     name: "India",
     status: "planned",
-    image: "/f.png",
+    image: "/images/jurisdiction-coverage/12.png",
+
     desc: "Approved future direction — not current service.",
   },
 ];
@@ -107,9 +109,12 @@ export default function CoverageSnapshot() {
         </div>
 
         <div className="flex w-full justify-center pt-6">
-          <div className="whitespace-nowrap border-b border-slate-200 pb-1 text-center text-sm font-semibold leading-5 text-sky-700">
+          <a
+            href="/global-payroll/country-territory-directory"
+            className="inline-block whitespace-nowrap border-b border-slate-200 pb-1 text-center text-sm font-semibold leading-5 text-sky-700 hover:text-sky-900 transition-colors"
+          >
             Explore all jurisdictions in the Country and Territory Directory →
-          </div>
+          </a>
         </div>
       </div>
     </section>

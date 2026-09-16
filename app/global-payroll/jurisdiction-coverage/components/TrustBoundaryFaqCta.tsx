@@ -126,9 +126,9 @@ export default function TrustBoundaryFaqCta() {
           </div>
 
           {/* CTA Image */}
-          <div className="mt-8 h-[355px] w-full flex-shrink-0 overflow-hidden rounded-2xl border border-white/10 md:mt-0 md:w-[426px]">
+          <div className="mt-8 h-[355px] w-full flex-shrink-0 overflow-hidden rounded-2xl md:mt-0 md:w-[426px]">
             <Image
-              src="/xx.png"
+              src="/images/jurisdiction-coverage/14.png"
               alt="CTA illustration"
               width={426}
               height={355}

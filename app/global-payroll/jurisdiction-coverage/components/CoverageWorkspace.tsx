@@ -38,7 +38,7 @@ const rows: TableRow[] = [
 
 export default function CoverageWorkspace() {
   return (
-    <section className="w-full border-t border-b border-slate-100 bg-white px-8 py-20">
+    <section id="workspace" className="w-full border-t border-b border-slate-100 bg-white px-8 py-20">
       <div className="mx-auto max-w-[1180px] flex flex-col items-start gap-10">
         <div className="max-w-[700px] flex flex-col items-start gap-2.5 pt-[1.63px]">
           <SectionLabel slash>Jurisdiction Coverage Workspace</SectionLabel>

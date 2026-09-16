@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 export default function ZoikoJurisdictionCoveragePage() {
   return (
     <div className="relative w-full bg-slate-50">
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <StatsBar />
       <AvailabilityStateContract />
@@ -25,7 +25,7 @@ export default function ZoikoJurisdictionCoveragePage() {
       <MarketComparison />
       <EvidenceGovernance />
       <TrustBoundaryFaqCta />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
