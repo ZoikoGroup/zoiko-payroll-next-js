@@ -85,7 +85,7 @@ export default function ValidationPrinciplesSection() {
   ] as const;
 
   return (
-    <div className="flex items-center justify-center py-12 md:py-20 text-[#0F172A] bg-[#F5F8FA]">
+    <div id="validation-approach" className="scroll-mt-24 flex items-center justify-center py-12 md:py-20 text-[#0F172A] bg-[#F5F8FA]">
       <div className="max-w-6xl w-full flex flex-col items-center px-4 sm:px-6">
         {/* Main Section Title */}
         <h2 className="text-2xl sm:text-3xl md:text-[34px] font-extrabold text-[#0B192C] text-center tracking-tight mb-12 max-w-3xl leading-tight">

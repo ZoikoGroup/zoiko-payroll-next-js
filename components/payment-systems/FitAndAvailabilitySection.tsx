@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 interface ConfidenceBadgeCard {
@@ -9,6 +10,7 @@ interface ConfidenceBadgeCard {
   dotColor: string;
   description: string;
   linkText: string;
+  linkHref: string;
 }
 
 const statusCards: ConfidenceBadgeCard[] = [
@@ -19,6 +21,7 @@ const statusCards: ConfidenceBadgeCard[] = [
     dotColor: "bg-emerald-500",
     description: "Live coverage with current evidence.",
     linkText: "View payment details →",
+    linkHref: "/payroll-operations/payments-orchestration",
   },
   {
     label: "Available with implementation",
@@ -27,6 +30,7 @@ const statusCards: ConfidenceBadgeCard[] = [
     dotColor: "bg-sky-500",
     description: "Supported, requires setup work.",
     linkText: "Plan implementation →",
+    linkHref: "/product/implementation",
   },
   {
     label: "API-supported",
@@ -35,6 +39,7 @@ const statusCards: ConfidenceBadgeCard[] = [
     dotColor: "bg-purple-500",
     description: "Direct API connectivity available.",
     linkText: "Validate API fit →",
+    linkHref: "/integrations/api-documentation",
   },
   {
     label: "File / host-to-host",
@@ -43,6 +48,7 @@ const statusCards: ConfidenceBadgeCard[] = [
     dotColor: "bg-slate-400",
     description: "Managed or file-based exchange.",
     linkText: "Review implementation →",
+    linkHref: "/product/implementation",
   },
   {
     label: "Validation required",
@@ -51,6 +57,7 @@ const statusCards: ConfidenceBadgeCard[] = [
     dotColor: "bg-amber-500",
     description: "Fit not yet confirmed by evidence.",
     linkText: "Request fit validation →",
+    linkHref: "/contact",
   },
   {
     label: "Not listed",
@@ -59,6 +66,7 @@ const statusCards: ConfidenceBadgeCard[] = [
     dotColor: "bg-slate-400",
     description: "No registry entry currently exists.",
     linkText: "Talk to a specialist →",
+    linkHref: "/contact",
   },
   {
     label: "Temporarily unavailable",
@@ -67,6 +75,7 @@ const statusCards: ConfidenceBadgeCard[] = [
     dotColor: "bg-rose-500",
     description: "Evidence is stale or paused.",
     linkText: "Get support →",
+    linkHref: "/integrations/support",
   },
 ];
 
@@ -86,7 +95,7 @@ const railDetails: RailDetailRow[] = [
 
 export default function FitAndAvailabilitySection() {
   return (
-    <section className="w-full bg-[#EFF4F7] py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
+    <section id="fit-and-availability" className="scroll-mt-24 w-full bg-[#EFF4F7] py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Top Header Block */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
@@ -136,12 +145,12 @@ export default function FitAndAvailabilitySection() {
               </div>
 
               {/* Action Link */}
-              <a
-                href="#"
+              <Link
+                href={card.linkHref}
                 className="text-xs font-semibold text-[#0A8FD0] hover:underline inline-block"
               >
                 {card.linkText}
-              </a>
+              </Link>
             </div>
           ))}
 

@@ -64,7 +64,7 @@ export default function IntegrationSupportSection() {
             {/* CTA Button */}
             <div className="pt-2">
               <a
-                href="#"
+                href="#get-support"
                 className="inline-block px-6 py-3 rounded-xl bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:bg-[#087BB5] text-white text-xs sm:text-sm font-semibold transition-colors shadow-lg"
               >
                 Get integration support

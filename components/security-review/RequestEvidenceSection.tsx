@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { Lock, ArrowRight } from "lucide-react";
@@ -15,6 +16,7 @@ interface RequestCard {
   title: string;
   description: string;
   actionText: string;
+  actionHref: string;
 }
 
 const requestCards: RequestCard[] = [
@@ -31,6 +33,7 @@ const requestCards: RequestCard[] = [
     description:
       "Current status, scope and audit period from the verified registry.",
     actionText: "Visit the pricing Center",
+    actionHref: "/trust-security/compliance",
   },
   {
     imageSrc: "/images/pricing/4.png",
@@ -44,6 +47,7 @@ const requestCards: RequestCard[] = [
     description:
       "SIG, CAIQ or custom questionnaire intake through a secure upload or portal.",
     actionText: "Start a questionnaire",
+    actionHref: "/contact",
   },
   {
     imageSrc: "/images/pricing/5.png",
@@ -57,12 +61,13 @@ const requestCards: RequestCard[] = [
     description:
       "Detailed pentest, audit or architecture evidence via secure data-room access.",
     actionText: "Request restricted access",
+    actionHref: "/contact",
   },
 ];
 
 export default function RequestEvidenceSection() {
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F8FA] text-[#07243B]">
+    <section id="request-evidence" className="scroll-mt-24 w-full py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F8FA] text-[#07243B]">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Header Block */}
         <div className="space-y-3">
@@ -122,10 +127,10 @@ export default function RequestEvidenceSection() {
                     <p className="text-xs text-slate-500 font-medium leading-relaxed">
                       {card.description}
                     </p>
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0A78C3] group-hover:underline cursor-pointer">
+                    <Link href={card.actionHref} className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0A78C3] group-hover:underline cursor-pointer">
                       {card.actionText}
                       <ArrowRight className="w-3.5 h-3.5" />
-                    </span>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -24,9 +24,9 @@ export default function ReadinessCta() {
             move into implementation with clarity.
           </p>
           <div className="flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center">
-            {/* No assessment tool route exists yet — placeholder until one is built. */}
+            {/* Scrolls to the interactive assessment on this page; no standalone tool route exists yet. */}
             <Link
-              href="#"
+              href="#readiness-assessment"
               className="rounded-[10px] bg-blue-600 px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-blue-700"
             >
               Start readiness assessment

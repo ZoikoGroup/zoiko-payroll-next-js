@@ -46,9 +46,9 @@ export default function SolutionsHeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-              <button className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:from-[#097EB8] hover:to-[#065A87] text-white text-xs font-bold rounded-lg shadow-md transition-all text-center">
+              <Link href="#solution-navigator" className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:from-[#097EB8] hover:to-[#065A87] text-white text-xs font-bold rounded-lg shadow-md transition-all text-center">
                 Find your payroll solution
-              </button>
+              </Link>
               <Link href="/global-payroll" className="px-6 py-3 bg-white/10 border border-white/20 hover:bg-white/10 text-white text-xs font-semibold rounded-lg transition-all flex items-center justify-center gap-2">
                 <span>Explore global payroll</span>
                 <ArrowRight className="w-3.5 h-3.5" />

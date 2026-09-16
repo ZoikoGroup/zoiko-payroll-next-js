@@ -4,7 +4,7 @@ import Reveal from "../ui/Reveal";
 const links: { label: string; href?: string }[] = [
   { label: "Payroll Processing", href: "/product/payroll-processing" },
   { label: "Security & Trust", href: "/product/security" },
-  { label: "Product Tour", href: "#" },
+  { label: "Product Tour", href: "/product/tour" },
 ];
 
 export default function CtaSection() {

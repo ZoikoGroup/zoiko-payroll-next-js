@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function GlobalOperatingModelSection() {
@@ -22,13 +23,13 @@ export default function GlobalOperatingModelSection() {
   ];
 
   const bottomPills = [
-    "Global Payroll Overview",
-    "Jurisdiction Directory",
-    "Country / Territory Guides",
-    "Partner-Supported Payroll",
-    "Multi-Entity Payroll",
-    "Global Implementation",
-    "Global Reporting",
+    { label: "Global Payroll Overview", href: "/global-payroll" },
+    { label: "Jurisdiction Directory", href: "/global-payroll/jurisdiction-directory" },
+    { label: "Country / Territory Guides", href: "/global-payroll/country-guides" },
+    { label: "Partner-Supported Payroll", href: "/global-payroll/partner-supported" },
+    { label: "Multi-Entity Payroll", href: "/global-payroll/multi-entity-payroll" },
+    { label: "Global Implementation", href: "/global-payroll/implementation-migration" },
+    { label: "Global Reporting", href: "/global-payroll/reporting" },
   ];
 
   return (
@@ -105,12 +106,13 @@ export default function GlobalOperatingModelSection() {
         {/* Bottom Navigation Pills */}
         <div className="flex flex-wrap items-center justify-center gap-2.5 max-w-4xl mx-auto pt-2">
           {bottomPills.map((pill, idx) => (
-            <button
+            <Link
               key={idx}
+              href={pill.href}
               className="bg-white border border-slate-200/80 hover:border-[#0A8FD0] hover:text-[#0A8FD0] text-[#07243B] text-xs font-semibold px-4 py-2.5 rounded-full shadow-2xs transition-colors"
             >
-              {pill}
-            </button>
+              {pill.label}
+            </Link>
           ))}
         </div>
       </div>

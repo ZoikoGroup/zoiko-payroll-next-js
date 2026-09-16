@@ -58,7 +58,7 @@ export default function ComplexitySignalsSection() {
 
           <Reveal delay={120} className="relative mx-auto w-full max-w-xl lg:max-w-none lg:pl-10">
             <img
-              src="/images/enterprise-organizations/complexity-signals.png"
+              src="/images/enterprise-organizations/complexity-signals.webp"
               alt="Complexity Signals Dashboard Presentation"
               loading="lazy"
               className="w-full h-auto drop-shadow-md rounded-[12px] object-cover"

@@ -30,9 +30,9 @@ export default function ValidateIntegrationCtaSection() {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
           {/* Primary Filled Button */}
-          <button className="w-full sm:w-auto px-6 py-3.5 bg-[#0A8FD0] hover:bg-[#087BB5] text-white font-semibold text-xs sm:text-sm rounded-xl shadow-md transition-colors cursor-pointer">
+          <Link href="#fit-capability-confidence" className="w-full sm:w-auto px-6 py-3.5 bg-[#0A8FD0] hover:bg-[#087BB5] text-white font-semibold text-xs sm:text-sm rounded-xl shadow-md transition-colors cursor-pointer">
             Check your identity system
-          </button>
+          </Link>
 
           {/* Secondary Outlined Button */}
           <Link href="/contact" className="w-full sm:w-auto px-6 py-3.5 bg-slate-900/40 hover:bg-slate-800/60 border border-slate-500/50 text-white font-semibold text-xs sm:text-sm rounded-xl backdrop-blur-xs transition-colors cursor-pointer">

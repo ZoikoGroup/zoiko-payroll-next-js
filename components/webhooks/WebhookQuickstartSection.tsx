@@ -59,7 +59,7 @@ const statusBadges: StatusBadge[] = [
 
 export default function WebhookQuickstartSection() {
   return (
-    <section className="w-full bg-[#F9FAFB] py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
+    <section id="webhook-quickstart" className="scroll-mt-24 w-full bg-[#F9FAFB] py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Top Hero Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">

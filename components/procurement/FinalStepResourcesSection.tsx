@@ -36,12 +36,12 @@ export default function FinalStepResourcesSection() {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
-                <button
-                  type="button"
+                <Link
+                  href="/resources"
                   className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#2C90D0] to-[#117DC5] hover:bg-[#2374ac] text-white text-xs sm:text-sm font-bold shadow-lg shadow-[#2A87C8]/25 transition-all cursor-pointer"
                 >
                   Check Resources
-                </button>
+                </Link>
                 <Link href="/contact"
                   className="px-6 py-3.5 rounded-xl bg-[#FFFFFF1A] hover:bg-[#10334d] border border-slate-700/80 text-white text-xs sm:text-sm font-bold transition-all cursor-pointer"
                 >

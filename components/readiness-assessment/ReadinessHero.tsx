@@ -38,9 +38,9 @@ export default function ReadinessHero() {
           </p>
 
           <div className="flex flex-col items-stretch gap-3.5 pt-5 sm:flex-row sm:items-center lg:flex-col lg:items-start">
-            {/* No assessment tool route exists yet — placeholder until one is built. */}
+            {/* Scrolls to the interactive assessment on this page; no standalone tool route exists yet. */}
             <Link
-              href="#"
+              href="#readiness-assessment"
               className="rounded-xl bg-blue-600 px-6 py-3 text-center text-base font-semibold text-white shadow-[0px_8px_20px_0px_rgba(37,99,235,0.16)] transition-colors hover:bg-blue-700"
             >
               Start readiness assessment

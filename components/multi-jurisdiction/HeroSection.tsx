@@ -94,7 +94,7 @@ export default function HeroSection() {
               Book a demo
             </Link>
             <Link
-              href="#find-your-path"
+              href="/solutions"
               className="flex min-h-11 items-center justify-center rounded-lg border border-white/25 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
             >
               Find your solution

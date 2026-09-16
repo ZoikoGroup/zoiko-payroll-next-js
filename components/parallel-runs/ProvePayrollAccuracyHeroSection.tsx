@@ -61,12 +61,11 @@ export default function ProvePayrollAccuracyHeroSection() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-3.5 mb-14 w-full sm:w-auto">
-          <button
-            type="button"
+          <Link href="#validation-approach"
             className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] hover:bg-[#0863A1] text-white font-bold text-xs sm:text-sm transition-all shadow-md cursor-pointer"
           >
             Review validation approach
-          </button>
+          </Link>
           <Link href="/contact"
             className="w-full sm:w-auto px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#0F172A] font-bold text-xs sm:text-sm border border-[#E2E8F0] transition-all shadow-xs cursor-pointer"
           >

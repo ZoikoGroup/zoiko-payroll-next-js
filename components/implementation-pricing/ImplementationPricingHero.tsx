@@ -75,9 +75,9 @@ export default function ImplementationPricingHero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
-            <button className="bg-gradient-to-r from-[#388FCB] to-[#134870] hover:from-[#2B7BB5] hover:to-[#0F395A] text-white font-bold text-sm px-7 py-3.5 rounded-xl shadow-[0px_6px_16px_0px_rgba(17,125,197,0.28)] transition-all active:scale-[0.99] cursor-pointer">
+            <Link href="/contact" className="bg-gradient-to-r from-[#388FCB] to-[#134870] hover:from-[#2B7BB5] hover:to-[#0F395A] text-white font-bold text-sm px-7 py-3.5 rounded-xl shadow-[0px_6px_16px_0px_rgba(17,125,197,0.28)] transition-all active:scale-[0.99] cursor-pointer">
               Build an implementation estimate
-            </button>
+            </Link>
             <Link href="/book-a-demo" className="bg-white hover:bg-slate-100 border border-slate-200 text-[#07243B] font-bold text-sm px-7 py-3.5 rounded-xl transition-colors cursor-pointer">
               Book a demo
             </Link>

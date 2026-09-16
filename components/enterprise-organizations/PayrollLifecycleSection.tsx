@@ -14,7 +14,7 @@ export default function PayrollLifecycleSection() {
               <div className="absolute inset-0 -left-[1px] -top-[1.14px]">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                   <img
-                    src="/images/enterprise-organizations/payroll-lifecycle.png"
+                    src="/images/enterprise-organizations/payroll-lifecycle.webp"
                     alt="Payroll lifecycle dashboard"
                     loading="lazy"
                     className="absolute h-full -left-[2.24%] max-w-none top-0 w-[112.68%] object-cover"

@@ -8,7 +8,7 @@ const QUESTION_TOTAL = 16;
 
 export default function InteractiveAssessmentSection() {
   return (
-    <section className="bg-slate-50 px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+    <section id="readiness-assessment" className="scroll-mt-24 bg-slate-50 px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-10 sm:gap-14">
         <SectionHeading
           eyebrow="Interactive readiness assessment"

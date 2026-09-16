@@ -34,12 +34,12 @@ export default function FinalStepSection() {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
-                <button
-                  type="button"
+                <Link
+                  href="/pricing/plans"
                   className="px-6 py-3.5 rounded-xl bg-[#2A87C8] hover:bg-[#2374ac] text-white text-xs sm:text-sm font-bold shadow-lg shadow-[#2A87C8]/25 transition-all cursor-pointer"
                 >
                   Build your jurisdiction scope
-                </button>
+                </Link>
                 <Link href="/book-a-demo"
                   className="px-6 py-3.5 rounded-xl bg-[#FFFFFF1A] hover:bg-[#10334d] border border-slate-700/80 text-white text-xs sm:text-sm font-bold transition-all cursor-pointer"
                 >

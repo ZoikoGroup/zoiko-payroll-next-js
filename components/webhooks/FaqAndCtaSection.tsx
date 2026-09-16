@@ -163,7 +163,7 @@ export default function FaqAndCtaSection() {
               {/* CTA Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <a
-                  href="#"
+                  href="#webhook-quickstart"
                   className="px-6 py-3 rounded-xl bg-[#33A1E7] hover:bg-[#2558C7] text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs"
                 >
                   View webhook quickstart

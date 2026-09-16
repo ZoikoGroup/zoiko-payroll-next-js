@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -28,7 +29,7 @@ const featureCards: FeatureCard[] = [
     imageSrc: "/images/workspace/1.png",
     imageAlt: "Team collaborating on payroll processing",
     linkText: "Explore Payroll Processing",
-    linkHref: "#explore-payroll-processing",
+    linkHref: "/product/payroll-processing",
   },
   {
     id: "inputs-validation",
@@ -38,7 +39,7 @@ const featureCards: FeatureCard[] = [
     imageSrc: "/images/workspace/2.png",
     imageAlt: "Reviewing data inputs and validation documents",
     linkText: "Explore Inputs and Validation",
-    linkHref: "#explore-inputs-validation",
+    linkHref: "/payroll-operations/inputs-validation",
   },
   {
     id: "calculations",
@@ -48,7 +49,7 @@ const featureCards: FeatureCard[] = [
     imageSrc: "/images/workspace/3.png",
     imageAlt: "Payroll folders and overtime calculation worksheets",
     linkText: "Explore Calculations",
-    linkHref: "#explore-calculations",
+    linkHref: "/payroll-operations/calculations",
   },
   {
     id: "approvals",
@@ -58,7 +59,7 @@ const featureCards: FeatureCard[] = [
     imageSrc: "/images/workspace/4.png",
     imageAlt: "Executives discussing payroll approvals in a meeting",
     linkText: "Explore Approvals",
-    linkHref: "#explore-approvals",
+    linkHref: "/product/payroll-approvals",
   },
   {
     id: "deductions-adjustments",
@@ -68,7 +69,7 @@ const featureCards: FeatureCard[] = [
     imageSrc: "/images/workspace/5.png",
     imageAlt: "Finance specialist using calculator for deductions",
     linkText: "Explore Deductions",
-    linkHref: "#explore-deductions",
+    linkHref: "/product/deductions",
   },
   {
     id: "payments-orchestration",
@@ -77,7 +78,7 @@ const featureCards: FeatureCard[] = [
     imageSrc: "/images/workspace/6.png",
     imageAlt: "Digital payments network and security overlay",
     linkText: "Explore Payments",
-    linkHref: "#explore-payments",
+    linkHref: "/payroll-operations/payments-orchestration",
   },
   {
     id: "payroll-close-audit",
@@ -87,7 +88,7 @@ const featureCards: FeatureCard[] = [
     imageSrc: "/images/workspace/7.png",
     imageAlt: "Auditors reviewing financial charts and close reports",
     linkText: "Explore Close and Audit",
-    linkHref: "#explore-close-audit",
+    linkHref: "/payroll-operations/close-and-audit",
   },
   {
     id: "records-reports",
@@ -97,7 +98,7 @@ const featureCards: FeatureCard[] = [
     imageSrc: "/images/workspace/8.png",
     imageAlt: "Organizing payroll compliance reports and documents",
     linkText: "Explore Records and Reports",
-    linkHref: "#explore-records-reports",
+    linkHref: "/payroll-operations/records-and-reports",
   },
 ];
 
@@ -172,13 +173,13 @@ export default function DirectAnswerWorkspaceSection() {
                   <p className="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed">
                     {card.description}
                   </p>
-                  <a
+                  <Link
                     href={card.linkHref}
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0A78C3] hover:text-[#0863A1] transition-colors"
                   >
                     <span>{card.linkText}</span>
                     <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" />
-                  </a>
+                  </Link>
                 </div>
 
               </div>

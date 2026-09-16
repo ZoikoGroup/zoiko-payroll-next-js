@@ -9,7 +9,7 @@ export default function FederatedOperatingModelSection() {
           {/* Image */}
           <Reveal className="w-full lg:w-auto flex justify-center shrink-0">
             <img
-              src="/images/enterprise-organizations/governance-overview.png"
+              src="/images/enterprise-organizations/governance-overview.webp"
               alt="Federated Operating Model Dashboard"
               loading="lazy"
               className="bg-[#eef0f4] border border-[#e3e7ec] h-auto lg:h-[375px] w-full max-w-[500px] rounded-[16px] object-cover shrink-0"

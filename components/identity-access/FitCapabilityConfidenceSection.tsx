@@ -30,7 +30,7 @@ const statusCards: StatusCardProps[] = [
 
 export default function FitCapabilityConfidenceSection() {
   return (
-    <section className="w-full bg-[#F9FAFB] py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
+    <section id="fit-capability-confidence" className="scroll-mt-24 w-full bg-[#F9FAFB] py-20 px-4 sm:px-6 lg:px-8 text-[#0F172A]">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column Image with Floating Badges */}

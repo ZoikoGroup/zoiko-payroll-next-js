@@ -39,12 +39,12 @@ export default function PaymentSystemIntegrationsHero() {
 
             {/* Primary & Secondary Action Buttons */}
             <div className="flex flex-wrap items-center gap-3 pt-2">
-              <button
-                type="button"
+              <Link
+                href="#fit-and-availability"
                 className="px-5 py-3 rounded-lg text-xs font-semibold text-white bg-gradient-to-r from-[#2C90D0] to-[#2C90D0] hover:opacity-95 transition-opacity shadow-xs"
               >
                 Check your payment system
-              </button>
+              </Link>
               <Link href="/integrations/support"
                 className="px-5 py-3 rounded-lg text-xs font-semibold text-[#0F172A] bg-white border border-slate-200 hover:bg-slate-50 transition-colors shadow-2xs inline-flex items-center gap-1.5"
               >

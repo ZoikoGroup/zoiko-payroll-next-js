@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { ArrowRight, Info } from "lucide-react";
@@ -14,6 +15,7 @@ interface DisciplineCard {
   title: string;
   description: string;
   actionText: string;
+  actionHref: string;
 }
 
 const disciplineCards: DisciplineCard[] = [
@@ -28,6 +30,7 @@ const disciplineCards: DisciplineCard[] = [
     description:
       "Product overview, plans, pricing, implementation and service-model routes.",
     actionText: "View commercial resources",
+    actionHref: "/pricing",
   },
   {
     image: "/images/procurement/3.png",
@@ -40,6 +43,7 @@ const disciplineCards: DisciplineCard[] = [
     description:
       "Standard terms, order-form framework, DPA and confidentiality process.",
     actionText: "View legal resources",
+    actionHref: "/legal/legal-center",
   },
   {
     image: "/images/procurement/4.png",
@@ -52,6 +56,7 @@ const disciplineCards: DisciplineCard[] = [
     description:
       "Certifications, audit reports, questionnaires and privacy program links.",
     actionText: "Start security review",
+    actionHref: "/pricing/security-review",
   },
   {
     image: "/images/procurement/5.png",
@@ -64,6 +69,7 @@ const disciplineCards: DisciplineCard[] = [
     description:
       "Methodology, responsibility matrix, support model and continuity overview.",
     actionText: "View implementation resources",
+    actionHref: "/product/implementation",
   },
   {
     image: "/images/procurement/6.png",
@@ -76,6 +82,7 @@ const disciplineCards: DisciplineCard[] = [
     description:
       "Corporate identity, tax forms, invoicing details and insurance evidence.",
     actionText: "Start supplier onboarding",
+    actionHref: "/contact",
   },
   {
     image: "/images/procurement/7.png",
@@ -88,6 +95,7 @@ const disciplineCards: DisciplineCard[] = [
     description:
       "Accessibility statement, feedback route and current evidence where approved.",
     actionText: "View accessibility resources",
+    actionHref: "/legal/accessibility-statement",
   },
 ];
 
@@ -158,13 +166,13 @@ export default function ResourceCategoriesSection() {
 
                 {/* Action Link */}
                 <div className="pt-2">
-                  <a
-                    href="#"
+                  <Link
+                    href={card.actionHref}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0A78C3] hover:underline"
                   >
                     <span>{card.actionText}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
