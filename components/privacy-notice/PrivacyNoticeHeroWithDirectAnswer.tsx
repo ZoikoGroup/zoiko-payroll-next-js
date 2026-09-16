@@ -78,6 +78,7 @@ export default function PrivacyNoticeHeroWithDirectAnswer() {
                 >
                   Understand this notice
                 </Link>
+
                 <Link
                   href="#choices"
                   className="px-5 py-2.5 rounded-lg hover:bg-white/20 text-white text-xs sm:text-sm font-semibold border border-white/20 transition-all shadow-sm"
