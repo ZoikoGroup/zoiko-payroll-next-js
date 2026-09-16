@@ -98,7 +98,7 @@ export default function HeroSection() {
               >
                 Book a demo
               </Link>
-              <Link href="/integrations" className="rounded-lg border border-white/30 bg-white/10 px-5 py-3 text-center text-sm font-semibold text-white">
+              <Link href="#hub" className="rounded-lg border border-white/30 bg-white/10 px-5 py-3 text-center text-sm font-semibold text-white">
                 See the Integration Hub
               </Link>
             </div>

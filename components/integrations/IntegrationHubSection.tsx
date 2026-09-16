@@ -117,7 +117,7 @@ const rows = [
 
 export default function IntegrationHubSection() {
   return (
-    <section className="border-t border-b border-slate-200 bg-white py-20">
+    <section id="hub" className="border-t border-b border-slate-200 bg-white py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl">
           <Eyebrow>Integration Hub</Eyebrow>

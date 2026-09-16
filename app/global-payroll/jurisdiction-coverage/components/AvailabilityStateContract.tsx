@@ -4,7 +4,7 @@ import SectionLabel from "./SectionLabel";
 const statusCards = [
   {
     title: "Available",
-    image: "/1.png",
+    image: "/images/jurisdiction-coverage/1.png",
     color: "bg-emerald-50",
     dot: "bg-green-700",
     textColor: "text-green-700",
@@ -13,7 +13,7 @@ const statusCards = [
   },
   {
     title: "Limited availability",
-    image: "/2.png",
+    image: "/images/jurisdiction-coverage/2.png",
     color: "bg-orange-100",
     dot: "bg-yellow-700",
     textColor: "text-yellow-700",
@@ -22,7 +22,7 @@ const statusCards = [
   },
   {
     title: "Partner-supported",
-    image: "/3.png",
+    image: "/images/jurisdiction-coverage/3.png",
     color: "bg-sky-100",
     dot: "bg-sky-600",
     textColor: "text-sky-600",
@@ -31,7 +31,7 @@ const statusCards = [
   },
   {
     title: "Planned",
-    image: "/4.png",
+    image: "/images/jurisdiction-coverage/4.png",
     color: "bg-violet-100",
     dot: "bg-violet-700",
     textColor: "text-violet-700",
@@ -40,7 +40,7 @@ const statusCards = [
   },
   {
     title: "Unavailable",
-    image: "/5.png",
+    image: "/images/jurisdiction-coverage/5.png",
     color: "bg-rose-100",
     dot: "bg-red-600",
     textColor: "text-red-600",
@@ -49,7 +49,7 @@ const statusCards = [
   },
   {
     title: "Needs review",
-    image: "/6.png",
+    image: "/images/jurisdiction-coverage/6.png",
     color: "bg-gray-100",
     dot: "bg-slate-500",
     textColor: "text-slate-500",
@@ -60,7 +60,7 @@ const statusCards = [
 
 export default function AvailabilityStateContract() {
   return (
-    <section className="w-full py-20 bg-slate-50">
+    <section className="w-full py-20 bg-[#F5F8FA]">
       <div className="mx-auto max-w-[1180px] px-10 flex flex-col items-start gap-2.5">
         <div className="w-full pt-[1.62px] pb-[0.01px] flex flex-col items-start gap-2.5">
           <SectionLabel slash>Availability State Contract</SectionLabel>
@@ -84,7 +84,7 @@ export default function AvailabilityStateContract() {
               className="w-[352px] h-[435px] flex-shrink-0 bg-white rounded-2xl shadow-[0px_4px_14px_0px_rgba(10,46,71,0.05)] shadow-[0px_1px_2px_0px_rgba(10,46,71,0.04)] outline outline-1 outline-offset-[-1px] outline-slate-200 flex flex-col items-start overflow-hidden"
             >
               <div className="w-full px-2.5 pt-2.5 pb-0 flex flex-col items-start">
-                <div className="w-full bg-gradient-to-br from-sky-950 via-sky-950 to-slate-900 rounded-[10px] flex flex-col justify-center items-start overflow-hidden">
+                <div className="w-full rounded-[10px] flex flex-col justify-center items-start overflow-hidden">
                   <Image
                     src={card.image}
                     alt={card.title}
