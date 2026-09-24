@@ -147,7 +147,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Partners", href: "/company/partners" },
       { label: "Careers", href: "/company/careers" },
       { label: "Newsroom", href: "/company/newsroom" },
-      { label: "Contact", href: "/contact" },
+      { label: "Contact", href: "/zoiko-payroll-contact" },
       { label: "Offices", href: "/company/offices" },
     ],
   },
@@ -162,7 +162,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Data Processing Addendum", href: "/legal/dpa" },
       { label: "Acceptable Use Policy", href: "/legal/acceptable-use-policy" },
       { label: "Accessibility Statement", href: "/legal/accessibility-statement" },
-      { label: "Legal Notices", href: "/legal/notices" },
+      { label: "Legal Notices", href: "/legal-governance-legal-notices" },
       { label: "Sitemap", href: "/legal/sitemap" },
     ],
   },
@@ -193,7 +193,7 @@ export const headquarters: Headquarters[] = [
 ];
 
 export const utilityLinks: FooterLink[] = [
-  { label: "Help Center", href: "/resources/help-center" },
+  { label: "Help Center", href: "/zoiko-payroll-help-center" },
   { label: "Contact support", href: "/company/contact" },
   { label: "Documentation", href: "/resources/documentation" },
   { label: "Release notes", href: "/resources/release-notes" },
