@@ -39,6 +39,9 @@ export const metadata: Metadata = {
   title: "Global Payroll Management Software | Zoiko Payroll",
   description:
     "Manage global payroll calculations, approvals, deductions, reporting, compliance workflows, and employee self-service, built around local requirements.",
+  verification: {
+    google: "SZFJVJrJy_fWY-PyLPXoiL9dcdmKvTg2mJEjFgGLlmE",
+  },
 };
 
 export default function RootLayout({
