@@ -24,7 +24,7 @@ const legalDocuments: LegalDocumentRow[] = [
     published: "Jun 2026",
     effective: "Jun 2026",
     version: "v3.2",
-    href: "/privacy",
+    href: "/legal/privacy-notice",
   },
   {
     title: "Website Terms of Use",
@@ -34,7 +34,7 @@ const legalDocuments: LegalDocumentRow[] = [
     published: "Mar 2026",
     effective: "Mar 2026",
     version: "v2.0",
-    href: "/terms",
+    href: "/legal/website-terms",
   },
   {
     title: "Zoiko Payroll Service Terms",
@@ -64,7 +64,7 @@ const legalDocuments: LegalDocumentRow[] = [
     published: "Dec 2025",
     effective: "Dec 2025",
     version: "v1.6",
-    href: "/aup",
+    href: "/legal/acceptable-use-policy",
   },
   {
     title: "Cookie Notice",
@@ -74,7 +74,7 @@ const legalDocuments: LegalDocumentRow[] = [
     published: "Aug 2026",
     effective: "Sep 2026",
     version: "v1.4",
-    href: "/cookies",
+    href: "/legal/cookie-notice",
   },
 ];
 

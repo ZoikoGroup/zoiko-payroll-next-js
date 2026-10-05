@@ -9,7 +9,7 @@ interface ProductCard {
   description: string;
   badgeLabel: string;
   badgeColor: string; // Tailwind background & text color classes
-  linkHref: string;
+  linkHref?: string;
 }
 
 const productsData: ProductCard[] = [
@@ -19,7 +19,7 @@ const productsData: ProductCard[] = [
     description: "Global payroll processing and control.",
     badgeLabel: "This product",
     badgeColor: "bg-[#E0F2FE] text-[#0284C7]",
-    linkHref: "/zoiko-payroll",
+    linkHref: "/product-module",
   },
   {
     category: "CONNECTED SUITE",
@@ -27,7 +27,7 @@ const productsData: ProductCard[] = [
     description: "Approved connected-suite expansion pathway.",
     badgeLabel: "Connected suite",
     badgeColor: "bg-[#F3E8FF] text-[#7E22CE]",
-    linkHref: "/zoiko-one",
+    linkHref: "/company/zoiko-one",
   },
   {
     category: "IDENTITY & ACCESS",
@@ -35,7 +35,6 @@ const productsData: ProductCard[] = [
     description: "Shared authentication foundation, where enabled.",
     badgeLabel: "Shared service",
     badgeColor: "bg-[#DCFCE7] text-[#166534]",
-    linkHref: "/zoiko-identity",
   },
 ];
 
@@ -96,14 +95,16 @@ export default function ApprovedTechnologyEcosystemSection() {
               </div>
 
               {/* View Product Link */}
-              <div>
-                <Link
-                  href={card.linkHref}
-                  className="inline-block text-xs font-bold text-[#1483C7] hover:text-[#0369A1] transition-colors"
-                >
-                  View product →
-                </Link>
-              </div>
+              {card.linkHref && (
+                <div>
+                  <Link
+                    href={card.linkHref}
+                    className="inline-block text-xs font-bold text-[#1483C7] hover:text-[#0369A1] transition-colors"
+                  >
+                    View product →
+                  </Link>
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -111,7 +112,7 @@ export default function ApprovedTechnologyEcosystemSection() {
         {/* View All Link */}
         <div className="border-b border-b-[#1483C7] inline py-2">
           <Link
-            href="/approved-products"
+            href="/company/zoiko-one"
             className="inline-block text-xs sm:text-sm font-semibold text-[#0284C7] hover:text-[#0369A1] transition-colors"
           >
             View all approved products →

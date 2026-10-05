@@ -31,7 +31,7 @@ export default function CtaSection() {
                   Book a demo
                 </Link>
                 <Link
-                  href="/global-payroll/multi-entity"
+                  href="/global-payroll/multi-entity-payroll"
                   className="flex min-h-11 items-center justify-center rounded-lg border border-white/30 px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/5"
                 >
                   Explore Multi-Entity Payroll

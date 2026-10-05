@@ -23,7 +23,7 @@ const leadershipCards: LeadershipCard[] = [
     tags: ["Product direction", "Roadmap"],
     bioText: "Approved one-line biography available on the full profile.",
     reviewedDate: "Reviewed Aug 2026",
-    profileHref: "/profile/m-weber",
+    profileHref: "/company/leadership",
   },
   {
     initials: "RT",
@@ -33,7 +33,7 @@ const leadershipCards: LeadershipCard[] = [
     tags: ["Technology", "Reliability"],
     bioText: "Approved one-line biography available on the full profile.",
     reviewedDate: "Reviewed Aug 2026",
-    profileHref: "/profile/r-tanaka",
+    profileHref: "/company/leadership",
   },
   {
     initials: "CA",
@@ -43,7 +43,7 @@ const leadershipCards: LeadershipCard[] = [
     tags: ["Operations", "Delivery"],
     bioText: "Approved one-line biography available on the full profile.",
     reviewedDate: "Reviewed Jul 2026",
-    profileHref: "/profile/c-alvarez",
+    profileHref: "/company/leadership",
   },
 ];
 

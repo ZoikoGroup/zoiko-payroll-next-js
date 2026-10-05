@@ -86,7 +86,7 @@ export default function CoverageDetailPatternSection() {
             {/* Buttons */}
             <div className="mt-7 flex flex-wrap items-center gap-3 pt-2">
               <Link
-                href="/implementation"
+                href="/product/implementation"
                 className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-xs font-semibold text-[#082F49] shadow-2xs transition-all duration-200 hover:border-[#0A78C2] hover:text-[#0A78C2] sm:text-sm"
               >
                 Explore implementation

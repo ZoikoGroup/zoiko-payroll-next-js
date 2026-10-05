@@ -10,7 +10,7 @@ const results = [
     meta: "Applies to: Payroll Processing · Reviewed Jul 2026",
     description: "A run stays in Validate until every blocking issue is resolved and owned.",
     linkLabel: "Open answer",
-    href: "/resources/help-center/validate",
+    href: "/resources/help-center",
   },
   {
     question: "Is there a current incident affecting payroll runs?",

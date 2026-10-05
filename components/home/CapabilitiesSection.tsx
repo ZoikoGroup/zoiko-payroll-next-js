@@ -51,7 +51,7 @@ const capabilities = [
     description: "Coordinate jurisdiction-specific configurations, review processes, documentation and traceable decisions.",
     tags: ["Local workflows", "Evidence records"],
     linkLabel: "Compliance workflows",
-    href: "/product/compliance",
+    href: "/global-payroll/compliance-workflows",
     image: "/images/home/compliance.png",
   },
 ];
@@ -100,7 +100,7 @@ export default function CapabilitiesSection() {
         </div>
 
         <Reveal className="mt-10 border-t border-slate-200 pt-8">
-          <ArrowLink href="/product">Explore all capabilities</ArrowLink>
+          <ArrowLink href="/product-module">Explore all capabilities</ArrowLink>
         </Reveal>
       </div>
     </section>

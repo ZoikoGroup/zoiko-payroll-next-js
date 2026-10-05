@@ -28,7 +28,7 @@ const procurementCards: ProcurementCard[] = [
     title: "Trust & Security",
     description: "Assurance and evidence authority.",
     linkText: "Visit Trust & Security",
-    href: "/trust-and-security",
+    href: "/trust-security",
   },
   {
     title: "Commercial / legal contact",

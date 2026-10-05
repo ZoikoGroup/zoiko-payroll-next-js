@@ -69,17 +69,17 @@ const routingRows: RoutingRow[] = [
   {
     question: "Accessibility feedback",
     routeTo: "Accessibility support route",
-    href: "/accessibility",
+    href: "/legal/accessibility-statement",
   },
   {
     question: "Service availability / incidents",
     routeTo: "System Status",
-    href: "/status",
+    href: "/resources/system-status",
   },
   {
     question: "Security / assurance evidence",
     routeTo: "Trust & Security",
-    href: "/trust-and-security",
+    href: "/trust-security",
   },
   {
     question: "Procurement / DPA execution",

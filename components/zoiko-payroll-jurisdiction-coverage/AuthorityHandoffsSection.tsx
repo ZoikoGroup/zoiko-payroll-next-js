@@ -37,7 +37,7 @@ export default function AuthorityHandoffsSection() {
 
             {/* Destination 1 */}
             <Link
-              href="/country-territory-directory"
+              href="/global-payroll/country-territory-directory"
               className="flex min-w-[140px] items-center justify-center rounded-xl border border-slate-200/90 bg-white px-4 py-3 text-center shadow-2xs transition-all duration-200 hover:-translate-y-0.5 hover:border-[#0A78C2] hover:shadow-xs active:translate-y-0"
             >
               <span className="text-xs font-bold text-[#082F49] sm:text-sm">
@@ -47,7 +47,7 @@ export default function AuthorityHandoffsSection() {
 
             {/* Destination 2 */}
             <Link
-              href="/payroll-requirements"
+              href="/global-payroll/payroll-requirements"
               className="flex min-w-[140px] items-center justify-center rounded-xl border border-slate-200/90 bg-white px-4 py-3 text-center shadow-2xs transition-all duration-200 hover:-translate-y-0.5 hover:border-[#0A78C2] hover:shadow-xs active:translate-y-0"
             >
               <span className="text-xs font-bold text-[#082F49] sm:text-sm">
@@ -67,7 +67,7 @@ export default function AuthorityHandoffsSection() {
 
             {/* Destination 4 */}
             <Link
-              href="/implementation"
+              href="/product/implementation"
               className="flex min-w-[140px] items-center justify-center rounded-xl border border-slate-200/90 bg-white px-4 py-3 text-center shadow-2xs transition-all duration-200 hover:-translate-y-0.5 hover:border-[#0A78C2] hover:shadow-xs active:translate-y-0"
             >
               <span className="text-xs font-bold text-[#082F49] sm:text-sm">

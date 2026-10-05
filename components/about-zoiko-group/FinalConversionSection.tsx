@@ -39,7 +39,7 @@ export default function FinalConversionSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             {/* Primary Solid White Button */}
             <Link
-              href="/explore-zoiko-payroll"
+              href="/product-module"
               className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white text-[#0F172A] text-xs sm:text-sm font-semibold hover:bg-gray-100 transition-all text-center shadow-sm"
             >
               Explore Zoiko Payroll
@@ -47,7 +47,7 @@ export default function FinalConversionSection() {
 
             {/* Secondary Transparent Outline Button */}
             <Link
-              href="/book-demo"
+              href="/book-a-demo"
               className="w-full sm:w-auto px-6 py-3.5 rounded-xl border border-white/20 text-white text-xs sm:text-sm font-semibold hover:bg-white/10 hover:border-white/30 transition-all text-center"
             >
               Book a demo

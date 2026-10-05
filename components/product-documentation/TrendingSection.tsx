@@ -8,7 +8,7 @@ const trending = [
   { icon: CheckSquareIcon, label: "Approval delegation setup", href: "/product/payroll-approvals" },
   { icon: ChartIcon, label: "Reporting export changes", href: "/product/reporting" },
   { icon: DatabaseIcon, label: "Directory / HRIS sync", href: "/product/integrations" },
-  { icon: ClockIcon, label: "Cycle stuck in Validating", href: "/resources/help-center/validate" },
+  { icon: ClockIcon, label: "Cycle stuck in Validating", href: "/resources/help-center" },
   { icon: CheckSquareIcon, label: "API webhook retry policy", href: "/product/integrations" },
 ];
 

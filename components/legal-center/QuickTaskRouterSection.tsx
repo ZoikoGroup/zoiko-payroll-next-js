@@ -16,13 +16,13 @@ const taskRouterCards: TaskRouterCard[] = [
     title: "Privacy & Cookies",
     description: "How your data is handled, and cookie controls.",
     linkText: "Go to Privacy & Cookies",
-    href: "/privacy",
+    href: "/legal/privacy-notice",
   },
   {
     title: "Website Use",
     description: "Terms for browsing and using this website.",
     linkText: "Go to Website Terms",
-    href: "/terms",
+    href: "/legal/website-terms",
   },
   {
     title: "Customer / Service Terms",
@@ -40,19 +40,19 @@ const taskRouterCards: TaskRouterCard[] = [
     title: "Acceptable Use",
     description: "Approved rules for using the service.",
     linkText: "Go to Acceptable Use",
-    href: "/aup",
+    href: "/legal/acceptable-use-policy",
   },
   {
     title: "Accessibility",
     description: "Our accessibility statement and feedback route.",
     linkText: "Go to Accessibility",
-    href: "/accessibility",
+    href: "/legal/accessibility-statement",
   },
   {
     title: "Legal Notices",
     description: "Entity, copyright and trademark notices.",
     linkText: "Go to Legal Notices",
-    href: "/legal-notices",
+    href: "/legal/legal-notices",
   },
   {
     title: "Sitemap",
