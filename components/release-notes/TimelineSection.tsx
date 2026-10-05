@@ -139,10 +139,9 @@ export default function TimelineSection() {
               </h3>
 
               {month.entries.map((entry) => (
-                <Link
+                <div
                   key={entry.id}
-                  href={`/resources/release-notes/${entry.id.toLowerCase()}`}
-                  className="relative mb-2.5 block rounded-[10px] border border-[#E1E8F0] bg-white px-4 py-3.5 transition-colors duration-200 hover:border-[#0A8FD0]/40"
+                  className="relative mb-2.5 block rounded-[10px] border border-[#E1E8F0] bg-white px-4 py-3.5"
                 >
                   <span
                     aria-hidden="true"
@@ -167,7 +166,7 @@ export default function TimelineSection() {
                     <span aria-hidden="true">·</span>
                     <span className={impactTones[entry.impactTone]}>{entry.impact}</span>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           ))}
