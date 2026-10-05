@@ -67,7 +67,7 @@ const paths = [
       "Conformance target, known limitations and how to reach the accessibility contact.",
     owner: "Accessibility Statement",
     linkLabel: "Review",
-    href: "/accessibility",
+    href: "/legal/accessibility-statement",
   },
   {
     icon: AlertTriangleIcon,
@@ -77,7 +77,7 @@ const paths = [
       "Goes directly to Responsible Disclosure — never to a general sales or contact form.",
     owner: "Responsible Disclosure",
     linkLabel: "Report",
-    href: "/responsible-disclosure",
+    href: "/company/trust-center",
     priority: true,
   },
 ];

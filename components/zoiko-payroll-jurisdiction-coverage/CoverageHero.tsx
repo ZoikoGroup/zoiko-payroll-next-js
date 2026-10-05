@@ -61,7 +61,7 @@ export default function CoverageHero() {
 
                   {/* Secondary Button */}
                   <Link
-                    href="/country-territory-directory"
+                    href="/global-payroll/country-territory-directory"
                     className="inline-flex w-full items-center justify-center rounded-lg border border-slate-200 bg-white py-3 text-sm font-bold text-[#082F49] shadow-2xs transition-all active:scale-[0.98]"
                   >
                     Browse Country and Territory Directory

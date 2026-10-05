@@ -15,25 +15,25 @@ const pathwaysData: PathwayCard[] = [
     id: 1,
     title: "Leadership",
     imageSrc: "/images/about-zoiko/1.png",
-    href: "/leadership",
+    href: "/company/leadership",
   },
   {
     id: 2,
     title: "Trust and Security",
     imageSrc: "/images/about-zoiko/2.png",
-    href: "/trust-and-security",
+    href: "/trust-security",
   },
   {
     id: 3,
     title: "Partners",
     imageSrc: "/images/about-zoiko/3.png",
-    href: "/partners",
+    href: "/company/partners",
   },
   {
     id: 4,
     title: "Careers",
     imageSrc: "/images/about-zoiko/4.png",
-    href: "/careers",
+    href: "/company/careers",
   },
 ];
 

@@ -159,7 +159,7 @@ export default function LegalCenterFAQSection() {
               Contact
             </Link>
             <Link
-              href="/trust-and-security"
+              href="/trust-security"
               className="px-5 py-2.5 rounded-xl bg-white hover:bg-gray-50 text-[#0F172A] text-xs font-semibold border border-gray-200 transition-all shadow-sm"
             >
               Trust & Security

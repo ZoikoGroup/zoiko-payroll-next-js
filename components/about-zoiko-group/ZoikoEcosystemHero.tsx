@@ -43,7 +43,7 @@ export default function ZoikoEcosystemHero() {
               <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
                 {/* Primary Button */}
                 <Link
-                  href="/book-demo"
+                  href="/book-a-demo"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] text-white text-xs sm:text-sm font-semibold shadow-md hover:opacity-95 transition-all text-center"
                 >
                   Book a demo →
@@ -51,7 +51,7 @@ export default function ZoikoEcosystemHero() {
 
                 {/* Secondary Outline Button */}
                 <Link
-                  href="/ecosystem"
+                  href="/company/zoiko-one"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-xl border border-white/20 text-white text-xs sm:text-sm font-semibold hover:bg-white/10 hover:border-white/30 transition-all text-center"
                 >
                   Explore the Zoiko ecosystem

@@ -63,7 +63,7 @@ export default function ContactSection() {
                 <p>
                   Service issue?{" "}
                   <Link
-                    href="/status"
+                    href="/resources/system-status"
                     className="font-bold text-[#7FC1EE] hover:underline"
                   >
                     Check System Status →
@@ -72,7 +72,7 @@ export default function ContactSection() {
                 <p>
                   Security concern?{" "}
                   <Link
-                    href="/responsible-disclosure"
+                    href="/company/trust-center"
                     className="font-bold text-[#7FC1EE] hover:underline"
                   >
                     Use Responsible Disclosure →
@@ -81,7 +81,7 @@ export default function ContactSection() {
                 <p>
                   Existing customer?{" "}
                   <Link
-                    href="/support"
+                    href="/customer"
                     className="font-bold text-[#7FC1EE] hover:underline"
                   >
                     Get Support →

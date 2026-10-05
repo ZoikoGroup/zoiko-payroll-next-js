@@ -35,7 +35,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Product Overview",
             description: "Understand the complete platform and choose the next product path.",
-            href: "/product",
+            href: "/product-module",
           },
           {
             title: "Payroll Processing",
@@ -80,7 +80,7 @@ export const megaMenus: Record<string, MegaMenu> = {
           {
             title: "Product Tour",
             description: "See representative Zoiko Payroll workflows in action.",
-            href: "/product/tour",
+            href: "/zoiko-payroll-product-tour",
           },
         ],
       },
@@ -111,7 +111,7 @@ export const megaMenus: Record<string, MegaMenu> = {
       description:
         "A short, synthetic-data product tour focused on control, approvals, records and reporting.",
       linkLabel: "Start the product tour",
-      href: "/product/tour",
+      href: "/zoiko-payroll-product-tour",
     },
     visual: "product",
   },
@@ -205,7 +205,7 @@ export const megaMenus: Record<string, MegaMenu> = {
       description:
         "A four-question solution finder using jurisdictions, entities, workforce range and primary objective.",
       linkLabel: "Find your solution",
-      href: "/solutions/finder",
+      href: "/solutions",
     },
     visual: "solutions",
   },

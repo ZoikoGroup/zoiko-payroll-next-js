@@ -175,7 +175,7 @@ export default function TimelineSection() {
 
         <div className="flex justify-center">
           <Link
-            href="/resources/release-notes/archive"
+            href="/resources/release-notes"
             className="rounded-lg border border-[#E1E8F0] bg-white px-5 py-2.5 text-center text-sm font-bold leading-5 text-[#0A2E4B] transition-colors duration-200 hover:border-[#0A8FD0]/40"
           >
             View archive (2024 – 2025)

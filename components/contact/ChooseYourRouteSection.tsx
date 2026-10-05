@@ -56,17 +56,17 @@ const alertNotices: AlertNotice[] = [
   {
     prefix: "Service down or degraded",
     linkText: "System Status",
-    href: "/status",
+    href: "/resources/system-status",
   },
   {
     prefix: "Security vulnerability",
     linkText: "Responsible Disclosure",
-    href: "/responsible-disclosure",
+    href: "/company/trust-center",
   },
   {
     prefix: "Legal notice / subpoena",
     linkText: "Legal route",
-    href: "/legal",
+    href: "/legal/legal-center",
   },
 ];
 

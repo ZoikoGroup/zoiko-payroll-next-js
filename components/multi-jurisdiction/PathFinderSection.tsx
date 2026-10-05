@@ -30,7 +30,7 @@ export default function PathFinderSection() {
             </div>
 
             <Link
-              href="/solutions/finder"
+              href="/solutions"
               className="mt-6 inline-flex min-h-11 items-center justify-center rounded-lg border border-[#DCE6EC] px-5 py-3 text-sm font-semibold text-[#082F49] transition-all duration-200 hover:-translate-y-0.5"
             >
               Find your solution <span aria-hidden="true">&nbsp;→</span>

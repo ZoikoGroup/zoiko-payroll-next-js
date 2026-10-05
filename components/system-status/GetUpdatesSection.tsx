@@ -70,7 +70,7 @@ export default function GetUpdatesSection() {
             </p>
           </div>
           <Link
-            href="/company/contact"
+            href="/contact"
             className="bg-brand-gradient shrink-0 rounded-lg px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-brand/30 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand/40"
           >
             Contact support

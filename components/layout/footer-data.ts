@@ -5,12 +5,12 @@ export const footerLinkColumns: FooterColumn[] = [
   {
     title: "Product",
     links: [
-      { label: "Product overview", href: "/product" },
+      { label: "Product overview", href: "/product-module" },
       { label: "How Zoiko Payroll works", href: "/product/how-it-works" },
       { label: "Payroll workspace", href: "/product/workspace" },
       { label: "Employee payroll records", href: "/product/employee-payroll-records" },
       { label: "Reporting and analytics", href: "/product/reporting" },
-      { label: "Product tour", href: "/product/tour" },
+      { label: "Product tour", href: "/zoiko-payroll-product-tour" },
     ],
   },
   {
@@ -115,7 +115,7 @@ export const footerLinkColumns: FooterColumn[] = [
     links: [
       { label: "Help Center", href: "/resources/help-center" },
       { label: "Product documentation", href: "/resources/documentation" },
-      { label: "Contact support", href: "/company/contact" },
+      { label: "Contact support", href: "/contact" },
       { label: "Employee access help", href: "/customer/employee-access" },
       { label: "Payroll administrator help", href: "/customer/administrator-help" },
       { label: "Implementation support", href: "/customer/implementation-support" },
@@ -133,16 +133,16 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Data residency", href: "/trust-security/data-residency" },
       { label: "Business continuity", href: "/trust-security/business-continuity" },
       { label: "Subprocessors", href: "/trust-security/subprocessors" },
-      { label: "Responsible disclosure", href: "/company/trust-center/responsible-disclosure" },
+      { label: "Responsible disclosure", href: "/company/trust-center" },
       { label: "Accessibility", href: "/legal/accessibility-statement" },
     ],
   },
   {
     title: "Company & ecosystem",
     links: [
-      { label: "About Zoiko Payroll", href: "/about-us" },
+      { label: "About Zoiko Payroll", href: "/company/about-us" },
       { label: "Zoiko Group", href: "/company/zoiko-group" },
-      { label: "Zoiko One", href: "/zoiko-one" },
+      { label: "Zoiko One", href: "/company/zoiko-one" },
       { label: "Leadership", href: "/company/leadership" },
       { label: "Partners", href: "/company/partners" },
       { label: "Careers", href: "/company/careers" },
@@ -182,19 +182,19 @@ export const headquarters: Headquarters[] = [
     entity: "Zoiko Tech Inc.",
     addressLines: ["1401 21st Street, Suite R", "Sacramento, CA 95811", "United States"],
     contactLabel: "Contact Global Headquarters",
-    href: "/company/contact",
+    href: "/contact",
   },
   {
     label: "European Headquarters",
     addressLines: ["167-169 Great Portland Street", "5th Floor", "London W1W 5PF", "United Kingdom"],
     contactLabel: "Contact European Headquarters",
-    href: "/company/contact",
+    href: "/contact",
   },
 ];
 
 export const utilityLinks: FooterLink[] = [
   { label: "Help Center", href: "/zoiko-payroll-help-center" },
-  { label: "Contact support", href: "/company/contact" },
+  { label: "Contact support", href: "/contact" },
   { label: "Documentation", href: "/resources/documentation" },
   { label: "Release notes", href: "/resources/release-notes" },
   { label: "Accessibility feedback", href: "/legal/accessibility-statement" },
@@ -203,11 +203,11 @@ export const utilityLinks: FooterLink[] = [
 export const bottomLegalLinks: FooterLink[] = [
   { label: "Privacy Notice", href: "/legal/privacy-notice" },
   { label: "Cookie Preferences", href: "/legal/cookie-notice" },
-  { label: "Terms of Use", href: "/legal/terms-of-service" },
+  { label: "Terms of Use", href: "/legal/website-terms" },
   { label: "Zoiko Payroll Service Terms", href: "/legal/service-terms" },
   { label: "Data Processing Addendum", href: "/legal/dpa" },
   { label: "Subprocessors", href: "/trust-security/subprocessors" },
   { label: "Acceptable Use Policy", href: "/legal/acceptable-use-policy" },
   { label: "Accessibility Statement", href: "/legal/accessibility-statement" },
-  { label: "Legal Notices", href: "/legal/notices" },
+  { label: "Legal Notices", href: "/legal/legal-notices" },
 ];

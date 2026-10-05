@@ -65,7 +65,7 @@ export default function PayrollWorkspaceSection() {
             <Link href="/register" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#0863A1] text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs cursor-pointer">
               Start Free Trial
             </Link>
-            <Link href="/product/tour" className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors flex items-center gap-1.5 cursor-pointer">
+            <Link href="/zoiko-payroll-product-tour" className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors flex items-center gap-1.5 cursor-pointer">
               <span>View Product Tour</span>
               <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" />
             </Link>

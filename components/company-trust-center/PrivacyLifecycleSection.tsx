@@ -23,7 +23,7 @@ const authorities = [
     description:
       "What data is collected, why, and which approved data classes apply to payroll processing.",
     authority: "Authority: Privacy Notice",
-    href: "/privacy-notice",
+    href: "/legal/privacy-notice",
   },
   {
     icon: ClockIcon,
@@ -31,7 +31,7 @@ const authorities = [
     description:
       "Retention and deletion periods, and residency scoped to primary processing, replicas and backups separately.",
     authority: "Authority: DPA / Privacy Notice",
-    href: "/privacy-notice",
+    href: "/legal/privacy-notice",
   },
   {
     icon: TransferIcon,
@@ -39,7 +39,7 @@ const authorities = [
     description:
       "Cross border transfer mechanisms and the current approved subprocessor list.",
     authority: "Authority: Subprocessor list",
-    href: "/subprocessors",
+    href: "/trust-security/subprocessors",
   },
 ];
 
