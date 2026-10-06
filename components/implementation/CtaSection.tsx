@@ -55,7 +55,7 @@ export default function CtaSection() {
                   </div>
                 ))}
                 <Link
-                  href="#"
+                  href="/book-a-demo"
                   className="mt-2 block rounded-md bg-blue-600 px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors duration-200 hover:bg-blue-700"
                 >
                   Request implementation timeline

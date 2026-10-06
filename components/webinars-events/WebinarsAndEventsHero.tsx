@@ -44,7 +44,7 @@ export default function WebinarsAndEventsHero() {
           {/* CTA Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
-              href="#"
+              href="/book-a-demo"
               className="bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:opacity-95 text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-xl shadow-xs transition-opacity cursor-pointer"
             >
               Join the Waitlist

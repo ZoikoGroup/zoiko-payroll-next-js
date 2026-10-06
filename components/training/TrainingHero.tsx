@@ -29,7 +29,7 @@ export default function TrainingHero() {
           <div className="flex flex-col items-stretch gap-3.5 pt-5 sm:flex-row sm:items-center">
             {/* No training-plan route exists yet — placeholder until one is built. */}
             <Link
-              href="#"
+              href="/contact"
               className="rounded-xl bg-blue-600 px-6 py-3 text-center text-base font-semibold text-white shadow-[0px_8px_20px_0px_rgba(37,99,235,0.16)] transition-colors hover:bg-blue-700"
             >
               Plan training

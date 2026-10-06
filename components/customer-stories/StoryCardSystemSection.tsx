@@ -138,7 +138,7 @@ export default function StoryCardSystemSection() {
               {/* Card Footer Link */}
               <div className="pt-2 border-t border-slate-100/80">
                 <a
-                  href="#"
+                  href="/resources/customer-stories"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#3D9BD6] hover:text-[#0C4773] transition-colors"
                 >
                   <span>Read customer story</span>

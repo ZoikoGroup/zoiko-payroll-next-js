@@ -38,7 +38,7 @@ export default function ChooseYourPathSection() {
 
             <div>
               <a
-                href="#"
+                href="/book-a-demo"
                 className="inline-block bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] hover:opacity-95 text-white text-xs font-bold px-6 py-3 rounded-xl shadow-xs transition-opacity cursor-pointer"
               >
                 Book a demo
@@ -60,7 +60,7 @@ export default function ChooseYourPathSection() {
 
             <div>
               <a
-                href="#"
+                href="/resources/documentation"
                 className="inline-block bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200/60 text-xs font-bold px-6 py-3 rounded-xl shadow-2xs transition-colors cursor-pointer"
               >
                 Explore documentation

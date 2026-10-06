@@ -111,7 +111,7 @@ export default function SignInSection() {
               {/* Forgot Password */}
               <div className="flex justify-end pt-0.5">
                 <Link
-                  href="/auth/reset-password"
+                  href="/reset-password"
                   className="text-xs font-medium text-[#A0AEC0] hover:text-[#0284C7] transition-colors"
                 >
                   Forgot Password?
@@ -131,7 +131,7 @@ export default function SignInSection() {
                 <p className="text-xs text-[#94A3B8]">
                   Don&apos;t have an account?{" "}
                   <Link
-                    href="/auth/register"
+                    href="/register"
                     className="font-semibold text-[#0F172A] hover:text-[#0284C7] transition-colors"
                   >
                     Sign Up

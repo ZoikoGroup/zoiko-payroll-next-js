@@ -34,7 +34,7 @@ export default function ChangeHero() {
           <div className="flex flex-col items-stretch gap-3.5 sm:flex-row sm:items-center">
             {/* No change-approach route exists yet — placeholder until one is built. */}
             <Link
-              href="#"
+              href="/book-a-demo"
               className="rounded-[10px] bg-linear-72 from-blue-400 via-sky-600 to-sky-950 px-7 py-3.5 text-center text-base font-semibold text-white shadow-[0px_8px_20px_0px_rgba(37,99,235,0.16)] transition-all hover:brightness-110"
             >
               Review change approach
