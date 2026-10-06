@@ -27,7 +27,7 @@ export default function TrainingCta() {
           <div className="flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center">
             {/* No training-plan route exists yet — placeholder until one is built. */}
             <Link
-              href="#"
+              href="/contact"
               className="rounded-[10px] bg-blue-600 px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-blue-700"
             >
               Plan training

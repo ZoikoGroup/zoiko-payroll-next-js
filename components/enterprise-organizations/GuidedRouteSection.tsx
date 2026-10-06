@@ -150,7 +150,7 @@ export default function GuidedRouteSection() {
               <Link href="/book-a-demo" className="bg-white rounded-[9px] px-[18px] min-h-[44px] flex items-center justify-center font-semibold text-[#0b1220] text-[14px] hover:bg-gray-100 transition-colors">
                 Book a demo
               </Link>
-              <Link href="#" className="border border-[#2e3b52] rounded-[9px] px-[18px] min-h-[44px] flex items-center justify-center font-semibold text-[#d6dbe3] text-[14px] hover:bg-[#1a3d54] transition-colors">
+              <Link href="/contact" className="border border-[#2e3b52] rounded-[9px] px-[18px] min-h-[44px] flex items-center justify-center font-semibold text-[#d6dbe3] text-[14px] hover:bg-[#1a3d54] transition-colors">
                 {"{{ alt }}"}
               </Link>
             </div>

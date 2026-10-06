@@ -44,7 +44,7 @@ export default function ReadyToGoFurtherSection() {
                 Book a demo
               </a>
               <a
-                href="#"
+                href="/global-payroll"
                 className="hover:bg-[#0B253C]/90 text-white border border-slate-400/40 text-xs sm:text-sm font-bold px-6 py-3 rounded-xl shadow-xs transition-colors cursor-pointer backdrop-blur-xs"
               >
                 Explore Global Payroll

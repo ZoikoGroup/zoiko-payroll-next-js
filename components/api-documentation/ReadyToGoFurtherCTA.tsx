@@ -30,7 +30,7 @@ export default function ReadyToGoFurtherCTA() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
           {/* Primary Blue Button with Subtle Gradient */}
           <a
-            href="#"
+            href="/integrations/api-documentation"
             className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:from-[#0A8FD0] hover:to-[#0284C7] text-white text-xs font-bold rounded-xl shadow-md transition-all text-center"
           >
             Explore API documentation

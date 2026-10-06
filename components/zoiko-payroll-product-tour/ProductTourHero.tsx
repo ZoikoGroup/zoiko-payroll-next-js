@@ -60,7 +60,7 @@ export default function ProductTourHero() {
                 {/* Desktop Action Buttons (Hidden on Mobile) */}
                 <div className="mt-8 hidden sm:flex flex-wrap items-center gap-3.5 sm:mt-9">
                   <Link
-                    href="/how-it-works"
+                    href="/product/how-it-works"
                     className="inline-flex items-center justify-center rounded-lg bg-[#38BDF8] px-5 py-3 text-sm font-bold text-[#091E2E] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#7DD3FC] hover:shadow-md active:translate-y-0"
                   >
                     How Zoiko Payroll works &rarr;
@@ -94,7 +94,7 @@ export default function ProductTourHero() {
 
                   {/* How Zoiko Payroll works text link */}
                   <Link
-                    href="/how-it-works"
+                    href="/product/how-it-works"
                     className="mt-1 inline-flex items-center justify-center gap-1.5 py-1 text-xs font-semibold text-white/90 transition-colors hover:text-white"
                   >
                     <span>How Zoiko Payroll works</span>

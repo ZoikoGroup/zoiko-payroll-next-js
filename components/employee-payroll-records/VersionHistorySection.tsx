@@ -42,7 +42,7 @@ export default function VersionHistorySection() {
 
           <div className="mt-5 border-t border-slate-200 pt-5">
             <Link
-              href="#"
+              href="/product/employee-payroll-records"
               className="inline-flex border-b border-slate-300 pb-0.5 text-sm font-semibold leading-5 text-sky-950 transition-colors duration-200 hover:border-sky-700 hover:text-sky-700"
             >
               View full history →

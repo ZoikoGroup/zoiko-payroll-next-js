@@ -39,19 +39,19 @@ export default function SalesInquiry() {
 
         {/* CTA Buttons */}
         <div className="flex w-full flex-wrap items-center justify-center gap-3 pt-1.5">
-          <button
+         <a href="book-a-demo"> <button
             type="button"
             className="rounded-lg bg-gradient-to-r from-[#0099e5] to-[#006fae] px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-white shadow-[0px_1px_2px_0px_rgba(10,46,75,0.06)] transition-opacity duration-200 hover:opacity-90"
           >
             Book a demo
-          </button>
+          </button></a>
 
-          <button
+       <a href="/contact">   <button
             type="button"
             className="rounded-lg border border-[#d9e1e7] bg-white px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-[#103653] transition-opacity duration-200 hover:opacity-70"
           >
             Send a sales inquiry
-          </button>
+          </button></a>
         </div>
 
         {/* Topic Pills */}

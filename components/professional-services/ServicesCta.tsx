@@ -32,7 +32,7 @@ export default function ServicesCta() {
             </Link>
             {/* No implementation-services index route exists yet — placeholder. */}
             <Link
-              href="#"
+              href="/product/implementation"
               className="rounded-lg border border-white/40 px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
               Explore implementation services

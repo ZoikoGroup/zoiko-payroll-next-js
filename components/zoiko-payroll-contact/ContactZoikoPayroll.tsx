@@ -71,19 +71,19 @@ export default function ContactZoikoPayroll() {
 
             {/* Buttons */}
             <div className="flex w-full flex-wrap items-start gap-3 pt-3.5">
-              <button
+             <a href="book-a-demo"> <button
                 type="button"
                 className="flex items-center justify-center rounded-lg bg-gradient-to-r from-[#0099e5] to-[#006fae] px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-white shadow-[0px_1px_2px_0px_rgba(10,46,75,0.06)] transition-opacity duration-200 hover:opacity-90"
               >
                 Book a demo
-              </button>
+              </button></a>
 
-              <button
+              <a href="/contact "><button
                 type="button"
                 className="flex items-center justify-center rounded-lg border border-[#d9e1e7] bg-white px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-[#103653] transition-opacity duration-200 hover:opacity-70"
               >
                 Choose a contact route
-              </button>
+              </button></a>
             </div>
 
             {/* Security Note */}
@@ -102,12 +102,12 @@ export default function ContactZoikoPayroll() {
                   Existing customer?{" "}
                 </span>
 
-                <button
+               <a href="zoiko-payroll-help-center"> <button
                   type="button"
                   className="font-bold text-[#0099e5] transition-opacity duration-200 hover:opacity-70"
                 >
                   Go to Help Center →
-                </button>
+                </button></a>
               </p>
             </div>
           </div>
