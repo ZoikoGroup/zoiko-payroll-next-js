@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 const supportOptions = [
   {
@@ -9,6 +10,7 @@ const supportOptions = [
     description:
       "For admins and users who can access their Zoiko Payroll account and in-product support.",
     button: "Sign in",
+    href: "/login",
   },
   {
     number: "2",
@@ -16,6 +18,7 @@ const supportOptions = [
     description:
       "Documented questions, setup guidance, troubleshooting and support entry points.",
     button: "Help Center",
+    href: "/resources/help-center",
   },
   {
     number: "3",
@@ -23,6 +26,7 @@ const supportOptions = [
     description:
       "Check for outages, degraded service or ongoing incidents.",
     button: "Status",
+    href: "/resources/system-status",
   },
   {
     number: "4",
@@ -30,6 +34,7 @@ const supportOptions = [
     description:
       "For eligible issues where unauthenticated intake is supported.",
     button: "Go to support options",
+    href: "/contact",
   },
   {
     number: "5",
@@ -37,6 +42,7 @@ const supportOptions = [
     description:
       "If your payroll relationship is managed by your employer or payroll administrator, contact them directly first.",
     button: "Learn more",
+    href: "/resources/help-center",
   },
 ];
 
@@ -97,12 +103,12 @@ export default function SupportPanel() {
               </div>
 
               {/* Button */}
-              <button
-                type="button"
+              <Link
+                href={option.href}
                 className="shrink-0 rounded-lg border border-[#dfe5e9] bg-white px-5 py-2.5 font-['Inter'] text-sm font-bold leading-6 text-[#103653] transition-colors hover:bg-[#f5f8fa]"
               >
                 {option.button}
-              </button>
+              </Link>
             </div>
           ))}
         </div>

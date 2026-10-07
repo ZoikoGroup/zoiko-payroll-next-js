@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 interface StoryCardProps {
@@ -137,13 +138,13 @@ export default function StoryCardSystemSection() {
 
               {/* Card Footer Link */}
               <div className="pt-2 border-t border-slate-100/80">
-                <a
+                <Link
                   href="/resources/customer-stories"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#3D9BD6] hover:text-[#0C4773] transition-colors"
                 >
                   <span>Read customer story</span>
                   <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" />
-                </a>
+                </Link>
               </div>
             </div>
           ))}

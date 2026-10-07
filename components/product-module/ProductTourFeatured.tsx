@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 export default function ProductTourFeatured() {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -107,12 +108,12 @@ export default function ProductTourFeatured() {
             }`}
             style={{ transitionDelay: "340ms" }}
           >
-            <button
-              type="button"
+            <Link
+              href="/zoiko-payroll-product-tour"
               className="inline-flex items-center justify-center rounded-lg bg-[#8BD8F8] px-6 py-3 font-['Inter'] text-sm font-extrabold leading-6 text-[#0F3552] transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90 active:translate-y-0"
             >
               Start the product tour →
-            </button>
+            </Link>
           </div>
         </div>
       </div>

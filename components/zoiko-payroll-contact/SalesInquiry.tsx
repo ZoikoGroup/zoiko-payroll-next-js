@@ -1,6 +1,14 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+
+const topics = [
+  { label: "Pricing", href: "/pricing" },
+  { label: "Global Payroll", href: "/global-payroll" },
+  { label: "Product Tour", href: "/zoiko-payroll-product-tour" },
+  { label: "Trust and Security", href: "/company/trust-center" },
+];
 
 export default function SalesInquiry() {
   return (
@@ -39,38 +47,36 @@ export default function SalesInquiry() {
 
         {/* CTA Buttons */}
         <div className="flex w-full flex-wrap items-center justify-center gap-3 pt-1.5">
-         <a href="book-a-demo"> <button
-            type="button"
+          <Link
+            href="/book-a-demo"
             className="rounded-lg bg-gradient-to-r from-[#0099e5] to-[#006fae] px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-white shadow-[0px_1px_2px_0px_rgba(10,46,75,0.06)] transition-opacity duration-200 hover:opacity-90"
           >
             Book a demo
-          </button></a>
+          </Link>
 
-       <a href="/contact">   <button
-            type="button"
+          <Link
+            href="#sales-form"
             className="rounded-lg border border-[#d9e1e7] bg-white px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-[#103653] transition-opacity duration-200 hover:opacity-70"
           >
             Send a sales inquiry
-          </button></a>
+          </Link>
         </div>
 
         {/* Topic Pills */}
         <div className="flex w-full flex-wrap items-center justify-center gap-2.5">
-          {["Pricing", "Global Payroll", "Product Tour", "Trust and Security"].map(
-            (topic) => (
-              <button
-                key={topic}
-                type="button"
-                className="rounded-[20px] border border-[#d9e1e7] bg-white px-4 py-2 font-['Inter'] text-xs font-semibold leading-5 text-[#315b77] transition-colors duration-200 hover:border-[#0099e5] hover:text-[#0099e5]"
-              >
-                {topic}
-              </button>
-            ),
-          )}
+          {topics.map((topic) => (
+            <Link
+              key={topic.label}
+              href={topic.href}
+              className="rounded-[20px] border border-[#d9e1e7] bg-white px-4 py-2 font-['Inter'] text-xs font-semibold leading-5 text-[#315b77] transition-colors duration-200 hover:border-[#0099e5] hover:text-[#0099e5]"
+            >
+              {topic.label}
+            </Link>
+          ))}
         </div>
 
         {/* Sales Inquiry Form */}
-        <div className="mt-4 flex w-full max-w-[760px] flex-col items-start gap-1.5 rounded-2xl border border-[#d9e1e7] bg-white px-5 py-8 shadow-[0px_12px_34px_0px_rgba(10,46,75,0.12)] sm:px-8 sm:pt-12 sm:pb-8">
+        <div id="sales-form" className="scroll-mt-20 mt-4 flex w-full max-w-[760px] flex-col items-start gap-1.5 rounded-2xl border border-[#d9e1e7] bg-white px-5 py-8 shadow-[0px_12px_34px_0px_rgba(10,46,75,0.12)] sm:px-8 sm:pt-12 sm:pb-8">
           {/* Form Heading */}
           <div className="w-full">
             <h3 className="m-0 font-['Inter'] text-lg font-extrabold leading-8 text-[#103653]">

@@ -10,18 +10,21 @@ const REVIEWS = [
     hasStarIcon: true,
     score: "4.7 / 5",
     details: "Based on 600+ reviews",
+    href: "https://www.trustpilot.com",
   },
   {
     platform: "G2",
     hasStarIcon: false,
     score: "4.6 / 5",
     details: "Based on 400+ reviews",
+    href: "https://www.g2.com",
   },
   {
     platform: "Glassdoor",
     hasStarIcon: false,
     score: "4.4 / 5",
     details: "Based on employee reviews",
+    href: "https://www.glassdoor.com",
   },
 ];
 
@@ -43,16 +46,20 @@ export default function TrustProofSection() {
         {/* 3 Review Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
           {REVIEWS.map((review, idx) => (
-            <div
+            <a
               key={idx}
-              className="bg-white border border-[#E1E8ED] rounded-2xl p-8 flex flex-col items-center justify-center space-y-3 shadow-xs transition-shadow hover:shadow-md"
+              href={review.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white border border-[#E1E8ED] rounded-2xl p-8 flex flex-col items-center justify-center space-y-3 shadow-xs transition-all hover:shadow-md hover:-translate-y-0.5"
             >
               {/* Platform Title */}
-              <div className="flex items-center gap-1.5 text-xs font-semibold text-[#5C6E7E] tracking-tight">
+              <div className="flex items-center gap-1.5 text-xs font-semibold text-[#5C6E7E] tracking-tight group-hover:text-[#0281D3] transition-colors">
                 {review.hasStarIcon && (
-                  <Star className="w-3.5 h-3.5 fill-[#5C6E7E] text-[#5C6E7E]" />
+                  <Star className="w-3.5 h-3.5 fill-[#5C6E7E] text-[#5C6E7E] group-hover:fill-[#0281D3] group-hover:text-[#0281D3] transition-colors" />
                 )}
                 <span>{review.platform}</span>
+                <span className="text-[10px] opacity-0 group-hover:opacity-100 transition-opacity">↗</span>
               </div>
 
               {/* Score */}
@@ -62,7 +69,7 @@ export default function TrustProofSection() {
 
               {/* Sub-details */}
               <div className="text-xs text-[#8A9BA8]">{review.details}</div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

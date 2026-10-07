@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   Mail,
   CircleHelp,
@@ -71,19 +72,19 @@ export default function ContactZoikoPayroll() {
 
             {/* Buttons */}
             <div className="flex w-full flex-wrap items-start gap-3 pt-3.5">
-             <a href="book-a-demo"> <button
-                type="button"
+              <Link
+                href="/book-a-demo"
                 className="flex items-center justify-center rounded-lg bg-gradient-to-r from-[#0099e5] to-[#006fae] px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-white shadow-[0px_1px_2px_0px_rgba(10,46,75,0.06)] transition-opacity duration-200 hover:opacity-90"
               >
                 Book a demo
-              </button></a>
+              </Link>
 
-              <a href="/contact "><button
-                type="button"
+              <Link
+                href="#choose-route"
                 className="flex items-center justify-center rounded-lg border border-[#d9e1e7] bg-white px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-[#103653] transition-opacity duration-200 hover:opacity-70"
               >
                 Choose a contact route
-              </button></a>
+              </Link>
             </div>
 
             {/* Security Note */}
@@ -102,12 +103,12 @@ export default function ContactZoikoPayroll() {
                   Existing customer?{" "}
                 </span>
 
-               <a href="zoiko-payroll-help-center"> <button
-                  type="button"
+                <Link
+                  href="/resources/help-center"
                   className="font-bold text-[#0099e5] transition-opacity duration-200 hover:opacity-70"
                 >
                   Go to Help Center →
-                </button></a>
+                </Link>
               </p>
             </div>
           </div>
@@ -127,9 +128,9 @@ export default function ContactZoikoPayroll() {
                 const Icon = route.icon;
 
                 return (
-                  <button
+                  <Link
                     key={route.title}
-                    type="button"
+                    href={route.title === "Sales" ? "#sales-form" : "#choose-route"}
                     className={`flex w-full items-center gap-3 rounded-lg px-2 py-2.5 text-left transition-colors duration-200 hover:bg-[#f5f9fc] ${
                       index === 0 ? "pt-2.5" : ""
                     }`}
@@ -153,7 +154,7 @@ export default function ContactZoikoPayroll() {
                         {route.description}
                       </div>
                     </div>
-                  </button>
+                  </Link>
                 );
               })}
             </div>

@@ -72,7 +72,8 @@ export default function HeroSection() {
 
   return (
     <section
-      className="relative overflow-hidden py-16 lg:py-20"
+      id="search"
+      className="relative overflow-hidden py-16 lg:py-20 scroll-mt-24"
       style={{
         backgroundImage:
           "radial-gradient(at 15% 0%, #164e63 0%, #0f172a 45%, #020617 100%)",

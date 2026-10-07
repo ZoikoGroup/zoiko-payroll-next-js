@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 interface AuthorityRow {
   topic: string;
@@ -17,7 +18,7 @@ const authorityData: AuthorityRow[] = [
   {
     topic: "Operational consent / preference changes",
     authority: "Cookie Settings",
-    href: "#",
+    href: "#cookie-settings",
   },
   {
     topic: "Legal provider role (where separately governed)",
@@ -27,7 +28,7 @@ const authorityData: AuthorityRow[] = [
   {
     topic: "Security controls & evidence",
     authority: "Trust and Security",
-    href: "/trust-security",
+    href: "/company/trust-center",
   },
 ];
 
@@ -61,7 +62,7 @@ export default function PrivacyRegionalSection() {
                   {row.topic}
                 </td>
                 <td className="py-4 px-6 font-semibold text-[#0284C7] hover:underline cursor-pointer">
-                  <a href={row.href}>{row.authority}</a>
+                  <Link href={row.href || "#"}>{row.authority}</Link>
                 </td>
               </tr>
             ))}

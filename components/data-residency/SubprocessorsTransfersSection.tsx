@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function SubprocessorsTransfersSection() {
@@ -76,8 +77,14 @@ export default function SubprocessorsTransfersSection() {
 
         {/* Footer Subtext */}
         <p className="text-[11px] sm:text-xs text-slate-500 font-medium text-center max-w-xl mx-auto leading-relaxed pt-4">
-          This page routes to the canonical Subprocessors list and current
-          Privacy/Legal records{" "}
+          This page routes to the canonical{" "}
+          <Link href="/trust-security/subprocessors" className="underline font-semibold hover:text-[#0A78C3]">
+            Subprocessors list
+          </Link>{" "}
+          and current{" "}
+          <Link href="/legal/legal-center" className="underline font-semibold hover:text-[#0A78C3]">
+            Privacy/Legal records
+          </Link>{" "}
           <span className="text-slate-400 font-bold">—</span> it is never the
           legal source of truth itself.
         </p>

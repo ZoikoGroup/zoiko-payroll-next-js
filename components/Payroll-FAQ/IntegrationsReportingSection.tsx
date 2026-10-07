@@ -24,7 +24,7 @@ const integrationsFaqData: IntegrationFAQItem[] = [
     scope: "Product",
     reviewedDate: "Reviewed Aug 2026",
     linkText: "View Integrations / Product Documentation",
-    linkHref: "#product-documentation"
+    linkHref: "/product/integrations"
   },
   {
     id: 2,

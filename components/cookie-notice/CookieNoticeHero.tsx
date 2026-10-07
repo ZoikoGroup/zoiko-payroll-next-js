@@ -51,12 +51,12 @@ export default function CookieNoticeHero() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <button
-              type="button"
+            <Link
+              href="#cookie-settings"
               className="px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-white bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:opacity-95 shadow-sm transition-all"
             >
               Open Cookie Settings
-            </button>
+            </Link>
             <Link href="/product/how-it-works"
               className="px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-white border border-white/30 hover:bg-white/10 transition-colors"
             >
@@ -68,9 +68,9 @@ export default function CookieNoticeHero() {
           <p className="text-[11px] text-slate-300 leading-normal pt-1">
             Reviewing this notice does not change your preferences — that happens
             only in{" "}
-            <span className="underline cursor-pointer hover:text-white">
+            <Link href="#cookie-settings" className="underline hover:text-white">
               Cookie Settings
-            </span>
+            </Link>
             . For broader personal-data rights, see the{" "}
             <Link href="/legal/privacy-notice" className="underline hover:text-white">
               Privacy Notice

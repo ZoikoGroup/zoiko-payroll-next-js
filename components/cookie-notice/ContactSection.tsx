@@ -19,12 +19,12 @@ export default function ContactSection() {
 
       {/* Action Buttons */}
       <div className="flex flex-wrap items-center gap-3 pt-2">
-        <button
-          type="button"
+        <Link
+          href="#cookie-settings"
           className="px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-white bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:opacity-95 shadow-sm transition-all"
         >
           Open Cookie Settings
-        </button>
+        </Link>
         <Link
           href="/legal/privacy-notice"
           className="px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-[#0F172A] bg-white border border-slate-200/80 hover:bg-slate-50 shadow-sm transition-colors"

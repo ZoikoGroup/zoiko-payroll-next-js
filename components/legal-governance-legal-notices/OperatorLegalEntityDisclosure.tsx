@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function OperatorLegalEntityDisclosure() {
   return (
-    <section className="w-full bg-[#E9F0F8] py-12 sm:py-16 lg:py-20">
+    <section id="operator" className="scroll-mt-20 w-full bg-[#E9F0F8] py-12 sm:py-16 lg:py-20">
       <div className="mx-auto flex w-full max-w-[1320px] flex-col items-center gap-8 px-5 sm:px-8 lg:px-16 xl:px-24">
 
         {/* Top content */}

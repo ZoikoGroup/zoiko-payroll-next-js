@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
+import Link from "next/link";
 
 type Notice = {
   notice: string;
@@ -10,6 +11,7 @@ type Notice = {
   effective: string;
   authority: string;
   action: string;
+  href: string;
 };
 
 const notices: Notice[] = [
@@ -21,6 +23,7 @@ const notices: Notice[] = [
     effective: "Jan 2026",
     authority: "Brand Guidelines",
     action: "Read notice",
+    href: "#ip",
   },
   {
     notice: "Operator Disclosure",
@@ -30,6 +33,7 @@ const notices: Notice[] = [
     effective: "Mar 2026",
     authority: "Terms of Use",
     action: "Read notice",
+    href: "#operator",
   },
   {
     notice: "Open-Source Attribution Notice",
@@ -39,6 +43,7 @@ const notices: Notice[] = [
     effective: "Feb 2026",
     authority: "N/A",
     action: "Read notice",
+    href: "/legal/legal-notices",
   },
   {
     notice: "Illustrative Content Notice",
@@ -48,6 +53,7 @@ const notices: Notice[] = [
     effective: "Jan 2026",
     authority: "Terms of Use",
     action: "Read notice",
+    href: "#product-service",
   },
   {
     notice: "Prior Regional Notice (EU)",
@@ -57,6 +63,7 @@ const notices: Notice[] = [
     effective: "Superseded Jun 2025",
     authority: "Privacy Notice",
     action: "View record",
+    href: "#notice-history",
   },
 ];
 
@@ -98,7 +105,7 @@ const NoticeRegistry = () => {
   }, [search, activeFilter]);
 
   return (
-    <section className="w-full bg-[#EAF0F5] px-5 sm:px-8 md:px-12 lg:px-14 py-14 sm:py-16 lg:py-20">
+    <section id="registry" className="scroll-mt-20 w-full bg-[#EAF0F5] px-5 sm:px-8 md:px-12 lg:px-14 py-14 sm:py-16 lg:py-20">
       <div className="w-full max-w-[1320px] mx-auto px-0 sm:px-6 md:px-12 lg:px-24 flex flex-col items-center gap-4">
 
         {/* Header */}
@@ -260,12 +267,12 @@ const NoticeRegistry = () => {
                       </TableCell>
 
                       <TableCell>
-                        <button
-                          type="button"
+                        <Link
+                          href={notice.href}
                           className="text-[#0A8FD0] text-xs font-bold font-['Inter'] leading-5 hover:underline"
                         >
                           {notice.action}
-                        </button>
+                        </Link>
                       </TableCell>
                     </div>
                   ))

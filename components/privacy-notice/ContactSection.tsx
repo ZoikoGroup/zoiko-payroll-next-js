@@ -15,8 +15,15 @@ export default function ContactSection() {
           </h2>
           <p className="text-[14.5px] text-[#5B646B] leading-relaxed max-w-3xl">
             Use the dedicated privacy request route for access, correction,
-            deletion or other applicable rights. For security evidence, use
-            Trust and Security. For cookie preferences, use Cookie Settings.
+            deletion or other applicable rights. For security evidence, use{" "}
+            <Link href="/company/trust-center" className="underline font-semibold hover:text-[#0284C7]">
+              Trust and Security
+            </Link>
+            . For cookie preferences, use{" "}
+            <Link href="/legal/cookie-notice#cookie-settings" className="underline font-semibold hover:text-[#0284C7]">
+              Cookie Settings
+            </Link>
+            .
           </p>
         </div>
       </div>

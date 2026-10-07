@@ -106,7 +106,7 @@ export default function ChooseYourRoute() {
       {/* =========================
           CHOOSE YOUR ROUTE
           ========================= */}
-      <section className="w-full bg-[#e9f0f8] px-4 py-14 sm:px-6 md:px-10 lg:px-14 lg:py-20">
+      <section id="choose-route" className="scroll-mt-20 w-full bg-[#e9f0f8] px-4 py-14 sm:px-6 md:px-10 lg:px-14 lg:py-20">
         <div className="mx-auto flex w-full max-w-[1320px] flex-col items-center gap-7 lg:px-24">
           {/* Heading */}
           <div className="flex w-full max-w-[680px] flex-col items-center gap-3.5">

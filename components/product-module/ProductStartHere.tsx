@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 const paths = [
   {
@@ -14,6 +15,7 @@ const paths = [
       </>
     ),
     link: "Explore How It Works →",
+    href: "/product/how-it-works",
   },
   {
     image: "/images/product-module/image2.png",
@@ -26,6 +28,7 @@ const paths = [
       </>
     ),
     link: "Explore Implementation →",
+    href: "/product/implementation",
   },
   {
     image: "/images/product-module/image1.png",
@@ -38,6 +41,7 @@ const paths = [
       </>
     ),
     link: "Explore Zoiko One Integration →",
+    href: "/product/zoiko-one-integration",
   },
 ];
 
@@ -292,9 +296,10 @@ export default function ProductStartHere() {
 
                 {/* Link */}
                 <div className="w-full">
-                  <button
-                    type="button"
+                  <Link
+                    href={path.href}
                     className="
+                      inline-block
                       text-left
                       font-['Inter']
                       text-xs
@@ -307,7 +312,7 @@ export default function ProductStartHere() {
                     "
                   >
                     {path.link}
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ProductServiceRegionalDisclosures() {
   return (
-    <section className="w-full bg-[#E9F0F8] px-6 py-16 md:px-10 lg:px-14 lg:py-20">
+    <section id="product-service" className="scroll-mt-20 w-full bg-[#E9F0F8] px-6 py-16 md:px-10 lg:px-14 lg:py-20">
       <div className="mx-auto flex w-full max-w-[1320px] flex-col items-center gap-10 lg:flex-row lg:gap-14 lg:px-24">
         {/* Left Content */}
         <div className="flex w-full flex-1 flex-col items-start gap-3.5">

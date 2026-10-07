@@ -4,10 +4,14 @@ import React, { useState } from "react";
 
 export default function NewsletterSubscribeSection() {
   const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle subscription action here
+    if (email) {
+      setSubmitted(true);
+      setEmail("");
+    }
   };
 
   return (
@@ -25,25 +29,31 @@ export default function NewsletterSubscribeSection() {
           </div>
 
           {/* Form / Input & Subscribe Button */}
-          <form
-            onSubmit={handleSubmit}
-            className="flex items-center gap-3 w-full md:w-auto shrink-0"
-          >
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="name@company.com"
-              required
-              className="w-full sm:w-64 px-4 py-2.5 bg-white border border-[#E1E8ED] rounded-xl text-xs sm:text-sm text-[#0A1928] placeholder-[#A0AEC0] focus:outline-none focus:border-[#0281D3] transition-colors"
-            />
-            <button
-              type="submit"
-              className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#1A83C8] to-[#093C73] hover:bg-[#026cb3] text-white font-semibold text-xs sm:text-sm transition-all shadow-md active:scale-95 shrink-0"
+          {submitted ? (
+            <div className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-[#093C73] bg-[#E0F2FE] px-5 py-2.5 rounded-xl border border-[#BAE6FD]">
+              <span>✓ You&apos;re subscribed to payroll governance insights.</span>
+            </div>
+          ) : (
+            <form
+              onSubmit={handleSubmit}
+              className="flex items-center gap-3 w-full md:w-auto shrink-0"
             >
-              Subscribe
-            </button>
-          </form>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="name@company.com"
+                required
+                className="w-full sm:w-64 px-4 py-2.5 bg-white border border-[#E1E8ED] rounded-xl text-xs sm:text-sm text-[#0A1928] placeholder-[#A0AEC0] focus:outline-none focus:border-[#0281D3] transition-colors"
+              />
+              <button
+                type="submit"
+                className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#1A83C8] to-[#093C73] hover:bg-[#026cb3] text-white font-semibold text-xs sm:text-sm transition-all shadow-md active:scale-95 shrink-0"
+              >
+                Subscribe
+              </button>
+            </form>
+          )}
         </div>
       </div>
     </section>

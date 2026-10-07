@@ -20,7 +20,7 @@ export default function HeroSection() {
 
   function search(term: string) {
     const trimmed = term.trim();
-    router.push(trimmed ? `/payroll-glossary?q=${encodeURIComponent(trimmed)}#a-z-index` : "#a-z-index");
+    router.push(trimmed ? `/resources/payroll-glossary?q=${encodeURIComponent(trimmed)}#a-z-index` : "#a-z-index");
   }
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {

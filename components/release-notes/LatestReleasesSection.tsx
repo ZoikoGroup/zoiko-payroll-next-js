@@ -20,7 +20,7 @@ const releases = [
     impactLabel: "Action required",
     tags: ["Approvals", "Config change"],
     image: "/images/release-notes/release-approvals.png",
-    href: "/resources/release-notes",
+    href: "#release-detail",
   },
   {
     id: "REL-2026-109",
@@ -31,7 +31,7 @@ const releases = [
     impactLabel: "No action expected",
     tags: ["Reporting", "Enhancement"],
     image: "/images/release-notes/release-reporting.png",
-    href: "/resources/release-notes",
+    href: "#REL-2026-109",
   },
   {
     id: "REL-2026-095",
@@ -42,7 +42,7 @@ const releases = [
     impactLabel: "No action expected",
     tags: ["Integrations", "Reliability"],
     image: "/images/release-notes/release-integrations.png",
-    href: "/resources/release-notes",
+    href: "#REL-2026-095",
   },
   {
     id: "REL-2026-101",
@@ -53,7 +53,7 @@ const releases = [
     impactLabel: "Recommended review",
     tags: ["Security", "Config change"],
     image: "/images/release-notes/release-security.png",
-    href: "/resources/release-notes",
+    href: "#REL-2026-101",
   },
 ];
 
