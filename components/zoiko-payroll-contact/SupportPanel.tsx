@@ -10,7 +10,7 @@ const supportOptions = [
     description:
       "For admins and users who can access their Zoiko Payroll account and in-product support.",
     button: "Sign in",
-    href: "/login",
+    href: "/sign-in",
   },
   {
     number: "2",

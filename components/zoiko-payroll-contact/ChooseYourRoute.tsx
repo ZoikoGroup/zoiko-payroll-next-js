@@ -98,6 +98,9 @@ export default function ChooseYourRoute() {
   const handleRouteClick = (route: (typeof routes)[number]) => {
     if (route.popup) {
       setActivePopup(route.popup);
+    } else {
+      const el = document.getElementById("sales-form");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -139,14 +142,10 @@ export default function ChooseYourRoute() {
                   key={route.title}
                   type="button"
                   onClick={() => handleRouteClick(route)}
-                  className={`flex min-h-[230px] flex-col items-center rounded-2xl px-4 py-5 text-center ${
+                  className={`flex min-h-[230px] flex-col items-center rounded-2xl px-4 py-5 text-center cursor-pointer transition-all duration-200 hover:border-[#0099e5] ${
                     route.active
                       ? "border-2 border-[#0099e5] bg-[#e9f0f8]"
                       : "border-2 border-[#d9e1e7] bg-white"
-                  } ${
-                    route.popup
-                      ? "cursor-pointer transition-all duration-200 hover:border-[#0099e5]"
-                      : "cursor-default"
                   }`}
                 >
                   {/* Icon */}

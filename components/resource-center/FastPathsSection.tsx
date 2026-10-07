@@ -5,37 +5,37 @@ import Eyebrow from "./Eyebrow";
 const rows = [
   {
     asking: "“How do I configure/use this?”",
-    primary: "Product Documentation",
+    primary: { label: "Product Documentation", href: "/resources/documentation" },
     secondary: { label: "Help Center", href: "/resources/help-center" },
   },
   {
     asking: "“I need help / something’s broken”",
-    primary: "Help Center",
+    primary: { label: "Help Center", href: "/resources/help-center" },
     secondary: { label: "Product Documentation", href: "/resources/documentation" },
   },
   {
     asking: "“Is there an outage or incident?”",
-    primary: "System Status",
+    primary: { label: "System Status", href: "/resources/system-status" },
     secondary: { label: "Help Center", href: "/resources/help-center" },
   },
   {
     asking: "“What changed / updated?”",
-    primary: "Release Notes",
+    primary: { label: "Release Notes", href: "/resources/release-notes" },
     secondary: { label: "Product Documentation", href: "/resources/documentation" },
   },
   {
     asking: "“How do I export or report?”",
-    primary: "Reporting / Product Documentation",
+    primary: { label: "Reporting / Product Documentation", href: "/product/reporting" },
     secondary: { label: "Help Center", href: "/resources/help-center" },
   },
   {
     asking: "“We’re implementing or migrating”",
-    primary: "Implementation",
+    primary: { label: "Implementation", href: "/product/implementation" },
     secondary: { label: "Help Center / Sales if scoped", href: "/product/implementation" },
   },
   {
     asking: "“I need security evidence”",
-    primary: "Security and Trust",
+    primary: { label: "Security and Trust", href: "/product/security" },
     secondary: { label: "Sales / procurement contact", href: "/product/security" },
   },
 ];
@@ -96,7 +96,14 @@ export default function FastPathsSection() {
                     >
                       {row.asking}
                     </th>
-                    <td className="px-5 py-4 text-sm leading-5 text-sky-950">{row.primary}</td>
+                    <td className="px-5 py-4 text-sm leading-5">
+                      <Link
+                        href={row.primary.href}
+                        className="font-semibold text-sky-950 hover:text-sky-700 hover:underline"
+                      >
+                        {row.primary.label}
+                      </Link>
+                    </td>
                     <td className="px-5 py-4 text-sm leading-5">
                       <Link
                         href={row.secondary.href}

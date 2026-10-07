@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 import SectionHeading from "./SectionHeading";
 
@@ -106,6 +107,15 @@ export default function ReportingSection() {
                 <span>{aging[0].cycle}</span>
                 <span>{aging[aging.length - 1].cycle}</span>
               </div>
+            </div>
+
+            <div className="mt-6">
+              <Link
+                href="/product/reporting"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-sky-600 transition-colors duration-200 hover:text-sky-700"
+              >
+                Learn more about reporting & audit trails →
+              </Link>
             </div>
           </Reveal>
         </div>

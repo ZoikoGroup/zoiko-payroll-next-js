@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 import SectionHeading from "./SectionHeading";
 
@@ -39,6 +40,15 @@ export default function ImplementationSection() {
               </div>
             ))}
           </div>
+        </Reveal>
+
+        <Reveal delay={120} className="mt-8 text-center">
+          <Link
+            href="/product/implementation"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-sky-400 hover:text-sky-300"
+          >
+            Explore our complete phased implementation methodology →
+          </Link>
         </Reveal>
       </div>
     </section>

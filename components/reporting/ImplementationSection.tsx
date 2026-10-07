@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 import Eyebrow from "./Eyebrow";
 
@@ -64,6 +65,14 @@ export default function ImplementationSection() {
               </div>
             </Reveal>
           ))}
+          <div className="pt-6">
+            <Link
+              href="/product/implementation"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:text-blue-700"
+            >
+              Explore full implementation methodology →
+            </Link>
+          </div>
         </div>
       </div>
     </section>
