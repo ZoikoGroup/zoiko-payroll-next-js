@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WebinarsAndEventsHero() {
   return (
@@ -43,18 +44,18 @@ export default function WebinarsAndEventsHero() {
 
           {/* CTA Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <a
-              href="/book-a-demo"
+            <Link
+              href="#register"
               className="bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:opacity-95 text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-xl shadow-xs transition-opacity cursor-pointer"
             >
               Join the Waitlist
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className="bg-[#FFFFFF26] hover:bg-[#173852]/90 text-white border border-slate-400/30 text-xs sm:text-sm font-bold px-6 py-3 rounded-xl shadow-xs transition-colors cursor-pointer backdrop-blur-xs"
             >
               Contact Support
-            </a>
+            </Link>
           </div>
         </div>
 

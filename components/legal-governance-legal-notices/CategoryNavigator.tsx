@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   CreditCard,
   Shield,
@@ -8,8 +9,7 @@ import {
   LockKeyhole,
   Search,
   Mail,
- Info,
-
+  Info,
 } from "lucide-react";
 
 const categories = [
@@ -17,31 +17,37 @@ const categories = [
     title: "Operator & corporate",
     description: "Legal entity and operator disclosures.",
     icon: CreditCard,
+    href: "#operator",
   },
   {
     title: "Intellectual property",
     description: "Trademark and copyright notices.",
     icon: Shield,
+    href: "#ip",
   },
   {
     title: "Third-party & open-source",
     description: "Attribution and license notices.",
     icon: CircleHelp,
+    href: "/legal/legal-notices",
   },
   {
     title: "Product & service",
     description: "Availability and illustrative-content notices.",
     icon: LockKeyhole,
+    href: "#product-service",
   },
   {
     title: "Regional & jurisdictional",
     description: "Approved scope-specific disclosures.",
     icon: Search,
+    href: "#product-service",
   },
   {
     title: "Electronic notices",
     description: "Formal delivery and communication notices.",
     icon: Mail,
+    href: "#electronic-notices",
   },
   {
     title: "Other approved notices",
@@ -53,7 +59,7 @@ const categories = [
       </>
     ),
     icon: Info,
-
+    href: "#registry",
   },
 ];
 
@@ -139,21 +145,26 @@ const CategoryNavigator = () => {
             const Icon = category.icon;
 
             return (
-              <div
+              <Link
                 key={category.title}
+                href={category.href}
                 className="
                   w-full
                   min-h-[176px]
                   p-4
                   bg-white
+                  hover:bg-slate-50
                   rounded-xl
                   border
                   border-[#DCE6ED]
+                  hover:border-[#0A8FD0]
                   flex
                   flex-col
                   items-center
                   justify-start
                   gap-[5px]
+                  transition-all
+                  group
                 "
               >
                 {/* Icon container */}
@@ -182,10 +193,12 @@ const CategoryNavigator = () => {
                     className="
                       text-center
                       text-[#0A2E4B]
+                      group-hover:text-[#0A8FD0]
                       text-xs
                       font-bold
                       font-['Inter']
                       leading-5
+                      transition-colors
                     "
                   >
                     {category.title}
@@ -207,7 +220,7 @@ const CategoryNavigator = () => {
                     {category.description}
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

@@ -2,12 +2,14 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface CategoryCard {
   id: number;
   title: string;
   description: string;
   imageSrc: string;
+  href: string;
 }
 
 const proofCategories: CategoryCard[] = [
@@ -17,18 +19,21 @@ const proofCategories: CategoryCard[] = [
     description:
       "Evidence on running and controlling multi-entity payroll cycles.",
     imageSrc: "/images/resources/14.png",
+    href: "/solutions/payroll-teams",
   },
   {
     id: 2,
     title: "Security & controls proof",
     description: "Evidence on access, auditability and control implementation.",
     imageSrc: "/images/resources/15.png",
+    href: "/product/security",
   },
   {
     id: 3,
     title: "Implementation proof",
     description: "Evidence on rollout planning and go-live readiness.",
     imageSrc: "/images/resources/16.png",
+    href: "/product/implementation",
   },
 ];
 
@@ -63,8 +68,9 @@ export default function FeaturedStorySection() {
         {/* 3-Column Proof Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {proofCategories.map((card) => (
-            <div
+            <Link
               key={card.id}
+              href={card.href}
               className="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-2xs hover:shadow-md transition-shadow group cursor-pointer flex flex-col"
             >
               {/* Card Image Container */}
@@ -86,7 +92,7 @@ export default function FeaturedStorySection() {
                   {card.description}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

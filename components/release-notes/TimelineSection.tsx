@@ -104,7 +104,7 @@ const stateTones = {
 
 export default function TimelineSection() {
   return (
-    <section className="border-t border-[#E1E8F0] bg-[#F9FAFB] py-16">
+    <section id="timeline" className="scroll-mt-20 border-t border-[#E1E8F0] bg-[#F9FAFB] py-16">
       <div className="mx-auto flex max-w-[1200px] flex-col gap-5 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <Reveal>
@@ -141,7 +141,8 @@ export default function TimelineSection() {
               {month.entries.map((entry) => (
                 <div
                   key={entry.id}
-                  className="relative mb-2.5 block rounded-[10px] border border-[#E1E8F0] bg-white px-4 py-3.5"
+                  id={entry.id}
+                  className="relative mb-2.5 block scroll-mt-24 rounded-[10px] border border-[#E1E8F0] bg-white px-4 py-3.5"
                 >
                   <span
                     aria-hidden="true"
@@ -174,7 +175,7 @@ export default function TimelineSection() {
 
         <div className="flex justify-center">
           <Link
-            href="/resources/release-notes"
+            href="#timeline"
             className="rounded-lg border border-[#E1E8F0] bg-white px-5 py-2.5 text-center text-sm font-bold leading-5 text-[#0A2E4B] transition-colors duration-200 hover:border-[#0A8FD0]/40"
           >
             View archive (2024 – 2025)

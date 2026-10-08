@@ -52,7 +52,7 @@ const banners: StatusBanner[] = [
 
 export default function RecoveryAndReplaySection() {
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white text-[#07243B]">
+    <section id="replay" className="scroll-mt-20 w-full py-16 px-4 sm:px-6 lg:px-8 bg-white text-[#07243B]">
       <div className="max-w-6xl mx-auto space-y-10">
         {/* Header Block */}
         <div className="space-y-3 text-center mx-auto">

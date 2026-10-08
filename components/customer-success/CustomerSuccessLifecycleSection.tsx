@@ -107,7 +107,7 @@ export default function CustomerSuccessLifecycleSection() {
   ] as const;
 
   return (
-    <div className="flex items-center justify-center py-12 md:py-20 text-[#0F172A] bg-[#F8FAFC]">
+    <section id="explore" className="scroll-mt-20 flex items-center justify-center py-12 md:py-20 text-[#0F172A] bg-[#F8FAFC]">
       <div className="max-w-6xl w-full flex flex-col items-center px-4 sm:px-6">
         {/* Category Label */}
         <p className="text-xs font-semibold text-[#3B82F6] tracking-wide mb-3">
@@ -156,6 +156,6 @@ export default function CustomerSuccessLifecycleSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

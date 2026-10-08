@@ -15,7 +15,7 @@ export default function LegalRightsCommunications() {
   ];
 
   return (
-    <section className="w-full bg-[#E9F0F8] px-6 py-16 md:px-10 lg:px-14 lg:py-20">
+    <section id="electronic-notices" className="scroll-mt-20 w-full bg-[#E9F0F8] px-6 py-16 md:px-10 lg:px-14 lg:py-20">
       <div className="mx-auto flex w-full max-w-[1320px] flex-col items-center gap-3 lg:px-24">
         {/* Header */}
         <div className="flex w-full max-w-[680px] flex-col items-center gap-4">

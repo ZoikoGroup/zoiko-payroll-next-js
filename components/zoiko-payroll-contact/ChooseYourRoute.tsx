@@ -98,6 +98,9 @@ export default function ChooseYourRoute() {
   const handleRouteClick = (route: (typeof routes)[number]) => {
     if (route.popup) {
       setActivePopup(route.popup);
+    } else {
+      const el = document.getElementById("sales-form");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -106,7 +109,7 @@ export default function ChooseYourRoute() {
       {/* =========================
           CHOOSE YOUR ROUTE
           ========================= */}
-      <section className="w-full bg-[#e9f0f8] px-4 py-14 sm:px-6 md:px-10 lg:px-14 lg:py-20">
+      <section id="choose-route" className="scroll-mt-20 w-full bg-[#e9f0f8] px-4 py-14 sm:px-6 md:px-10 lg:px-14 lg:py-20">
         <div className="mx-auto flex w-full max-w-[1320px] flex-col items-center gap-7 lg:px-24">
           {/* Heading */}
           <div className="flex w-full max-w-[680px] flex-col items-center gap-3.5">
@@ -139,14 +142,10 @@ export default function ChooseYourRoute() {
                   key={route.title}
                   type="button"
                   onClick={() => handleRouteClick(route)}
-                  className={`flex min-h-[230px] flex-col items-center rounded-2xl px-4 py-5 text-center ${
+                  className={`flex min-h-[230px] flex-col items-center rounded-2xl px-4 py-5 text-center cursor-pointer transition-all duration-200 hover:border-[#0099e5] ${
                     route.active
                       ? "border-2 border-[#0099e5] bg-[#e9f0f8]"
                       : "border-2 border-[#d9e1e7] bg-white"
-                  } ${
-                    route.popup
-                      ? "cursor-pointer transition-all duration-200 hover:border-[#0099e5]"
-                      : "cursor-default"
                   }`}
                 >
                   {/* Icon */}

@@ -53,7 +53,7 @@ export default function RegionAvailabilityRegistrySection() {
 
   return (
     <div className="w-full bg-[#F9FAFB] text-[#07243B] py-16 px-4 sm:px-6 lg:px-8">
-      <section className="max-w-6xl mx-auto space-y-10 text-center">
+      <section id="residency-options" className="scroll-mt-20 max-w-6xl mx-auto space-y-10 text-center">
         
         {/* Header Block */}
         <div className="space-y-4 mx-auto">

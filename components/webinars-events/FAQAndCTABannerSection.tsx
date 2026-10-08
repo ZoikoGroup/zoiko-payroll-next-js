@@ -132,12 +132,12 @@ export default function FAQAndCTABannerSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-              <button
-                type="button"
-                className="w-full sm:w-auto text-xs sm:text-sm font-bold bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] text-white px-7 py-3 rounded-xl shadow-md hover:opacity-95 transition-opacity cursor-pointer"
+              <Link
+                href="#register"
+                className="w-full sm:w-auto text-xs sm:text-sm font-bold bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] text-white px-7 py-3 rounded-xl shadow-md hover:opacity-95 transition-opacity cursor-pointer text-center"
               >
                 Join the Waitlist
-              </button>
+              </Link>
               <Link href="/contact"
                 className="w-full sm:w-auto text-xs sm:text-sm font-bold border border-white/40 hover:bg-white/10 text-white px-7 py-3 rounded-xl transition-colors cursor-pointer"
               >

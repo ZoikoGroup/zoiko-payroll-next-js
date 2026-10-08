@@ -81,7 +81,7 @@ export default function ContactSection() {
                 <p>
                   Existing customer?{" "}
                   <Link
-                    href="/customer"
+                    href="/resources/help-center"
                     className="font-bold text-[#7FC1EE] hover:underline"
                   >
                     Get Support →
@@ -189,8 +189,14 @@ export default function ContactSection() {
 
                   {/* Privacy Notice Note */}
                   <p className="text-[11px] text-[#828C97] leading-tight pt-1">
-                    By submitting you agree to the Privacy Notice. We&apos;ll route
-                    this to the right team automatically.
+                    By submitting you agree to the{" "}
+                    <Link
+                      href="/legal/privacy-notice"
+                      className="underline hover:text-[#0F172A]"
+                    >
+                      Privacy Notice
+                    </Link>
+                    . We&apos;ll route this to the right team automatically.
                   </p>
 
                   {/* Submit Button */}

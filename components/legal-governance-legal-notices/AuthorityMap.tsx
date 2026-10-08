@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 const AuthorityMap = () => {
   return (
@@ -71,50 +72,68 @@ const AuthorityMap = () => {
           <div className="w-full max-w-[640px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
 
             {/* Terms of Use */}
-            <div className="min-h-[72px] px-6 py-3 bg-white rounded-[10px] border border-[#DCE6ED] flex justify-center items-center">
-              <div className="text-center text-[#40586A] text-xs font-semibold font-['Inter'] leading-5">
+            <Link
+              href="/legal/service-terms"
+              className="min-h-[72px] px-6 py-3 bg-white hover:bg-slate-50 rounded-[10px] border border-[#DCE6ED] flex justify-center items-center transition-colors group"
+            >
+              <div className="text-center text-[#40586A] group-hover:text-[#0A8FD0] text-xs font-semibold font-['Inter'] leading-5 transition-colors">
                 Terms of Use
               </div>
-            </div>
+            </Link>
 
             {/* Privacy Notice */}
-            <div className="min-h-[72px] px-6 py-3 bg-white rounded-[10px] border border-[#DCE6ED] flex justify-center items-center">
-              <div className="text-center text-[#40586A] text-xs font-semibold font-['Inter'] leading-5">
+            <Link
+              href="/legal/privacy-notice"
+              className="min-h-[72px] px-6 py-3 bg-white hover:bg-slate-50 rounded-[10px] border border-[#DCE6ED] flex justify-center items-center transition-colors group"
+            >
+              <div className="text-center text-[#40586A] group-hover:text-[#0A8FD0] text-xs font-semibold font-['Inter'] leading-5 transition-colors">
                 Privacy Notice
               </div>
-            </div>
+            </Link>
 
             {/* Data Processing Addendum */}
-            <div className="min-h-[72px] px-6 py-3 bg-white rounded-[10px] border border-[#DCE6ED] flex justify-center items-center">
-              <div className="text-center text-[#40586A] text-xs font-semibold font-['Inter'] leading-5">
+            <Link
+              href="/legal/dpa"
+              className="min-h-[72px] px-6 py-3 bg-white hover:bg-slate-50 rounded-[10px] border border-[#DCE6ED] flex justify-center items-center transition-colors group"
+            >
+              <div className="text-center text-[#40586A] group-hover:text-[#0A8FD0] text-xs font-semibold font-['Inter'] leading-5 transition-colors">
                 Data Processing
                 <br />
                 Addendum
               </div>
-            </div>
+            </Link>
 
             {/* Cookie Notice */}
-            <div className="min-h-[72px] px-6 py-3 bg-white rounded-[10px] border border-[#DCE6ED] flex justify-center items-center">
-              <div className="text-center text-[#40586A] text-xs font-semibold font-['Inter'] leading-5">
+            <Link
+              href="/legal/cookie-notice"
+              className="min-h-[72px] px-6 py-3 bg-white hover:bg-slate-50 rounded-[10px] border border-[#DCE6ED] flex justify-center items-center transition-colors group"
+            >
+              <div className="text-center text-[#40586A] group-hover:text-[#0A8FD0] text-xs font-semibold font-['Inter'] leading-5 transition-colors">
                 Cookie Notice
               </div>
-            </div>
+            </Link>
 
             {/* Trust and Security */}
-            <div className="min-h-[72px] px-6 py-3 bg-white rounded-[10px] border border-[#DCE6ED] flex justify-center items-center">
-              <div className="text-center text-[#40586A] text-xs font-semibold font-['Inter'] leading-5">
+            <Link
+              href="/company/trust-center"
+              className="min-h-[72px] px-6 py-3 bg-white hover:bg-slate-50 rounded-[10px] border border-[#DCE6ED] flex justify-center items-center transition-colors group"
+            >
+              <div className="text-center text-[#40586A] group-hover:text-[#0A8FD0] text-xs font-semibold font-['Inter'] leading-5 transition-colors">
                 Trust and Security
               </div>
-            </div>
+            </Link>
 
             {/* Compliance and Assurance */}
-            <div className="min-h-[72px] px-6 py-3 bg-white rounded-[10px] border border-[#DCE6ED] flex justify-center items-center">
-              <div className="text-center text-[#40586A] text-xs font-semibold font-['Inter'] leading-5">
+            <Link
+              href="/trust-security/compliance"
+              className="min-h-[72px] px-6 py-3 bg-white hover:bg-slate-50 rounded-[10px] border border-[#DCE6ED] flex justify-center items-center transition-colors group"
+            >
+              <div className="text-center text-[#40586A] group-hover:text-[#0A8FD0] text-xs font-semibold font-['Inter'] leading-5 transition-colors">
                 Compliance and
                 <br />
                 Assurance
               </div>
-            </div>
+            </Link>
           </div>
         </div>
 

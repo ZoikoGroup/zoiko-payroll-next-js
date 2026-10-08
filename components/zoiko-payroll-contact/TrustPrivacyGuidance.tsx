@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const guidanceItems = [
   "Secure submission",
@@ -63,21 +64,21 @@ export default function TrustPrivacyGuidance() {
             {/* Links */}
             <div className="w-full pt-1">
               <p className="m-0 font-['Inter'] text-xs leading-5">
-                <button
-                  type="button"
+                <Link
+                  href="/legal/privacy-notice"
                   className="font-bold text-[#0099e5] transition-opacity hover:opacity-70"
                 >
                   Privacy Policy →
-                </button>
+                </Link>
 
                 <span className="mx-2 text-gray-600"> </span>
 
-                <button
-                  type="button"
+                <Link
+                  href="/company/trust-center"
                   className="font-bold text-[#0099e5] transition-opacity hover:opacity-70"
                 >
                   Trust and Security →
-                </button>
+                </Link>
               </p>
             </div>
           </div>

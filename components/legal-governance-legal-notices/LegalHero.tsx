@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 const LegalHero = () => {
   return (
@@ -43,30 +44,33 @@ const LegalHero = () => {
 
           {/* BUTTONS */}
           <div className="flex flex-wrap items-start gap-3 pt-3">
-            <button
-              type="button"
+            <Link
+              href="#registry"
               className="flex items-center justify-center rounded-lg bg-[#0A8FD0] px-6 py-3 shadow-[0px_1px_2px_0px_rgba(10,46,75,0.06)] transition-colors hover:bg-[#087DB8]"
             >
               <span className="whitespace-nowrap text-center font-['Inter'] text-sm font-bold leading-6 text-white">
                 Review published notices
               </span>
-            </button>
+            </Link>
 
-            <button
-              type="button"
-              className="flex items-center justify-center rounded-lg border border-[#DCE6ED] bg-white px-6 py-3"
+            <Link
+              href="#notice-history"
+              className="flex items-center justify-center rounded-lg border border-[#DCE6ED] bg-white px-6 py-3 transition-colors hover:bg-slate-50"
             >
               <span className="whitespace-nowrap text-center font-['Inter'] text-sm font-bold leading-6 text-[#0A2E4B]">
                 Review notice history
               </span>
-            </button>
+            </Link>
           </div>
 
           {/* RELATED DOCUMENTS */}
-          <div className="flex flex-col items-start">
-            <div className="font-['Inter'] text-xs font-bold leading-5 text-[#0A8FD0]">
+          <div className="flex flex-col items-start pt-2">
+            <Link
+              href="/legal/legal-center"
+              className="font-['Inter'] text-xs font-bold leading-5 text-[#0A8FD0] hover:underline"
+            >
               Browse related legal and governance documents →
-            </div>
+            </Link>
           </div>
         </div>
 

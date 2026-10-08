@@ -25,8 +25,8 @@ const routes: Record<RouteKey, { label: string; href: string; why: string }> = {
   },
   international: {
     label: "International Groups",
-    href: "/solutions/multi-jurisdiction",
-    why: "statutory responsibility across markets points to multi-jurisdiction payroll.",
+    href: "/solutions/international-groups",
+    why: "statutory responsibility across markets points to international group payroll.",
   },
 };
 

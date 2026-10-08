@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 export default function MediaPressPanel() {
   return (
@@ -37,23 +38,23 @@ export default function MediaPressPanel() {
 
         {/* Top Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-3">
-          <button
-            type="button"
+          <Link
+            href="#press-form"
             className="rounded-lg bg-gradient-to-r from-[#38bdf8] to-[#0099e5] px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-white shadow-[0px_1px_2px_0px_rgba(10,46,75,0.06)] transition-opacity hover:opacity-90"
           >
             Send press inquiry
-          </button>
+          </Link>
 
-          <button
-            type="button"
+          <Link
+            href="/company/newsroom"
             className="rounded-lg border border-[#d9e1e7] bg-white px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-[#103653] transition-colors hover:bg-[#f5f8fb]"
           >
             Visit Newsroom
-          </button>
+          </Link>
         </div>
 
         {/* Press Inquiry Form */}
-        <div className="w-full max-w-[700px] rounded-2xl border border-[#d9e1e7] bg-white px-6 py-7 shadow-[0px_12px_34px_0px_rgba(10,46,75,0.12)] sm:px-8 sm:pt-9 sm:pb-8">
+        <div id="press-form" className="scroll-mt-20 w-full max-w-[700px] rounded-2xl border border-[#d9e1e7] bg-white px-6 py-7 shadow-[0px_12px_34px_0px_rgba(10,46,75,0.12)] sm:px-8 sm:pt-9 sm:pb-8">
           {/* Form Title */}
           <h3 className="m-0 font-['Inter'] text-lg font-extrabold leading-8 text-[#103653]">
             Press inquiry

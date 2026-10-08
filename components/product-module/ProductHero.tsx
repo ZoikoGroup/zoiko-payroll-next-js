@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 export default function ProductHero() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -228,8 +229,8 @@ export default function ProductHero() {
             }}
           >
             {/* Primary CTA */}
-            <button
-              type="button"
+            <Link
+              href="/product/payroll-processing"
               className="
                 w-full
                 rounded-lg
@@ -251,11 +252,11 @@ export default function ProductHero() {
               "
             >
               Explore Payroll Processing
-            </button>
+            </Link>
 
             {/* Secondary CTA */}
-            <button
-              type="button"
+            <Link
+              href="/zoiko-payroll-product-tour"
               className="
                 w-full
                 rounded-lg
@@ -280,7 +281,7 @@ export default function ProductHero() {
               "
             >
               Start Product Tour
-            </button>
+            </Link>
           </div>
         </div>
       </div>

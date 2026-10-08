@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ScaleGlobalPayrollCTASection() {
   return (
@@ -34,20 +35,20 @@ export default function ScaleGlobalPayrollCTASection() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
               {/* Primary White Button */}
-              <a
-                href="/implementation/customer-success#explore"
+              <Link
+                href="#explore"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-[#2563EB] font-bold text-xs sm:text-sm hover:bg-slate-100 transition-colors shadow-xs"
               >
                 Explore our success model
-              </a>
+              </Link>
 
               {/* Secondary Transparent Outline Button */}
-              <a
+              <Link
                 href="/contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#FFFFFF1F] border border-white/20 text-white font-semibold text-xs sm:text-sm hover:bg-white/10 transition-colors backdrop-blur-xs"
               >
                 Talk to Zoiko Payroll
-              </a>
+              </Link>
             </div>
           </div>
         </div>

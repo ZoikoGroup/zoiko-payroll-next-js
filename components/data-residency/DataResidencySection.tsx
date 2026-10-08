@@ -54,9 +54,12 @@ export default function DataResidencySection() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <button className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#165f95] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md transition-all cursor-pointer">
+              <Link
+                href="#residency-options"
+                className="px-6 py-3 bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#165f95] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md transition-all cursor-pointer"
+              >
                 View residency options
-              </button>
+              </Link>
 
               <Link href="/legal/dpa" className="px-6 py-3 bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200/80 text-xs sm:text-sm font-bold rounded-xl shadow-xs transition-all cursor-pointer">
                 Open Data Processing Addendum

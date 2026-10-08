@@ -37,7 +37,7 @@ const formFields: FormField[] = [
 
 export default function RegistrationSection() {
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-[#F9FAFB] text-[#07243B]">
+    <section id="register" className="scroll-mt-20 w-full py-16 px-4 sm:px-6 lg:px-8 bg-[#F9FAFB] text-[#07243B]">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Top Feature Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">

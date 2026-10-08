@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface StepItem {
   title: string;
@@ -159,18 +160,18 @@ export default function StoryDetailExperienceSection() {
 
           {/* Timeline Footer Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
-            <button
-              type="button"
+            <Link
+              href="/product/integrations"
               className="bg-white border border-slate-200/80 text-[#07243B] text-xs font-bold px-5 py-2.5 rounded-full shadow-2xs hover:bg-slate-50 transition-colors cursor-pointer"
             >
               Systems & Integrations (where approved)
-            </button>
-            <button
-              type="button"
+            </Link>
+            <Link
+              href="/company/trust-center"
               className="bg-white border border-slate-200/80 text-[#07243B] text-xs font-bold px-5 py-2.5 rounded-full shadow-2xs hover:bg-slate-50 transition-colors cursor-pointer"
             >
               Sources & corrections
-            </button>
+            </Link>
           </div>
         </div>
       </div>

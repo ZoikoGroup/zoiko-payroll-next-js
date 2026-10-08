@@ -24,7 +24,7 @@ export default function FinalCtaSection() {
               <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </Link>
             <Link
-              href="/resources/release-notes"
+              href="#timeline"
               className="rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/40"
             >
               Browse release notes

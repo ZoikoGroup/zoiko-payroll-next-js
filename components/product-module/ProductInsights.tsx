@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 const modules = [
   {
@@ -14,6 +15,7 @@ const modules = [
       </>
     ),
     link: "Explore Reporting and Analytics →",
+    href: "/product/reporting",
   },
   {
     image: "/images/product-module/image6.png",
@@ -26,6 +28,7 @@ const modules = [
       </>
     ),
     link: "Explore Integrations →",
+    href: "/product/integrations",
   },
   {
     image: "/images/product-module/image7.png",
@@ -38,6 +41,7 @@ const modules = [
       </>
     ),
     link: "Explore Security and Trust →",
+    href: "/product/security",
   },
   {
     image: "/images/product-module/image8.png",
@@ -50,6 +54,7 @@ const modules = [
       </>
     ),
     link: "Start Product Tour →",
+    href: "/zoiko-payroll-product-tour",
   },
 ];
 
@@ -295,9 +300,10 @@ export default function ProductInsights() {
 
                 {/* Link */}
                 <div className="w-full">
-                  <button
-                    type="button"
+                  <Link
+                    href={module.href}
                     className="
+                      inline-block
                       text-left
                       font-['Inter']
                       text-xs
@@ -310,7 +316,7 @@ export default function ProductInsights() {
                     "
                   >
                     {module.link}
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

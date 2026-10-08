@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 const modules = [
   {
@@ -14,6 +15,7 @@ const modules = [
       </>
     ),
     link: "Explore Payroll Processing →",
+    href: "/product/payroll-processing",
   },
   {
     image: "/images/product-module/image2.png",
@@ -26,6 +28,7 @@ const modules = [
       </>
     ),
     link: "Explore Approvals →",
+    href: "/product/payroll-approvals",
   },
   {
     image: "/images/product-module/image3.png",
@@ -44,6 +47,7 @@ const modules = [
         Adjustments →
       </>
     ),
+    href: "/product/deductions",
   },
   {
     image: "/images/product-module/image4.png",
@@ -56,6 +60,7 @@ const modules = [
       </>
     ),
     link: "Explore Employee Payroll Records →",
+    href: "/product/employee-payroll-records",
   },
 ];
 
@@ -308,9 +313,10 @@ export default function ProductModules() {
 
                 {/* Link */}
                 <div className="w-full">
-                  <button
-                    type="button"
+                  <Link
+                    href={module.href}
                     className="
+                      inline-block
                       text-left
                       font-['Inter']
                       text-xs
@@ -323,7 +329,7 @@ export default function ProductModules() {
                     "
                   >
                     {module.link}
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

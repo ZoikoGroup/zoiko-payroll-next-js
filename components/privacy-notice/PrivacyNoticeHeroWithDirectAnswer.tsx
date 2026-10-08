@@ -73,14 +73,14 @@ export default function PrivacyNoticeHeroWithDirectAnswer() {
               {/* CTA Buttons */}
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <Link
-                  href="#understand"
+                  href="#roles-context"
                   className="px-5 py-2.5 rounded-lg bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:bg-[#0369A1] text-white text-xs sm:text-sm font-semibold transition-all shadow-sm"
                 >
                   Understand this notice
                 </Link>
 
                 <Link
-                  href="#choices"
+                  href="#rights-requests"
                   className="px-5 py-2.5 rounded-lg hover:bg-white/20 text-white text-xs sm:text-sm font-semibold border border-white/20 transition-all shadow-sm"
                 >
                   Privacy choices and requests

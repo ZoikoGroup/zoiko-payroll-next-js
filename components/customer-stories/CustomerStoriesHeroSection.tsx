@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CustomerStoriesHeroSection() {
   return (
@@ -31,20 +32,20 @@ export default function CustomerStoriesHeroSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <button
-              type="button"
+            <Link
+              href="/book-a-demo"
               className="bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] hover:opacity-95 text-white text-xs font-semibold px-5 py-2.5 rounded-lg shadow-sm transition-opacity inline-flex items-center gap-1.5 cursor-pointer"
             >
               <span>Book a demo</span>
               <span>→</span>
-            </button>
+            </Link>
 
-            <button
-              type="button"
+            <Link
+              href="/global-payroll"
               className="bg-white border border-slate-200/80 hover:bg-slate-50 text-[#07243B] text-xs font-semibold px-5 py-2.5 rounded-lg shadow-2xs transition-colors cursor-pointer"
             >
               Explore Global Payroll
-            </button>
+            </Link>
           </div>
         </div>
 

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ReadyToGoFurtherSection() {
   return (
@@ -37,18 +38,18 @@ export default function ReadyToGoFurtherSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
-              <a
-                href="#"
+              <Link
+                href="/book-a-demo"
                 className="bg-gradient-to-r from-[#3D9BD6] to-[#0C4773] hover:opacity-95 text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-xl shadow-xs transition-opacity cursor-pointer"
               >
                 Book a demo
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/global-payroll"
                 className="hover:bg-[#0B253C]/90 text-white border border-slate-400/40 text-xs sm:text-sm font-bold px-6 py-3 rounded-xl shadow-xs transition-colors cursor-pointer backdrop-blur-xs"
               >
                 Explore Global Payroll
-              </a>
+              </Link>
             </div>
           </div>
         </div>

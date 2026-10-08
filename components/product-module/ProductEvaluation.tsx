@@ -1,13 +1,14 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 const resources = [
-  "Security and Trust",
-  "Compliance and Assurance",
-  "Data Residency",
-  "Global Payroll Guide",
-  "Pricing",
+  { label: "Security and Trust", href: "/product/security" },
+  { label: "Compliance and Assurance", href: "/trust-security/compliance" },
+  { label: "Data Residency", href: "/trust-security/data-residency" },
+  { label: "Global Payroll Guide", href: "/resources/global-payroll-guide" },
+  { label: "Pricing", href: "/pricing" },
 ];
 
 export default function ProductEvaluation() {
@@ -94,16 +95,16 @@ export default function ProductEvaluation() {
           style={{ transitionDelay: "320ms" }}
         >
           {resources.map((resource, index) => (
-            <button
-              key={resource}
-              type="button"
+            <Link
+              key={resource.label}
+              href={resource.href}
               className="rounded-[20px] border border-[#E1E4E6] bg-white px-4 py-2 font-['Inter'] text-xs font-semibold leading-5 text-[#24516B] transition-all duration-200 hover:-translate-y-0.5 hover:border-[#3FB97A] hover:shadow-[0_4px_12px_rgba(18,50,74,0.08)] active:translate-y-0"
               style={{
                 transitionDelay: `${360 + index * 50}ms`,
               }}
             >
-              {resource}
-            </button>
+              {resource.label}
+            </Link>
           ))}
         </div>
 

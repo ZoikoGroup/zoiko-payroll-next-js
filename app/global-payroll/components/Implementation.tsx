@@ -104,10 +104,15 @@ export default function Implementation() {
               what your organization needs to improve. We&apos;ll confirm
               jurisdiction availability before anything else.
             </div>
-            <div className="w-96 h-16 pt-3.5 flex items-start gap-3.5">
-              <Link href="/book-a-demo" className="w-56 px-5 py-3 bg-gradient-to-b from-blue-600 rounded-[10px] shadow-[0px_6px_16px_0px_rgba(11,94,153,0.28)] flex items-center justify-center cursor-pointer">
+            <div className="w-full h-16 pt-3.5 flex items-start gap-3.5 flex-wrap">
+              <Link href="/book-a-demo" className="px-5 py-3 bg-gradient-to-b from-blue-600 to-blue-800 rounded-[10px] shadow-[0px_6px_16px_0px_rgba(11,94,153,0.28)] flex items-center justify-center cursor-pointer hover:opacity-90 transition-opacity">
                 <span className="text-white text-sm font-semibold">
                   Book a demo
+                </span>
+              </Link>
+              <Link href="/contact" className="px-5 py-3 bg-white/10 border border-white/20 rounded-[10px] flex items-center justify-center cursor-pointer hover:bg-white/20 transition-colors">
+                <span className="text-white text-sm font-semibold">
+                  Contact sales
                 </span>
               </Link>
             </div>

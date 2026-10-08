@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 export default function ProductReadyCta() {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -83,20 +84,20 @@ export default function ProductReadyCta() {
           style={{ transitionDelay: "280ms" }}
         >
           {/* Primary CTA */}
-          <button
-            type="button"
+          <Link
+            href="/product/payroll-processing"
             className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-[#56BCE8] to-[#159BD7] px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-white shadow-[0px_1px_2px_0px_rgba(10,46,75,0.06)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-105 hover:shadow-[0px_6px_18px_rgba(10,46,75,0.18)] active:translate-y-0"
           >
             Explore Payroll Processing
-          </button>
+          </Link>
 
           {/* Secondary CTA */}
-          <button
-            type="button"
+          <Link
+            href="/zoiko-payroll-product-tour"
             className="inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-3 font-['Inter'] text-sm font-bold leading-6 text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/60 hover:bg-white/10 active:translate-y-0"
           >
             Start Product Tour
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
 
 export default function IntellectualPropertyNotices() {
   return (
-    <section className="w-full bg-[#F7FAFC] py-12 sm:py-16 lg:py-20">
+    <section id="ip" className="scroll-mt-20 w-full bg-[#F7FAFC] py-12 sm:py-16 lg:py-20">
       <div className="mx-auto flex w-full max-w-[1320px] flex-col items-center gap-7 px-5 sm:px-8 lg:px-16 xl:px-24">
 
         {/* Section Heading */}

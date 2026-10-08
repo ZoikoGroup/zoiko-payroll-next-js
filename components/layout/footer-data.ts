@@ -133,7 +133,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Data residency", href: "/trust-security/data-residency" },
       { label: "Business continuity", href: "/trust-security/business-continuity" },
       { label: "Subprocessors", href: "/trust-security/subprocessors" },
-      { label: "Responsible disclosure", href: "/company/trust-center" },
+      { label: "Responsible disclosure", href: "/company/responsible-disclosure" },
       { label: "Accessibility", href: "/legal/accessibility-statement" },
     ],
   },

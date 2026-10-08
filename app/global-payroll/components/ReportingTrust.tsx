@@ -1,15 +1,23 @@
+import Link from "next/link";
+
 const cards = [
   {
     title: "Reporting & reconciliation",
     items: ["Local currency shown separately from reporting currency", "FX basis and as-of date always disclosed", "Reconciliation failures stay visible, not hidden"],
+    href: "/global-payroll/reporting",
+    linkText: "Explore Global Reporting →",
   },
   {
     title: "Integration health",
     items: ["Direction, source of record and versioned mapping", "Provider and service model disclosed per connector", "Partial failures, retry and support owner tracked"],
+    href: "/integrations",
+    linkText: "Explore Integrations →",
   },
   {
     title: "Security & trust",
     items: ["Evidence-led — nothing invented or implied", "Certifications, residency and encryption stated as documented", "Full detail available in the Trust Center"],
+    href: "/company/trust-center",
+    linkText: "Open Trust Center →",
   },
 ];
 
@@ -40,17 +48,24 @@ export default function ReportingTrust() {
       {/* Feature cards */}
       <div className="w-full flex items-start gap-5">
         {cards.map((c) => (
-          <div key={c.title} className="w-96 px-6 pt-6 pb-11 bg-white rounded-2xl shadow-[0px_1px_2px_0px_rgba(8,47,73,0.04)] outline outline-1 outline-offset-[-1px] outline-slate-100 flex flex-col gap-3">
-            <div className="w-9 h-9 bg-slate-50 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-100 flex items-center justify-center">
-              <div className="w-4 h-4 border-2 border-sky-700 rounded-sm" />
+          <div key={c.title} className="w-96 px-6 pt-6 pb-6 bg-white rounded-2xl shadow-[0px_1px_2px_0px_rgba(8,47,73,0.04)] outline outline-1 outline-offset-[-1px] outline-slate-100 flex flex-col justify-between gap-3">
+            <div>
+              <div className="w-9 h-9 bg-slate-50 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-100 flex items-center justify-center">
+                <div className="w-4 h-4 border-2 border-sky-700 rounded-sm" />
+              </div>
+              <div className="pt-[3px] text-sky-950 text-lg font-bold leading-7">{c.title}</div>
+              <div className="flex flex-col mt-2">
+                {c.items.map((item, i) => (
+                  <div key={item} className={`py-1.5 ${i > 0 ? "border-t border-slate-100" : ""}`}>
+                    <span className="text-slate-600 text-xs leading-5">{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="pt-[3px] text-sky-950 text-lg font-bold leading-7">{c.title}</div>
-            <div className="flex flex-col">
-              {c.items.map((item, i) => (
-                <div key={item} className={`py-1.5 ${i > 0 ? "border-t border-slate-100" : ""}`}>
-                  <span className="text-slate-600 text-xs leading-5">{item}</span>
-                </div>
-              ))}
+            <div className="pt-2 border-t border-slate-100">
+              <Link href={c.href} className="text-xs font-semibold text-sky-700 hover:underline">
+                {c.linkText}
+              </Link>
             </div>
           </div>
         ))}

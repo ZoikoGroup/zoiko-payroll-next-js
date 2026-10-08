@@ -22,7 +22,7 @@ const productFaqData: ProductFAQItem[] = [
     scope: "General",
     reviewedDate: "Reviewed Aug 2026",
     linkText: "View Product Documentation",
-    linkHref: "#product-documentation"
+    linkHref: "/resources/documentation"
   },
   {
     id: 2,

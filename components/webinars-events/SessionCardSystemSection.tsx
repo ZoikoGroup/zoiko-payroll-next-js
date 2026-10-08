@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Speaker {
   initials: string;
@@ -39,7 +40,7 @@ const cardsData: CardData[] = [
       role: "Chief Product Officer",
     },
     ctaText: "Register →",
-    ctaLink: "#",
+    ctaLink: "#register",
   },
   {
     badge: { label: "Waitlist", bg: "bg-[#FEF6E1]", text: "text-[#876517]" },
@@ -54,7 +55,7 @@ const cardsData: CardData[] = [
       role: "Chief Technology Officer",
     },
     ctaText: "Join waitlist →",
-    ctaLink: "#",
+    ctaLink: "#register",
   },
   {
     badge: { label: "On demand", bg: "bg-[#E3F0E7]", text: "text-[#20502F]" },
@@ -69,7 +70,7 @@ const cardsData: CardData[] = [
       role: "VP, Payroll Operations",
     },
     ctaText: "Watch on demand →",
-    ctaLink: "#",
+    ctaLink: "#replay",
   },
   {
     badge: { label: "Completed", bg: "bg-slate-100", text: "text-slate-600" },
@@ -84,7 +85,7 @@ const cardsData: CardData[] = [
       role: "Head of Security",
     },
     ctaText: "Review update →",
-    ctaLink: "#",
+    ctaLink: "#replay",
   },
 ];
 
@@ -172,12 +173,12 @@ export default function SessionCardSystemSection() {
 
                 {/* Action Link */}
                 <div className="pt-1">
-                  <a
+                  <Link
                     href={card.ctaLink}
                     className="inline-block text-xs font-bold text-[#3D9BD6] hover:text-[#0C4773] transition-colors"
                   >
                     {card.ctaText}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

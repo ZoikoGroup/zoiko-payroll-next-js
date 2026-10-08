@@ -131,9 +131,12 @@ export default function FaqAndCtaSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-              <button className="bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#165a8c] text-white text-xs sm:text-sm font-extrabold px-6 py-3.5 rounded-xl shadow-md transition-all cursor-pointer">
+              <Link
+                href="#residency-options"
+                className="bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#165a8c] text-white text-xs sm:text-sm font-extrabold px-6 py-3.5 rounded-xl shadow-md transition-all cursor-pointer"
+              >
                 View residency options
-              </button>
+              </Link>
               <Link href="/legal/dpa" className="hover:bg-[#07243B] text-white border border-slate-600/60 text-xs sm:text-sm font-extrabold px-6 py-3.5 rounded-xl shadow-md transition-all cursor-pointer">
                 Open Data Processing Addendum
               </Link>

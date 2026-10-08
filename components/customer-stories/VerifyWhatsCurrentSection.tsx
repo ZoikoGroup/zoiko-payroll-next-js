@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 interface DestinationNode {
@@ -9,15 +10,15 @@ interface DestinationNode {
 }
 
 const topDestinations: DestinationNode[] = [
-  { title: "Jurisdiction Coverage", href: "#" },
-  { title: "Product Documentation", href: "#" },
-  { title: "Integrations & APIs", href: "#" },
-  { title: "Security and Trust", href: "#" },
+  { title: "Jurisdiction Coverage", href: "/global-payroll/jurisdiction-coverage" },
+  { title: "Product Documentation", href: "/resources/documentation" },
+  { title: "Integrations & APIs", href: "/product/integrations" },
+  { title: "Security and Trust", href: "/product/security" },
 ];
 
 const bottomDestinations: DestinationNode[] = [
-  { title: "Implementation", href: "#" },
-  { title: "Pricing & Procurement", href: "#" },
+  { title: "Implementation", href: "/product/implementation" },
+  { title: "Pricing & Procurement", href: "/pricing" },
 ];
 
 export default function VerifyWhatsCurrentSection() {
@@ -69,30 +70,30 @@ export default function VerifyWhatsCurrentSection() {
             {/* Top Row Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {topDestinations.map((item, idx) => (
-                <a
+                <Link
                   key={idx}
-                  href={item.href || "#"}
+                  href={item.href || "/resources"}
                   className="bg-white border border-slate-200/80 hover:border-[#3D9BD6] rounded-2xl p-4 text-center shadow-2xs hover:shadow-xs transition-all flex items-center justify-center h-20 min-w-[130px]"
                 >
                   <span className="text-xs font-bold text-[#07243B] leading-snug">
                     {item.title}
                   </span>
-                </a>
+                </Link>
               ))}
             </div>
 
             {/* Bottom Row Grid */}
             <div className="grid grid-cols-2 gap-3 max-w-sm">
               {bottomDestinations.map((item, idx) => (
-                <a
+                <Link
                   key={idx}
-                  href={item.href || "#"}
+                  href={item.href || "/resources"}
                   className="bg-white border border-slate-200/80 hover:border-[#3D9BD6] rounded-2xl p-4 text-center shadow-2xs hover:shadow-xs transition-all flex items-center justify-center h-20"
                 >
                   <span className="text-xs font-bold text-[#07243B] leading-snug">
                     {item.title}
                   </span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

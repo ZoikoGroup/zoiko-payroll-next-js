@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 export default function PostGoLiveSuccessSection() {
   const globalHealth = [
@@ -62,18 +63,18 @@ export default function PostGoLiveSuccessSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-3 mb-10 w-full sm:w-auto">
-              <a
-                href="/implementation/customer-success#explore"
+              <Link
+                href="#explore"
                 className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-[#0B192C] hover:bg-[#1E293B] text-white text-xs sm:text-sm font-semibold text-center transition-colors shadow-sm"
               >
                 Explore our success model
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
                 className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white border border-[#E2E8F0] hover:bg-slate-50 text-[#0B192C] text-xs sm:text-sm font-semibold text-center transition-colors shadow-xs"
               >
                 Talk to Zoiko Payroll
-              </a>
+              </Link>
             </div>
 
             {/* Feature List Footer */}

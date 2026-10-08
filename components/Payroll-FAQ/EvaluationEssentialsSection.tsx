@@ -24,7 +24,7 @@ const evaluationData: EvaluationItem[] = [
     scope: "General",
     reviewedDate: "Reviewed Aug 2026",
     linkText: "View Product Overview / How Zoiko Payroll Works",
-    linkHref: "#product-overview"
+    linkHref: "/product/how-it-works"
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ export default function EvaluationEssentialsSection() {
   return (
     <section className="w-full bg-white border-t border-slate-200 py-16 px-4 md:px-8 font-['Plus_Jakarta_Sans',sans-serif]">
       <div className="max-w-[1200px] mx-auto space-y-8">
-        
+
         {/* Header Block */}
         <div className="space-y-3">
           <div className="flex items-center space-x-2">
@@ -72,11 +72,11 @@ export default function EvaluationEssentialsSection() {
               Evaluation essentials
             </span>
           </div>
-          
+
           <h2 className="text-sky-950 text-3xl font-extrabold leading-tight">
             The questions most evaluators ask first.
           </h2>
-          
+
           <p className="text-gray-600 text-base leading-relaxed">
             Editorially selected, not a popularity or personalized ranking. Answer before CTA, every time.
           </p>
@@ -86,7 +86,7 @@ export default function EvaluationEssentialsSection() {
         <div className="space-y-3">
           {evaluationData.map((item) => {
             const isOpen = openId === item.id;
-            
+
             return (
               <div
                 key={item.id}

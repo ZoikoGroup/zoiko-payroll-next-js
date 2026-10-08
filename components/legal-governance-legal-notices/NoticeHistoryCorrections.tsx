@@ -20,7 +20,7 @@ export default function NoticeHistoryCorrections() {
   ];
 
   return (
-    <section className="w-full bg-[#F7FAFC] px-6 py-16 md:px-10 lg:px-14 lg:py-20">
+    <section id="notice-history" className="scroll-mt-20 w-full bg-[#F7FAFC] px-6 py-16 md:px-10 lg:px-14 lg:py-20">
       <div className="mx-auto flex w-full max-w-[1320px] flex-col items-center gap-5">
         {/* Header */}
         <div className="flex w-full max-w-[680px] flex-col items-center gap-4">
