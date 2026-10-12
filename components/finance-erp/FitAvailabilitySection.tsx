@@ -109,7 +109,7 @@ export default function FitAvailabilitySection() {
 
           {/* Main Title: 36px */}
           <h2 className="text-2xl sm:text-[36px] font-bold text-[#0F172A] tracking-tight leading-snug max-w-2xl mx-auto">
-            Seven states — never a blanket "we integrate with everything."
+            Seven states — never a blanket &quot;we integrate with everything.&quot;
           </h2>
         </div>
 

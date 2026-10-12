@@ -40,7 +40,7 @@ export default function SecurityReviewSection() {
 
             {/* Description */}
             <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
-              Review Zoiko Payroll's security-control model, assurance evidence
+              Review Zoiko Payroll&apos;s security-control model, assurance evidence
               and enterprise due-diligence process. Public information is
               available immediately; sensitive reports and security materials
               are shared only through controlled access.

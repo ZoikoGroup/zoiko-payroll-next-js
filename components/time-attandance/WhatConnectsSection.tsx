@@ -93,7 +93,7 @@ export default function WhatConnectsSection() {
             <p className="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-xl">
               Each domain below exposes its own coverage, minimum required
               source state, direction and classification owner — never a single
-              blanket "we support time tracking" claim.
+              blanket &quot;we support time tracking&quot; claim.
             </p>
 
             {/* Callout Box with Left Blue Line Accent */}

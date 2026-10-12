@@ -61,7 +61,7 @@ export default function IdentityEncryptionIsolationSection() {
 
           {/* Right Subtext */}
           <p className="text-xs text-slate-400 font-medium pb-1 max-w-xs md:text-right">
-            No "military-grade" or "unbreakable" claims — ever.
+            No &quot;military-grade&quot; or &quot;unbreakable&quot; claims — ever.
           </p>
         </div>
 

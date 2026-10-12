@@ -100,7 +100,7 @@ export default function CustomFitRequestSection() {
               <table className="w-full text-left text-xs border-collapse min-w-[500px]">
                 <thead>
                   <tr className="bg-[#E9F0F8] text-[#5B646B] font-bold text-[10px] uppercase tracking-wider border-b border-slate-200/60">
-                    <th className="py-3.5 px-6">WHAT YOU'RE SEEING</th>
+                    <th className="py-3.5 px-6">WHAT YOU&apos;RE SEEING</th>
                     <th className="py-3.5 px-6">ROUTE</th>
                   </tr>
                 </thead>

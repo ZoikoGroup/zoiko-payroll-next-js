@@ -62,7 +62,7 @@ export default function DeveloperSupportSection() {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-[#EBF2F9] border-b border-slate-200/80 text-[11px] font-bold text-slate-600 uppercase tracking-wider">
-                  <th className="py-3.5 px-6">WHAT YOU'RE SEEING</th>
+                  <th className="py-3.5 px-6">WHAT YOU&apos;RE SEEING</th>
                   <th className="py-3.5 px-6">ROUTE</th>
                 </tr>
               </thead>

@@ -42,13 +42,13 @@ export default function ServicesCommercialScopeSection() {
 
             {/* Title */}
             <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-extrabold text-[#07243B] tracking-tight leading-tight">
-              Know what's included. Add only what you need.
+              Know what&apos;s included. Add only what you need.
             </h2>
 
             {/* Body Description */}
             <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed max-w-xl">
               Zolko Payroll separates the platform from operational services, so
-              you can see what's included, what can be added, and who's
+              you can see what&apos;s included, what can be added, and who&apos;s
               responsible — by plan, entity and jurisdiction.
             </p>
 

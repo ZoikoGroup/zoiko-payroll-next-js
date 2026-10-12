@@ -46,7 +46,7 @@ export default function RecalculationSection() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-[34px] font-bold tracking-tight text-[#07243B] leading-tight">
-              A material change never leaves a stale "final" amount
+              A material change never leaves a stale &quot;final&quot; amount
             </h2>
 
             <p className="text-sm sm:text-base text-slate-500 leading-relaxed">

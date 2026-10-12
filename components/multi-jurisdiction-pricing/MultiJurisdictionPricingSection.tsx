@@ -35,7 +35,7 @@ export default function MultiJurisdictionPricingSection() {
 
             {/* Title */}
             <h2 className="text-3xl sm:text-4xl lg:text-[39px] font-extrabold text-[#07243B] tracking-tight leading-tight">
-              Scale across jurisdictions without losing sight of what you're
+              Scale across jurisdictions without losing sight of what you&apos;re
               paying for.
             </h2>
 

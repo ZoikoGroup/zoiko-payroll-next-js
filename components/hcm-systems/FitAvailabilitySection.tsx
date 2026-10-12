@@ -90,7 +90,7 @@ export default function FitAvailabilitySection() {
 
             {/* Main Title */}
             <h2 className="text-3xl md:text-[24px] font-bold text-[#0F172A] tracking-tight">
-              Confirmed doesn't mean implemented.
+              Confirmed doesn&apos;t mean implemented.
             </h2>
 
             {/* Subheading */}

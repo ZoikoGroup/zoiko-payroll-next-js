@@ -19,13 +19,13 @@ export default function DirectAnswerPricingSection() {
 
             {/* Title */}
             <h2 className="text-2xl sm:text-3xl lg:text-[31px] font-extrabold text-[#07243B] tracking-tight max-w-xl">
-              Multi-country pricing isn't a per-country surcharge.
+              Multi-country pricing isn&apos;t a per-country surcharge.
             </h2>
           </div>
 
           {/* Right Subtext */}
           <p className="text-xs text-slate-400 font-medium pb-1 max-w-xs md:text-right">
-            One flat "country fee" would hide more than it explains.
+            One flat &quot;country fee&quot; would hide more than it explains.
           </p>
         </div>
 

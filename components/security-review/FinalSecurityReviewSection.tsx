@@ -29,7 +29,7 @@ export default function FinalSecurityReviewSection() {
 
               {/* Description */}
               <p className="text-xs sm:text-sm text-slate-300 font-medium leading-relaxed max-w-lg">
-                Get evidence-based answers to your team's due-diligence
+                Get evidence-based answers to your team&apos;s due-diligence
                 questions, or request restricted materials through a controlled
                 channel.
               </p>

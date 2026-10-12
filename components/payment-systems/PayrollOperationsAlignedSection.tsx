@@ -116,7 +116,7 @@ export default function PayrollOperationsAlignedSection() {
 
             {/* Subtext */}
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-lg">
-              Tell us your payment systems, countries and rails, and we'll
+              Tell us your payment systems, countries and rails, and we&apos;ll
               confirm fit against current registry evidence before anything goes
               live.
             </p>

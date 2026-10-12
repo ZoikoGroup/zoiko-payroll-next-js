@@ -24,7 +24,7 @@ export default function SourceOfTruthSection() {
           {/* Main Title */}
           <h2 className="text-2xl sm:text-3xl md:text-[26px] font-bold text-[#0F172A] tracking-tight max-w-2xl">
             Direction is defined per data domain — never a global
-            "bi-directional" claim.
+            &quot;bi-directional&quot; claim.
           </h2>
         </div>
 

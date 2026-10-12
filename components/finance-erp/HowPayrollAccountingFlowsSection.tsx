@@ -98,7 +98,7 @@ export default function HowPayrollAccountingFlowsSection() {
             <span>HOW PAYROLL ACCOUNTING FLOWS</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-[36px] font-bold tracking-tight leading-tight max-w-3xl mx-auto">
-            Seven distinct states — never collapsed into "Synced."
+            Seven distinct states — never collapsed into &quot;Synced.&quot;
           </h2>
         </div>
 

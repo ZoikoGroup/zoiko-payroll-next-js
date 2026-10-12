@@ -44,7 +44,7 @@ export default function ActivationWorkflowSection() {
 
             {/* Main Title */}
             <h2 className="text-3xl sm:text-[26px] font-bold text-[#0F172A] tracking-tight">
-              Never "live in days." Timing is source-governed only
+              Never &quot;live in days.&quot; Timing is source-governed only
             </h2>
 
             {/* Subtext */}

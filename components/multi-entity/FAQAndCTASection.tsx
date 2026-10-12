@@ -121,7 +121,7 @@ export default function FAQAndCTASection() {
 
           {/* Subtitle */}
           <p className="text-xs sm:text-sm text-slate-300 font-medium max-w-xl mx-auto">
-            Bring your entity structure — we'll show you what the Control Center
+            Bring your entity structure — we&apos;ll show you what the Control Center
             looks like for it.
           </p>
 

@@ -111,7 +111,7 @@ export default function RecordClassesTaxonomySection() {
               Never regenerate history in place.
             </strong>{" "}
             A historical final report is never silently regenerated using
-            today's rules or data — it is reproduced deterministically, or a new
+            today&apos;s rules or data — it is reproduced deterministically, or a new
             version is created with explicit lineage and reason.
           </p>
         </div>

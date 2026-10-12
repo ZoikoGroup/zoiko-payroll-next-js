@@ -48,7 +48,7 @@ export default function PaymentStateContractSection() {
 
             {/* Title */}
             <h2 className="text-3xl sm:text-[36px] font-bold tracking-tight text-[#0F172A] leading-tight">
-              One lifecycle. No shortcuts to "Paid"
+              One lifecycle. No shortcuts to &quot;Paid&quot;
             </h2>
           </div>
 
@@ -112,7 +112,7 @@ export default function PaymentStateContractSection() {
                 Only SETTLED carries settlement meaning, and only when backed by
                 approved evidence. BENEFICIARY_CREDIT_CONFIRMED requires
                 explicit beneficiary-credit evidence where the rail supports it.
-                A payment is never labeled "Paid" or "Synced" when evidence only
+                A payment is never labeled &quot;Paid&quot; or &quot;Synced&quot; when evidence only
                 proves release, submission, acceptance or processing.
               </p>
             </div>
