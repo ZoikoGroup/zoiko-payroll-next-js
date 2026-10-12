@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -24,18 +25,18 @@ export default function CoordinatePayrollCTASection() {
           {/* Action Buttons & Links */}
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
             {/* Primary Filled Button */}
-            <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2E91D1] to-[#0B4E7D] hover:from-[#026EB4] hover:to-[#015287] text-white text-sm font-semibold transition-all shadow-md active:scale-95">
+            <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2E91D1] to-[#0B4E7D] hover:from-[#026EB4] hover:to-[#015287] text-white text-sm font-semibold transition-all shadow-md active:scale-95">
               Book a demo
-            </button>
+            </Link>
 
             {/* Secondary Outline Button */}
-            <button className="px-6 py-3 rounded-xl bg-transparent border border-white/30 hover:bg-white/10 text-white text-sm font-semibold transition-all active:scale-95">
+            <Link href="/global-payroll/compliance-workflows" className="px-6 py-3 rounded-xl bg-transparent border border-white/30 hover:bg-white/10 text-white text-sm font-semibold transition-all active:scale-95">
               Review Compliance Workflows
-            </button>
+            </Link>
 
             {/* Inline Link with Arrow */}
             <a
-              href="#"
+              href="/global-payroll/jurisdiction-coverage"
               className="inline-flex items-center gap-1.5 px-3 py-3 text-sm font-semibold text-[#BFE0F3] hover:text-white transition-colors ml-2"
             >
               <span>Check jurisdiction availability</span>

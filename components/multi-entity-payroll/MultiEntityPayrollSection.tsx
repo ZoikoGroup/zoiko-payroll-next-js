@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function MultiEntityPayrollSection() {
@@ -30,13 +31,13 @@ export default function MultiEntityPayrollSection() {
 
             {/* Action CTA Buttons */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2E91D1] to-[#0B4E7D] hover:from-[#026EB4] hover:to-[#015287] text-white text-sm font-semibold transition-all shadow-md active:scale-95">
+              <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#2E91D1] to-[#0B4E7D] hover:from-[#026EB4] hover:to-[#015287] text-white text-sm font-semibold transition-all shadow-md active:scale-95">
                 Book a demo
-              </button>
+              </Link>
 
-              <button className="px-6 py-3 rounded-xl bg-transparent border border-white/30 hover:bg-white/10 text-white text-sm font-semibold transition-all active:scale-95">
+              <Link href="#multi-entity-control-center" className="px-6 py-3 rounded-xl bg-transparent border border-white/30 hover:bg-white/10 text-white text-sm font-semibold transition-all active:scale-95">
                 Explore the multi-entity control model
-              </button>
+              </Link>
             </div>
           </div>
 

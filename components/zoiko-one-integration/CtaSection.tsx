@@ -49,7 +49,7 @@ export default function CtaSection() {
                   Book a demo
                 </Link>
                 <Link
-                  href="/company/contact"
+                  href="/contact"
                   className="flex min-h-11 items-center justify-center rounded-lg border border-white/40 px-6 py-3 text-sm font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
                 >
                   Discuss Zoiko One integration

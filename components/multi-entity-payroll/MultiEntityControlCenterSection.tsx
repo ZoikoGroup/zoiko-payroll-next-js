@@ -82,7 +82,7 @@ const ENTITY_CARDS = [
 
 export default function MultiEntityControlCenterSection() {
   return (
-    <section className="w-full bg-white py-20 px-6 lg:px-16 text-[#0A1928] font-sans antialiased">
+    <section id="multi-entity-control-center" className="scroll-mt-24 w-full bg-white py-20 px-6 lg:px-16 text-[#0A1928] font-sans antialiased">
       <div className="max-w-6xl mx-auto space-y-10">
         {/* Section Header */}
         <div className="space-y-3">

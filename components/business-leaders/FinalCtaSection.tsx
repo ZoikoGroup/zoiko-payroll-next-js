@@ -37,7 +37,7 @@ export default function FinalCtaSection() {
             Book a Demo →
           </Link>
           <Link
-            href="/solution"
+            href="/solutions"
             className="inline-flex items-center justify-center rounded-lg border border-white/35 px-6 py-[13px] text-[14.5px] font-semibold text-white transition-all hover:bg-white/10"
           >
             Find Your Solution

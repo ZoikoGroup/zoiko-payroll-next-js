@@ -31,13 +31,13 @@ export default function ImplementationHeroSection() {
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
-              href="#"
+              href="/contact"
               className="px-10 py-3 rounded-full bg-[#0281D3] text-white font-semibold text-sm transition-opacity hover:opacity-90"
             >
               Contact Support
             </a>
             <a
-              href="#"
+              href="/global-payroll/jurisdiction-coverage"
               className="px-6 py-3 rounded-full bg-transparent border border-[#B9CDDD]/30 text-white font-semibold text-sm transition-colors hover:border-white"
             >
               Check jurisdiction availability

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 import SectionHeading from "./SectionHeading";
 import StatusChip, { type ChipTone } from "./StatusChip";
@@ -253,15 +254,15 @@ export default function AlignmentCenterSection() {
             </div>
 
             <div className="flex flex-col gap-3 border-t border-slate-200 px-5 py-4 sm:flex-row sm:flex-wrap">
-              <span className="flex min-h-11 items-center justify-center rounded-lg border border-slate-200 px-5 text-sm font-bold leading-5 text-sky-950">
+              <Link href="/payroll-operations/inputs-validation" className="flex min-h-11 items-center justify-center rounded-lg border border-slate-200 px-5 text-sm font-bold leading-5 text-sky-950">
                 Review items needing HR context
-              </span>
-              <span className="flex min-h-11 items-center justify-center rounded-lg border border-slate-200 px-5 text-sm font-bold leading-5 text-sky-950">
+              </Link>
+              <Link href="/product/deductions" className="flex min-h-11 items-center justify-center rounded-lg border border-slate-200 px-5 text-sm font-bold leading-5 text-sky-950">
                 Open change detail
-              </span>
-              <span className="flex min-h-11 items-center justify-center rounded-lg bg-linear-71 from-blue-500 to-sky-900 px-5 text-sm font-bold leading-5 text-white">
+              </Link>
+              <Link href="/product/payroll-processing" className="flex min-h-11 items-center justify-center rounded-lg bg-linear-71 from-blue-500 to-sky-900 px-5 text-sm font-bold leading-5 text-white">
                 Hand off to Payroll
-              </span>
+              </Link>
             </div>
 
             <p className="border-t border-slate-200 bg-slate-50 px-5 py-3.5 text-xs leading-5 text-slate-500">

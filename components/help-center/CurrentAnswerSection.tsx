@@ -68,7 +68,7 @@ export default function CurrentAnswerSection() {
               <span className="font-semibold text-slate-700">Escalate if:</span> a blocker has no clear
               owner after 24 hours.
             </p>
-            <ArrowLink href="/resources/help-center/verified-support" className="shrink-0">
+            <ArrowLink href="/resources/help-center" className="shrink-0">
               Open verified support
             </ArrowLink>
           </div>

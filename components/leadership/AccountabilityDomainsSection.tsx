@@ -21,7 +21,7 @@ const domainsData: AccountabilityDomain[] = [
     scopeBadge: "All entities",
     status: "Active",
     nextQuestionLabel: "Product overview →",
-    nextQuestionHref: "/product-overview",
+    nextQuestionHref: "/product-module",
   },
   {
     domain: "Technology",
@@ -30,7 +30,7 @@ const domainsData: AccountabilityDomain[] = [
     scopeBadge: "All products",
     status: "Active",
     nextQuestionLabel: "Security and Trust →",
-    nextQuestionHref: "/trust-and-security",
+    nextQuestionHref: "/trust-security",
   },
   {
     domain: "Payroll operations",
@@ -39,7 +39,7 @@ const domainsData: AccountabilityDomain[] = [
     scopeBadge: "All jurisdictions",
     status: "Active",
     nextQuestionLabel: "Implementation →",
-    nextQuestionHref: "/implementation",
+    nextQuestionHref: "/product/implementation",
   },
   {
     domain: "Trust & security",
@@ -48,7 +48,7 @@ const domainsData: AccountabilityDomain[] = [
     scopeBadge: "Company-wide",
     status: "Active",
     nextQuestionLabel: "Trust and Security →",
-    nextQuestionHref: "/trust-and-security",
+    nextQuestionHref: "/trust-security",
   },
   {
     domain: "Customer & commercial",

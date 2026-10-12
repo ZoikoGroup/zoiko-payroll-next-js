@@ -38,7 +38,7 @@ export default function FeaturedGuidesSection() {
   ];
 
   return (
-    <section className="w-full bg-white border-t border-[#E1E8F0] py-16 px-6 lg:px-12 font-sans text-[#0A2E4B]">
+    <section id='explore' className="w-full bg-white border-t border-[#E1E8F0] py-16 px-6 lg:px-12 font-sans text-[#0A2E4B]">
       <div className="max-w-[1200px] mx-auto">
         {/* Section Header */}
         <div className="mb-10">

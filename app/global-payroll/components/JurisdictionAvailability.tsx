@@ -1,3 +1,4 @@
+import Link from "next/link";
 const states = [
   { name: "Available", dot: "bg-green-700", text: "text-green-700", bg: "bg-gray-200", desc: "Fully supported with current effective date and scope." },
   { name: "Limited", dot: "bg-yellow-800", text: "text-yellow-800", bg: "bg-orange-100", desc: "Partial scope, specific worker types or service boundaries." },
@@ -67,9 +68,9 @@ export default function JurisdictionAvailability() {
               Positive availability states are backed by current, dated evidence — not a static claim. Review the full jurisdiction directory for markets currently in scope.
             </div>
             <div className="pt-2">
-              <div className="w-52 border-b border-slate-200 pb-1">
+              <Link href="/global-payroll/jurisdiction-directory" className="block w-52 border-b border-slate-200 pb-1">
                 <span className="text-sky-700 text-sm font-semibold leading-5">View jurisdiction directory →</span>
-              </div>
+              </Link>
             </div>
           </div>
 

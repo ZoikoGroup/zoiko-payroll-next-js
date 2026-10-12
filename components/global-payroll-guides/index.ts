@@ -1,0 +1,12 @@
+export { default as GlobalPayrollHeroSection } from "./GlobalPayrollHeroSection";
+export { default as GuideStatusSection } from "./GuideStatusSection";
+export { default as ChooseYourPathSection } from "./ChooseYourPathSection";
+export { default as GlobalVsLocalControlSection } from "./GlobalVsLocalControlSection";
+export { default as OperatingModelLifecycleSection } from "./OperatingModelLifecycleSection";
+export { default as RolesGovernanceSection } from "./RolesGovernanceSection";
+export { default as DataIntegrationsSection } from "./DataIntegrationsSection";
+export { default as ReportingReconciliationSection } from "./ReportingReconciliationSection";
+export { default as ImplementationChangeJourneySection } from "./ImplementationChangeJourneySection";
+export { default as EvaluationRisksSection } from "./EvaluationRisksSection";
+export { default as FAQSection } from "./FAQSection";
+export { default as CTASection } from "./CTASection";

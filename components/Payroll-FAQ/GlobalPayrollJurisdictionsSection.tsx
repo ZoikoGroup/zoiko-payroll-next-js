@@ -24,7 +24,7 @@ const globalPayrollFaqData: GlobalPayrollFAQItem[] = [
     scope: "Jurisdiction",
     reviewedDate: "Reviewed Aug 2026",
     linkText: "Check Global Payroll / Jurisdiction Coverage",
-    linkHref: "#jurisdiction-coverage"
+    linkHref: "/global-payroll/jurisdiction-coverage"
   },
   {
     id: 2,

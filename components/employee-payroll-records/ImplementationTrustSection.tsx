@@ -53,9 +53,12 @@ export default function ImplementationTrustSection() {
           </ol>
 
           <div className="mt-8 flex flex-wrap gap-6 border-t border-slate-200 pt-6">
-            <span className="inline-flex border-b border-slate-300 pb-0.5 text-sm font-semibold leading-5 text-sky-950">
+            <Link
+              href="/product/security"
+              className="inline-flex border-b border-slate-300 pb-0.5 text-sm font-semibold leading-5 text-sky-950 transition-colors duration-200 hover:border-sky-700 hover:text-sky-700"
+            >
               Review security &amp; trust →
-            </span>
+            </Link>
             <Link
               href="/product/implementation"
               className="inline-flex border-b border-slate-300 pb-0.5 text-sm font-semibold leading-5 text-sky-950 transition-colors duration-200 hover:border-sky-700 hover:text-sky-700"

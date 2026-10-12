@@ -9,6 +9,7 @@ const topics = [
     title: "Payroll cycle & calendars",
     description: "Pay period, pay date, cutoff, frequency, processing window.",
     count: "6 terms",
+    href: "/product/payroll-processing",
   },
   {
     icon: "＄",
@@ -16,6 +17,7 @@ const topics = [
     title: "Pay & calculations",
     description: "Gross pay, net pay, earnings, rounding, retroactive adjustment.",
     count: "7 terms",
+    href: "/payroll-operations/calculations",
   },
   {
     icon: "✎",
@@ -23,6 +25,7 @@ const topics = [
     title: "Earnings",
     description: "Salary, hourly earnings, overtime concept, bonus, allowance.",
     count: "5 terms",
+    href: "/payroll-operations/inputs-validation",
   },
   {
     icon: "−",
@@ -30,6 +33,7 @@ const topics = [
     title: "Deductions & adjustments",
     description: "Deduction, recurring deduction, correction, reimbursement.",
     count: "5 terms",
+    href: "/deductions-and-adjustments",
   },
   {
     icon: "✓",
@@ -37,6 +41,7 @@ const topics = [
     title: "Approvals & controls",
     description: "Validation, review, approval, segregation of duties, exception.",
     count: "6 terms",
+    href: "/product/payroll-approvals",
   },
   {
     icon: "▤",
@@ -44,6 +49,7 @@ const topics = [
     title: "Records & documents",
     description: "Payroll record, payslip concept, payroll history, evidence record.",
     count: "4 terms",
+    href: "/product/employee-payroll-records",
   },
   {
     icon: "↻",
@@ -51,6 +57,7 @@ const topics = [
     title: "Reporting & reconciliation",
     description: "Payroll register, variance, reconciliation, export, close.",
     count: "5 terms",
+    href: "/resources/reporting",
   },
   {
     icon: "⇄",
@@ -58,6 +65,7 @@ const topics = [
     title: "Integrations & data",
     description: "Source system, mapping, identifier, import, reconciliation reference.",
     count: "5 terms",
+    href: "/product/integrations",
   },
   {
     icon: "🌐",
@@ -65,6 +73,7 @@ const topics = [
     title: "Global payroll & jurisdictions",
     description: "Jurisdiction, legal entity, payroll group, local requirement.",
     count: "6 terms",
+    href: "/global-payroll",
   },
 ];
 
@@ -87,7 +96,7 @@ export default function TopicsSection() {
             {topics.map((topic) => (
               <li key={topic.title} className="h-full">
                 <Link
-                  href="#a-z-index"
+                  href={topic.href}
                   className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-sky-200"
                 >
                   <span
@@ -113,7 +122,7 @@ export default function TopicsSection() {
 
         <Reveal delay={100}>
           <Link
-            href="#a-z-index"
+            href="/resources/payroll-guides"
             className="mt-8 inline-block text-sm font-bold leading-5 text-sky-700 hover:text-sky-800"
           >
             See all 12 topics →

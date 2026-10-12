@@ -20,7 +20,7 @@ const versionData: VersionHistoryRow[] = [
 
 export default function AIChildrenVersionSection() {
   return (
-    <section id="ai-children-version" className="scroll-mt-8 space-y-6">
+    <section id="ai-children-history" className="scroll-mt-8 space-y-6">
       {/* Top Divider */}
       <div className="border-t border-slate-100 pt-8">
         {/* Title & Explanatory Paragraphs */}

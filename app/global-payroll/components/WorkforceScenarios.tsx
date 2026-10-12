@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const scenarios = [
-  { title: "New hires", desc: "Structured onboarding, first-cycle setup and identity verification — ready before day one.", tag: "Pre-start pathway", tagDot: "bg-sky-600", image: "/p.png" },
-  { title: "Domestic & international relocation", desc: "Currency, tax residency and entity reassignment handled without a payroll gap.", tag: "Flexible effective dates", tagDot: "bg-green-600", image: "/q.png" },
-  { title: "Temporary assignments & secondments", desc: "Defined start and end dates, with a clear, accountable exit from payroll.", tag: "Fixed-term stay", tagDot: "bg-yellow-600", image: "/r.png" },
-  { title: "Projects & rotations", desc: "Multi-entity work with clean, traceable handovers between assignments.", tag: "Cross-entity ready", tagDot: "bg-sky-600", image: "/s.png" },
-  { title: "Seasonal workforces", desc: "Peak-period capacity with predictable, short-cycle costs.", tag: "Rapid start", tagDot: "bg-green-600", image: "/t.png" },
-  { title: "Trainees, apprentices & contractors", desc: "Lower budgets, defined pay programs, and no performance or productivity scoring.", tag: "No performance data", tagDot: "bg-gray-400", image: "/u.png" },
+  { title: "New hires", desc: "Structured onboarding, first-cycle setup and identity verification — ready before day one.", tag: "Pre-start pathway", tagDot: "bg-sky-600", image: "/images/global-payroll/2.png" },
+  { title: "Domestic & international relocation", desc: "Currency, tax residency and entity reassignment handled without a payroll gap.", tag: "Flexible effective dates", tagDot: "bg-green-600", image: "/images/global-payroll/3.png" },
+  { title: "Temporary assignments & secondments", desc: "Defined start and end dates, with a clear, accountable exit from payroll.", tag: "Fixed-term stay", tagDot: "bg-yellow-600", image: "/images/global-payroll/4.png" },
+  { title: "Projects & rotations", desc: "Multi-entity work with clean, traceable handovers between assignments.", tag: "Cross-entity ready", tagDot: "bg-sky-600", image: "/images/global-payroll/5.png" },
+  { title: "Seasonal workforces", desc: "Peak-period capacity with predictable, short-cycle costs.", tag: "Rapid start", tagDot: "bg-green-600", image: "/images/global-payroll/6.png" },
+  { title: "Trainees, apprentices & contractors", desc: "Lower budgets, defined pay programs, and no performance or productivity scoring.", tag: "No performance data", tagDot: "bg-gray-400", image: "/images/global-payroll/7.png" },
 ];
 
 export default function WorkforceScenarios() {

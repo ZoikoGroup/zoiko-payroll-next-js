@@ -82,7 +82,7 @@ export default function LegalCenterHeroSection() {
                   Contact
                 </Link>
                 <Link
-                  href="/trust-and-security"
+                  href="/trust-security"
                   className="px-6 py-3 rounded-xl bg-white text-[#0F172A] hover:bg-gray-100 text-xs sm:text-sm font-semibold transition-all shadow-sm"
                 >
                   Trust & Security

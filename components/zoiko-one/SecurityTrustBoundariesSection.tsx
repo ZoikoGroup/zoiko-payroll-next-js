@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -124,10 +125,10 @@ export default function SecurityTrustBoundariesSection() {
             </div>
 
             {/* CTA Button */}
-            <button className="shrink-0 px-6 py-3.5 rounded-2xl bg-white hover:bg-white/90 text-[#0A1928] text-xs sm:text-sm font-bold transition-all shadow-md active:scale-95 inline-flex items-center gap-2">
+            <Link href="/company/trust-center" className="shrink-0 px-6 py-3.5 rounded-2xl bg-white hover:bg-white/90 text-[#0A1928] text-xs sm:text-sm font-bold transition-all shadow-md active:scale-95 inline-flex items-center gap-2">
               <span>Visit the Trust Center</span>
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

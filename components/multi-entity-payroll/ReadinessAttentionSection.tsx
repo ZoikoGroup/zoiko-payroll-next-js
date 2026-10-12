@@ -106,7 +106,7 @@ export default function ReadinessAttentionSection() {
               {/* Action Link */}
               <div className="pl-5 md:pl-0 shrink-0">
                 <a
-                  href="#"
+                  href="/contact"
                   className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0281D3] hover:underline"
                 >
                   Resolution route &rarr;

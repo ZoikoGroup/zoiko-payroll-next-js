@@ -49,12 +49,12 @@ export default function HeroSection() {
                 className="w-full rounded-[10px] bg-white py-3 pl-11 pr-4 text-sm text-brand-dark placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
               />
             </div>
-            <button
-              type="button"
-              className="shrink-0 rounded-lg bg-brand-gradient px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-200 hover:brightness-110"
+            <Link
+              href="#timeline"
+              className="shrink-0 rounded-lg bg-brand-gradient px-5 py-3 text-center text-sm font-bold text-white shadow-sm transition-all duration-200 hover:brightness-110"
             >
               Browse release notes
-            </button>
+            </Link>
           </div>
 
           <div className="mt-4 flex flex-wrap items-center gap-3">

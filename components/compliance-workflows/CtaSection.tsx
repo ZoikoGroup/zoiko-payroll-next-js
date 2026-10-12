@@ -24,7 +24,7 @@ export default function CtaSection() {
                     Book a demo
                   </Link>
                   <Link
-                    href="/local-payroll-requirements"
+                    href="/global-payroll/payroll-requirements"
                     className="flex min-h-11 items-center justify-center rounded-lg border border-white/30 px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/5"
                   >
                     Review Local Payroll Requirements
@@ -32,7 +32,7 @@ export default function CtaSection() {
                 </div>
 
                 <Link
-                  href="/global-payroll/coverage"
+                  href="/global-payroll/jurisdiction-coverage"
                   className="mt-7 inline-flex border-b border-indigo-200/30 pb-0.5 text-sm font-medium text-indigo-200 transition-colors duration-200 hover:text-white"
                 >
                   Check jurisdiction availability <span aria-hidden="true">&rarr;</span>

@@ -23,7 +23,7 @@ export default function FinalCtaSection() {
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2">
               <Link
-                href="/product"
+                href="/product-module"
                 className="group inline-flex items-center gap-1.5 text-sm font-semibold text-white underline decoration-white/40 underline-offset-4 transition-colors duration-200 hover:decoration-white"
               >
                 Explore the platform

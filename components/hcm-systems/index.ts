@@ -1,0 +1,10 @@
+export { default as HrisIntegrationHero } from "./HrisIntegrationHero";
+export { default as FitAvailabilitySection } from "./FitAvailabilitySection";
+export { default as IntegrationCategoriesSection } from "./IntegrationCategoriesSection";
+export { default as SourceOfTruthSection } from "./SourceOfTruthSection";
+export { default as PayrollSafeTimingSection } from "./PayrollSafeTimingSection";
+export { default as MappingValidationSection } from "./MappingValidationSection";
+export { default as ActivationWorkflowSection } from "./ActivationWorkflowSection";
+export { default as SecurityPrivacySection } from "./SecurityPrivacySection";
+export { default as SupportedSystemsRegistrySection } from "./SupportedSystemsRegistrySection";
+export { default as FAQAndCTASection } from "./FAQAndCTASection";

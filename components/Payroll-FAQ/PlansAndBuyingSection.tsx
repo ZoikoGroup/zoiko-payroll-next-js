@@ -24,7 +24,7 @@ const faqData: FAQItem[] = [
     scope: "Plan",
     reviewedDate: "Reviewed Aug 2026",
     linkText: "View Pricing",
-    linkHref: "#pricing"
+    linkHref: "/pricing"
   },
   {
     id: 2,

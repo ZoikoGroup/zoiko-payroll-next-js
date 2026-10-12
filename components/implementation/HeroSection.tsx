@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 import Eyebrow from "./Eyebrow";
 
@@ -42,12 +43,18 @@ export default function HeroSection() {
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <span className="rounded-lg bg-white px-4 py-2.5 text-center text-sm font-semibold text-slate-900">
+                <Link
+                  href="/book-a-demo"
+                  className="rounded-lg bg-white px-4 py-2.5 text-center text-sm font-semibold text-slate-900 transition-all duration-200 hover:-translate-y-0.5"
+                >
                   Book an implementation scoping call
-                </span>
-                <span className="rounded-lg border border-white/30 px-4 py-2.5 text-center text-sm font-semibold text-white">
+                </Link>
+                <Link
+                  href="/resources/implementation"
+                  className="rounded-lg border border-white/30 px-4 py-2.5 text-center text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
+                >
                   Download the migration guide
-                </span>
+                </Link>
               </div>
 
               <ul className="mt-8 flex flex-wrap gap-x-8 gap-y-3">

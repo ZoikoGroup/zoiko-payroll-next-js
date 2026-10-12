@@ -1,0 +1,12 @@
+export { default as ChangeHero } from "./ChangeHero";
+export { default as WhyItMattersSection } from "./WhyItMattersSection";
+export { default as DisciplineSection } from "./DisciplineSection";
+export { default as ChangeJourneySection } from "./ChangeJourneySection";
+export { default as StakeholderEcosystemSection } from "./StakeholderEcosystemSection";
+export { default as ImpactAssessmentSection } from "./ImpactAssessmentSection";
+export { default as GovernanceSection } from "./GovernanceSection";
+export { default as CommunicationSection } from "./CommunicationSection";
+export { default as GoLiveHypercareSection } from "./GoLiveHypercareSection";
+export { default as SharedResponsibilitySection } from "./SharedResponsibilitySection";
+export { default as ChangeFaqSection } from "./ChangeFaqSection";
+export { default as ChangeCta } from "./ChangeCta";

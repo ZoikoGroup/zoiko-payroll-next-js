@@ -61,7 +61,7 @@ export default function ControlCenterSection() {
           {/* CTA Button */}
           <div className="pt-2">
             <a
-              href="#"
+              href="book-a-demo"
               className="inline-block px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] text-white font-semibold text-sm shadow-sm transition-opacity hover:opacity-90"
             >
               Explore the control center

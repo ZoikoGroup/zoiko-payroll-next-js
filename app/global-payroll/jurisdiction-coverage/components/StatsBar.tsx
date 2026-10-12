@@ -17,10 +17,13 @@ export default function StatsBar() {
             <div className="text-xs leading-4 text-slate-400">{stat.label}</div>
           </div>
         ))}
-        <div className="border-b border-white/30 pb-0.5">
-          <span className="text-sm font-bold leading-5 text-blue-200">
+        <div className="">
+          <a
+            href="#workspace"
+            className="inline-flex items-center text-sm font-bold leading-5 text-blue-200 hover:text-white transition-colors"
+          >
             Explore the coverage workspace →
-          </span>
+          </a>
         </div>
       </div>
     </div>

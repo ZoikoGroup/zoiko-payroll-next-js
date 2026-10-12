@@ -1,0 +1,11 @@
+export { default as GlobalPayrollSection } from "./GlobalPayrollSection";
+export { default as ConnectedPayrollSection } from "./ConnectedPayrollSection";
+export { default as OperationModelSection } from "./OperationModelSection";
+export { default as ResponsibilityMatrixSection } from "./ResponsibilityMatrixSection";
+export { default as ResponsibilityMatrixTableSection } from "./ResponsibilityMatrixTableSection";
+export { default as MonthlyPayrollFlowSection } from "./MonthlyPayrollFlowSection";
+export { default as GovernanceAndQualitySection } from "./GovernanceAndQualitySection";
+export { default as PaymentsAndFundingBoundarySection } from "./PaymentsAndFundingBoundarySection";
+export { default as HybridGlobalModelSection } from "./HybridGlobalModelSection";
+export { default as ImplementationSection } from "./ImplementationSection";
+export { default as FAQSection } from "./FAQSection";

@@ -47,7 +47,7 @@ export default function HeroSection() {
                 Book a demo
               </Link>
               <Link
-                href="/solution"
+                href="/solutions"
                 className="w-full sm:w-auto inline-flex justify-center items-center rounded-[9px] border border-[#cbd2db] bg-white px-[22px] min-h-[44px] text-[15px] font-semibold text-[#0b1220] transition-all hover:bg-slate-50"
               >
                 Find your solution
@@ -80,7 +80,7 @@ export default function HeroSection() {
           {/* Right Column (Image) */}
           <Reveal delay={120} className="w-full mt-6 lg:mt-0">
             <img
-              src="/images/enterprise-organizations/hero.png"
+              src="/images/enterprise-organizations/hero.webp"
               alt="Enterprise Payroll Dashboard on Laptop"
               loading="lazy"
               className="w-full h-auto drop-shadow-2xl"

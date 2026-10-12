@@ -1,0 +1,11 @@
+export { default as MultiEntityPayrollSection } from "./MultiEntityPayrollSection";
+export { default as MultiEntityControlProblemSection } from "./MultiEntityControlProblemSection";
+export { default as EntityArchitectureSection } from "./EntityArchitectureSection";
+export { default as MultiEntityControlCenterSection } from "./MultiEntityControlCenterSection";
+export { default as StandardizeVsLocalizeSection } from "./StandardizeVsLocalizeSection";
+export { default as CoordinatedPayrollCyclesSection } from "./CoordinatedPayrollCyclesSection";
+export { default as EntityReadinessSection } from "./EntityReadinessSection";
+export { default as GovernanceAndFundingSection } from "./GovernanceAndFundingSection";
+export { default as FinanceAndReportingSection } from "./FinanceAndReportingSection";
+export { default as DeliveryAndIntegrationsSection } from "./DeliveryAndIntegrationsSection";
+export { default as FAQAndCTASection } from "./FAQAndCTASection";

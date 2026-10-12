@@ -28,9 +28,12 @@ export default function HeroSection() {
               Exact calculations, integrations and jurisdiction support depend on your configured scope.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <span className="bg-brand-gradient rounded-lg px-6 py-3 text-center text-sm font-semibold text-white shadow-md shadow-brand/30">
+              <Link
+                href="#six-stage-lifecycle"
+                className="bg-brand-gradient rounded-lg px-6 py-3 text-center text-sm font-semibold text-white shadow-md shadow-brand/30 transition-all duration-200 hover:-translate-y-0.5"
+              >
                 Explore the six stages
-              </span>
+              </Link>
               <Link
                 href="/book-a-demo"
                 className="rounded-lg border border-slate-300 px-6 py-3 text-center text-sm font-semibold text-brand-dark transition-all duration-200 hover:-translate-y-0.5 hover:border-brand hover:text-brand"

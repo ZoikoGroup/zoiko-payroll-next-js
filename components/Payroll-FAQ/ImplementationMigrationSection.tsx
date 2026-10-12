@@ -24,7 +24,7 @@ const migrationFaqData: MigrationFAQItem[] = [
     scope: "General",
     reviewedDate: "Reviewed Aug 2026",
     linkText: "Open Implementation / Migration",
-    linkHref: "#implementation-migration"
+    linkHref: "/resources/implementation"
   },
   {
     id: 2,

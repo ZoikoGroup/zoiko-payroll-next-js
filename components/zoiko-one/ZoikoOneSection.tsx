@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { Check } from "lucide-react";
 
@@ -49,9 +50,9 @@ export default function ZoikoOneSection() {
 
           {/* CTA Button */}
           <div className="pt-4">
-            <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#0F6FAE] to-[#4FA3D1] hover:bg-[#0281D3] text-white hover:text-[#0A1928] text-xs sm:text-sm font-bold transition-all shadow-md active:scale-95">
+            <Link href="/product/zoiko-one-integration" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#0F6FAE] to-[#4FA3D1] hover:bg-[#0281D3] text-white hover:text-[#0A1928] text-xs sm:text-sm font-bold transition-all shadow-md active:scale-95">
               Understand the Zoiko One relationship
-            </button>
+            </Link>
           </div>
         </div>
 

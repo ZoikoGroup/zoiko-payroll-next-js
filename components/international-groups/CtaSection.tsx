@@ -5,7 +5,7 @@ import Eyebrow from "./Eyebrow";
 const links = [
   { label: "View Jurisdiction Directory", href: "/global-payroll/jurisdiction-directory" },
   { label: "Explore Multi-Jurisdiction Payroll", href: "/solutions/multi-jurisdiction" },
-  { label: "Contact Sales", href: "/company/contact" },
+  { label: "Contact Sales", href: "/contact" },
 ];
 
 export default function CtaSection() {

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 import Eyebrow from "../home/Eyebrow";
 import { ArrowRightIcon } from "../ui/icons";
@@ -70,10 +71,10 @@ export default function JurisdictionModelSection() {
               })}
             </ul>
 
-            <span className="mt-8 inline-flex items-center gap-1.5 border-b border-[#0A3050] pb-1 text-sm font-semibold text-brand-dark">
+            <Link href="/global-payroll/jurisdiction-coverage" className="mt-8 inline-flex items-center gap-1.5 border-b border-[#0A3050] pb-1 text-sm font-semibold text-brand-dark">
               Check jurisdiction availability
               <ArrowRightIcon className="h-4 w-4" />
-            </span>
+            </Link>
           </Reveal>
 
           <Reveal delay={100} className="space-y-4">

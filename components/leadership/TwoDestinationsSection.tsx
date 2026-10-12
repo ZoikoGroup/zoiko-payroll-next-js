@@ -16,14 +16,14 @@ const destinationsData: DestinationCard[] = [
     description:
       "Leadership profiles never carry certification or procurement claims. Trust and Security is the sole authority for controls, certification and procurement evidence. Board, committee or governance structures are shown only when Corporate/Legal verifies them.",
     buttonText: "Explore Trust and Security",
-    buttonHref: "/trust-and-security",
+    buttonHref: "/trust-security",
   },
   {
     title: "Customer accountability",
     description:
       "Existing customers need Help Center, System Status and Contact — not an executive profile. Active incidents and operational problems always outrank sales. Personal executive contact details are never exposed here.",
     buttonText: "Open Help Center",
-    buttonHref: "/help-center",
+    buttonHref: "/resources/help-center",
   },
 ];
 

@@ -43,13 +43,13 @@ export default function MarketSummarySection() {
 
               <div className="mt-6 flex flex-col gap-3 sm:max-w-xs">
                 <Link
-                  href="/global-payroll/coverage"
+                  href="/global-payroll/jurisdiction-coverage"
                   className="flex min-h-11 items-center justify-center rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 >
                   View documented coverage
                 </Link>
                 <Link
-                  href="/local-payroll-requirements"
+                  href="/global-payroll/payroll-requirements"
                   className="flex min-h-11 items-center justify-center rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition-all duration-200 hover:-translate-y-0.5"
                 >
                   Read jurisdiction guide
@@ -79,7 +79,7 @@ export default function MarketSummarySection() {
                   <dt className="text-sm leading-5 text-gray-700">Guide available</dt>
                   <dd>
                     <Link
-                      href="/local-payroll-requirements"
+                      href="/global-payroll/payroll-requirements"
                       className="text-sm font-semibold leading-5 text-slate-900 transition-colors duration-200 hover:text-blue-600"
                     >
                       Yes <span aria-hidden="true">→</span>

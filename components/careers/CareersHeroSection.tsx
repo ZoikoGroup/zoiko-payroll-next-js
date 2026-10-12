@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { Play } from "lucide-react";
 
 export default function CareersHeroSection() {
@@ -25,9 +26,12 @@ export default function CareersHeroSection() {
 
           {/* CTA Button */}
           <div className="pt-2">
-            <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#1A83C8] to-[#093C73] hover:bg-[#026cb3] text-white font-semibold text-sm transition-all shadow-md active:scale-95">
+            <Link
+              href="#open-roles"
+              className="inline-block px-6 py-3 rounded-xl bg-gradient-to-r from-[#1A83C8] to-[#093C73] hover:bg-[#026cb3] text-white font-semibold text-sm transition-all shadow-md active:scale-95"
+            >
               See open roles
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -41,14 +45,17 @@ export default function CareersHeroSection() {
 
           {/* Floating Watch Video Button (Bottom Left) */}
           <div className="absolute bottom-6 left-6">
-            <button className="flex items-center gap-3 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-full shadow-md border border-black/5 hover:bg-white transition-all active:scale-95 group">
+            <Link
+              href="/resources/product-videos"
+              className="flex items-center gap-3 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-full shadow-md border border-black/5 hover:bg-white transition-all active:scale-95 group"
+            >
               <span className="w-8 h-8 rounded-full bg-[#0A2540] text-white flex items-center justify-center shrink-0">
                 <Play className="w-3.5 h-3.5 fill-white translate-x-0.5" />
               </span>
               <span className="text-xs sm:text-sm font-bold text-[#0A1928] pr-1">
                 Watch video
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

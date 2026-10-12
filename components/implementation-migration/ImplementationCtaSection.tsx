@@ -6,12 +6,12 @@ import { ArrowRight } from "lucide-react";
 const CTA_BUTTONS = [
   {
     label: "Contact Support",
-    href: "#",
+    href: "/contact",
     variant: "primary",
   },
   {
     label: "Explore Global Payroll Resources",
-    href: "#",
+    href: "/global-payroll/resources",
     variant: "secondary",
     icon: ArrowRight,
   },

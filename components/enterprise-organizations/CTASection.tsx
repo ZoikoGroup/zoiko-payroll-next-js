@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 
 export default function CTASection() {
@@ -28,12 +29,12 @@ export default function CTASection() {
           </div>
 
           <div className="flex flex-wrap gap-[12px] items-center justify-center mt-[12.8px]">
-            <button className="bg-white rounded-[9px] px-[22px] min-h-[44px] flex items-center justify-center font-semibold text-[#0b1220] text-[15px] hover:bg-gray-100 transition-colors">
+            <Link href="/book-a-demo" className="bg-white rounded-[9px] px-[22px] min-h-[44px] flex items-center justify-center font-semibold text-[#0b1220] text-[15px] hover:bg-gray-100 transition-colors">
               Book a demo
-            </button>
-            <button className="border border-[#2e3b52] rounded-[9px] px-[22px] min-h-[44px] flex items-center justify-center font-semibold text-white text-[15px] hover:bg-[#1a3d54] transition-colors">
+            </Link>
+            <Link href="/solutions" className="border border-[#2e3b52] rounded-[9px] px-[22px] min-h-[44px] flex items-center justify-center font-semibold text-white text-[15px] hover:bg-[#1a3d54] transition-colors">
               Find your solution
-            </button>
+            </Link>
           </div>
 
         </Reveal>

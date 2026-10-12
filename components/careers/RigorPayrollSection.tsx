@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 // Statistics data for the grid
@@ -45,9 +46,9 @@ export default function RigorPayrollSection() {
             </p>
 
             <div>
-              <button className="px-6 py-2.5 rounded-xl border border-[#E1E8ED] bg-white text-[#0A1928] hover:bg-[#F8FAFC] font-semibold text-xs sm:text-sm transition-all shadow-2xs active:scale-95">
+              <Link href="/company/about-us" className="px-6 py-2.5 rounded-xl border border-[#E1E8ED] bg-white text-[#0A1928] hover:bg-[#F8FAFC] font-semibold text-xs sm:text-sm transition-all shadow-2xs active:scale-95">
                 About us
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "../ui/Reveal";
 import StageHeader from "./StageHeader";
 
@@ -10,7 +11,14 @@ const coordinates = [
 const doesNotBecome = [
   "Legal advice or an autonomous legal conclusion",
   'A certification that a customer is "compliant"',
-  "A replacement for local/specialist judgment or Payroll Approvals",
+  (
+    <span key="approvals">
+      A replacement for local/specialist judgment or{" "}
+      <Link href="/product/payroll-approvals" className="font-semibold text-blue-600 hover:underline">
+        Payroll Approvals
+      </Link>
+    </span>
+  ),
 ];
 
 export default function AuthorityBoundarySection() {
@@ -64,8 +72,8 @@ export default function AuthorityBoundarySection() {
                 The workflow does not become
               </h3>
               <ul className="mt-3.5 space-y-2.5">
-                {doesNotBecome.map((item) => (
-                  <li key={item} className="flex gap-2 text-sm leading-6 text-gray-700">
+                {doesNotBecome.map((item, idx) => (
+                  <li key={idx} className="flex gap-2 text-sm leading-6 text-gray-700">
                     <span className="shrink-0 text-gray-400" aria-hidden="true">
                       &bull;
                     </span>

@@ -9,7 +9,7 @@ const guides = [
     description: "Market-specific payroll context, terminology and operating questions for the UK.",
     tags: ["Reviewed Jul 2026", "Current"],
     image: "/images/jurisdiction-guides/london.png",
-    href: "/resources/jurisdiction-guides/united-kingdom",
+    href: "/resources/jurisdiction-guides",
   },
   {
     name: "United States",
@@ -17,7 +17,7 @@ const guides = [
     description: "Federal and state-level payroll context and questions to investigate.",
     tags: ["Reviewed Aug 2026", "Current"],
     image: "/images/jurisdiction-guides/seattle.png",
-    href: "/resources/jurisdiction-guides/united-states",
+    href: "/resources/jurisdiction-guides",
   },
   {
     name: "Singapore",
@@ -25,7 +25,7 @@ const guides = [
     description: "Operating environment and payroll terminology for the Singapore market.",
     tags: ["Reviewed Jun 2026", "Current"],
     image: "/images/jurisdiction-guides/singapore.png",
-    href: "/resources/jurisdiction-guides/singapore",
+    href: "/resources/jurisdiction-guides",
   },
   {
     name: "United Arab Emirates",
@@ -33,7 +33,7 @@ const guides = [
     description: "Market context and payroll operating questions for the UAE.",
     tags: ["Review due"],
     image: "/images/jurisdiction-guides/dubai.png",
-    href: "/resources/jurisdiction-guides/united-arab-emirates",
+    href: "/resources/jurisdiction-guides",
   },
   {
     name: "Germany",
@@ -41,7 +41,7 @@ const guides = [
     description: "Market-specific payroll terminology and operating environment for Germany.",
     tags: ["Reviewed May 2026", "Current"],
     image: "/images/jurisdiction-guides/cologne.png",
-    href: "/resources/jurisdiction-guides/germany",
+    href: "/resources/jurisdiction-guides",
   },
   {
     name: "Ontario",
@@ -49,7 +49,7 @@ const guides = [
     description: "Provincial payroll context and operating questions for Ontario.",
     tags: ["Reviewed Jul 2026", "Current"],
     image: "/images/jurisdiction-guides/toronto.png",
-    href: "/resources/jurisdiction-guides/ontario",
+    href: "/resources/jurisdiction-guides",
   },
 ];
 

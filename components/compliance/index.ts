@@ -1,0 +1,12 @@
+export { default as ComplianceSection } from "./ComplianceSection";
+export { default as DirectAnswerSection } from "./DirectAnswerSection";
+export { default as AssuranceExplorerSection } from "./AssuranceExplorerSection";
+export { default as EvidenceCardSystemSection } from "./EvidenceCardSystemSection";
+export { default as Soc1AssuranceSection } from "./Soc1AssuranceSection";
+export { default as Soc2IsoEvidenceSection } from "./Soc2IsoEvidenceSection";
+export { default as PrivacyMappingSection } from "./PrivacyMappingSection";
+export { default as PayrollAssuranceTableSection } from "./PayrollAssuranceTableSection";
+export { default as ContinuitySection } from "./ContinuitySection";
+export { default as EvidenceAccessWorkflowSection } from "./EvidenceAccessWorkflowSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as ReadyToGoFurtherSection } from "./ReadyToGoFurtherSection";

@@ -17,7 +17,7 @@ export default function FAQHeroSection() {
   };
 
   return (
-    <section className="w-full bg-white py-12 px-4 md:px-8 font-['Plus_Jakarta_Sans',sans-serif]">
+    <section id='search' className="w-full bg-white py-12 px-4 md:px-8 font-['Plus_Jakarta_Sans',sans-serif]">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
         {/* Left Column: Heading & Description */}
@@ -106,7 +106,7 @@ export default function FAQHeroSection() {
                   <span>Reviewed Aug 2026</span>
                 </div>
                 <a
-                  href="#product-overview"
+                  href="/product/how-it-works"
                   className="text-sky-600 font-bold hover:underline inline-flex items-center"
                 >
                   View Product Overview &rarr;

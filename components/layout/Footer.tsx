@@ -5,6 +5,7 @@ import {
   FacebookIcon,
   InstagramIcon,
   LinkedInIcon,
+  PinterestIcon,
   XSocialIcon,
   YouTubeIcon,
   ArrowRightIcon,
@@ -13,11 +14,12 @@ import {
 } from "../ui/icons";
 
 const socialLinks = [
-  { label: "LinkedIn", href: "https://linkedin.com", Icon: LinkedInIcon },
-  { label: "YouTube", href: "https://youtube.com", Icon: YouTubeIcon },
-  { label: "X", href: "https://x.com", Icon: XSocialIcon },
-  { label: "Instagram", href: "https://instagram.com", Icon: InstagramIcon },
-  { label: "Facebook", href: "https://facebook.com", Icon: FacebookIcon },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/zoikopayroll/", Icon: LinkedInIcon },
+  { label: "YouTube", href: "https://www.youtube.com/@ZoikoPayrollPlatform", Icon: YouTubeIcon },
+  { label: "X", href: "https://x.com/ZoikoPayroll", Icon: XSocialIcon },
+  { label: "Instagram", href: "https://www.instagram.com/zoikopayroll/", Icon: InstagramIcon },
+  { label: "Facebook", href: "https://www.facebook.com/zoikopayroll/", Icon: FacebookIcon },
+  { label: "Pinterest", href: "https://www.pinterest.com/zoikopayroll/", Icon: PinterestIcon },
 ] as const;
 
 const linkClass =
@@ -69,7 +71,7 @@ export default function Footer() {
               <p className="mt-1 max-w-md text-sm leading-relaxed text-slate-400">
                 Use Zoiko Payroll as standalone SaaS or as part of Zoiko One.
               </p>
-              <div className="mt-5 flex items-center gap-4">
+              <div className="mt-5 flex flex-wrap items-center gap-4">
                 {socialLinks.map(({ label, href, Icon }) => (
                   <a
                     key={label}

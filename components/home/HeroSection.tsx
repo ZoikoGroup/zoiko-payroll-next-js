@@ -33,7 +33,7 @@ export default function HeroSection() {
                 Book a demo
               </Link>
               <Link
-                href="/product"
+                href="/product-module"
                 className="rounded-lg border border-slate-300 px-6 py-3 text-center text-sm font-semibold text-brand-dark transition-all duration-200 hover:-translate-y-0.5 hover:border-brand hover:text-brand"
               >
                 Explore the platform

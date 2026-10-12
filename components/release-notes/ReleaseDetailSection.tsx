@@ -20,7 +20,7 @@ const metadata = [
 
 export default function ReleaseDetailSection() {
   return (
-    <section className="border-t border-[#DCE6EC] bg-white py-14 sm:py-20">
+    <section id="release-detail" className="scroll-mt-20 border-t border-[#DCE6EC] bg-white py-14 sm:py-20">
       <div className="mx-auto max-w-[1180px] px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-[640px]">
           <Eyebrow>Release note detail + applicability</Eyebrow>

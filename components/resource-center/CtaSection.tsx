@@ -32,7 +32,7 @@ export default function CtaSection() {
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
-              href="/resources"
+              href="#search"
               className="flex min-h-12 items-center justify-center rounded-lg bg-sky-500 px-6 py-3 text-sm font-semibold leading-6 text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-sky-400"
             >
               Search resources

@@ -1,0 +1,10 @@
+export { default as SubprocessorsHero } from "./SubprocessorsHero";
+export { default as RoleClassificationSection } from "./RoleClassificationSection";
+export { default as RegistrySearchSection } from "./RegistrySearchSection";
+export { default as CurrentRegistrySection } from "./CurrentRegistrySection";
+export { default as AffiliateSubprocessorsSection } from "./AffiliateSubprocessorsSection";
+export { default as ChangeHistorySection } from "./ChangeHistorySection";
+export { default as AssessmentLifecycleSection } from "./AssessmentLifecycleSection";
+export { default as InternationalTransfersSection } from "./InternationalTransfersSection";
+export { default as ObjectionWorkflowSection } from "./ObjectionWorkflowSection";
+export { default as SubprocessorsCta } from "./SubprocessorsCta";

@@ -19,7 +19,7 @@ const noticeCards: NoticeCard[] = [
     description:
       "Approved use restrictions where incorporated or applicable — see the full document for scope.",
     linkText: "View policy",
-    href: "/aup",
+    href: "/legal/acceptable-use-policy",
   },
   {
     title: "Accessibility Statement",
@@ -27,14 +27,14 @@ const noticeCards: NoticeCard[] = [
     description:
       "Our current accessibility statement and an approved feedback and support route.",
     linkText: "View statement",
-    href: "/accessibility",
+    href: "/legal/accessibility-statement",
   },
   {
     title: "Legal Notices",
     subtitle: "Entity, copyright & trademark",
     description: "Approved entity, copyright, trademark and notice facts only.",
     linkText: "View notices",
-    href: "/legal-notices",
+    href: "/legal/legal-notices",
   },
 ];
 

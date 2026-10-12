@@ -15,31 +15,31 @@ const stepsData: GovernanceStep[] = [
     stepNumber: 1,
     title: "Trust and Security",
     description: "Security controls and governance. Verified trust information and policies.",
-    linkHref: "/trust-and-security",
+    linkHref: "/trust-security",
   },
   {
     stepNumber: 2,
     title: "Product Documentation",
     description: "Product guidance and specifications. Clear information for implementation and use",
-    linkHref: "/docs",
+    linkHref: "/resources/documentation",
   },
   {
     stepNumber: 3,
     title: "System Status",
     description: "Current service health and availability. See active incidents and operational updates.",
-    linkHref: "/status",
+    linkHref: "/resources/system-status",
   },
   {
     stepNumber: 4,
     title: "Release Notes",
     description: "Latest product updates and changes. Track new features, fixes, and improvements.",
-    linkHref: "/release-notes",
+    linkHref: "/resources/release-notes",
   },
   {
     stepNumber: 5,
     title: "Help Center",
     description: "Support resources and troubleshooting guidance. Find answers when you need help.",
-    linkHref: "/help-center",
+    linkHref: "/resources/help-center",
   },
 ];
 

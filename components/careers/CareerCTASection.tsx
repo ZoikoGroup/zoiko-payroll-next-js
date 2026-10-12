@@ -1,10 +1,11 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 export default function CareerCTASection() {
   return (
-    <section className="w-full bg-white py-20 px-6 lg:px-16 font-sans antialiased">
+    <section id="open-roles" className="w-full bg-white py-20 px-6 lg:px-16 font-sans antialiased scroll-mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-[#072432] via-[#09486D] to-[#0281D3] py-16 sm:py-20 px-8 text-center text-white shadow-md">
           {/* Constellation / Tech Nodes Background Effect */}
@@ -60,9 +61,12 @@ export default function CareerCTASection() {
             </p>
 
             <div className="pt-2">
-              <button className="px-6 py-3 rounded-xl bg-white text-[#0A1928] hover:bg-slate-100 font-bold text-xs sm:text-sm transition-all shadow-sm active:scale-95">
+              <Link
+                href="/contact"
+                className="inline-block px-6 py-3 rounded-xl bg-white text-[#0A1928] hover:bg-slate-100 font-bold text-xs sm:text-sm transition-all shadow-sm active:scale-95"
+              >
                 Explore open roles
-              </button>
+              </Link>
             </div>
           </div>
         </div>

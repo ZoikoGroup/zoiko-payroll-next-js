@@ -13,14 +13,14 @@ export const navItems: NavItem[] = [
   {
     label: "Product",
     columns: [
-      { label: "Product overview", href: "/product" },
+      { label: "Product overview", href: "/product-module" },
       { label: "How Zoiko Payroll works", href: "/product/how-it-works" },
       { label: "Payroll processing", href: "/product/payroll-processing" },
       { label: "Approvals", href: "/product/payroll-approvals" },
       { label: "Employee payroll records", href: "/product/employee-payroll-records" },
-      { label: "Deductions and adjustments", href: "/product/deductions" },
+      { label: "Deductions and adjustments", href: "/deductions-and-adjustments" },
       { label: "Reporting", href: "/product/reporting" },
-      { label: "Integrations", href: "/product/integrations" },
+      { label: "Integrations", href: "/integrations" },
       { label: "Implementation", href: "/product/implementation" },
       { label: "Security", href: "/product/security" },
       { label: "Pricing", href: "/pricing" },
@@ -46,8 +46,8 @@ export const navItems: NavItem[] = [
     columns: [
       { label: "Jurisdiction directory", href: "/global-payroll/jurisdiction-directory" },
       { label: "Country guides", href: "/resources/jurisdiction-guides" },
-      { label: "Global payroll guide", href: "/global-payroll/guide" },
-      { label: "Payroll glossary", href: "/global-payroll/glossary" },
+      { label: "Global payroll guide", href: "/global-payroll/resources" },
+      { label: "Payroll glossary", href: "/resources/payroll-glossary" },
     ],
   },
   { label: "Pricing", href: "/pricing" },
@@ -67,7 +67,7 @@ export const navItems: NavItem[] = [
       { label: "About", href: "/company/about-us" },
       { label: "Zoiko Group", href: "/company/zoiko-group" },
       { label: "Careers", href: "/company/careers" },
-      { label: "Contact", href: "/company/contact" },
+      { label: "Contact", href: "/contact" },
     ],
   },
 ];

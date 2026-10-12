@@ -124,7 +124,7 @@ export default function WhatItIsSection() {
         </Reveal>
 
         <Reveal delay={220} className="mt-8">
-          <ArrowLink href="/product">Explore all product capabilities</ArrowLink>
+          <ArrowLink href="/product-module">Explore all product capabilities</ArrowLink>
         </Reveal>
       </div>
     </section>

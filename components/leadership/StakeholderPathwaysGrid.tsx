@@ -15,19 +15,19 @@ const pathwaysData: PathwayCard[] = [
     title: "Buyer / executive sponsor",
     description: "Role and accountability map, then evaluate.",
     linkLabel: "Book a demo →",
-    linkHref: "/book-demo",
+    linkHref: "/book-a-demo",
   },
   {
     title: "Payroll / finance",
     description: "Product, reporting and implementation depth.",
     linkLabel: "Product →",
-    linkHref: "/product",
+    linkHref: "/product-module",
   },
   {
     title: "Security / privacy / risk",
     description: "Controls and procurement evidence.",
     linkLabel: "Trust and Security →",
-    linkHref: "/trust-and-security",
+    linkHref: "/trust-security",
   },
   {
     title: "Procurement / legal",
@@ -39,25 +39,25 @@ const pathwaysData: PathwayCard[] = [
     title: "Existing customer",
     description: "Support, status and account help.",
     linkLabel: "Help Center →",
-    linkHref: "/help-center",
+    linkHref: "/resources/help-center",
   },
   {
     title: "Candidate",
     description: "Open roles and hiring information.",
     linkLabel: "Careers →",
-    linkHref: "/careers",
+    linkHref: "/company/careers",
   },
   {
     title: "Media / analyst",
     description: "Verified statements and press contact.",
     linkLabel: "Newsroom →",
-    linkHref: "/newsroom",
+    linkHref: "/company/newsroom",
   },
   {
     title: "Partner",
     description: "Partnership routes and contact.",
     linkLabel: "Partners →",
-    linkHref: "/partners",
+    linkHref: "/company/partners",
   },
 ];
 

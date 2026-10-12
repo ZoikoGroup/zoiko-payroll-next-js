@@ -6,15 +6,15 @@ interface QuickLink {
 }
 
 const footerLinks: QuickLink[] = [
-  { label: 'Resource Center', href: '#resource-center' },
-  { label: 'Help Center', href: '#help-center' },
-  { label: 'System Status', href: '#system-status' },
-  { label: 'Release Notes', href: '#release-notes' },
-  { label: 'Jurisdiction Guides', href: '#jurisdiction-guides' },
-  { label: 'Global Payroll', href: '#global-payroll' },
-  { label: 'Implementation', href: '#implementation' },
-  { label: 'Security and Trust', href: '#security-trust' },
-  { label: 'Reporting', href: '#reporting' },
+  { label: 'Resource Center', href: '/resources' },
+  { label: 'Help Center', href: '/resources/help-center' },
+  { label: 'System Status', href: '/resources/system-status' },
+  { label: 'Release Notes', href: '/resources/release-notes' },
+  { label: 'Jurisdiction Guides', href: '/resources/jurisdiction-guides' },
+  { label: 'Global Payroll', href: '/global-payroll' },
+  { label: 'Implementation', href: '/resources/implementation' },
+  { label: 'Security and Trust', href: '/resources/security-trust' },
+  { label: 'Reporting', href: '/resources/reporting' },
 ];
 
 export const AuthoritativeStepSection: React.FC = () => {
@@ -47,13 +47,13 @@ export const AuthoritativeStepSection: React.FC = () => {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#search-faq"
+            href="#search"
             className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-sky-400 to-sky-900 text-white text-sm font-bold rounded-lg shadow-[0px_1px_2px_0px_rgba(10,46,75,0.06)] hover:opacity-95 transition-opacity min-w-[160px]"
           >
             Search the FAQ
           </a>
           <a
-            href="#product-documentation"
+            href="/resources/documentation"
             className="inline-flex items-center justify-center px-6 py-3 bg-transparent border border-white/30 text-white text-sm font-bold rounded-lg hover:bg-white/10 transition-colors"
           >
             Visit Product Documentation

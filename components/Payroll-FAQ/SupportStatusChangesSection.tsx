@@ -24,7 +24,7 @@ const supportFaqData: SupportFAQItem[] = [
     scope: "General",
     reviewedDate: "Reviewed Aug 2026",
     linkText: "Open Help Center / System Status",
-    linkHref: "#help-center"
+    linkHref: "/resources/help-center"
   },
   {
     id: 2,

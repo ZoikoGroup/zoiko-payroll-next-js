@@ -102,7 +102,7 @@ export default function AvailabilityWorkflowSection() {
               Need to see how local requirements are reviewed and evidenced?
             </span>
             <a
-              href="#explore-compliance"
+              href="/global-payroll/compliance-workflows"
               className="font-bold text-[#0281D3] hover:underline inline-flex items-center gap-1"
             >
               Explore Compliance Workflows

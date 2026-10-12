@@ -1,0 +1,11 @@
+export { default as ServiceTermsHero } from "./ServiceTermsHero";
+export { default as TermsSummarySection } from "./TermsSummarySection";
+export { default as WhatAreServiceTermsSection } from "./WhatAreServiceTermsSection";
+export { default as StandardVsAgreementSection } from "./StandardVsAgreementSection";
+export { default as ContractDocumentMapSection } from "./ContractDocumentMapSection";
+export { default as TableOfContentsSection } from "./TableOfContentsSection";
+export { default as TermsSections } from "./TermsSections";
+export { default as AgreementStatusSection } from "./AgreementStatusSection";
+export { default as ServiceTermsFAQSection } from "./ServiceTermsFAQSection";
+export { default as VersionHistorySection } from "./VersionHistorySection";
+export { default as RelatedResourcesSection } from "./RelatedResourcesSection";

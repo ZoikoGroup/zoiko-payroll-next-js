@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function SearchInteraction() {
   return (
     <section className="w-full px-32 py-20 bg-white">
@@ -57,11 +59,22 @@ export default function SearchInteraction() {
             {[
               { label: "Scope", value: "Select entity types, self-managed only" },
               { label: "Effective date", value: "Reviewed August 2026" },
-              { label: "Next step", value: "Discuss your operating markets →", valueColor: "text-sky-700 font-bold" },
+              {
+                label: "Next step",
+                value: "Discuss your operating markets →",
+                href: "/contact",
+                valueColor: "text-sky-700 font-bold hover:underline",
+              },
             ].map((row, i) => (
               <div key={row.label} className={`py-3 flex items-start justify-between ${i < 2 ? "border-b border-slate-100" : ""}`}>
                 <span className="text-gray-400 text-sm leading-5">{row.label}</span>
-                <span className={`text-sky-950 text-sm leading-5 ${row.valueColor || "font-bold"}`}>{row.value}</span>
+                {row.href ? (
+                  <Link href={row.href} className={`text-sm leading-5 ${row.valueColor || "font-bold text-sky-950"}`}>
+                    {row.value}
+                  </Link>
+                ) : (
+                  <span className={`text-sky-950 text-sm leading-5 ${row.valueColor || "font-bold"}`}>{row.value}</span>
+                )}
               </div>
             ))}
           </div>

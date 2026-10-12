@@ -40,7 +40,7 @@ export default function LeadershipHeroSection() {
         <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 pt-2 w-full sm:w-auto">
           {/* Primary Filled Blue Button */}
           <Link
-            href="/book-demo"
+            href="/book-a-demo"
             className="w-full sm:w-auto px-6 py-3 rounded-[8px] bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] hover:from-[#247ab1] hover:to-[#185485] text-white font-medium text-sm transition-all shadow-md active:scale-[0.99] text-center"
           >
             Book a demo
@@ -48,7 +48,7 @@ export default function LeadershipHeroSection() {
 
           {/* Secondary Glassmorphism / Outline Button */}
           <Link
-            href="/trust-and-security"
+            href="/trust-security"
             className="w-full sm:w-auto px-6 py-3 rounded-[8px] bg-[#FFFFFF26] hover:bg-white/30 text-white border border-white/20 font-medium text-sm transition-all text-center backdrop-blur-sm"
           >
             Explore Trust and Security

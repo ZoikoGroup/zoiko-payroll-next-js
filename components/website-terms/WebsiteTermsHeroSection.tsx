@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { AlertTriangle } from "lucide-react";
 
 export default function WebsiteTermsHeroSection() {
@@ -39,20 +38,20 @@ export default function WebsiteTermsHeroSection() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               {/* Primary Blue Button */}
-              <Link
+              <a
                 href="#terms"
                 className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-[#0F6FAE] to-[#4FA3D1] hover:bg-[#0369A1] text-white text-xs sm:text-sm font-semibold transition-all text-center shadow-sm"
               >
                 Read the terms
-              </Link>
+              </a>
 
               {/* Secondary White Button */}
-              <Link
-                href="#coverage"
+              <a
+                href="#terms"
                 className="w-full sm:w-auto px-6 py-3 rounded-xl bg-white text-[#0F172A] hover:bg-gray-100 text-xs sm:text-sm font-semibold transition-all text-center shadow-sm"
               >
                 See what these terms cover
-              </Link>
+              </a>
             </div>
           </div>
         </div>

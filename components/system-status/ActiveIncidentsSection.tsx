@@ -64,7 +64,7 @@ export default function ActiveIncidentsSection() {
             before marking this resolved.
           </p>
 
-          <ArrowLink href="/resources/system-status/incidents" className="mt-4">
+          <ArrowLink href="/resources/system-status" className="mt-4">
             View incident
           </ArrowLink>
 

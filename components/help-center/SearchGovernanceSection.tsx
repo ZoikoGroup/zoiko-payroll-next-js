@@ -10,7 +10,7 @@ const results = [
     meta: "Applies to: Payroll Processing · Reviewed Jul 2026",
     description: "A run stays in Validate until every blocking issue is resolved and owned.",
     linkLabel: "Open answer",
-    href: "/resources/help-center/validate",
+    href: "/resources/help-center",
   },
   {
     question: "Is there a current incident affecting payroll runs?",
@@ -109,7 +109,7 @@ export default function SearchGovernanceSection() {
               Book a demo
             </Link>
             <Link
-              href="/product"
+              href="/product/how-it-works"
               className="rounded-lg border border-white/20 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/40"
             >
               Explore Product

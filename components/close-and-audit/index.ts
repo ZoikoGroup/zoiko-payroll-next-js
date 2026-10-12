@@ -1,0 +1,10 @@
+export { default as PayrollCloseAuditHeroSection } from "./PayrollCloseAuditHeroSection";
+export { default as DirectAnswerPayrollCloseSection } from "./DirectAnswerPayrollCloseSection";
+export { default as CloseReadinessControlRoomSection } from "./CloseReadinessControlRoomSection";
+export { default as ReconciliationMatrixSection } from "./ReconciliationMatrixSection";
+export { default as ReopenGovernanceSection } from "./ReopenGovernanceSection";
+export { default as ExceptionsWorkbenchSection } from "./ExceptionsWorkbenchSection";
+export { default as AuditTrailEvidenceSection } from "./AuditTrailEvidenceSection";
+export { default as GlobalMultiEntityOperatingModelSection } from "./GlobalMultiEntityOperatingModelSection";
+export { default as RolesSecurityAIGuardrailsSection } from "./RolesSecurityAIGuardrailsSection";
+export { default as CloseAuditFAQSection } from "./CloseAuditFAQSection";

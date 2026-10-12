@@ -28,7 +28,7 @@ export default function ReadyToGoFurtherCTA() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           {/* Primary Gradient Button */}
           <Link
-            href="/book-demo"
+            href="/book-a-demo"
             className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] text-white text-xs sm:text-sm font-semibold shadow-md hover:opacity-95 transition-all text-center"
           >
             Book a demo
@@ -36,7 +36,7 @@ export default function ReadyToGoFurtherCTA() {
 
           {/* Secondary Outline Button */}
           <Link
-            href="/trust-and-security"
+            href="/trust-security"
             className="w-full sm:w-auto px-6 py-3.5 rounded-xl border border-white/20 text-white text-xs sm:text-sm font-semibold hover:bg-white/10 hover:border-white/30 transition-all text-center"
           >
             Explore Trust and Security

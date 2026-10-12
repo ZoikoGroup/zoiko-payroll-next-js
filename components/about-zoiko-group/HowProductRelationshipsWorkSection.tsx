@@ -92,7 +92,7 @@ export default function HowProductRelationshipsWorkSection() {
           {/* Call-to-Action Button */}
           <div className="relative z-10 shrink-0">
             <Link
-              href="/zoiko-one"
+              href="/company/zoiko-one"
               className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-white text-[#0F172A] hover:bg-gray-100 text-xs sm:text-sm font-semibold transition-colors shadow-sm"
             >
               Explore Zoiko One{" "}

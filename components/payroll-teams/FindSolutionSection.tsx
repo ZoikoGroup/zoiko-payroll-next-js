@@ -150,7 +150,7 @@ export default function FindSolutionSection() {
                 Edit answers
               </Link>
               <Link
-                href={route.href}
+                href={route.href === "/solutions/payroll-teams" ? "/solutions" : route.href}
                 className="flex min-h-11 items-center justify-center rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition-all duration-200 hover:-translate-y-0.5"
               >
                 Compare another route

@@ -19,7 +19,7 @@ const actionOptions: ActionOption[] = [
       </>
     ),
     buttonText: 'Explore Zoiko Payroll',
-    buttonHref: '#explore-product',
+    buttonHref: '/product/how-it-works',
     isPrimary: false,
   },
   {
@@ -32,7 +32,7 @@ const actionOptions: ActionOption[] = [
       </>
     ),
     buttonText: 'View Pricing',
-    buttonHref: '#pricing',
+    buttonHref: '/pricing',
     isPrimary: false,
   },
   {
@@ -45,7 +45,7 @@ const actionOptions: ActionOption[] = [
       </>
     ),
     buttonText: 'Book a demo',
-    buttonHref: '#book-demo',
+    buttonHref: '/book-a-demo',
     isPrimary: true,
   },
 ];

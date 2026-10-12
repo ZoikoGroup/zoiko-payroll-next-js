@@ -1,14 +1,15 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 // Bottom link items matching the screenshot footer navigation
 const FOOTER_LINKS = [
-  { label: "Compliance Workflows", href: "#compliance-workflows" },
-  { label: "Multi-Entity Payroll", href: "#multi-entity-payroll" },
-  { label: "Global Reporting", href: "#global-reporting" },
-  { label: "Implementation and Migration", href: "#implementation-migration" },
-  { label: "Jurisdiction Guides", href: "#jurisdiction-guides" },
+  { label: "Compliance Workflows", href: "/global-payroll/compliance-workflows" },
+  { label: "Multi-Entity Payroll", href: "/global-payroll/multi-entity-payroll" },
+  { label: "Global Reporting", href: "/global-payroll/reporting" },
+  { label: "Implementation and Migration", href: "/global-payroll/implementation-migration" },
+  { label: "Jurisdiction Guides", href: "/global-payroll/jurisdiction-guides" },
 ];
 
 export default function CallToActionSection() {
@@ -30,14 +31,14 @@ export default function CallToActionSection() {
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4">
           {/* Primary Filled Button */}
-          <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] text-white hover:bg-[#0281D3]/90 text-sm font-semibold transition-all shadow-md active:scale-95">
+          <Link href="/global-payroll/jurisdiction-directory" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] text-white hover:bg-[#0281D3]/90 text-sm font-semibold transition-all shadow-md active:scale-95">
             Review a jurisdiction
-          </button>
+          </Link>
 
           {/* Secondary Outline Button */}
-          <button className="px-6 py-3 rounded-xl bg-transparent border border-white/30 hover:bg-white/10 text-white text-sm font-semibold transition-all active:scale-95">
+          <Link href="/book-a-demo" className="px-6 py-3 rounded-xl bg-transparent border border-white/30 hover:bg-white/10 text-white text-sm font-semibold transition-all active:scale-95">
             Book a demo
-          </button>
+          </Link>
         </div>
 
         {/* Horizontal Divider */}
@@ -48,13 +49,13 @@ export default function CallToActionSection() {
         {/* Bottom Navigation Links */}
         <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-xs sm:text-sm text-[#9FC7E3]">
           {FOOTER_LINKS.map((link, index) => (
-            <a
+            <Link
               key={index}
               href={link.href}
               className="hover:text-white transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

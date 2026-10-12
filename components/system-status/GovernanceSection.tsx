@@ -9,7 +9,7 @@ const doesNotOwn = [
   { label: "Support resolution", link: "Help Center", href: "/resources/help-center" },
   { label: "Shipped product changes", link: "Release Notes", href: "/resources/release-notes" },
   { label: "Security/privacy assurance", link: "Security & Trust", href: "/product/security" },
-  { label: "Customer-specific case status", link: "Support", href: "/company/contact" },
+  { label: "Customer-specific case status", link: "Support", href: "/contact" },
 ];
 
 const deliveryTraits = [

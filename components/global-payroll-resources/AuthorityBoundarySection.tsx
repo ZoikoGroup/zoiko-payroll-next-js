@@ -19,9 +19,9 @@ const doNotEstablish = [
 
 const sourcesOfTruth = [
   { label: "Coverage / Directory", href: "/global-payroll/country-territory-directory" },
-  { label: "Local Payroll Requirements", href: "/local-payroll-requirements" },
+  { label: "Local Payroll Requirements", href: "/global-payroll/payroll-requirements" },
   { label: "Compliance Workflows", href: "/global-payroll/compliance-workflows" },
-  { label: "Multi-Entity Payroll", href: "/global-payroll/multi-entity" },
+  { label: "Multi-Entity Payroll", href: "/global-payroll/multi-entity-payroll" },
   { label: "Global Reporting", href: "/global-payroll/reporting" },
   { label: "Implementation & Migration", href: "/solutions/payroll-migration" },
 ];

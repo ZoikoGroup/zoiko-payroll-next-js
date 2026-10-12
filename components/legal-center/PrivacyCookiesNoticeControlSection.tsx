@@ -20,12 +20,12 @@ interface ControlItem {
 const disclosureItems: DisclosureItem[] = [
   {
     title: "Privacy Notice",
-    href: "/privacy",
+    href: "/legal/privacy-notice",
     actionText: "View",
   },
   {
     title: "Cookie Notice",
-    href: "/cookies",
+    href: "/legal/cookie-notice",
     actionText: "View",
   },
 ];

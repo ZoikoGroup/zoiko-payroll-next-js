@@ -17,7 +17,7 @@ const resourcesData: RelatedResource[] = [
     title: "Legal Center",
     description: "The governance hub for all Zoiko Payroll legal disclosures.",
     linkText: "Open Legal Center",
-    linkHref: "#legal-center",
+    linkHref: "/legal/legal-center",
     imgSrc: "/images/legal/5.png",
   },
   {
@@ -25,7 +25,7 @@ const resourcesData: RelatedResource[] = [
     description:
       "Security controls and evidence — this notice owns disclosure only.",
     linkText: "Open Trust and Security",
-    linkHref: "#trust-security",
+    linkHref: "/company/trust-center",
     imgSrc: "/images/legal/6.png",
   },
   {
@@ -33,7 +33,7 @@ const resourcesData: RelatedResource[] = [
     description:
       "Contractual processing terms for customer-directed payroll data.",
     linkText: "Open DPA",
-    linkHref: "#dpa",
+    linkHref: "/legal/dpa",
     imgSrc: "/images/legal/7.png",
   },
 ];

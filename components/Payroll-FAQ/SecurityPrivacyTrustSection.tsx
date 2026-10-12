@@ -24,7 +24,7 @@ const securityFaqData: SecurityFAQItem[] = [
     scope: "General",
     reviewedDate: "Reviewed Aug 2026",
     linkText: "Open Security and Trust",
-    linkHref: "#security-trust"
+    linkHref: "/resources/security-trust"
   },
   {
     id: 2,

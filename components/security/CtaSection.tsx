@@ -3,10 +3,10 @@ import Reveal from "../ui/Reveal";
 import Eyebrow from "./Eyebrow";
 
 const links: { label: string; href?: string }[] = [
-  { label: "Trust Center" },
+  { label: "Trust Center", href: "/company/trust-center"},
   { label: "Integrations", href: "/product/integrations" },
   { label: "Implementation", href: "/product/implementation" },
-  { label: "Pricing" },
+  { label: "Pricing", href : "/pricing" },
 ];
 
 export default function CtaSection() {
@@ -34,7 +34,7 @@ export default function CtaSection() {
                 Book a demo
               </Link>
               <Link
-                href="/company/contact"
+                href="/contact"
                 className="flex min-h-11 items-center justify-center rounded-lg border border-[#565F6E] bg-[#3D4655] px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
               >
                 Contact sales
