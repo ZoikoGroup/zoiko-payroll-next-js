@@ -110,7 +110,7 @@ export default function ApiDocumentationViewer() {
             {/* Code Block Window */}
             <div className="bg-[#0C1E2F] border border-slate-800 rounded-2xl p-4 sm:p-5 font-mono text-xs text-slate-300 leading-relaxed overflow-x-auto space-y-2">
               <p className="text-slate-500 font-sans text-[11px]">
-                // Example generated from current API contract at build time
+                {"// Example generated from current API contract at build time"}
               </p>
               <div className="space-y-1">
                 <div>

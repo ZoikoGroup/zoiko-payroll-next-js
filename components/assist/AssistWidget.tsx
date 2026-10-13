@@ -1,254 +1,426 @@
 "use client";
 
-import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
-import Image from "next/image";
-import { CloseIcon, SendIcon } from "../ui/icons";
-import Logo from "../layout/Logo";
+import { ArrowLeft, RotateCcw, TriangleAlert } from "lucide-react";
 import {
+  AssistApiError,
   createPublicSession,
+  getPublicAssistConfig,
+  getPublicAssistHealth,
+  getPublicPayrollCountries,
   isAssistConfigured,
-  listPublicMessages,
   submitPublicMessage,
-  type PublicSource,
+  type PublicCountriesFeed,
 } from "@/lib/assist";
+import {
+  COPY,
+  POPULAR_QUESTIONS,
+  PUBLIC_ANSWER_INTENTS,
+  REQUEST_TIMEOUT_MS,
+  TOPICS,
+  containsSensitiveData,
+  mergeConfig,
+  type ActionKey,
+  type Topic,
+  type TopicPrompt,
+} from "./concierge-content";
+import {
+  ConciergeComposer,
+  ConciergeHeader,
+  ConciergeLauncher,
+  CountryCheck,
+  CtaRow,
+  FOCUS_RING,
+  PANEL_CLASS,
+  PopularQuestions,
+  PublicMessageBubble,
+  SupportChooser,
+  ThinkingBubble,
+  TopicGrid,
+  WelcomeBlock,
+  type ConciergeMessage,
+  type FeedState,
+  type HealthState,
+} from "./ConciergeUI";
 
-// Anonymous-visitor Assist widget for the public marketing site. Mirrors the
-// payroll app's own public-mode widget (same backend, same /assist/public/*
-// endpoints, same safety scope: global knowledge-base answers only, no
-// account or payroll data ever reachable from this surface) but restyled to
-// this site's own blue brand rather than the payroll app's purple.
-const SESSION_KEY = "zoiko_marketing_assist_session";
+// Anonymous-visitor Global Payroll AI Concierge for the public marketing
+// site (wireframe ZP-PUB-AI-UX-001). Same backend, same /assist/public/*
+// endpoints and safety scope as the payroll app's public widget: global
+// knowledge-base answers only, no account or payroll data reachable from
+// this surface, no attachments. The session id lives in memory only — a
+// reload or Close starts fresh, with no silent retrieval of an earlier
+// anonymous transcript (§08).
+const LOGO_SRC = "/logo.png";
+const ICON_SRC = "/zoikopayroll-icon.png";
 
-type Message = {
-  id: string;
-  role: "user" | "assistant";
-  content: string;
-  sources?: PublicSource[];
+type Banner = { kind: "expired" | "rateLimited" | "connectivity" | "invalid"; text: string };
+
+type SendOptions = {
+  actions?: ActionKey[];
+  topicId?: string;
+  countryCode?: string;
+  retryId?: string;
+  fromComposer?: boolean;
 };
+
+function classifyError(e: unknown): Banner {
+  if (e instanceof DOMException && e.name === "AbortError") return { kind: "connectivity", text: COPY.connectivity };
+  const status = e instanceof AssistApiError ? e.status : undefined;
+  const message = e instanceof Error ? e.message : "";
+  if (status === 404 || status === 410) return { kind: "expired", text: COPY.sessionExpired };
+  if (status === 429) return { kind: "rateLimited", text: COPY.rateLimited };
+  if (status === 400 && /message limit|new session/i.test(message)) {
+    return { kind: "expired", text: "This conversation has reached its message limit. Start a new conversation." };
+  }
+  if (status === 400 || status === 422) {
+    return { kind: "invalid", text: message || "That message couldn't be sent. Please rephrase and try again." };
+  }
+  return { kind: "connectivity", text: COPY.connectivity };
+}
+
+let messageCounter = 0;
+const nextId = (prefix: string) => `${prefix}-${Date.now()}-${++messageCounter}`;
 
 const emptySubscribe = () => () => {};
 
 // createPortal needs `document`, which doesn't exist during this Client
 // Component's server render — this reports false on the server and true
-// once hydrated on the client, with no effect/setState round trip (avoids
-// react-hooks/set-state-in-effect entirely, unlike the common
-// useState+useEffect "mounted" gate).
+// once hydrated on the client, with no effect/setState round trip.
 function useIsClient(): boolean {
   return useSyncExternalStore(emptySubscribe, () => true, () => false);
 }
 
 export default function AssistWidget() {
   const isClient = useIsClient();
+  const headingId = useId();
   const [open, setOpen] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const [config, setConfig] = useState(() => mergeConfig(null));
+  const [feed, setFeed] = useState<PublicCountriesFeed | null>(null);
+  const [feedState, setFeedState] = useState<FeedState>("loading");
+  const [health, setHealth] = useState<HealthState>("checking");
+  const [locale, setLocale] = useState("en");
   const [sessionId, setSessionId] = useState<number | null>(null);
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<ConciergeMessage[]>([]);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const bootStarted = useRef(false);
+  const [warning, setWarning] = useState("");
+  const [banner, setBanner] = useState<Banner | null>(null);
+  const [view, setView] = useState<"home" | "chat">("home");
+  const [activeTopicId, setActiveTopicId] = useState<string | null>(null);
+  const [showSupport, setShowSupport] = useState(false);
+
+  const launcherRef = useRef<HTMLButtonElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const countryInputRef = useRef<HTMLInputElement>(null);
+  const inFlight = useRef(false);
+  const pendingCountryFocus = useRef(false);
+
+  // Config, country feed and health load once, on first open (never on
+  // page load — the widget must not do work without a user gesture).
+  function openPanel() {
+    setOpen(true);
+    if (!loaded) {
+      setLoaded(true);
+      getPublicAssistConfig(locale).then((c) => setConfig(mergeConfig(c)));
+      getPublicPayrollCountries(locale).then((f) => {
+        setFeed(f);
+        setFeedState(f && Array.isArray(f.countries) ? "ready" : "error");
+      });
+      getPublicAssistHealth().then(setHealth);
+    } else if (health === "unavailable") {
+      // Re-check a failed probe on reopen so a transient outage doesn't
+      // leave the composer locked for the whole visit.
+      getPublicAssistHealth().then(setHealth);
+    }
+  }
 
   useEffect(() => {
-    if (!open || sessionId !== null || bootStarted.current) return;
-    bootStarted.current = true;
-    (async () => {
-      try {
-        const existing = sessionStorage.getItem(SESSION_KEY);
-        if (existing) {
-          const id = Number(existing);
-          const history = await listPublicMessages(id);
-          setSessionId(id);
-          setMessages(history.map((m) => ({ id: `h-${m.id}`, role: m.role, content: m.content })));
-        } else {
-          const session = await createPublicSession("en");
-          sessionStorage.setItem(SESSION_KEY, String(session.id));
-          setSessionId(session.id);
-        }
-      } catch {
-        setError("Assist is temporarily unavailable. Please try again shortly.");
-        bootStarted.current = false;
-      }
-    })();
-  }, [open, sessionId]);
+    if (open) headingRef.current?.focus();
+  }, [open]);
 
   useEffect(() => {
-    scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
-  }, [messages, sending]);
+    if (view === "chat") scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
+  }, [messages, sending, view]);
 
-  async function sendMessage(text?: string) {
-    const content = (text ?? input).trim();
-    if (!content || sending || !sessionId) return;
+  // A "Check your country" follow-up switches to the home view; focus the
+  // country search once that view has mounted.
+  useEffect(() => {
+    if (!pendingCountryFocus.current || view !== "home") return;
+    pendingCountryFocus.current = false;
+    countryInputRef.current?.scrollIntoView({ block: "center", behavior: "smooth" });
+    countryInputRef.current?.focus({ preventScroll: true });
+  }, [view]);
+
+  const minimize = useCallback(() => {
+    setOpen(false);
+    launcherRef.current?.focus();
+  }, []);
+
+  // Close ends the conversation; Minimize keeps it (wireframe §08).
+  function resetConversation() {
+    setSessionId(null);
+    setMessages([]);
     setInput("");
-    setError(null);
-    setMessages((prev) => [...prev, { id: `u-${Date.now()}`, role: "user", content }]);
+    setWarning("");
+    setBanner(null);
+    setView("home");
+    setActiveTopicId(null);
+    setShowSupport(false);
+  }
+
+  function close() {
+    resetConversation();
+    minimize();
+  }
+
+  async function ensureSession(): Promise<number> {
+    if (sessionId) return sessionId;
+    const session = await createPublicSession(locale);
+    setSessionId(session.id);
+    return session.id;
+  }
+
+  async function sendMessage(text: string, { actions = [], topicId, countryCode, retryId, fromComposer = false }: SendOptions = {}) {
+    const content = (text || "").trim();
+    if (!content || inFlight.current) return;
+    if (content.length > config.maxMessageLength) return;
+    if (containsSensitiveData(content)) {
+      setWarning(COPY.sensitiveWarning);
+      return;
+    }
+
+    inFlight.current = true;
+    setWarning("");
+    setBanner(null);
+    setView("chat");
+    setShowSupport(false);
+    if (fromComposer) setInput("");
+
+    const userId = retryId || nextId("u");
+    setMessages((prev) =>
+      retryId
+        ? prev.map((m) => (m.id === retryId ? { ...m, status: "sending" } : m))
+        : [...prev, { id: userId, role: "user", content, status: "sending", actions, topicId, countryCode }]
+    );
     setSending(true);
+
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
     try {
-      const result = await submitPublicMessage(sessionId, content);
+      const sid = await ensureSession();
+      const result = await submitPublicMessage(sid, content, { countryCode, topicId, signal: controller.signal });
+      const sources = result.sources || [];
+      let answer = result.answer;
+      let answerActions = actions;
+      let kind: ConciergeMessage["kind"] = "answer";
+      if (!PUBLIC_ANSWER_INTENTS.has(result.intent_id)) {
+        // Account/action-shaped request — the backend redirected it.
+        answerActions = ["signIn"];
+      } else if ((result.intent_id === "kb.answer" || result.intent_id === "explain.field") && sources.length === 0) {
+        kind = "insufficient";
+        answer = `${COPY.insufficientEvidence} You can check country coverage or talk to our Sales team for specifics.`;
+        answerActions = ["checkCountry", "talkToSales"];
+      }
       setMessages((prev) => [
-        ...prev,
-        { id: `a-${Date.now()}`, role: "assistant", content: result.answer, sources: result.sources },
+        ...prev.map((m): ConciergeMessage => (m.id === userId ? { ...m, status: "sent" } : m)),
+        { id: nextId("a"), role: "assistant", kind, content: answer, sources, actions: answerActions },
       ]);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong sending that message.");
+      if (health === "unavailable" || health === "checking") setHealth("available");
+    } catch (e) {
+      const error = classifyError(e);
+      setMessages((prev) => prev.map((m): ConciergeMessage => (m.id === userId ? { ...m, status: "failed" } : m)));
+      setBanner(error);
+      if (error.kind === "expired") setSessionId(null);
+      if (error.kind === "connectivity" && !sessionId) setHealth("unavailable");
     } finally {
+      clearTimeout(timer);
+      inFlight.current = false;
       setSending(false);
     }
   }
 
-  // Rendered only on the client (createPortal needs `document`, which
-  // doesn't exist during this component's server render) and only when a
-  // backend URL is actually configured — until then the widget stays
-  // invisible rather than pointing at a broken endpoint.
+  function handleTopicPrompt(prompt: TopicPrompt, topic: Topic) {
+    if (prompt.mode === "prefill") {
+      setInput(prompt.prefill || "");
+      requestAnimationFrame(() => {
+        const el = textareaRef.current;
+        if (!el) return;
+        el.focus();
+        el.setSelectionRange(el.value.length, el.value.length);
+      });
+      return;
+    }
+    sendMessage(prompt.label, { actions: prompt.actions, topicId: topic.id });
+  }
+
+  function goToCountryCheck() {
+    setView("home");
+    setActiveTopicId(null);
+    pendingCountryFocus.current = true;
+  }
+
+  // Rendered only on the client and only when a backend URL is actually
+  // configured — until then the widget stays invisible rather than
+  // pointing at a broken endpoint.
   if (!isClient || !isAssistConfigured()) return null;
+
+  const hasConversation = messages.length > 0;
+  const unavailable = health === "unavailable";
 
   return createPortal(
     <>
-      <style>{`
-        @keyframes zoikoAssistGlow {
-          0%, 100% { opacity: 0.5; transform: scale(1); }
-          50% { opacity: 0.85; transform: scale(1.1); }
-        }
-        .zoiko-assist-glow { animation: zoikoAssistGlow 2.8s ease-in-out infinite; }
-        @media (prefers-reduced-motion: reduce) {
-          .zoiko-assist-glow { animation: none; }
-        }
-      `}</style>
-
-      <div className="fixed bottom-6 right-6 z-[9997] h-14 w-14">
-        {/* Ambient glow halo — sits behind the button, pulses gently, same
-            technique as the payroll platform's own launcher. */}
-        <div
-          aria-hidden="true"
-          className={`zoiko-assist-glow pointer-events-none absolute inset-0 rounded-2xl bg-brand blur-xl transition-opacity duration-300 ${
-            open ? "opacity-80" : "opacity-55"
-          }`}
-        />
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-label={open ? "Close Assist" : "Open Zoiko Payroll Assist"}
-          className={`relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-[radial-gradient(circle_at_32%_26%,var(--brand-light)_0%,var(--brand)_55%,var(--brand-dark)_100%)] text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.35),inset_0_-8px_14px_-6px_rgba(0,0,0,0.4),0_16px_30px_-8px_rgba(0,0,0,0.45)] transition-all duration-200 hover:-translate-y-[3px] hover:scale-[1.04] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.45),inset_0_-8px_14px_-6px_rgba(0,0,0,0.4),0_20px_36px_-8px_rgba(0,0,0,0.5)] active:translate-y-0 active:scale-100 ${
-            open ? "rotate-90" : ""
-          }`}
-        >
-          {open ? (
-            <CloseIcon className="h-6 w-6" />
-          ) : (
-            <Image src="/zoikopayroll-icon.png" alt="" fill sizes="56px" className="object-cover" priority />
-          )}
-        </button>
-      </div>
+      <ConciergeLauncher
+        ref={launcherRef}
+        open={open}
+        onToggle={() => (open ? minimize() : openPanel())}
+        iconSrc={ICON_SRC}
+        label={open ? "Minimize Global Payroll AI Concierge" : "Open Global Payroll AI Concierge"}
+      />
 
       {open ? (
         <div
           role="dialog"
-          aria-modal="true"
-          aria-label="Zoiko Payroll Assist"
-          className="fixed inset-0 z-[9997] flex flex-col overflow-hidden bg-background sm:inset-auto sm:bottom-24 sm:right-6 sm:h-[560px] sm:max-h-[calc(100dvh-8rem)] sm:w-[min(400px,calc(100vw-2rem))] sm:max-w-[calc(100vw-2rem)] sm:rounded-[22px] sm:border sm:border-black/10 sm:shadow-[0_24px_64px_rgba(0,0,0,0.18)]"
+          aria-labelledby={headingId}
+          lang={locale}
+          className={PANEL_CLASS}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") {
+              e.preventDefault();
+              minimize();
+            }
+          }}
         >
-          <div className="flex items-center justify-between border-b border-black/10 bg-background px-4 py-3">
-            <div className="flex items-center gap-2.5">
-              <Logo sizeClassName="h-6 w-auto" />
-              <div className="h-5 w-px shrink-0 bg-black/10" />
-              <p className="text-[13px] font-bold tracking-wide text-brand">Assist</p>
-            </div>
-            <button
-              type="button"
-              onClick={() => setOpen(false)}
-              aria-label="Close"
-              className="rounded-[10px] p-1.5 text-foreground/60 transition hover:bg-black/5 hover:text-brand"
-            >
-              <CloseIcon className="h-4 w-4" />
-            </button>
-          </div>
+          <ConciergeHeader
+            logoSrc={LOGO_SRC}
+            headingId={headingId}
+            headingRef={headingRef}
+            status={health}
+            locales={config.locales}
+            locale={locale}
+            onLocaleChange={setLocale}
+            onMinimize={minimize}
+            onClose={close}
+          />
 
-          <div className="flex min-h-0 flex-1 flex-col">
-            {sessionId === null && !error ? (
-              <div className="flex flex-1 items-center justify-center">
-                <div className="h-6 w-6 animate-spin rounded-full border-2 border-brand border-t-transparent" />
+          <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto overscroll-contain bg-white">
+            {view === "home" ? (
+              <div className="space-y-4 px-4 py-4 md:px-5">
+                {hasConversation ? (
+                  <button
+                    type="button"
+                    onClick={() => setView("chat")}
+                    className={`inline-flex items-center gap-1.5 rounded-[8px] text-[12px] font-semibold text-brand hover:underline ${FOCUS_RING}`}
+                  >
+                    <ArrowLeft size={14} aria-hidden="true" /> Back to conversation
+                  </button>
+                ) : null}
+                <WelcomeBlock iconSrc={ICON_SRC} compact={hasConversation} />
+                <TopicGrid
+                  topics={TOPICS}
+                  activeTopicId={activeTopicId}
+                  onSelectTopic={setActiveTopicId}
+                  onBack={() => setActiveTopicId(null)}
+                  onPrompt={handleTopicPrompt}
+                  disabled={sending || unavailable}
+                />
+                <CountryCheck
+                  ref={countryInputRef}
+                  feed={feed}
+                  feedState={feedState}
+                  links={config.links}
+                  roadmapNote={config.roadmapNote}
+                  disabled={sending || unavailable}
+                  onAsk={(country) =>
+                    sendMessage(`How does payroll work in ${country.name}?`, {
+                      countryCode: country.code,
+                      actions: ["talkToSales"],
+                    })
+                  }
+                />
+                <div className="border-t border-[#E6EEF8]" aria-hidden="true" />
+                <PopularQuestions
+                  questions={POPULAR_QUESTIONS}
+                  disabled={sending || unavailable}
+                  faqUrl={config.links.faq}
+                  links={config.links}
+                  onPick={(q) => sendMessage(q.label, { actions: q.actions })}
+                />
+                <CtaRow links={config.links} onSupport={() => setShowSupport((v) => !v)} supportExpanded={showSupport} />
+                {showSupport ? (
+                  <SupportChooser
+                    links={config.links}
+                    liveSupportAvailable={config.liveSupportAvailable}
+                    onClose={() => setShowSupport(false)}
+                  />
+                ) : null}
               </div>
             ) : (
-              <>
-                <div ref={scrollRef} className="min-h-0 flex-1 space-y-3 overflow-y-auto bg-black/[0.02] p-4">
-                  {error ? (
-                    <p className="rounded-[12px] bg-red-50 px-3 py-2 text-[12px] font-medium text-red-700">{error}</p>
-                  ) : null}
-                  {messages.length === 0 ? (
-                    <div className="rounded-[16px] rounded-bl-[4px] border border-black/10 bg-white px-3.5 py-2.5 text-[13px] leading-relaxed text-foreground">
-                      <p>
-                        Hi! I&rsquo;m Zoiko Payroll Assist. Ask me general questions about payroll, payslips,
-                        taxes, or how Zoiko Payroll works. For account-specific help, sign in to the platform.
-                      </p>
-                    </div>
-                  ) : (
-                    messages.map((m) => (
-                      <div key={m.id} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
-                        <div
-                          className={`max-w-[85%] whitespace-pre-wrap rounded-[16px] px-3.5 py-2.5 text-[13px] leading-relaxed ${
-                            m.role === "user"
-                              ? "rounded-br-[4px] bg-brand text-white"
-                              : "rounded-bl-[4px] border border-black/10 bg-white text-foreground"
-                          }`}
-                        >
-                          {m.content}
-                          {m.sources?.length ? (
-                            <div className="mt-2 flex flex-wrap gap-1">
-                              {m.sources.map((s, i) => (
-                                <span key={i} className="rounded-full bg-brand/10 px-2 py-0.5 text-[10px] font-semibold text-brand">
-                                  {s.title}
-                                </span>
-                              ))}
-                            </div>
-                          ) : null}
-                        </div>
-                      </div>
-                    ))
-                  )}
-                  {sending ? (
-                    <div className="flex justify-start">
-                      <div className="flex items-center gap-2 rounded-[16px] rounded-bl-[4px] border border-black/10 bg-white px-3.5 py-2.5 text-[12px] text-foreground/60">
-                        <div className="h-3 w-3 animate-spin rounded-full border-2 border-brand border-t-transparent" />
-                        Thinking&hellip;
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    sendMessage();
-                  }}
-                  className="flex items-end gap-2 border-t border-black/10 p-3"
-                >
-                  <textarea
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" && !e.shiftKey) {
-                        e.preventDefault();
-                        sendMessage();
+              <div className="space-y-3 px-4 py-4 md:px-5">
+                <WelcomeBlock iconSrc={ICON_SRC} compact />
+                <div role="log" aria-live="polite" aria-relevant="additions" aria-label="Conversation" className="space-y-3">
+                  {messages.map((m) => (
+                    <PublicMessageBubble
+                      key={m.id}
+                      message={m}
+                      links={config.links}
+                      iconSrc={ICON_SRC}
+                      retryDisabled={sending}
+                      onRetry={(msg) =>
+                        sendMessage(msg.content, {
+                          retryId: msg.id,
+                          actions: msg.actions,
+                          topicId: msg.topicId,
+                          countryCode: msg.countryCode,
+                        })
                       }
-                    }}
-                    rows={1}
-                    placeholder="Ask a question&hellip;"
-                    className="max-h-28 flex-1 resize-none rounded-[12px] border border-black/10 bg-white px-3 py-2.5 text-[13px] text-foreground outline-none transition focus:border-brand"
-                  />
-                  <button
-                    type="submit"
-                    disabled={!input.trim() || sending}
-                    className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-brand text-white transition hover:bg-brand-dark disabled:opacity-40"
-                  >
-                    <SendIcon className="h-4 w-4" />
-                  </button>
-                </form>
-                <p className="px-3 pb-3 text-[10px] text-foreground/50">
-                  General information only &mdash; sign in to the platform for account-specific help.
-                </p>
-              </>
+                      onCheckCountry={goToCountryCheck}
+                    />
+                  ))}
+                </div>
+                {sending ? <ThinkingBubble iconSrc={ICON_SRC} /> : null}
+              </div>
             )}
           </div>
+
+          {banner ? (
+            <div
+              role="alert"
+              className="flex items-start gap-2 border-t border-[#B7791F]/30 bg-[#FBF0DE] px-4 py-2.5 text-[12px] text-[#1C2B42] md:px-5"
+            >
+              <TriangleAlert size={15} className="mt-0.5 shrink-0 text-[#9A6412]" aria-hidden="true" />
+              <p className="flex-1">{banner.text}</p>
+              {banner.kind === "expired" ? (
+                <button
+                  type="button"
+                  onClick={resetConversation}
+                  className={`inline-flex shrink-0 items-center gap-1 font-semibold text-brand underline ${FOCUS_RING}`}
+                >
+                  <RotateCcw size={12} aria-hidden="true" /> Start a new conversation
+                </button>
+              ) : null}
+            </div>
+          ) : null}
+
+          <ConciergeComposer
+            ref={textareaRef}
+            value={input}
+            onChange={(v) => {
+              setInput(v);
+              if (warning) setWarning("");
+            }}
+            onSubmit={() => sendMessage(input, { fromComposer: true })}
+            sending={sending}
+            disabled={unavailable}
+            maxLength={config.maxMessageLength}
+            notice={COPY.publicNotice}
+            warning={warning}
+            showTopicsButton={view === "chat"}
+            onShowTopics={() => setView("home")}
+          />
         </div>
       ) : null}
     </>,

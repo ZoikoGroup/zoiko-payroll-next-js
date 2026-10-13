@@ -20,7 +20,7 @@ export default function DirectAnswerSection() {
 
             {/* Title */}
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#07243B] tracking-tight">
-              What's included with Zolko Payroll?
+              What&apos;s included with Zolko Payroll?
             </h2>
           </div>
 

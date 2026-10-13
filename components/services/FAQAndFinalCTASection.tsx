@@ -119,8 +119,8 @@ export default function FAQAndFinalCTASection() {
 
               {/* Description */}
               <p className="text-xs sm:text-sm text-slate-300 font-medium leading-relaxed max-w-lg">
-                Tell us how you want payroll operated — we'll show what's
-                included, what's optional, and what needs a specialist.
+                Tell us how you want payroll operated — we&apos;ll show what&apos;s
+                included, what&apos;s optional, and what needs a specialist.
               </p>
 
               {/* Action Buttons */}

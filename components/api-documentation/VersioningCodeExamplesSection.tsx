@@ -183,7 +183,7 @@ export default function VersioningCodeExamplesSection() {
           {/* Code Window Content */}
           <div className="p-6 font-mono text-xs text-slate-300 leading-relaxed overflow-x-auto space-y-3">
             <p className="text-slate-500 font-sans text-[11px]">
-              // Example generated from current API contract at build time
+              {"// Example generated from current API contract at build time"}
             </p>
             <pre className="text-slate-200">
               <code>{codeSnippets[activeLang]}</code>

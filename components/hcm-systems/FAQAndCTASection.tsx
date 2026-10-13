@@ -156,8 +156,8 @@ export default function FAQAndCTASection() {
 
               {/* Description */}
               <p className="text-xs sm:text-sm text-slate-400 max-w-lg leading-relaxed">
-                Confirm fit before production activation — no generic "book a
-                demo" for every state.
+                Confirm fit before production activation — no generic &quot;book a
+                demo&quot; for every state.
               </p>
 
               {/* Action Button */}

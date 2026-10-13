@@ -89,7 +89,7 @@ export default function TimeStateContractSection() {
 
         {/* Title */}
         <h2 className="text-3xl sm:text-[36px] font-bold tracking-tight text-[#0F172A] leading-tight max-w-4xl mx-auto">
-          Eleven states — "Synced" is never a synonym for payroll-ready
+          Eleven states — &quot;Synced&quot; is never a synonym for payroll-ready
         </h2>
 
         {/* Main Paragraph Description */}

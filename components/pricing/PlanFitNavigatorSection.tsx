@@ -26,7 +26,7 @@ export default function PlanFitNavigatorSection() {
 
           {/* Description */}
           <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed max-w-xl">
-            Answer four questions and we'll calculate a recommendation using the
+            Answer four questions and we&apos;ll calculate a recommendation using the
             same commercial rules used at checkout — no opaque scoring, just the
             highest tier your scale or capability needs require.
           </p>

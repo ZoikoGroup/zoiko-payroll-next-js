@@ -10,6 +10,7 @@ import {
   Users,
   BarChart3,
   ArrowRight,
+  type LucideIcon,
   ArrowLeft,
   Info,
   CheckCircle2,
@@ -20,7 +21,7 @@ import {
 interface StepInfo {
   id: number;
   title: string;
-  icon: any;
+  icon: LucideIcon;
   aboutTitle: string;
   aboutDescription: string;
   aboutFootnote: string;

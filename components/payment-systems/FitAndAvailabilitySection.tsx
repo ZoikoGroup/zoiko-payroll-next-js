@@ -159,7 +159,7 @@ export default function FitAndAvailabilitySection() {
             <p className="text-xs leading-relaxed text-[#C9DCEA]">
               <span className="font-semibold">Stale evidence</span>{" "}
               automatically downgrades a public claim to validation-required —
-              never left showing "available."
+              never left showing &quot;available.&quot;
             </p>
           </div>
         </div>
@@ -199,12 +199,12 @@ export default function FitAndAvailabilitySection() {
               <div className="space-y-3 text-xs text-slate-500 leading-relaxed">
                 <p>
                   Each fact above is independently evidenced. A provider being
-                  generally "available" says nothing about whether a specific
+                  generally &quot;available&quot; says nothing about whether a specific
                   country, currency, rail or funding combination is supported
                   today.
                 </p>
                 <p>
-                  Never generalize from a provider's name or brand recognition
+                  Never generalize from a provider&apos;s name or brand recognition
                   alone — always confirm against the current registry entry
                   before relying on a route in production.
                 </p>

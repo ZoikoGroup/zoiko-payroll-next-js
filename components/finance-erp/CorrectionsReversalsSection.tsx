@@ -106,7 +106,7 @@ export default function CorrectionsReversalsSection() {
               </span>{" "}
               identity, amount, line count, entity, currency, dimensions,
               status, variance and evidence — every check is privileged over a
-              simple "sent successfully" flag.
+              simple &quot;sent successfully&quot; flag.
             </p>
           </div>
         </div>

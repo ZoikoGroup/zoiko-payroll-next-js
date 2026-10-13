@@ -28,7 +28,7 @@ export default function FinalStepSection() {
 
               {/* Description */}
               <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed max-w-xl">
-                Tell us your entities, jurisdictions and delivery models — we'll
+                Tell us your entities, jurisdictions and delivery models — we&apos;ll
                 show you the commercial layers that actually apply.
               </p>
 

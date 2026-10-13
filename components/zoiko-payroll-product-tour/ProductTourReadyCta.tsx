@@ -8,7 +8,7 @@ export default function ProductTourReadyCta() {
         <Reveal>
           {/* Eyebrow */}
           <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#38BDF8]">
-            // READY TO GO FURTHER?
+            {"// READY TO GO FURTHER?"}
           </span>
 
           {/* Heading */}

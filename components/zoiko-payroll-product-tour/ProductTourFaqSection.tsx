@@ -60,7 +60,7 @@ export default function ProductTourFaqSection() {
         <Reveal>
           <div className="text-center">
             <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#0A78C2]">
-              // FREQUENTLY ASKED QUESTIONS
+              {"// FREQUENTLY ASKED QUESTIONS"}
             </span>
             <h2 className="mt-3 text-2xl font-extrabold tracking-tight text-[#082F49] sm:text-3xl md:text-[34px]">
               Questions about the Product Tour

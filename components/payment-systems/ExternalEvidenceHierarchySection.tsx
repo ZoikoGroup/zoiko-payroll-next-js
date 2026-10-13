@@ -90,7 +90,7 @@ export default function ExternalEvidenceHierarchySection() {
 
             {/* Main Title */}
             <h2 className="text-3xl sm:text-[36px] font-bold tracking-tight text-white leading-tight">
-              Evidence has a hierarchy — and delivery isn't success.
+              Evidence has a hierarchy — and delivery isn&apos;t success.
             </h2>
           </div>
 

@@ -49,7 +49,7 @@ export default function SecurityDirectAnswerSection() {
 
             {/* Title (31px) */}
             <h2 className="text-[31px] font-extrabold text-[#07243B] tracking-tight leading-tight max-w-2xl">
-              How is Zoiko Payroll's security organized?
+              How is Zoiko Payroll&apos;s security organized?
             </h2>
           </div>
 
@@ -62,7 +62,7 @@ export default function SecurityDirectAnswerSection() {
         {/* Featured Main Box with 4px Left Border */}
         <div className="bg-white border border-slate-200/80 border-l-[4px] border-l-[#0A78C3] rounded-2xl p-6 sm:p-8 shadow-xs">
           <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed">
-            Zoiko Payroll's security review is organized around verified
+            Zoiko Payroll&apos;s security review is organized around verified
             security controls, current assurance evidence and controlled
             due-diligence access. Buyers can review public security information,
             request protected audit or assessment materials where available, and

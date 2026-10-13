@@ -44,7 +44,7 @@ export default function ManagedPayrollOperationsSection() {
             <div className="flex items-center gap-2">
               <span className="w-1 h-3.5 bg-[#3D9BD6] inline-block rounded-xs" />
               <span className="text-xs font-bold tracking-wider text-[#3D9BD6] uppercase">
-                RESPONSIBILITY, NOT "WE HANDLE EVERYTHING"
+                RESPONSIBILITY, NOT &quot;WE HANDLE EVERYTHING&quot;
               </span>
             </div>
 
