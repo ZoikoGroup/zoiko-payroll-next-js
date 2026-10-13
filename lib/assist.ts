@@ -146,13 +146,20 @@ export function getPublicPayrollCountries(locale: string = "en"): Promise<Public
 }
 
 // Prefers the dedicated public health endpoint; until that is deployed,
-// falls back to the existing unauthenticated /assist/status. Fails closed.
+// falls back to probing /assist/status. Some deployments protect that route
+// (401/403) — any non-5xx HTTP answer still proves the service is reachable,
+// so only a network failure or a server error counts as unavailable.
 export async function getPublicAssistHealth(): Promise<HealthStatus> {
   const health = await optional<{ status?: HealthStatus }>("/api/assist/public/health");
   if (health?.status) return health.status;
-  const status = await optional<{ status?: string; knowledge_available?: boolean }>("/api/assist/status");
-  if (!status || status.status !== "ok") return "unavailable";
-  return status.knowledge_available ? "available" : "degraded";
+  try {
+    const status = await request<{ status?: string; knowledge_available?: boolean }>("/api/assist/status");
+    if (status.status !== "ok") return "degraded";
+    return status.knowledge_available ? "available" : "degraded";
+  } catch (e) {
+    if (e instanceof AssistApiError && e.status && e.status < 500) return "available";
+    return "unavailable";
+  }
 }
 
 export function listPublicMessages(sessionId: number): Promise<PublicMessage[]> {
