@@ -212,7 +212,7 @@ export const sitemapCategories: SitemapCategory[] = [
       { label: "Employee access help" },
       { label: "Payroll administrator help" },
       { label: "Implementation support", href: "/resources/implementation" },
-      { label: "Sign in", href: "/sign-in" },
+      { label: "Sign in", href: "https://app.zoikopayroll.com/login" },
       { label: "System Status", href: "/resources/system-status" },
     ],
   },

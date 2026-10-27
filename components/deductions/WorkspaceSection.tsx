@@ -206,7 +206,7 @@ export default function WorkspaceSection() {
                 </div>
               </dl>
 
-              <Link href="/sign-in" className="mt-5 border-t border-slate-200 pt-4 text-sm font-semibold leading-5 text-sky-800 underline underline-offset-4">
+              <Link href="https://app.zoikopayroll.com/login" className="mt-5 border-t border-slate-200 pt-4 text-sm font-semibold leading-5 text-sky-800 underline underline-offset-4">
                 View change history →
               </Link>
             </div>
