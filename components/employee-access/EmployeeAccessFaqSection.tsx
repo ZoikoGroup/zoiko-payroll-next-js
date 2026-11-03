@@ -149,7 +149,7 @@ export default function EmployeeAccessFaqSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-              <Link href="/sign-in"
+              <Link href="https://app.zoikopayroll.com/login"
                 className="w-full sm:w-auto bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#087CB7] text-white font-bold text-xs sm:text-sm px-8 py-3 rounded-xl shadow-md transition-all tracking-[1px]"
               >
                 Sign in

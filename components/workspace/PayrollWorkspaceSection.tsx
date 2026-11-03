@@ -62,7 +62,7 @@ export default function PayrollWorkspaceSection() {
 
           {/* Action CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
-            <Link href="/register" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#0863A1] text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs cursor-pointer">
+            <Link href="https://app.zoikopayroll.com/login" className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#3EA3E0] to-[#0B4573] hover:bg-[#0863A1] text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs cursor-pointer">
               Start Free Trial
             </Link>
             <Link href="/zoiko-payroll-product-tour" className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-[#07243B] text-xs sm:text-sm font-semibold transition-colors flex items-center gap-1.5 cursor-pointer">

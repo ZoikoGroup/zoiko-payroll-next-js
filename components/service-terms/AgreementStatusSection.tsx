@@ -22,7 +22,7 @@ export default function AgreementStatusSection() {
 
         <div className="mt-6 flex flex-wrap gap-3">
           <Link
-            href="/sign-in"
+            href="https://app.zoikopayroll.com/login"
             className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-[#2C8FD1] to-[#0B4C78] px-6 py-3 text-sm font-bold text-white shadow-sm transition-all hover:from-[#2680bd] hover:to-[#093d61] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-700"
           >
             Sign in to check agreement status

@@ -62,7 +62,7 @@ export default function ExploreProfessionalSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <Link href="/register" className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#2E9BDD] via-[#0F5688] to-[#0A3D63] hover:bg-[#051a2c] text-white text-xs sm:text-sm font-bold shadow-md transition-colors cursor-pointer">
+            <Link href="https://app.zoikopayroll.com/login" className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#2E9BDD] via-[#0F5688] to-[#0A3D63] hover:bg-[#051a2c] text-white text-xs sm:text-sm font-bold shadow-md transition-colors cursor-pointer">
               Start 30-Day Evaluation
             </Link>
             <Link href="/contact" className="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-[#07243B] border border-slate-200 text-xs sm:text-sm font-bold shadow-xs transition-colors cursor-pointer">

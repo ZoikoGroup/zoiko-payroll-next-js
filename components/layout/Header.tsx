@@ -145,7 +145,7 @@ export default function Header() {
         {/* Desktop actions */}
         <div className="hidden items-center gap-3 lg:flex">
           <Link
-            href="/sign-in"
+            href="https://app.zoikopayroll.com/login"
             className="text-sm font-medium text-brand-dark transition-colors duration-200 hover:text-brand"
           >
             Sign in
@@ -218,7 +218,7 @@ export default function Header() {
 
           <div className="mt-3 flex flex-col gap-2 border-t border-slate-200 pt-3">
             <Link
-              href="/sign-in"
+              href="https://app.zoikopayroll.com/login"
               className="rounded-lg px-3 py-2.5 text-center text-sm font-medium text-brand-dark transition-colors duration-200 hover:bg-slate-50"
             >
               Sign in

@@ -119,7 +119,7 @@ export const footerLinkColumns: FooterColumn[] = [
       { label: "Employee access help", href: "/customer/employee-access" },
       { label: "Payroll administrator help", href: "/customer/administrator-help" },
       { label: "Implementation support", href: "/customer/implementation-support" },
-      { label: "Sign in", href: "/sign-in" },
+      { label: "Sign in", href: "https://app.zoikopayroll.com/login" },
       { label: "System status", href: "/resources/system-status" },
     ],
   },

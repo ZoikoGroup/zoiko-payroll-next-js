@@ -198,7 +198,7 @@ export default function ApprovalCenterSection() {
                   </div>
                 ))}
               </dl>
-              <Link href="/sign-in" className="mt-5 block rounded-md bg-green-700 px-4 py-2.5 text-center text-sm font-semibold text-white">
+              <Link href="https://app.zoikopayroll.com/login" className="mt-5 block rounded-md bg-green-700 px-4 py-2.5 text-center text-sm font-semibold text-white">
                 Review approval →
               </Link>
             </div>

@@ -37,7 +37,7 @@ const destinations = [
     badge: "→",
     title: "Sign in",
     description: "Return to your workspace.",
-    href: "/sign-in",
+    href: "https://app.zoikopayroll.com/login",
   },
 ];
 
