@@ -334,6 +334,9 @@ export default function AssistWidget() {
                   links={config.links}
                   roadmapNote={config.roadmapNote}
                   disabled={sending || unavailable}
+                  onAskAvailability={(name) =>
+                    sendMessage(`Is Zoiko Payroll available in ${name}?`, { actions: ["talkToSales"] })
+                  }
                   onAsk={(country) =>
                     sendMessage(`How does payroll work in ${country.name}?`, {
                       countryCode: country.code,

@@ -73,7 +73,7 @@ export type ConciergeMessage = {
   countryCode?: string;
 };
 type IconType = ComponentType<{ size?: number; className?: string; "aria-hidden"?: boolean | "true" }>;
-type UnknownCountry = { unknown: true; name: string };
+type UnknownCountry = { unknown: true; name: string; feedUnavailable?: boolean };
 
 // Building blocks for the website's Global Payroll AI Concierge panel —
 // the same design as the payroll platform's widget, on this site's brand.
@@ -544,11 +544,13 @@ function CountryDetail({
   country,
   links,
   onAsk,
+  onAskAvailability,
   disabled,
 }: {
   country: PublicCountry | UnknownCountry;
   links: Links;
   onAsk?: (country: PublicCountry) => void;
+  onAskAvailability?: (name: string) => void;
   disabled?: boolean;
 }) {
   if ("unknown" in country) {
@@ -556,9 +558,21 @@ function CountryDetail({
       <div className="mt-3 rounded-[12px] border border-[#D5E4F4] bg-white p-3" role="status">
         <p className="text-[13px] font-semibold text-[#1C2B42]">{country.name}</p>
         <p className="mt-1 text-[12px] text-[#4A5B72]">
-          Not currently listed as available. Talk to Sales to confirm options.
+          {country.feedUnavailable
+            ? "We couldn't load the country list just now. Ask the assistant, or talk to Sales to confirm options."
+            : "Not currently listed as available. Talk to Sales to confirm options."}
         </p>
         <div className="mt-2.5 flex flex-wrap gap-2">
+          {country.feedUnavailable && onAskAvailability ? (
+            <button
+              type="button"
+              disabled={disabled}
+              onClick={() => onAskAvailability(country.name)}
+              className={`inline-flex items-center gap-1.5 rounded-[10px] bg-brand px-3 py-2 text-[12px] font-semibold text-white transition hover:bg-[#0866ab] disabled:opacity-50 ${FOCUS_RING}`}
+            >
+              Ask about payroll in {country.name}
+            </button>
+          ) : null}
           <ActionLink href={links.talkToSales} links={links} icon={Users}>
             Talk to Sales
           </ActionLink>
@@ -653,9 +667,10 @@ export const CountryCheck = forwardRef<
     links: Links;
     roadmapNote?: string;
     onAsk?: (country: PublicCountry) => void;
+    onAskAvailability?: (name: string) => void;
     disabled?: boolean;
   }
->(function CountryCheck({ feed, feedState, links, roadmapNote, onAsk, disabled }, inputRef) {
+>(function CountryCheck({ feed, feedState, links, roadmapNote, onAsk, onAskAvailability, disabled }, inputRef) {
   const baseId = useId();
   const listId = `${baseId}-list`;
   const [query, setQuery] = useState("");
@@ -697,7 +712,7 @@ export const CountryCheck = forwardRef<
       e.preventDefault();
       if (open && activeIndex >= 0 && countries[activeIndex]) choose(countries[activeIndex]);
       else if (query.trim() && countries.length === 0) {
-        setSelected({ unknown: true, name: query.trim() });
+        setSelected({ unknown: true, name: query.trim(), feedUnavailable: feedState === "error" });
         setOpen(false);
       } else if (countries.length === 1) choose(countries[0]);
     } else if (e.key === "Escape" && open) {
@@ -746,8 +761,8 @@ export const CountryCheck = forwardRef<
           aria-expanded={open}
           aria-controls={listId}
           aria-activedescendant={open && activeIndex >= 0 ? `${listId}-${activeIndex}` : undefined}
-          disabled={unavailable || loading}
-          placeholder={loading ? "Loading countries…" : "Search a country…"}
+          disabled={loading}
+          placeholder={loading ? "Loading countries…" : unavailable ? "Type a country and press Enter…" : "Search a country…"}
           value={query}
           onChange={(e) => {
             setQuery(e.target.value);
@@ -836,7 +851,7 @@ export const CountryCheck = forwardRef<
         </div>
       ) : null}
 
-      {selected ? <CountryDetail country={selected} links={links} onAsk={onAsk} disabled={disabled} /> : null}
+      {selected ? <CountryDetail country={selected} links={links} onAsk={onAsk} onAskAvailability={onAskAvailability} disabled={disabled} /> : null}
     </section>
   );
 });
