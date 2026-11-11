@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AnnouncementBar from "@/components/layout/AnnouncementBar";
 import AssistWidget from "@/components/assist/AssistWidget";
+import BlackFridayPopup from "@/components/black-friday/BlackFridayPopup";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -57,6 +58,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <AssistWidget />
+        <BlackFridayPopup />
       </body>
     </html>
   );
