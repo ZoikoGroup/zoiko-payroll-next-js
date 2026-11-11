@@ -1,0 +1,9 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as WhyZoiko } from "./WhyZoiko";
+export { default as CoreCapabilities } from "./CoreCapabilities";
+export { default as PayrollWorkflow } from "./PayrollWorkflow";
+export { default as Jurisdictions } from "./Jurisdictions";
+export { default as SecurityTrust } from "./SecurityTrust";
+export { default as Pricing } from "./Pricing";
+export { default as OfferSection } from "./OfferSection";
+export { default as BookDemo } from "./BookDemo";

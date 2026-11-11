@@ -107,7 +107,100 @@ body {
   animation: mega-menu-in 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* ---------- Black Friday popup ---------- */
+
+@keyframes bf-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bf-pop-out {
+  to {
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+  }
+}
+
+@keyframes bf-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes bf-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes bf-shine {
+  0%,
+  60% {
+    transform: translateX(-120%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-20deg);
+  }
+}
+
+@keyframes bf-glow {
+  0%,
+  100% {
+    opacity: 0.6;
+    scale: 1;
+  }
+  50% {
+    opacity: 1;
+    scale: 1.25;
+  }
+}
+
+.bf-pop-in {
+  animation: bf-pop-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.bf-pop-out {
+  animation: bf-pop-out 0.22s ease-in both;
+}
+
+.bf-fade-in {
+  animation: bf-fade-in 0.3s ease-out both;
+}
+
+.bf-fade-out {
+  animation: bf-fade-out 0.22s ease-in both;
+}
+
+.bf-glow {
+  animation: bf-glow 4s ease-in-out infinite;
+}
+
+.bf-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  animation: bf-shine 3.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .bf-pop-in,
+  .bf-pop-out,
+  .bf-fade-in,
+  .bf-fade-out,
+  .bf-glow,
+  .bf-shine::after {
+    animation: none;
+  }
+
   .reveal {
     opacity: 1;
     transform: none;
