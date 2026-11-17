@@ -12,9 +12,9 @@ import {
 } from "@/components/black-friday";
 
 export const metadata: Metadata = {
-  title: "Black Friday 2026 | Zoiko Payroll",
+  title: "Black Friday Payroll Deals & Discounts 2026 | Zoiko Payroll",
   description:
-    "Black Friday to Cyber Monday, 27–30 November 2026: a proposed 25% off the first 12 months of eligible annual Zoiko Payroll platform licensing for new accounts.",
+    "Discover Zoiko Payroll Black Friday discounts in 2026. Explore payroll software offers to simplify salary processing and employee management.",
 };
 
 export default function BlackFridayPage() {
